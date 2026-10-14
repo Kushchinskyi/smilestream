@@ -1,7 +1,7 @@
 // Whether the backend is configured. When false the app runs in explicit demo mode
 // and never exposes admin operations.
 export const backendConfigured = Boolean(
-  import.meta.env.VITE_SUPABASE_URL && import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY,
+  import.meta.env['VITE_SUPABASE_URL'] && import.meta.env['VITE_SUPABASE_PUBLISHABLE_KEY'],
 );
 
 export type Video = {

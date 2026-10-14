@@ -57,7 +57,7 @@ function AdminPage() {
       editing === "new"
         ? await supabase.from("videos").insert(payload)
         : await supabase.from("videos").update({ ...payload, updated_at: new Date().toISOString() }).eq("id", editing!);
-    if (error) return toast.error(error.message);
+    if (error) { toast.error(error.message); return; }
     toast.success("Збережено");
     setEditing(null);
     load();
@@ -66,13 +66,13 @@ function AdminPage() {
   async function remove(v: Video) {
     if (!confirm(`Видалити «${v.title}»?`)) return;
     const { error } = await supabase.from("videos").delete().eq("id", v.id);
-    if (error) return toast.error(error.message);
+    if (error) { toast.error(error.message); return; }
     load();
   }
 
   async function toggle(v: Video) {
     const { error } = await supabase.from("videos").update({ is_active: !v.is_active }).eq("id", v.id);
-    if (error) return toast.error(error.message);
+    if (error) { toast.error(error.message); return; }
     load();
   }
 
