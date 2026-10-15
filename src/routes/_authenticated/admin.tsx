@@ -79,8 +79,17 @@ function AdminPage() {
   async function move(i: number, dir: -1 | 1) {
     const a = videos[i], b = videos[i + dir];
     if (!a || !b) return;
-    await supabase.from("videos").update({ sort_order: b.sort_order }).eq("id", a.id);
-    await supabase.from("videos").update({ sort_order: a.sort_order }).eq("id", b.id);
+    // Equal sort_order values would make a swap a no-op; fall back to neighbour ±1.
+    const aNew = a.sort_order === b.sort_order ? b.sort_order + dir : b.sort_order;
+    const bNew = a.sort_order;
+    const r1 = await supabase.from("videos").update({ sort_order: aNew }).eq("id", a.id);
+    if (r1.error) { toast.error(r1.error.message); load(); return; }
+    const r2 = await supabase.from("videos").update({ sort_order: bNew }).eq("id", b.id);
+    if (r2.error) {
+      // Roll back the first update so order stays consistent.
+      await supabase.from("videos").update({ sort_order: a.sort_order }).eq("id", a.id);
+      toast.error(r2.error.message);
+    }
     load();
   }
 
