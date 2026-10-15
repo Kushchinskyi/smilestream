@@ -175,7 +175,11 @@ function TvPage() {
   function onError() {
     const v = videoRef.current;
     if (!v || !v.getAttribute("src")) return;
-    const text = describeMediaError(v);
+    const code = v.error?.code;
+    const url = v.currentSrc || v.getAttribute("src") || "";
+    const text = (code === 2 || code === 4
+      ? "URL недоступний або не є MP4 (можливо 403/404/AccessDenied). "
+      : "") + describeMediaError(v) + " · URL: " + url;
     setLastError(text);
     errorsRef.current += 1;
     const total = listRef.current.length || 1;
