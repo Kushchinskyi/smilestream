@@ -109,7 +109,7 @@ function TvPage() {
       return;
     }
     const idx = ((i % items.length) + items.length) % items.length;
-    const item = items[idx];
+    const item = items[idx]!;
     indexRef.current = idx;
     setIndex(idx);
     v.muted = mutedRef.current;
