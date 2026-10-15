@@ -20,7 +20,29 @@ export const Route = createFileRoute("/tv")({
 
 type Source = "server" | "demo";
 
+function describePlayError(err: unknown): string {
+  const name = (err as { name?: string })?.name ?? "";
+  const msg = (err as { message?: string })?.message ?? String(err);
+  if (name === "NotAllowedError") return "NotAllowedError: браузер заборонив відтворення без натискання.";
+  if (name === "NotSupportedError") return "NotSupportedError: формат або адреса відео не підтримується.";
+  if (name === "AbortError") return "AbortError: завантаження перервано.";
+  return (name ? name + ": " : "") + msg;
+}
+
+function describeMediaError(v: HTMLVideoElement): string {
+  const e = v.error;
+  if (!e) return "Невідома помилка відео";
+  switch (e.code) {
+    case 1: return "MEDIA_ERR_ABORTED: завантаження перервано";
+    case 2: return "MEDIA_ERR_NETWORK: помилка мережі";
+    case 3: return "MEDIA_ERR_DECODE: не вдалося декодувати відео";
+    case 4: return "MEDIA_ERR_SRC_NOT_SUPPORTED: формат/адреса не підтримується";
+    default: return "Помилка відео (код " + e.code + ")";
+  }
+}
+
 // Plain, compatibility-first player: no animations, no third-party embeds.
+// play() is always invoked synchronously from a user gesture or a media event — never from useEffect.
 function TvPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [list, setList] = useState<Video[] | null>(null);
@@ -29,76 +51,142 @@ function TvPage() {
   const [started, setStarted] = useState(false);
   const [muted, setMuted] = useState(true);
   const [status, setStatus] = useState("Завантаження плейлиста…");
+  const [lastError, setLastError] = useState<string | null>(null);
+  const [needsTap, setNeedsTap] = useState(false);
   const [showStatus, setShowStatus] = useState(false);
-  const [errors, setErrors] = useState(0);
-  const hideTimer = useRef<number | undefined>(undefined);
 
-  async function loadPlaylist() {
-    if (!backendConfigured) {
-      setSource("demo");
-      setList(DEMO_PLAYLIST);
-      return;
-    }
+  const listRef = useRef<Video[]>([]);
+  const indexRef = useRef(0);
+  const mutedRef = useRef(true);
+  const errorsRef = useRef(0);
+  const hideTimer = useRef<number | undefined>(undefined);
+  const advanceTimer = useRef<number | undefined>(undefined);
+  const reloadTimer = useRef<number | undefined>(undefined);
+
+  function clearTimers() {
+    window.clearTimeout(advanceTimer.current);
+    window.clearTimeout(reloadTimer.current);
+    advanceTimer.current = undefined;
+    reloadTimer.current = undefined;
+  }
+
+  async function fetchPlaylist(): Promise<{ items: Video[]; src: Source }> {
+    if (!backendConfigured) return { items: DEMO_PLAYLIST, src: "demo" };
     try {
       const { data, error } = await supabase
-        .from("videos")
-        .select("*")
-        .eq("is_active", true)
-        .order("sort_order");
+        .from("videos").select("*").eq("is_active", true).order("sort_order");
       if (error) throw error;
-      setSource("server");
-      setList(data);
+      return { items: data ?? [], src: "server" };
     } catch {
-      setSource("demo");
-      setList(DEMO_PLAYLIST);
+      return { items: DEMO_PLAYLIST, src: "demo" };
     }
   }
 
+  function applyList(items: Video[], src: Source) {
+    listRef.current = items;
+    setList(items);
+    setSource(src);
+  }
+
   useEffect(() => {
-    loadPlaylist();
+    let alive = true;
+    fetchPlaylist().then(({ items, src }) => { if (alive) applyList(items, src); });
+    return () => {
+      alive = false;
+      clearTimers();
+      window.clearTimeout(hideTimer.current);
+    };
   }, []);
 
-  const current = list && list.length ? list[index % list.length] : null;
-
-  // Load and play current item
-  useEffect(() => {
+  // Must be called synchronously inside a click handler or media event.
+  function playAt(i: number) {
     const v = videoRef.current;
-    if (!v || !current || !started) return;
-    v.src = current.url;
-    v.muted = muted;
-    v.load();
-    setStatus("Відтворення: " + current.title);
-    const p = v.play();
-    if (p && typeof p.catch === "function") {
-      p.catch(() => {
-        // Autoplay with sound blocked → retry muted
-        v.muted = true;
-        setMuted(true);
-        v.play().catch(() => setStatus("Браузер заблокував автозапуск. Натисніть OK."));
-      });
+    const items = listRef.current;
+    if (!v) return;
+    if (!items.length) {
+      setStatus("Плейлист порожній. Повторна перевірка через 60 с.");
+      scheduleReload(60000);
+      return;
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [current?.id, index, started]);
+    const idx = ((i % items.length) + items.length) % items.length;
+    const item = items[idx]!;
+    indexRef.current = idx;
+    setIndex(idx);
+    v.muted = mutedRef.current;
+    v.playsInline = true;
+    v.setAttribute("playsinline", "");
+    v.setAttribute("webkit-playsinline", "");
+    v.src = item.url;
+    setStatus("Відтворення: " + item.title);
+    let p: Promise<void> | undefined;
+    try {
+      p = v.play();
+    } catch (err) {
+      handlePlayRejection(err);
+      return;
+    }
+    if (p && typeof p.catch === "function") p.catch(handlePlayRejection);
+  }
+
+  function handlePlayRejection(err: unknown) {
+    const name = (err as { name?: string })?.name;
+    if (name === "AbortError") return; // superseded by a newer src
+    const text = describePlayError(err);
+    setLastError(text);
+    if (name === "NotAllowedError") {
+      setNeedsTap(true);
+      setStatus("Потрібне натискання для запуску");
+    } else {
+      setStatus("Не вдалося відтворити, перехід до наступного ролика");
+      scheduleAdvance(1500);
+    }
+  }
+
+  function scheduleAdvance(ms: number) {
+    window.clearTimeout(advanceTimer.current);
+    advanceTimer.current = window.setTimeout(() => { advanceTimer.current = undefined; next(); }, ms);
+  }
+
+  function scheduleReload(ms: number) {
+    window.clearTimeout(reloadTimer.current);
+    reloadTimer.current = window.setTimeout(async () => {
+      reloadTimer.current = undefined;
+      const { items, src } = await fetchPlaylist();
+      applyList(items, src);
+      if (items.length) {
+        indexRef.current = 0;
+        playAt(0);
+      } else scheduleReload(60000);
+    }, ms);
+  }
 
   function next() {
-    if (!list || !list.length) return;
-    const n = index + 1;
-    if (n >= list.length) {
-      // end of loop: refresh playlist from server so admin changes apply
-      loadPlaylist();
-      setIndex(0);
-    } else setIndex(n);
+    clearTimers();
+    const items = listRef.current;
+    if (!items.length) { playAt(0); return; }
+    const n = indexRef.current + 1;
+    if (n >= items.length) {
+      // End of loop: play first item immediately (keeps media activation), refresh list in background.
+      playAt(0);
+      fetchPlaylist().then(({ items: fresh, src }) => applyList(fresh, src));
+    } else playAt(n);
   }
 
   function onError() {
-    setErrors((e) => e + 1);
-    setStatus("Помилка відтворення, перехід до наступного ролика");
-    if (list && errors + 1 >= list.length * 2) {
+    const v = videoRef.current;
+    if (!v || !v.getAttribute("src")) return;
+    const text = describeMediaError(v);
+    setLastError(text);
+    errorsRef.current += 1;
+    const total = listRef.current.length || 1;
+    if (errorsRef.current >= total * 2) {
       setStatus("Жоден ролик не відтворюється. Повтор через 30 с.");
-      window.setTimeout(() => { setErrors(0); next(); }, 30000);
+      clearTimers();
+      advanceTimer.current = window.setTimeout(() => { errorsRef.current = 0; next(); }, 30000);
       return;
     }
-    window.setTimeout(next, 1500);
+    setStatus("Помилка відтворення, перехід до наступного ролика");
+    scheduleAdvance(1500);
   }
 
   function reveal() {
@@ -116,9 +204,22 @@ function TvPage() {
   }
 
   function start(withSound: boolean) {
+    clearTimers();
+    mutedRef.current = !withSound;
     setMuted(!withSound);
+    setNeedsTap(false);
+    setLastError(null);
+    errorsRef.current = 0;
     setStarted(true);
-    fullscreen();
+    playAt(indexRef.current);
+  }
+
+  function retry() {
+    clearTimers();
+    setNeedsTap(false);
+    setLastError(null);
+    errorsRef.current = 0;
+    playAt(indexRef.current);
   }
 
   useEffect(() => {
@@ -138,7 +239,7 @@ function TvPage() {
           preload="auto"
           onEnded={next}
           onError={onError}
-          onPlaying={() => setErrors(0)}
+          onPlaying={() => { errorsRef.current = 0; setLastError(null); setNeedsTap(false); }}
           onClick={reveal}
         />
 
@@ -168,17 +269,29 @@ function TvPage() {
           </div>
         )}
 
-        {started && showStatus && (
+        {started && needsTap && (
+          <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 bg-ink/90 p-8 text-center">
+            <p className="text-2xl">Браузер заблокував автозапуск</p>
+            {lastError && <p className="text-base opacity-70">{lastError}</p>}
+            <button autoFocus onClick={retry} className="rounded-2xl bg-teal px-12 py-8 text-3xl font-semibold text-teal-foreground focus:outline focus:outline-4 focus:outline-ink-foreground">
+              ▶ Запустити знову
+            </button>
+          </div>
+        )}
+
+        {started && !needsTap && (showStatus || lastError || !list?.length) && (
           <div className="absolute bottom-0 left-0 right-0 bg-ink/90 p-6 text-xl">
             <div>{status}</div>
+            {lastError && <div className="mt-2 text-base text-warning">{lastError}</div>}
             <div className="mt-2 text-base opacity-70">
-              Ролик {list ? (index % list.length) + 1 : 0} / {list?.length ?? 0} · {muted ? "без звуку" : "зі звуком"} · джерело: {source === "server" ? "сервер" : "демо"}
-              {current?.is_test ? " · ТЕСТОВЕ ВІДЕО" : ""}
+              Ролик {list?.length ? index + 1 : 0} / {list?.length ?? 0} · {muted ? "без звуку" : "зі звуком"} · джерело: {source === "server" ? "сервер" : "демо"}
+              {list?.[index]?.is_test ? " · ТЕСТОВЕ ВІДЕО" : ""}
             </div>
-            <div className="mt-4 flex gap-4">
-              <button onClick={fullscreen} className="rounded-lg bg-teal px-6 py-3 text-teal-foreground">Повний екран</button>
+            <div className="mt-4 flex flex-wrap gap-4">
+              <button onClick={retry} className="rounded-lg bg-teal px-6 py-3 text-teal-foreground">Перезапустити</button>
+              <button onClick={fullscreen} className="rounded-lg border border-ink-foreground px-6 py-3">Повний екран</button>
               <button
-                onClick={() => { const v = videoRef.current; if (v) { v.muted = !v.muted; setMuted(v.muted); } }}
+                onClick={() => { const v = videoRef.current; if (v) { v.muted = !v.muted; mutedRef.current = v.muted; setMuted(v.muted); } }}
                 className="rounded-lg border border-ink-foreground px-6 py-3"
               >
                 {muted ? "Увімкнути звук" : "Вимкнути звук"}
