@@ -17,6 +17,9 @@ export const Route = createFileRoute("/tv")({
 });
 
 function TvPage() {
+  const surface = useRef<HTMLDivElement>(null);
+  const focusDirection = useRef(1);
+  const [navigation, setNavigation] = useState(0);
   const first = useRef<HTMLVideoElement>(null);
   const second = useRef<HTMLVideoElement>(null);
   const music = useRef<HTMLAudioElement>(null);
@@ -75,7 +78,10 @@ function TvPage() {
           () => syncError("звук", true),
         )
       : () => {};
-    if (!backendConfigured) setSyncStatus("Сервер не налаштовано. Демо-контент не додається.");
+    if (!backendConfigured) {
+      setStatus("Плейлист недоступний без налаштованого сервера.");
+      setSyncStatus("Сервер не налаштовано. Демо-контент не додається.");
+    }
     return () => {
       stopVideos();
       stopAudio();
@@ -89,21 +95,58 @@ function TvPage() {
       clearTimeout(hide.current);
       hide.current = setTimeout(() => setControls(false), 8000);
     };
-    window.addEventListener("keydown", reveal);
+    const onKey = (event: KeyboardEvent) => {
+      reveal();
+      const key =
+        event.key ||
+        (
+          {
+            13: "Enter",
+            37: "ArrowLeft",
+            38: "ArrowUp",
+            39: "ArrowRight",
+            40: "ArrowDown",
+          } as Record<number, string>
+        )[event.keyCode];
+      const arrow = ["ArrowLeft", "ArrowUp", "ArrowRight", "ArrowDown"].includes(key || "");
+      const enterWithoutFocus =
+        key === "Enter" &&
+        !(
+          document.activeElement instanceof HTMLButtonElement &&
+          surface.current?.contains(document.activeElement)
+        );
+      if (arrow || enterWithoutFocus) {
+        event.preventDefault();
+        focusDirection.current = key === "ArrowLeft" || key === "ArrowUp" ? -1 : 1;
+        setNavigation((n) => n + 1);
+      }
+    };
+    window.addEventListener("keydown", onKey);
     window.addEventListener("click", reveal);
     return () => {
-      window.removeEventListener("keydown", reveal);
+      window.removeEventListener("keydown", onKey);
       window.removeEventListener("click", reveal);
       clearTimeout(hide.current);
     };
   }, []);
+  useEffect(() => {
+    if (!navigation) return;
+    const buttons = Array.from(
+      surface.current?.querySelectorAll<HTMLButtonElement>("button:not([disabled])") || [],
+    );
+    if (!buttons.length) return;
+    const index = buttons.indexOf(document.activeElement as HTMLButtonElement);
+    buttons[
+      index < 0 ? 0 : (index + focusDirection.current + buttons.length) % buttons.length
+    ]?.focus();
+  }, [navigation]);
   function start(sound: boolean) {
     setStarted(true);
     setBlocked(false);
     player.current?.start(sound);
   }
   return (
-    <div className="fixed inset-0 bg-black text-white">
+    <div ref={surface} className="tv-screen fixed inset-0 bg-black text-white">
       {[first, second].map((ref, i) => (
         <video
           key={i}
@@ -126,7 +169,7 @@ function TvPage() {
       {(!started || blocked) && (
         <div
           style={{ position: "absolute", inset: 0, zIndex: 3, background: "#111" }}
-          className="flex flex-col items-center justify-center gap-6 p-8 text-center"
+          className="tv-start flex flex-col items-center justify-center gap-6 p-8 text-center"
         >
           <h1 className="text-3xl">Smile Stream</h1>
           <p>{status}</p>
@@ -154,7 +197,7 @@ function TvPage() {
             zIndex: 2,
             background: "rgba(0,0,0,.85)",
           }}
-          className="space-y-4 p-6"
+          className="tv-status space-y-4 p-6"
         >
           <p role="status">{status}</p>
           {syncStatus && <p>{syncStatus}</p>}
