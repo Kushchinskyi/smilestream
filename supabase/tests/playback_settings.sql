@@ -1,4 +1,6 @@
--- Run ONLY through scripts/test-sql.mjs against a disposable/local or explicit staging database.
+-- Run via scripts/test-sql.mjs on a disposable/local or explicit staging database.
+-- MCP alternative: verify the approved test project_id first, set smile.isolated_sql_test=on,
+-- then execute this exact transaction there. Never execute against the production project.
 -- Standard PostgreSQL assertions: any unexpected outcome raises an exception and fails the runner.
 -- Requires original Drizzle schema + the prepared playback_settings migration.
 begin;

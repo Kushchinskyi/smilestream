@@ -12,6 +12,7 @@ dist
 dist-ssr
 .output
 .media-test-output/
+.integration-test-output/
 .vinxi
 .tanstack/**
 .nitro

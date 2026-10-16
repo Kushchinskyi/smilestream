@@ -4,6 +4,27 @@ import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { testBackend, testTarget } from "./test-target.mjs";
 import { mediaTestEnvironment, assertMediaTestBuild } from "./media-test/guard.mjs";
+import { integrationBackend, INTEGRATION_PROJECT } from "./integration-target.mjs";
+test("integration launcher is pinned to the approved isolated project", () => {
+  const config = {
+    projectRef: INTEGRATION_PROJECT,
+    url: `https://${INTEGRATION_PROJECT}.supabase.co`,
+    publishableKey: "sb_publishable_test",
+  };
+  assert.equal(integrationBackend(config).endpoint, config.url);
+  for (const url of [
+    "https://ieytvixchndxnxsxpcot.supabase.co",
+    "https://other.supabase.co",
+    "http://127.0.0.1",
+    `${config.url}/path`,
+  ])
+    assert.throws(() => integrationBackend({ ...config, url }), /approved isolated/);
+  assert.throws(() => integrationBackend({ ...config, projectRef: "other" }), /approved isolated/);
+  assert.throws(
+    () => integrationBackend({ ...config, publishableKey: "sb_secret_forbidden" }),
+    /publishable/,
+  );
+});
 test("media preview removes inherited backend, Vite and test credentials", () => {
   const clean = mediaTestEnvironment(
     {

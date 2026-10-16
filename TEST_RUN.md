@@ -1,5 +1,7 @@
 # Smile Stream — безопасный тестовый запуск (задание №4)
 
+Результаты реального интеграционного теста на отдельно созданном Supabase и запуск Samsung: [INTEGRATION_TEST.md](INTEGRATION_TEST.md).
+
 Для отдельного теста реальных видео и музыки **без Supabase** см. [MEDIA_TEST.md](MEDIA_TEST.md): launcher `--media-test --lan`.
 
 ## Что проверено здесь
