@@ -14,6 +14,12 @@ export type Database = {
   }
   public: {
     Tables: {
+      playback_settings: {
+        Row: { id: number; music_urls: string[]; music_volume: number; video_volume: number; duck_volume: number; original_video_ids: string[] }
+        Insert: { id?: number; music_urls?: string[]; music_volume?: number; video_volume?: number; duck_volume?: number; original_video_ids?: string[] }
+        Update: { music_urls?: string[]; music_volume?: number; video_volume?: number; duck_volume?: number; original_video_ids?: string[] }
+        Relationships: []
+      }
       screens: {
         Row: {
           created_at: string

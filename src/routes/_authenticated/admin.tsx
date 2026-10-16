@@ -8,6 +8,7 @@ import { formatDuration, type Video } from "@/lib/backend";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Switch } from "@/components/ui/switch";
+import { AudioSettingsPanel } from '@/components/AudioSettingsPanel';
 
 export const Route = createFileRoute("/_authenticated/admin")({
   head: () => ({
@@ -112,6 +113,7 @@ function AdminPage() {
           </p>
         )}
 
+        {admin === "yes" && <AudioSettingsPanel videos={videos} />}
         {admin === "yes" && editing && (
           <div className="mt-8 grid gap-4 rounded-xl border bg-card p-6 md:grid-cols-6">
             <label className="space-y-1 text-sm md:col-span-3">Назва
