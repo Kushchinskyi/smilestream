@@ -40,7 +40,7 @@ Samplelib describes these as test downloads without license restrictions. All fo
 
 ## TV remote acceptance
 
-1. Open TV URL. Arrows focus buttons with a yellow outline; Enter starts with sound. Confirm moving image and music.
+1. Open TV URL. Arrows focus buttons with a yellow outline; Enter starts with sound. Confirm moving image and music. After playback starts, the entire panel hides after five idle seconds. Any arrow reveals it and focuses the first enabled button; subsequent arrows navigate and OK activates. Remote keys and mouse actions reset the timer. “Сховати панель” hides it immediately and clears hidden-button focus. A mouse click/touch also reveals it; pointer movement alone does not uncover a hidden panel. Hiding/showing never restarts video or music; diagnostic data continues updating in memory/DOM. Before the first playback the panel stays visible.
 2. Watch at least three full loops (about 90 seconds). All titles must play in order, slots 1/2 alternate, switch/loop counters grow, and next video is preloaded (`readyState` normally 3/4, buffered > 0).
 3. Switch time measures ended/manual Next to incoming playing, **not physical screen black-frame duration**. Diagnostics refresh every 250 ms. Also observe the screen.
 4. Clip 2 enables original audio: actual music level should drop from 0.35 to 0.07 (duck=0.20), returning on clip 3. Listen to confirm. Use independent Music/Video/Ducking +/- buttons; music time/source must not reset on level changes.

@@ -1,6 +1,7 @@
 import { TvPlayback } from "../../src/lib/tv-playback";
 import { ensureTizenBuiltins } from "../../src/lib/tizen-compat";
 import { playlist, audioSettings, localMediaHost } from "./fixtures";
+import { attachDiagnosticPanel } from "./panel";
 import "./style.css";
 
 ensureTizenBuiltins();
@@ -17,6 +18,7 @@ const music = app.querySelector("audio")!;
 const status = app.querySelector("#status")!;
 const diagnostics = app.querySelector("#diagnostics")!;
 const controls = app.querySelector("#controls")!;
+const panel = app.querySelector("section")!;
 const settings = { ...audioSettings };
 let switches = 0,
   loops = 0,
@@ -101,6 +103,8 @@ button("Помилка наступного / відновити список", 
   );
   render();
 });
+button("Сховати панель", () => panelUi.hide());
+const panelUi = attachDiagnosticPanel(panel, videos);
 function render() {
   const current = videos[active]!,
     next = videos[1 - active]!;
@@ -116,21 +120,12 @@ function render() {
 }
 const timer = setInterval(render, 250);
 render();
-window.addEventListener("keydown", (event) => {
-  if (!["ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Enter"].includes(event.key)) return;
-  const buttons = Array.from(controls.querySelectorAll("button"));
-  const index = buttons.indexOf(document.activeElement as HTMLButtonElement);
-  if (event.key === "Enter" && index >= 0) return;
-  event.preventDefault();
-  const delta = event.key === "ArrowLeft" || event.key === "ArrowUp" ? -1 : 1;
-  buttons[index < 0 ? 0 : (index + delta + buttons.length) % buttons.length]?.focus();
-});
 window.addEventListener(
   "pagehide",
   () => {
     clearInterval(timer);
+    panelUi.dispose();
     player.dispose();
   },
   { once: true },
 );
-controls.querySelector("button")?.focus();
