@@ -1,5 +1,7 @@
 # Smile Stream — безопасный тестовый запуск (задание №4)
 
+Для отдельного теста реальных видео и музыки **без Supabase** см. [MEDIA_TEST.md](MEDIA_TEST.md): launcher `--media-test --lan`.
+
 ## Что проверено здесь
 
 - Статически сопоставлены исходная схема `drizzle/migrations/0000_migration.sql` и подготовленная миграция `supabase/migrations/20261016174139_centralized_playback_settings.sql`. Сигнатура `has_role(uuid, app_role)` совпадает. Публичный SELECT позволяет anon/authenticated читать singleton; UPDATE выдан authenticated только на пять колонок настроек и ограничен USING/WITH CHECK по существующей admin-роли. INSERT/DELETE/id UPDATE клиентам не выданы. Проверка администратора не использует user_metadata. Существующие роли, auth-триггеры и политики не менялись.

@@ -3,6 +3,56 @@ import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { testBackend, testTarget } from "./test-target.mjs";
+import { mediaTestEnvironment, assertMediaTestBuild } from "./media-test/guard.mjs";
+test("media preview removes inherited backend, Vite and test credentials", () => {
+  const clean = mediaTestEnvironment(
+    {
+      PATH: "keep",
+      VITE_SUPABASE_URL: "production",
+      SUPABASE_SERVICE_ROLE_KEY: "secret",
+      SMILE_TEST_DATABASE_URL: "secret",
+      VITE_OTHER_TOKEN: "secret",
+      NITRO_PRESET: "cloudflare",
+    },
+    [],
+  );
+  assert.equal(clean.PATH, "keep");
+  assert.equal(clean.NITRO_PRESET, "node-server");
+  assert.equal(JSON.stringify(clean).includes("secret"), false);
+  assert.equal(clean.VITE_SUPABASE_URL, undefined);
+  assert.throws(() => mediaTestEnvironment({}, ["--staging"]), /staging/);
+});
+test("media build cannot run in normal mode, without launcher, or in hosting/CI", () => {
+  assert.throws(() => assertMediaTestBuild({}, "media-test"), /launcher/);
+  const env = mediaTestEnvironment({}, []);
+  assert.throws(() => assertMediaTestBuild(env, "production"), /normal builds/);
+  assert.doesNotThrow(() => assertMediaTestBuild(env, "media-test"));
+  for (const key of [
+    "CI",
+    "LOVABLE_PREVIEW_HOST",
+    "LOVABLE_NITRO_PRESET",
+    "CF_PAGES",
+    "VERCEL",
+    "NETLIFY",
+  ])
+    assert.throws(
+      () => assertMediaTestBuild({ ...env, [key]: "1" }, "media-test"),
+      /local preview/,
+    );
+});
+test("launcher refuses media-test with staging before spawning a build/server", () => {
+  const result = spawnSync(
+    process.execPath,
+    ["scripts/start-local-test.mjs", "--media-test", "--staging"],
+    {
+      cwd: fileURLToPath(new URL("../", import.meta.url)),
+      encoding: "utf8",
+    },
+  );
+  assert.notEqual(result.status, 0);
+  assert.match(result.stderr, /media-test cannot use staging/);
+  assert(!result.stdout.includes("Local test only"));
+});
 test("default local launch ignores production environment and disables backend", () => {
   assert.deepEqual(
     testBackend({
