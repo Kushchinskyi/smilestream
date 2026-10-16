@@ -2,6 +2,10 @@ import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { TvPlayback } from "@/lib/tv-playback";
 import { parseAudio } from "@/lib/audio-settings";
 import { DEMO_PLAYLIST } from "@/lib/backend";
+const TEST_PLAYLIST = DEMO_PLAYLIST.map((v, i) => ({
+  ...v,
+  id: `00000000-0000-4000-8000-00000000000${i + 1}`,
+}));
 
 describe("TV media channels", () => {
   let videos: HTMLVideoElement[], music: HTMLAudioElement, player: TvPlayback;
@@ -30,13 +34,13 @@ describe("TV media channels", () => {
       }),
       configurable: true,
     });
-    player = new TvPlayback(videos, music, DEMO_PLAYLIST, vi.fn());
+    player = new TvPlayback(videos, music, TEST_PLAYLIST, vi.fn());
     player.updateSettings({
       musicUrls: ["https://example.com/music.mp3"],
       musicVolume: 0.5,
       videoVolume: 0.8,
       duckVolume: 0.2,
-      originalIds: [DEMO_PLAYLIST[0]!.id],
+      originalIds: [TEST_PLAYLIST[0]!.id],
     });
   });
   afterEach(() => {
@@ -47,7 +51,7 @@ describe("TV media channels", () => {
   it("preloads next, retains outgoing until playing, and keeps music independent", () => {
     player.start(true);
     videos[0]!.dispatchEvent(new Event("playing"));
-    expect(videos[1]!.getAttribute("src")).toBe(DEMO_PLAYLIST[1]!.url);
+    expect(videos[1]!.getAttribute("src")).toBe(TEST_PLAYLIST[1]!.url);
     expect(music.volume).toBeCloseTo(0.1);
     expect(videos[0]!.volume).toBe(0.8);
     const src = music.src;
@@ -65,7 +69,7 @@ describe("TV media channels", () => {
     expect(musicPlay).not.toHaveBeenCalled();
     videos[1]!.dispatchEvent(new Event("ended"));
     videos[0]!.dispatchEvent(new Event("playing"));
-    expect(videos[0]!.getAttribute("src")).toBe(DEMO_PLAYLIST[0]!.url);
+    expect(videos[0]!.getAttribute("src")).toBe(TEST_PLAYLIST[0]!.url);
     expect(videos[0]!.muted).toBe(false);
   });
   it("recovers frozen media and releases timers on disposal", () => {
@@ -103,7 +107,7 @@ describe("TV media channels", () => {
       musicVolume: 0.2,
       videoVolume: 0.3,
       duckVolume: 0.1,
-      originalIds: [DEMO_PLAYLIST[0]!.id],
+      originalIds: [TEST_PLAYLIST[0]!.id],
     });
     expect(videos[0]!.volume).toBe(0.3);
     expect(music.getAttribute("src")).toBeNull();
@@ -116,10 +120,10 @@ describe("TV media channels", () => {
     videos[0]!.currentTime = 3;
     const activeLoad = vi.spyOn(videos[0]!, "load").mockClear();
     const musicLoad = vi.mocked(music.load).mockClear();
-    const added = { ...DEMO_PLAYLIST[1]!, id: "added", url: "https://example.com/added.mp4" };
-    player.updatePlaylist([DEMO_PLAYLIST[0]!, added, DEMO_PLAYLIST[1]!]);
+    const added = { ...TEST_PLAYLIST[1]!, id: "added", url: "https://example.com/added.mp4" };
+    player.updatePlaylist([TEST_PLAYLIST[0]!, added, TEST_PLAYLIST[1]!]);
     expect(videos[0]!.currentTime).toBe(3);
-    expect(videos[0]!.getAttribute("src")).toBe(DEMO_PLAYLIST[0]!.url);
+    expect(videos[0]!.getAttribute("src")).toBe(TEST_PLAYLIST[0]!.url);
     expect(videos[0]!.paused).toBe(false);
     expect(videos[1]!.getAttribute("src")).toBe(added.url);
     expect(musicLoad).not.toHaveBeenCalled();
@@ -128,7 +132,7 @@ describe("TV media channels", () => {
     videos[0]!.dispatchEvent(new Event("ended"));
     videos[1]!.dispatchEvent(new Event("playing"));
     expect(videos[1]!.getAttribute("src")).toBe(added.url);
-    expect(videos[0]!.getAttribute("src")).toBe(DEMO_PLAYLIST[1]!.url);
+    expect(videos[0]!.getAttribute("src")).toBe(TEST_PLAYLIST[1]!.url);
   });
   it("finishes a removed current video, handles an empty list and resumes when content returns", () => {
     player.start(true);
@@ -139,20 +143,20 @@ describe("TV media channels", () => {
     expect(videos[1]!.getAttribute("src")).toBeNull();
     Object.defineProperty(videos[0]!, "ended", { value: true, configurable: true });
     videos[0]!.dispatchEvent(new Event("ended"));
-    player.updatePlaylist([DEMO_PLAYLIST[1]!]);
+    player.updatePlaylist([TEST_PLAYLIST[1]!]);
     videos[1]!.dispatchEvent(new Event("playing"));
-    expect(videos[1]!.getAttribute("src")).toBe(DEMO_PLAYLIST[1]!.url);
+    expect(videos[1]!.getAttribute("src")).toBe(TEST_PLAYLIST[1]!.url);
     expect(videos[1]!.style.zIndex).toBe("1");
   });
   it("defers a playlist snapshot received during a handoff until playing", () => {
     player.start(true);
     player.next();
-    const added = { ...DEMO_PLAYLIST[0]!, id: "new", url: "https://example.com/new.mp4" };
+    const added = { ...TEST_PLAYLIST[0]!, id: "new", url: "https://example.com/new.mp4" };
     player.updatePlaylist([added]);
-    expect(videos[1]!.getAttribute("src")).toBe(DEMO_PLAYLIST[1]!.url);
+    expect(videos[1]!.getAttribute("src")).toBe(TEST_PLAYLIST[1]!.url);
     videos[1]!.dispatchEvent(new Event("playing"));
     expect(videos[0]!.getAttribute("src")).toBe(added.url);
-    expect(videos[1]!.getAttribute("src")).toBe(DEMO_PLAYLIST[1]!.url);
+    expect(videos[1]!.getAttribute("src")).toBe(TEST_PLAYLIST[1]!.url);
   });
   it("changes volume remotely without restarting unchanged music", () => {
     player.start(true);
@@ -162,7 +166,7 @@ describe("TV media channels", () => {
       musicVolume: 0.8,
       videoVolume: 0.5,
       duckVolume: 0.25,
-      originalIds: [DEMO_PLAYLIST[0]!.id],
+      originalIds: [TEST_PLAYLIST[0]!.id],
     });
     expect(videos[0]!.volume).toBe(0.5);
     expect(music.volume).toBe(0.2);

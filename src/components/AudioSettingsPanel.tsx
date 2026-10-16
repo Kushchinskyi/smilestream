@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
-import { readAudio, parseAudio, DEFAULT_AUDIO } from "@/lib/audio-settings";
+import { readAudio, validateAudio, DEFAULT_AUDIO } from "@/lib/audio-settings";
 import type { Video } from "@/lib/backend";
 import { fetchAudio, writeAudio } from "@/lib/playback-api";
 
@@ -45,13 +45,16 @@ export function AudioSettingsPanel({ videos }: { videos: Video[] }) {
       .split(/\r?\n/)
       .map((s) => s.trim())
       .filter(Boolean);
-    if (musicUrls.some((s) => !/^https:\/\//i.test(s))) {
-      toast.error("Вкажіть прямі HTTPS-адреси аудіо");
+    let draft;
+    try {
+      draft = validateAudio({ ...settings, musicUrls });
+    } catch (error) {
+      toast.error((error as Error).message);
       return;
     }
     try {
       setSaving(true);
-      await writeAudio({ ...settings, musicUrls });
+      await writeAudio(draft);
       toast.success("Налаштування збережено для всіх ТВ. Оновлення приблизно через 10 секунд.");
     } catch {
       toast.error(
@@ -163,11 +166,12 @@ export function AudioSettingsPanel({ videos }: { videos: Video[] }) {
               const file = e.target.files?.[0];
               if (!file) return;
               try {
-                const s = parseAudio(JSON.parse(await file.text()));
+                if (file.size > 2 * 1024 * 1024) throw new Error("Файл перевищує 2 МБ");
+                const s = validateAudio(JSON.parse(await file.text()));
                 setSettings(s);
                 setUrls(s.musicUrls.join("\n"));
-              } catch {
-                toast.error("Некоректний JSON");
+              } catch (error) {
+                toast.error((error as Error).message || "Некоректний JSON");
               }
             }}
           />

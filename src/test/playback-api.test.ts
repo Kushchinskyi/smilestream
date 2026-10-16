@@ -27,7 +27,7 @@ describe("Supabase playback API", () => {
         music_volume: 0.8,
         video_volume: 0.6,
         duck_volume: 0.1,
-        original_video_ids: ["id"],
+        original_video_ids: ["00000000-0000-4000-8000-000000000001"],
       },
       error: null,
     });
@@ -36,7 +36,7 @@ describe("Supabase playback API", () => {
       musicVolume: 0.8,
       videoVolume: 0.6,
       duckVolume: 0.1,
-      originalIds: ["id"],
+      originalIds: ["00000000-0000-4000-8000-000000000001"],
     });
     expect(supabase.from).toHaveBeenCalledWith("playback_settings");
     expect(query.eq).toHaveBeenCalledWith("id", 1);
@@ -70,5 +70,10 @@ describe("Supabase playback API", () => {
     expect(query.eq).toHaveBeenCalledWith("is_active", true);
     expect(query.order).toHaveBeenCalledWith("sort_order");
     expect(query.update).not.toHaveBeenCalled();
+  });
+  it("rejects invalid settings before making any Supabase request", async () => {
+    await expect(writeAudio({ ...DEFAULT_AUDIO, musicUrls: ["https://"] })).rejects.toThrow();
+    await expect(writeAudio({ ...DEFAULT_AUDIO, originalIds: ["demo-1"] })).rejects.toThrow();
+    expect(supabase.from).not.toHaveBeenCalled();
   });
 });

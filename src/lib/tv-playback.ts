@@ -13,6 +13,10 @@ export class TvPlayback {
   private settings: AudioSettings = DEFAULT_AUDIO;
   private current: Video | null = null;
   private queued: Video[] | null = null;
+  private generations = new Map<HTMLMediaElement, number>();
+  private failedVideos = new Set<string>();
+  private cooldown: ReturnType<typeof setTimeout> | undefined;
+  private waiting = false;
   private progress = new Map<HTMLMediaElement, { time: number; at: number }>();
   private attempts = new Map<HTMLMediaElement, number>();
   private timers = new Map<HTMLMediaElement, ReturnType<typeof setTimeout>>();
@@ -22,7 +26,7 @@ export class TvPlayback {
     private videos: HTMLVideoElement[],
     private music: HTMLAudioElement,
     private items: Video[],
-    private report: (message: string, blocked?: boolean) => void,
+    private report: (message: string, blocked?: boolean, persistent?: boolean) => void,
   ) {
     this.current = items[0] || null;
     videos.forEach((v, slot) => {
@@ -34,6 +38,9 @@ export class TvPlayback {
         if (slot === this.active && this.pending === null) this.next();
       });
       this.listen(v, "playing", () => {
+        if (this.cooldown !== undefined) return;
+        this.cancel(v);
+        this.progress.set(v, { time: v.currentTime, at: Date.now() });
         if (this.pending === slot) {
           const old = this.videos[this.active]!;
           old.pause();
@@ -52,6 +59,7 @@ export class TvPlayback {
           }
         }
         if (slot === this.active) {
+          this.waiting = false;
           this.report(this.current?.title || "");
           this.mix();
         }
@@ -61,10 +69,17 @@ export class TvPlayback {
       });
       this.listen(v, "pause", () => this.mix());
       this.listen(v, "waiting", () => {
-        if (slot === this.active) this.mix(true);
+        if (slot === this.active) {
+          this.waiting = true;
+          this.mix();
+        }
       });
     });
     this.listen(music, "ended", () => this.nextMusic());
+    this.listen(music, "playing", () => {
+      this.cancel(music);
+      this.progress.set(music, { time: music.currentTime, at: Date.now() });
+    });
     this.listen(music, "error", () => {
       if (this.running) this.recover(music);
     });
@@ -87,11 +102,16 @@ export class TvPlayback {
       if (!this.running || document.hidden) return;
       [this.videos[this.pending ?? this.active]!, music].forEach((m) => {
         if (!m.getAttribute("src") || (m === music && !this.sound)) return;
+        if (m !== music && this.cooldown !== undefined) return;
         if (m !== music && m.ended && !this.items.length) return;
         const p = this.progress.get(m);
         if (!p || m.currentTime !== p.time) {
           this.progress.set(m, { time: m.currentTime, at: Date.now() });
-          if (p && m.currentTime !== p.time) this.attempts.set(m, 0);
+          if (p && m.currentTime > p.time && !m.seeking && !m.paused) {
+            this.attempts.set(m, 0);
+            this.cancel(m);
+            if (m !== music) this.failedVideos.clear();
+          }
         } else if (Date.now() - p.at > 15000) this.recover(m);
       });
     }, 3000);
@@ -113,6 +133,15 @@ export class TvPlayback {
       return;
     }
     if (JSON.stringify(items) === JSON.stringify(this.items)) return;
+    const sourcesChanged =
+      JSON.stringify(items.map((v) => [v.id, v.url])) !==
+      JSON.stringify(this.items.map((v) => [v.id, v.url]));
+    const wasCooling = this.cooldown !== undefined;
+    if (sourcesChanged) {
+      this.failedVideos.clear();
+      clearTimeout(this.cooldown);
+      this.cooldown = undefined;
+    }
     this.items = items;
     this.index = items.findIndex((item) => item.id === this.current?.id);
     const standby = this.videos[1 - this.active]!;
@@ -135,7 +164,8 @@ export class TvPlayback {
       }
     } else {
       this.prepare(1 - this.active, (this.index + 1) % items.length);
-      if (this.running && this.videos[this.active]!.ended) this.next();
+      if (this.running && (this.videos[this.active]!.ended || (wasCooling && sourcesChanged)))
+        this.next();
     }
   }
   private listen(m: HTMLMediaElement, name: string, fn: () => void) {
@@ -146,31 +176,40 @@ export class TvPlayback {
     const v = this.videos[slot]!,
       item = this.items[index];
     if (!item) return;
-    this.cancel(v);
-    v.onloadedmetadata = null;
+    this.resetSource(v);
     v.pause();
     v.muted = true;
     v.dataset["index"] = String(index);
+    v.dataset["sourceKey"] = JSON.stringify([item.id, item.url]);
     v.src = item.url;
     v.load();
-    this.progress.delete(v);
+    this.progress.set(v, { time: 0, at: Date.now() });
+  }
+  private resetSource(m: HTMLMediaElement) {
+    this.cancel(m);
+    m.onloadedmetadata = null;
+    this.attempts.delete(m);
+    this.progress.delete(m);
+    this.generations.set(m, (this.generations.get(m) || 0) + 1);
   }
   private play(m: HTMLMediaElement) {
     if (this.disposed) return;
+    const generation = this.generations.get(m);
+    const rejected = (e: unknown) => {
+      const name = (e as { name?: string } | null)?.name;
+      if (this.disposed || this.generations.get(m) !== generation || name === "AbortError") return;
+      if (name === "NotAllowedError") {
+        this.report("Натисніть «Продовжити» для запуску звуку та відео", true);
+        this.running = false;
+        this.music.pause();
+        this.videos.forEach((v) => v.pause());
+      } else this.recover(m);
+    };
     try {
       const promise = m.play();
-      if (promise && promise.catch)
-        promise.catch((e: { name?: string }) => {
-          if (this.disposed || e.name === "AbortError") return;
-          if (e.name === "NotAllowedError") {
-            this.report("Натисніть «Продовжити» для запуску звуку та відео", true);
-            this.running = false;
-            this.music.pause();
-            this.videos.forEach((v) => v.pause());
-          } else this.recover(m);
-        });
-    } catch {
-      this.recover(m);
+      if (promise && promise.catch) promise.catch(rejected);
+    } catch (error) {
+      rejected(error);
     }
   }
   start(sound: boolean) {
@@ -185,19 +224,25 @@ export class TvPlayback {
       this.prepare(1 - this.active, (this.index + 1) % this.items.length);
     }
     this.mix();
-    this.play(this.videos[this.pending ?? this.active]!);
+    if (this.cooldown === undefined) this.play(this.videos[this.pending ?? this.active]!);
     this.loadMusic();
   }
   resume() {
     this.running = true;
     const v = this.videos[this.pending ?? this.active]!;
-    if (v.error) v.load();
+    if (v.error && this.cooldown === undefined) this.recover(v);
     this.mix();
-    if (v.getAttribute("src") && !(v.ended && !this.items.length)) this.play(v);
+    if (
+      !v.error &&
+      this.cooldown === undefined &&
+      v.getAttribute("src") &&
+      !(v.ended && !this.items.length)
+    )
+      this.play(v);
     if (this.sound && this.settings.musicUrls.length) this.play(this.music);
   }
   next() {
-    if (!this.items.length || this.pending !== null) {
+    if (!this.items.length || this.pending !== null || this.cooldown !== undefined) {
       this.mix(true);
       return;
     }
@@ -208,6 +253,7 @@ export class TvPlayback {
     this.cancel(this.videos[this.active]!);
     if (Number(v.dataset["index"]) !== index || v.error) this.prepare(slot, index);
     this.pending = slot;
+    this.progress.set(v, { time: v.currentTime, at: Date.now() });
     // Incoming stays muted until playing, so two video soundtracks never overlap.
     this.play(v);
   }
@@ -217,7 +263,7 @@ export class TvPlayback {
     if (this.sound) this.loadMusic();
     else this.music.pause();
   }
-  private mix(waiting = false) {
+  private mix(waiting = this.waiting) {
     const v = this.videos[this.active]!;
     const original = this.settings.originalIds.includes(this.current?.id || "");
     this.videos.forEach((video, slot) => {
@@ -235,15 +281,17 @@ export class TvPlayback {
     this.cancel(this.music);
     const url = this.settings.musicUrls[this.musicIndex];
     if (!url) {
+      this.resetSource(this.music);
       this.music.pause();
       this.music.removeAttribute("src");
       this.music.load();
       return;
     }
     if (this.music.getAttribute("src") !== url) {
+      this.resetSource(this.music);
       this.music.src = url;
       this.music.load();
-      this.progress.delete(this.music);
+      this.progress.set(this.music, { time: 0, at: Date.now() });
     }
     this.mix();
     if (this.sound && this.running) this.play(this.music);
@@ -260,27 +308,27 @@ export class TvPlayback {
   private recover(m: HTMLMediaElement) {
     if (!this.running || this.disposed || this.timers.has(m)) return;
     if (m !== this.music && m !== this.videos[this.pending ?? this.active]) return;
+    if (m !== this.music && this.cooldown !== undefined) return;
     const attempt = (this.attempts.get(m) || 0) + 1;
     this.attempts.set(m, attempt);
-    this.report(m === this.music ? "Відновлення музики…" : "Відновлення відео…");
+    if (this.cooldown === undefined)
+      this.report(m === this.music ? "Відновлення музики…" : "Відновлення відео…");
+    const generation = this.generations.get(m);
     this.timers.set(
       m,
       setTimeout(
         () => {
           this.timers.delete(m);
-          if (!this.running || this.disposed) return;
-          this.progress.delete(m);
+          if (!this.running || this.disposed || this.generations.get(m) !== generation) return;
           if (attempt > 2) {
             if (m === this.music) this.nextMusic();
-            else if (this.pending !== null) {
-              const slot = this.pending;
-              const next = (Number(m.dataset["index"]) + 1) % this.items.length;
-              this.prepare(slot, next);
-              this.play(m);
-            } else this.next();
+            else this.skipFailedVideo(m as HTMLVideoElement);
           } else {
             const position = m.currentTime;
+            // Same source retry: invalidate old play promises but retain its retry budget.
+            this.generations.set(m, (this.generations.get(m) || 0) + 1);
             m.load();
+            this.progress.set(m, { time: 0, at: Date.now() });
             // Seeking is best-effort; some TV engines reject it until metadata arrives.
             const seek = () => {
               if (Number.isFinite(position) && position > 0) {
@@ -294,6 +342,7 @@ export class TvPlayback {
             m.onloadedmetadata = () => {
               m.onloadedmetadata = null;
               seek();
+              this.progress.set(m, { time: m.currentTime, at: Date.now() });
             };
             this.play(m);
           }
@@ -302,10 +351,57 @@ export class TvPlayback {
       ),
     );
   }
+  private skipFailedVideo(v: HTMLVideoElement) {
+    const failedKey = v.dataset["sourceKey"] || "";
+    this.failedVideos.add(failedKey);
+    let failedIndex = Number(v.dataset["index"]);
+    this.pending = null;
+    this.cancel(v);
+    v.pause();
+    v.muted = true;
+    if (this.queued !== null) {
+      const queued = this.queued;
+      this.queued = null;
+      this.updatePlaylist(queued);
+      if (this.pending !== null || !this.items.length) return;
+      failedIndex = this.items.findIndex(
+        (item) => JSON.stringify([item.id, item.url]) === failedKey,
+      );
+    }
+    if (!this.items.length) {
+      this.mix(true);
+      return;
+    }
+    for (let offset = 1; offset <= this.items.length; offset++) {
+      const index = (failedIndex + offset) % this.items.length;
+      const item = this.items[index]!;
+      if (!this.failedVideos.has(JSON.stringify([item.id, item.url]))) {
+        const slot = 1 - this.active;
+        this.prepare(slot, index);
+        this.pending = slot;
+        this.play(this.videos[slot]!);
+        return;
+      }
+    }
+    this.videos.forEach((video) => this.cancel(video));
+    this.report("Усі ролики недоступні. Повторна спроба через 30 секунд.", false, true);
+    this.mix(true);
+    this.cooldown = setTimeout(() => {
+      this.cooldown = undefined;
+      this.failedVideos.clear();
+      if (!this.disposed && this.running && this.items.length) {
+        const slot = 1 - this.active;
+        this.prepare(slot, 0);
+        this.pending = slot;
+        this.play(this.videos[slot]!);
+      }
+    }, 30000);
+  }
   dispose() {
     this.disposed = true;
     this.running = false;
     clearInterval(this.watchdog);
+    clearTimeout(this.cooldown);
     this.cleanups.forEach((fn) => fn());
     [...this.videos, this.music].forEach((m) => {
       this.cancel(m);

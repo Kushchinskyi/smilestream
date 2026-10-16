@@ -1,5 +1,5 @@
 import { supabase } from "@/integrations/supabase/client";
-import { parseAudio, type AudioSettings } from "./audio-settings";
+import { parseAudio, validateAudio, type AudioSettings } from "./audio-settings";
 import type { Video } from "./backend";
 
 export async function fetchAudio(signal: AbortSignal): Promise<AudioSettings> {
@@ -19,7 +19,7 @@ export async function fetchAudio(signal: AbortSignal): Promise<AudioSettings> {
   });
 }
 export async function writeAudio(settings: AudioSettings): Promise<AudioSettings> {
-  const s = parseAudio(settings);
+  const s = validateAudio(settings);
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 12000);
   try {

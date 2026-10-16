@@ -25,6 +25,7 @@ function TvPage() {
   const [syncStatus, setSyncStatus] = useState("");
   const [started, setStarted] = useState(false);
   const [blocked, setBlocked] = useState(false);
+  const [persistentStatus, setPersistentStatus] = useState(false);
   const [status, setStatus] = useState("Завантаження плейлиста…");
   const [controls, setControls] = useState(true);
   const hide = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
@@ -34,8 +35,9 @@ function TvPage() {
       [first.current, second.current],
       music.current,
       [],
-      (message, needsTap = false) => {
+      (message, needsTap = false, persistent = false) => {
         setStatus(message);
+        setPersistentStatus(persistent);
         if (needsTap) setBlocked(true);
       },
     );
@@ -142,7 +144,7 @@ function TvPage() {
           )}
         </div>
       )}
-      {started && controls && !blocked && (
+      {started && (controls || persistentStatus) && !blocked && (
         <div
           style={{
             position: "absolute",
