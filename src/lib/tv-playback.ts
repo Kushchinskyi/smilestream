@@ -1,5 +1,7 @@
 import type { Video } from "./backend";
 import { DEFAULT_AUDIO, parseAudio, type AudioSettings } from "./audio-settings";
+import { AdScheduler, type AdConfiguration } from "./ad-scheduler";
+import { integrationAdIntervalMs } from "./ad-clock";
 
 // Two stable elements; never replace the outgoing source before the incoming plays.
 export class TvPlayback {
@@ -13,6 +15,10 @@ export class TvPlayback {
   private settings: AudioSettings = DEFAULT_AUDIO;
   private current: Video | null = null;
   private queued: Video[] | null = null;
+  private ads = new AdScheduler(integrationAdIntervalMs);
+  private main: { items: Video[]; currentId: string | undefined } | null = null;
+  private blockOriginal = new Map<string, boolean>();
+  private lastTick = Date.now();
   private generations = new Map<HTMLMediaElement, number>();
   private failedVideos = new Set<string>();
   private cooldown: ReturnType<typeof setTimeout> | undefined;
@@ -35,7 +41,7 @@ export class TvPlayback {
       v.playsInline = true;
       v.setAttribute("webkit-playsinline", "");
       this.listen(v, "ended", () => {
-        if (slot === this.active && this.pending === null) this.next();
+        if (slot === this.active && this.pending === null) this.naturalEnd();
       });
       this.listen(v, "playing", () => {
         if (this.cooldown !== undefined) return;
@@ -51,7 +57,7 @@ export class TvPlayback {
           this.pending = null;
           this.index = Number(v.dataset["index"]);
           this.current = this.items[this.index] || null;
-          this.prepare(1 - slot, (this.index + 1) % this.items.length);
+          this.prepareStandby();
           if (this.queued !== null) {
             const queued = this.queued;
             this.queued = null;
@@ -67,7 +73,10 @@ export class TvPlayback {
       this.listen(v, "error", () => {
         if (this.running && (slot === this.active || slot === this.pending)) this.recover(v);
       });
-      this.listen(v, "pause", () => this.mix());
+      this.listen(v, "pause", () => {
+        if (slot === this.active && !v.ended && this.pending === null) this.ads.tick(0, false);
+        this.mix();
+      });
       this.listen(v, "waiting", () => {
         if (slot === this.active) {
           this.waiting = true;
@@ -90,15 +99,48 @@ export class TvPlayback {
       }
     };
     const visible = () => {
+      this.ads.tick(0, false);
+      this.lastTick = Date.now();
       if (!document.hidden && this.running) this.resume();
     };
+    const offline = () => {
+      this.ads.tick(0, false);
+      this.lastTick = Date.now();
+    };
     window.addEventListener("online", online);
+    window.addEventListener("offline", offline);
     document.addEventListener("visibilitychange", visible);
     this.cleanups.push(() => {
       window.removeEventListener("online", online);
+      window.removeEventListener("offline", offline);
       document.removeEventListener("visibilitychange", visible);
     });
     this.watchdog = setInterval(() => {
+      const now = Date.now();
+      const activeVideo = this.videos[this.active]!;
+      const progressing =
+        activeVideo.currentTime > (this.progress.get(activeVideo)?.time ?? activeVideo.currentTime);
+      this.ads.tick(
+        progressing && !activeVideo.paused && !activeVideo.ended && this.pending === null
+          ? now - this.lastTick
+          : 0,
+        this.running &&
+          !document.hidden &&
+          navigator.onLine &&
+          !this.waiting &&
+          this.cooldown === undefined,
+      );
+      this.lastTick = now;
+      const upcoming = this.main || this.pending !== null ? [] : this.ads.peekBlock();
+      if (upcoming.length) {
+        const first = upcoming[0]!;
+        this.blockOriginal = new Map(upcoming.map((a) => [a.id, a.original_sound]));
+        if (
+          this.videos[1 - this.active]!.dataset["sourceKey"] !==
+          JSON.stringify([first.id, first.url])
+        )
+          this.prepare(1 - this.active, 0, upcoming, true);
+      }
       if (!this.running || document.hidden) return;
       [this.videos[this.pending ?? this.active]!, music].forEach((m) => {
         if (!m.getAttribute("src") || (m === music && !this.sound)) return;
@@ -116,6 +158,57 @@ export class TvPlayback {
       });
     }, 3000);
   }
+  updateAdvertisements(configuration: AdConfiguration) {
+    if (!this.disposed) this.ads.update(configuration);
+  }
+  private mainNext() {
+    if (!this.main) return 0;
+    return (
+      (this.main.items.findIndex((v) => v.id === this.main!.currentId) + 1) %
+      (this.main.items.length || 1)
+    );
+  }
+  private prepareStandby() {
+    if (this.main && this.index === this.items.length - 1) {
+      this.prepare(1 - this.active, this.mainNext(), this.main.items);
+    } else this.prepare(1 - this.active, (this.index + 1) % this.items.length);
+  }
+  private naturalEnd() {
+    if (this.main) {
+      this.next();
+      return;
+    }
+    if (!this.items.length) {
+      this.next();
+      return;
+    }
+    const block = this.ads.takeBlock();
+    if (!block.length || !this.items.length) {
+      this.next();
+      return;
+    }
+    this.main = { items: this.items, currentId: this.current?.id };
+    this.blockOriginal = new Map(block.map((a) => [a.id, a.original_sound]));
+    this.items = block;
+    this.index = -1;
+    this.next();
+  }
+  private finishAdBlock() {
+    if (!this.main) return;
+    const main = this.main;
+    this.main = null;
+    this.items = main.items;
+    this.index = this.items.findIndex((v) => v.id === main.currentId);
+    this.ads.finish();
+    this.failedVideos.clear();
+    if (!this.items.length) {
+      this.report("Основний плейлист порожній. Очікуємо оновлення.", false, true);
+      this.mix(true);
+      return;
+    }
+    // Keep outgoing ad sound semantics until the next main element actually plays.
+    this.next();
+  }
   updateSettings(settings: AudioSettings) {
     if (this.disposed) return;
     const previous = this.settings.musicUrls.join("\n");
@@ -128,6 +221,10 @@ export class TvPlayback {
   }
   updatePlaylist(items: Video[]) {
     if (this.disposed) return;
+    if (this.main) {
+      this.main.items = items;
+      return;
+    }
     if (this.pending !== null) {
       this.queued = items;
       return;
@@ -172,15 +269,23 @@ export class TvPlayback {
     m.addEventListener(name, fn);
     this.cleanups.push(() => m.removeEventListener(name, fn));
   }
-  private prepare(slot: number, index: number) {
+  private prepare(
+    slot: number,
+    index: number,
+    items = this.items,
+    isAdvertisement = !!this.main && items === this.items,
+  ) {
     const v = this.videos[slot]!,
-      item = this.items[index];
+      item = items[index];
     if (!item) return;
     this.resetSource(v);
     v.pause();
     v.muted = true;
     v.dataset["index"] = String(index);
     v.dataset["sourceKey"] = JSON.stringify([item.id, item.url]);
+    v.dataset["originalAd"] = isAdvertisement
+      ? String(this.blockOriginal.get(item.id) === true)
+      : "";
     v.src = item.url;
     v.load();
     this.progress.set(v, { time: 0, at: Date.now() });
@@ -242,6 +347,14 @@ export class TvPlayback {
     if (this.sound && this.settings.musicUrls.length) this.play(this.music);
   }
   next() {
+    if (
+      this.main &&
+      this.pending === null &&
+      (this.index >= this.items.length - 1 || !this.ads.enabled)
+    ) {
+      this.finishAdBlock();
+      return;
+    }
     if (!this.items.length || this.pending !== null || this.cooldown !== undefined) {
       this.mix(true);
       return;
@@ -251,7 +364,16 @@ export class TvPlayback {
     const index = (this.index + 1) % this.items.length;
     this.cancel(v);
     this.cancel(this.videos[this.active]!);
-    if (Number(v.dataset["index"]) !== index || v.error) this.prepare(slot, index);
+    if (
+      v.dataset["sourceKey"] !== JSON.stringify([this.items[index]!.id, this.items[index]!.url]) ||
+      v.error
+    )
+      this.prepare(slot, index);
+    // A preloaded source can retain its URL while a fresh main snapshot moves its index.
+    v.dataset["index"] = String(index);
+    v.dataset["originalAd"] = this.main
+      ? String(this.blockOriginal.get(this.items[index]!.id) === true)
+      : "";
     this.pending = slot;
     this.progress.set(v, { time: v.currentTime, at: Date.now() });
     // Incoming stays muted until playing, so two video soundtracks never overlap.
@@ -265,7 +387,9 @@ export class TvPlayback {
   }
   private mix(waiting = this.waiting) {
     const v = this.videos[this.active]!;
-    const original = this.settings.originalIds.includes(this.current?.id || "");
+    const original = v.dataset["originalAd"]
+      ? v.dataset["originalAd"] === "true"
+      : this.settings.originalIds.includes(this.current?.id || "");
     this.videos.forEach((video, slot) => {
       video.muted = !this.sound || !original || slot !== this.active;
       video.volume = this.settings.videoVolume;
@@ -309,6 +433,11 @@ export class TvPlayback {
     if (!this.running || this.disposed || this.timers.has(m)) return;
     if (m !== this.music && m !== this.videos[this.pending ?? this.active]) return;
     if (m !== this.music && this.cooldown !== undefined) return;
+    if (m !== this.music) {
+      this.waiting = true;
+      this.ads.tick(0, false);
+      this.mix(true);
+    }
     const attempt = (this.attempts.get(m) || 0) + 1;
     this.attempts.set(m, attempt);
     if (this.cooldown === undefined)
@@ -359,6 +488,16 @@ export class TvPlayback {
     this.cancel(v);
     v.pause();
     v.muted = true;
+    if (this.main) {
+      const nextIndex = failedIndex + 1;
+      if (nextIndex >= this.items.length || !this.ads.enabled) this.finishAdBlock();
+      else {
+        this.prepare(1 - this.active, nextIndex);
+        this.pending = 1 - this.active;
+        this.play(this.videos[this.pending]!);
+      }
+      return;
+    }
     if (this.queued !== null) {
       const queued = this.queued;
       this.queued = null;

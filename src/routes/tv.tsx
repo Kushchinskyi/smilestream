@@ -4,6 +4,8 @@ import { backendConfigured, type Video } from "@/lib/backend";
 import { TvPlayback } from "@/lib/tv-playback";
 import { fetchAudio, fetchVideos } from "@/lib/playback-api";
 import { startPolling } from "@/lib/playback-sync";
+import { fetchAdvertisements } from "@/lib/ad-api";
+import { integrationAdClockLabel } from "@/lib/ad-clock";
 
 export const Route = createFileRoute("/tv")({
   ssr: false,
@@ -78,6 +80,16 @@ function TvPage() {
           () => syncError("звук", true),
         )
       : () => {};
+    const stopAds = backendConfigured
+      ? startPolling(
+          fetchAdvertisements,
+          (configuration) => {
+            p.updateAdvertisements(configuration);
+            syncError("реклама", false);
+          },
+          () => syncError("реклама", true),
+        )
+      : () => {};
     if (!backendConfigured) {
       setStatus("Плейлист недоступний без налаштованого сервера.");
       setSyncStatus("Сервер не налаштовано. Демо-контент не додається.");
@@ -85,6 +97,7 @@ function TvPage() {
     return () => {
       stopVideos();
       stopAudio();
+      stopAds();
       p.dispose();
       player.current = null;
     };
@@ -173,6 +186,7 @@ function TvPage() {
         >
           <h1 className="text-3xl">Smile Stream</h1>
           <p>{status}</p>
+          {integrationAdClockLabel && <p>{integrationAdClockLabel}</p>}
           {items?.length === 0 && <p>Плейлист порожній; оновлення автоматично.</p>}
           {syncStatus && <p>{syncStatus}</p>}
           {!!items?.length && (
@@ -200,6 +214,7 @@ function TvPage() {
           className="tv-status space-y-4 p-6"
         >
           <p role="status">{status}</p>
+          {integrationAdClockLabel && <p>{integrationAdClockLabel}</p>}
           {syncStatus && <p>{syncStatus}</p>}
           <div className="flex flex-wrap gap-4">
             <button className="rounded border p-4" onClick={() => player.current?.resume()}>

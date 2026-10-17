@@ -8,8 +8,15 @@ export type Database = {
   };
   public: {
     Tables: {
+      ad_playback_settings: {
+        Row: { id: number; enabled: boolean; interval_minutes: number; block_count: number };
+        Insert: { id?: number; enabled?: boolean; interval_minutes?: number; block_count?: number };
+        Update: { enabled?: boolean; interval_minutes?: number; block_count?: number };
+        Relationships: [];
+      };
       advertisements: {
         Row: {
+          cover_url: string;
           id: string;
           title: string;
           url: string;
@@ -20,6 +27,7 @@ export type Database = {
           created_at: string;
         };
         Insert: {
+          cover_url?: string;
           id?: string;
           title: string;
           url: string;
@@ -29,6 +37,7 @@ export type Database = {
           original_sound?: boolean;
         };
         Update: {
+          cover_url?: string;
           title?: string;
           url?: string;
           duration_seconds?: number;
@@ -39,9 +48,21 @@ export type Database = {
         Relationships: [];
       };
       media_metadata: {
-        Row: { kind: string; source_key: string; label: string; category: string };
-        Insert: { kind: string; source_key: string; label?: string; category?: string };
-        Update: { label?: string; category?: string };
+        Row: {
+          kind: string;
+          source_key: string;
+          label: string;
+          category: string;
+          cover_url: string;
+        };
+        Insert: {
+          kind: string;
+          source_key: string;
+          label?: string;
+          category?: string;
+          cover_url?: string;
+        };
+        Update: { label?: string; category?: string; cover_url?: string };
         Relationships: [];
       };
       playback_settings: {
@@ -156,6 +177,7 @@ export type Database = {
       [_ in never]: never;
     };
     Functions: {
+      read_ad_playback: { Args: Record<string, never>; Returns: Json };
       reorder_advertisements: { Args: { ordered_ids: string[] }; Returns: undefined };
       reorder_videos: { Args: { ordered_ids: string[] }; Returns: undefined };
       has_role: {

@@ -1,4 +1,5 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import { fileURLToPath } from "node:url";
 import { integrationBackend, INTEGRATION_PROJECT } from "./scripts/integration-target.mjs";
 import { mediaTestEnvironment } from "./scripts/media-test/guard.mjs";
 
@@ -19,6 +20,16 @@ export default async (env) => {
     vite: {
       envDir: false,
       envPrefix: "SMILE_NEVER_EXPOSE_ENV_",
+      resolve: {
+        alias: [
+          {
+            find: /^(\.\/ad-clock|@\/lib\/ad-clock)$/,
+            replacement: fileURLToPath(
+              new URL("./scripts/integration-ad-clock.ts", import.meta.url),
+            ),
+          },
+        ],
+      },
       build: { target: "chrome85", cssTarget: "chrome85" },
       define: {
         "import.meta.env.VITE_SUPABASE_URL": JSON.stringify(backend.endpoint),

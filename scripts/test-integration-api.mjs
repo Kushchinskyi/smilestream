@@ -121,15 +121,40 @@ try {
     ["ordinary", user],
     ["admin", admin],
   ]) {
-    const inventory = await c.from("advertisements").select("id").limit(1);
-    if (name === "anon") assert(inventory.error);
+    const inventory = await c.from("advertisements").select("id,is_active").limit(10);
+    assert.equal(inventory.error, null);
+    if (name !== "admin") assert(inventory.data.every((row) => row.is_active));
+    const settings = await c.from("ad_playback_settings").select("*").eq("id", 1).single();
+    assert.equal(settings.error, null);
+    const snapshot = await c.rpc("read_ad_playback");
+    assert.equal(snapshot.error, null);
+    assert(snapshot.data.advertisements.every((row) => row.is_active));
+    assert((await c.from("ad_playback_settings").insert({ id: 1 })).error);
+    assert((await c.from("ad_playback_settings").delete().eq("id", 1)).error);
+    const write = await c
+      .from("ad_playback_settings")
+      .update({ enabled: settings.data.enabled })
+      .eq("id", 1)
+      .select("id");
+    if (name === "anon") assert(write.error);
     else {
-      assert.equal(inventory.error, null);
-      if (name === "ordinary") assert.deepEqual(inventory.data, []);
+      assert.equal(write.error, null);
+      assert.equal(write.data.length, name === "admin" ? 1 : 0);
+    }
+    if (name === "admin") {
+      for (const value of [
+        { interval_minutes: 1 },
+        { block_count: 4 },
+        { enabled: null },
+        { id: 2 },
+      ])
+        assert((await c.from("ad_playback_settings").update(value).eq("id", 1)).error);
     }
     assert((await c.rpc("reorder_advertisements", { ordered_ids: null })).error);
   }
-  console.log("PASS: advertisement inventory RLS and null reorder guard");
+  console.log(
+    "PASS: ad settings, invoker snapshot, active-only public read, role writes, constraints and null reorder guard",
+  );
 } finally {
   await Promise.all([
     user.auth.signOut({ scope: "local" }),

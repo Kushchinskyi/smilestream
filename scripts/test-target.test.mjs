@@ -2,9 +2,21 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
+import { readFileSync } from "node:fs";
 import { testBackend, testTarget } from "./test-target.mjs";
 import { mediaTestEnvironment, assertMediaTestBuild } from "./media-test/guard.mjs";
 import { integrationBackend, INTEGRATION_PROJECT } from "./integration-target.mjs";
+test("accelerated ad clock has no normal environment/query switch", () => {
+  const normal = readFileSync(new URL("../src/lib/ad-clock.ts", import.meta.url), "utf8");
+  assert.match(normal, /integrationAdIntervalMs = 0/);
+  assert(!/import\.meta\.env|process\.env|location|URLSearchParams/.test(normal));
+  const special = readFileSync(new URL("../vite.integration.config.mjs", import.meta.url), "utf8");
+  assert.match(special, /env\.mode !== "integration-test"/);
+  assert.match(special, /process\.env\.SMILE_INTEGRATION_PROJECT !== INTEGRATION_PROJECT/);
+  assert.match(special, /integration-ad-clock\.ts/);
+  const production = readFileSync(new URL("../vite.config.ts", import.meta.url), "utf8");
+  assert(!production.includes("integration-ad-clock"));
+});
 test("integration launcher is pinned to the approved isolated project", () => {
   const config = {
     projectRef: INTEGRATION_PROJECT,

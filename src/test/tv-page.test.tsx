@@ -7,6 +7,9 @@ import { supabase } from "@/integrations/supabase/client";
 
 vi.mock("@/lib/backend", () => ({ backendConfigured: true }));
 vi.mock("@/lib/playback-api", () => ({ fetchAudio: vi.fn(), fetchVideos: vi.fn() }));
+vi.mock("@/lib/ad-api", () => ({
+  fetchAdvertisements: vi.fn().mockRejectedValue(new Error("missing ad migration")),
+}));
 vi.mock("@/integrations/supabase/client", () => ({ supabase: { auth: { getUser: vi.fn() } } }));
 
 describe("public TV page with missing settings migration", () => {

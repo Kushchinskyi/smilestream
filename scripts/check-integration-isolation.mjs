@@ -16,6 +16,10 @@ const config = JSON.parse(
 );
 integrationBackend(config);
 const integration = await content(".integration-test-output");
+const ordinary = await content(".output");
+const acceleratedLabel = "Локальний тест: рекламний інтервал 60 с";
+assert(integration.includes(acceleratedLabel), "Integration clock alias was not included");
+assert(!ordinary.includes(acceleratedLabel), "Accelerated ad clock leaked into ordinary build");
 assert(integration.includes(INTEGRATION_PROJECT), "Missing test project in integration build");
 for (const forbidden of [
   "ieytvixchndxnxsxpcot",
@@ -28,10 +32,7 @@ for (const forbidden of [
       !integration.includes(forbidden),
       "Production/canary/password found in integration artifacts",
     );
-assert(
-  !(await content(".output")).includes(INTEGRATION_PROJECT),
-  "Test backend leaked into ordinary build",
-);
+assert(!ordinary.includes(INTEGRATION_PROJECT), "Test backend leaked into ordinary build");
 console.log(
   "PASS: integration build uses test project only; passwords excluded; ordinary build unchanged",
 );
