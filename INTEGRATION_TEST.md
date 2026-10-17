@@ -1,6 +1,8 @@
 # Smile Stream — Supabase integration test
 
-Обновление Smile Stream 2.0: новые UI/метаданные/рекламная библиотека и актуальные ограничения описаны в [DEVELOPMENT_REPORT.md](DEVELOPMENT_REPORT.md), порядок миграций — [RELEASE_READINESS.md](RELEASE_READINESS.md). Результаты ниже относятся к исходному интеграционному этапу.
+Обновление Smile Stream 2.0: рекламные блоки в /tv, UI, метаданные и актуальные проверки описаны в [DEVELOPMENT_REPORT.md](DEVELOPMENT_REPORT.md), порядок миграций — [RELEASE_READINESS.md](RELEASE_READINESS.md). Результаты ниже относятся к исходному интеграционному этапу.
+
+Текущие повторяемые HTTP-проверки: `node scripts/test-integration-api.mjs --confirm-isolated-project` и `node scripts/test-ad-integration.mjs --confirm-isolated-project`. Они закреплены за тестовым ref, читают только игнорируемый credential-файл, удаляют собственные HTTP-фикстуры и восстанавливают настройки. SQL-файлы `supabase/tests/ad_playback_settings.sql` и `ad_snapshot_capacity.sql` выполняются от владельца только на тестовой базе после проверки ref, целиком вместе с BEGIN/ROLLBACK; для ролевых тестов требуются уже подготовленные тестовые admin/user. Новые SQL-тесты были реально выполнены через MCP. Существующий `test-sql.mjs` запускает исходный playback_settings suite; не выдавайте его один запуск за все новые SQL suites.
 
 ## Изолированное окружение
 

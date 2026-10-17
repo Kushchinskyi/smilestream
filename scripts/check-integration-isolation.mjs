@@ -20,6 +20,8 @@ const ordinary = await content(".output");
 const acceleratedLabel = "Локальний тест: рекламний інтервал 60 с";
 assert(integration.includes(acceleratedLabel), "Integration clock alias was not included");
 assert(!ordinary.includes(acceleratedLabel), "Accelerated ad clock leaked into ordinary build");
+for (const secret of [config.adminPassword, config.userPassword, "SMILE_ISOLATION_CANARY"])
+  if (secret) assert(!ordinary.includes(secret), "Credential/canary found in ordinary artifacts");
 assert(integration.includes(INTEGRATION_PROJECT), "Missing test project in integration build");
 for (const forbidden of [
   "ieytvixchndxnxsxpcot",

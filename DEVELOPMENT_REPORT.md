@@ -1,103 +1,66 @@
-# Smile Stream 2.0 — development report
+# Smile Stream 2.0 — development report, 2026-10-17
 
-## Scope and status
+Review candidate on `feature/seamless-tv-audio`, [Draft PR #1](https://github.com/Kushchinskyi/smilestream/pull/1). No merge, deployment, production Supabase access or Lovable configuration changes. This supersedes the earlier inventory-only status.
 
-Implemented a substantive administrative release candidate and a separate advertisement **inventory**, preserving the hardware-tested playback architecture. This is **not completion of the entire master task**. Remaining functions and blocked visual checks are explicitly listed below. Work is on feature/seamless-tv-audio, [Draft PR #1](https://github.com/Kushchinskyi/smilestream/pull/1); no merge/production deployment.
+## Architecture
 
-## Functional changes
+- One `AdScheduler` per `TvPlayback`, driven by the existing 3-second watchdog. No second engine, scheduler timer, Realtime subscription or music authority. The two stable HTML5 videos and independent audio element remain.
+- A due block preloads its first ad, starts only at a natural main-video end, and preloads each successor/next main clip. Outgoing video remains until incoming `playing`. Manual Next does not start ads; pending guards prevent duplicate ended/configuration blocks.
+- During ads, main items and the completed main ID are retained separately. Resume selects that ID's successor in the latest main snapshot. If removed, select the first fresh item; empty main waits for new content with music continuing. No normal video is inserted/deleted/reordered by playback.
+- Rotation uses active ads ordered by sort_order/id, continuing after the last selected ad. Count 1/2/3/all, no repeats within a block. An absent cursor starts at the first active ad. Empty/disabled ads follow normal playback.
+- A block is a snapshot: list/order/count/ad-sound changes affect the next block. Disabling completes the current ad then resumes main. Global volume/sound settings apply immediately. Normal sound uses only playback_settings.original_video_ids; ads use their own original_sound, default OFF.
+- Video 0%, global mute, pause, buffering, end or recovery do not duck music. Main→ad→main does not restart unchanged music. Music URL changes keep the established new-list behavior.
+- Broken ads use source-generation protection, two reloads and 2/4/8-second retry delays before skipping. Frozen sources trigger the existing 15-second watchdog. A failed block advances once through its finite list, then returns to main; the next interval provides cooldown. Main all-bad recovery retains its 30-second cooldown.
 
-- Premium Medical SaaS admin shell: light neutral canvas, white cards, dark blue typography, teal accent, responsive sidebar/horizontal navigation, reusable forms/cards/statuses and Ukrainian text.
-- Working sections: overview, video library, advertisement inventory, music/audio, screens, diagnostics and settings. Working-hours scheduling is not exposed as a fake working section.
-- Overview shows actual loaded library counts, configured durations and saved audio levels. Failed initial reads do not become zero metrics.
-- Video library: search, category/activity filters, cards/list, pagination 25/page, bounded paginated Supabase reads beyond the default 1000-row response, multi-selection, bulk activity/original sound, safe preview, duplicate warning, HTTPS validation, metadata-duration probe/manual duration, edit modal and confirmed delete.
-- Atomic full-library reorder with drag-and-drop and accessible arrow-button alternative. Reorder rejects stale/incomplete/unknown/duplicate/NULL identity snapshots before writing.
-- Central category taxonomy: digital dentistry, CAD/CAM, 3D printing, implants, prosthetics, orthodontics, hygiene, sterilization, other. Metadata is separate from stable TV playback payloads.
-- Original video sound is controlled directly from a card/editor or bulk action. `playback_settings.original_video_ids` remains its sole normal-video source of truth. No competing boolean was added to normal videos.
-- Audio: large custom sliders, percent values, explanatory duck factor, mute/restore actions, explicit draft/save/error states. No requests per slider movement.
-- Music: ordered editable tracks, manual centrally stored labels, local play/stop, load-error display, reorder/delete/add. Draft edits do not alter TV music. Leaving the component stops local preview.
-- Audio import: 2 MiB limit, strict existing HTTPS/UUID/volume/count validation, preview and draft-only application. No automatic server overwrite.
-- Export: explicit field whitelist for normal library/audio/metadata; separate advertisement inventory export. No auth/session/password/API-key data included.
-- Screens: name/diagonal CRUD, modal validation, confirmed deletion. Pairing/online/current playback remain **дані відсутні**; no fake heartbeat or public control command.
-- Diagnostics show the actual last successful configuration read, polling semantics and timezone. Per-device counters/errors/uptime are explicitly unavailable.
-- Separate ad inventory: admin-only CRUD, preview, sorting, activity, per-ad original-sound flag, bulk actions and export. Original sound defaults OFF. **No automatic insertion into /tv**, interval scheduling or rotation is implied.
-- Unsaved audio navigation/reload protection, unsaved editor protection, keyboard focus styles, empty/error/skeleton states, no invented thumbnails or media metadata.
+## Per-TV time model
 
-## Database / security
+A fresh page starts at zero. The clock samples real forward main-video progress every 3 seconds, adding eligible active playback samples (maximum 5 seconds each). Short handoffs/zero-progress samples add nothing but retain credit. Pause, offline, visibility changes, buffering/recovery reset credit. Hidden/offline/suspended time never becomes debt; finishing a block resets the clock. There is no persistent/global wall-clock schedule or catch-up burst.
 
-Three additive migrations were generated using the official Supabase CLI and applied **only** after checking project dhvfrnlxskqjnefndztu:
+Identical polls do not reset time. Enabled/interval/count changes reset it; list-only changes retain credit and are selected at the next natural boundary. A due block waits for the current main clip. TVs intentionally have independent phase. Precision is the sampling period plus remaining clip duration.
 
-- `20261016211630_admin_media_metadata.sql` — admin-only metadata and invoker reorder RPC.
-- `20261017041255_reorder_identity_guard.sql` — strengthens exact identity/NULL validation. It is mandatory after the first migration.
-- `20261017123203_advertisement_library.sql` — isolated advertisements and invoker reorder RPC; no TV read grants yet because broadcasting is not implemented.
+## Database, isolation and synchronization
 
-Existing roles, first-admin trigger, has_role, normal-video RLS, authorization and production schema were not changed. New tables revoke default grants, enable RLS, and gate all operations through existing admin-role lookup. Reorder functions use SECURITY INVOKER and explicit admin checks; anon execution is revoked.
+CLI-created additive migrations were applied only after verifying `smilestream-integration-test`, ref `dhvfrnlxskqjnefndztu`, Frankfurt:
 
-The test project remains isolated: pinned launcher, separate integration output, public key only in browser, explicit backend override and artifact scans. `smile-integration.local`, output directories and CLI temporary files remain ignored. Pre-existing tracked .env is not included in new commits.
+1. `20261017131933_ad_playback_settings.sql`: singleton default OFF, intervals 15/20/30/45/60, count 0=all; public SELECT/admin column UPDATE via original has_role; no browser INSERT/DELETE/id update. Public active-only advertisement reads; invoker snapshot RPC.
+2. `20261017132134_media_cover_urls.sql`: optional validated HTTPS cover metadata for ordinary/ad libraries, not TV payloads.
+3. `20261017133052_ad_snapshot_capacity_guard.sql`: 1001st overflow sentinel and partial active-ad ordering index. Clients reject >1000 active ads instead of silently treating a truncated list as all. Admin can still disable scheduling/deactivate excess ads.
 
-## Verification
+All remain **unapplied to production**. Earlier migration prerequisites are in RELEASE_READINESS.md. Existing auth roles, first-admin trigger, has_role and normal-video RLS are unchanged. Never replay Drizzle seeds on an existing database. Test MCP history records these names at versions 20261017132044 / 20261017132217 / 20261017133135 respectively, while local CLI filenames retain their creation timestamps. No history repair was performed; reconcile the history explicitly before any CLI push to an already migrated environment.
 
-- TypeScript and ESLint touched modules pass.
-- Full Vitest suite includes previous TV/recovery/launcher-facing regressions plus new admin validation, safe export/import, 130-video pagination/bulk UI, draft volume and bounded multi-page API tests.
-- Production and integration builds pass with the existing large-bundle/tsconfig-paths warnings.
-- SQL role tests pass for metadata and advertisements, constraints, admin write/read/delete, non-admin denial, sound default and atomic reorder; all fixture/order changes roll back.
-- Existing playback-settings SQL and real HTTP anon/user/admin checks pass; extended Data API checks cover metadata/advertisement isolation and reorder guards.
-- New SQL test initially hit an expired connector request state twice. A short probe showed no stuck transactions. Tests were adapted to the already provisioned test identities and rerun successfully; failures were not counted as passes.
-- The jsdom test initially logged unimplemented media pause/load cleanup calls; test-only media mocks were added. Runtime cleanup remains active.
-- Artifact audits exclude test backend in ordinary output, production backend/passwords in integration output, and fixture UI from ordinary production build.
-- No new browser screenshots/responsive review can be claimed: saved browser permission denies localhost even after chat approval. 1440/1280/1024/768/390, long titles, crowded modal rendering, actual network-error rendering and visual focus must still be reviewed.
+`read_ad_playback` returns settings and ordered active ads in one consistent snapshot. One new bounded polling resource joins existing audio/video loops: approximately 18 reads/minute/TV, one in flight per resource, 12-second abort, coalesced reconnect/foreground events and cleanup. Missing ad tables do not stop main playback. Failures retain the last accepted snapshot and show a sync error.
 
-Final exact test counts and commit refs are recorded in the final validation section below.
+The isolated launcher aliases a separate clock module to 60 seconds; ordinary code has zero override and no URL/env/user-settings switch. CI/hosting is refused, backend is pinned and inherited backend variables replaced. Artifact scans verify the accelerated label only in integration output, no production ref/passwords there, and no test ref in ordinary output. Credential/output files stay ignored; browser gets only a public key.
 
-## Commits
+Two deliberately retained short test ads (5/10 seconds, Samplelib HTTPS MP4) are in the test advertisements table only. Both HEAD checks returned 200/video/mp4. Prefix: `РЕКЛАМА · ІНТЕГРАЦІЙНИЙ ТЕСТ`; original sound OFF. Scheduling is left OFF, interval 30/count 1. The three existing main videos/order and two test accounts are preserved. SQL fixtures roll back; HTTP fixtures are deleted by generated UUID and prior settings restored.
 
-- [b508acc](https://github.com/Kushchinskyi/smilestream/commit/b508acc) — preserved previous integration launcher/API checks/report without credential file.
-- [6568cba](https://github.com/Kushchinskyi/smilestream/commit/6568cba) — redesigned admin workspace, normal library, audio drafts, metadata/RLS and atomic sorting.
-- [7aadb14](https://github.com/Kushchinskyi/smilestream/commit/7aadb14) — separate advertisement inventory, permissions, export and tests. No scheduling/TV insertion.
-- Release documentation is a separate final commit; its hash is the PR head and is reported with the session result.
+## UI changes
 
-## Unfinished priorities
+- Separate advertising settings card with saved/draft/loading/error/retry states and returned-row verification. Navigation/reload guards protect drafts; zero-row/partial bulk writes are not called success.
+- Ducking explanation calculates current draft values and marks saved/draft. Video 0% explains base music; 0/100% edges tested.
+- Active main cycle duration is explicit: `30 с`, `1 год 1 хв 5 с`; excludes ads.
+- Existing design preserved; small captions/URLs/statuses raised to at least 12px and pale text darkened. Flexible settings controls and long-text wrapping added.
+- Optional manual HTTPS covers in editors/library/exports; lazy no-referrer images with Film fallback on error. No automatic MP4/CORS thumbnail promise; /tv does not load covers.
+- Per-device last/next ad and counters remain “Дані недоступні”; no fabricated global admin-clock schedule.
 
-| Master priority       | State                                                                                  |
-| --------------------- | -------------------------------------------------------------------------------------- |
-| A admin redesign      | Functional candidate; real visual/responsive review blocked                            |
-| B advertisements      | B1 inventory implemented; B2–B4 scheduling/rotation/TV insertion not implemented       |
-| C original sound      | Normal-video editor/card/bulk via existing source; ads own inventory flag, not aired   |
-| D video library       | Implemented listed library controls; physical/touch visual review still required       |
-| E screens             | Name/diagonal CRUD only; secure pairing, per-device config and commands pending        |
-| F monitoring          | Honest config diagnostics; actual telemetry/counters/retention not implemented         |
-| G schedules           | Not implemented; timezone displayed, no claim of turning TV power on                   |
-| H resilience          | Existing engine unchanged and regressions tested; no new 8-hour run                    |
-| I backup              | Normal/ad exports and staged audio import; full restore/screen/schedule import pending |
-| J security            | Test-only migrations, RLS/API/artifact checks; production untouched                    |
-| K verification        | Automated checks executed; visual access blocked and new Samsung regression pending    |
-| L release preparation | RELEASE_READINESS.md, this report and ADMIN_GUIDE_UK.md prepared                       |
+## Executed verification
 
-Do not enable ad broadcasting by simply adding inventory rows to normal videos. Implement a separate bounded block scheduler with one timing authority, saved next-main identity, no accumulated missed blocks, error/cooldown semantics and tests, then explicitly repeat hardware acceptance.
+- TypeScript PASS; Vitest **104 tests / 15 files PASS**; ESLint touched TS/TSX/MJS modules PASS. Legacy repository formatting was not rewritten.
+- Coverage includes normal timing, natural end/manual Next/OFF, rotation/all/count/config changes, duplicate events, 100 scheduler cycles/six media cycles, short-clip clock retention, preload sound changes, moved main index, empty lists, single clip, two bad ads, frozen ad, source retry reset, pause/offline/hidden, zero volume/music continuity, cleanup, draft/error UI and cover fallback.
+- Production-mode Node/chrome85, isolated integration and freshly rebuilt standalone media-test builds PASS. Node preset was process-local; Lovable configuration unchanged. Existing tsconfig-paths/plugin warnings remain.
+- Node launcher safety **11 PASS**. Integration/media artifact and actual-password scans PASS.
+- SQL/RLS suites for original playback settings, metadata/reorder, ads, new scheduling/covers and 1001-row overflow PASS on test only. Fixtures/order roll back.
+- Real Auth/Data API anon/user/admin restrictions, admin UPDATE RETURNING, denied INSERT/DELETE/id/invalid values, active-only reads and invoker snapshot PASS. Two independent anonymous HTTP clients received actual admin ad/sound/playlist changes; fixture cleanup/config restore PASS. This is not two browser TVs.
+- Local admin and /tv HTTP/LAN availability checked; this does not verify rendering/decoders.
 
-## Risks and next actions
+Bun is unavailable. Checks used installed dependencies via direct Node entrypoints; bun.lock unchanged. A pnpm exec wrapper attempted installation and failed on ignored dependency build scripts; generated untracked pnpm files were removed. Frozen Bun validation remains a release gate.
 
-See RELEASE_READINESS.md for migration order, backups, rollback, publication approvals and blockers. New editor saves span multiple requests; partial save messages preserve existing identity for retry, but are not a single cross-table transaction. Concurrent settings edits still use last writer wins. Avoid parallel editors until optimistic concurrency is implemented. External media URLs can expire/be unavailable. Database metadata/ads checks are intentionally not a complete URL parser; application validation remains required.
+## Unverified and remaining risks
 
-The prior user-confirmed Samsung playback result is preserved, not re-labelled as a new test of this redesign. Repeat new admin operations against the isolated project while two clients play, network recovery, sound/ducking and a measured long soak before production approval.
+- Saved browser permission denies `http://127.0.0.1:4173` despite previous chat approval. No alternate browser/headless/CDP bypass used. No new rendered UI, two-TV browser test or screenshots at 1440/1280/1024/768/390. User must allow that exact origin in browser access permissions and authorize retry; managed denial may require its administrator. Exact settings-menu location has not been verified.
+- Previous baseline Samsung success is the user's hardware result. New advertising still needs physical Samsung/decoder/autoplay/network checks and an actual long soak. Preload is a hint; frame-perfect gapless playback is not guaranteed.
+- Existing baseline SECURITY DEFINER warnings on assign_first_admin/has_role and disabled leaked-password protection remain. See [public function guidance](https://supabase.com/docs/guides/database/database-linter?lint=0028_anon_security_definer_function_executable), [authenticated guidance](https://supabase.com/docs/guides/database/database-linter?lint=0029_authenticated_security_definer_function_executable) and [password protection](https://supabase.com/docs/guides/auth/password-security#password-strength-and-leaked-password-protection). Existing auth settings/functions were not rewritten.
+- Last-write-wins settings, non-atomic ordinary video+metadata+sound saves (with partial-error reporting), external media availability and no offline cold start remain.
+- Pairing/per-device config, real heartbeat/telemetry, working-hours schedules and full restore/import remain separate unfinished scope. No production-ready claim.
 
-## Final automated validation
-
-| Check                                                                               | Actual result                                                                          |
-| ----------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| TypeScript `tsc --noEmit`                                                           | PASS                                                                                   |
-| Vitest                                                                              | **76 tests in 12 files PASS**                                                          |
-| ESLint changed TS/TSX modules                                                       | PASS                                                                                   |
-| Node launcher/isolation guard tests                                                 | **10 PASS**                                                                            |
-| Ordinary production-mode build, Node preset / chrome85                              | PASS; known bundle/plugin warnings                                                     |
-| Dedicated integration build                                                         | PASS                                                                                   |
-| Media + integration artifact isolation                                              | PASS                                                                                   |
-| Original playback settings SQL regression suite                                     | PASS, all fixtures rolled back                                                         |
-| Metadata RLS/constraints/NULL/unknown/duplicate/atomic reorder SQL                  | PASS, order/fixtures rolled back                                                       |
-| Advertisement RLS/default sound/constraints/reorder SQL                             | PASS, fixtures rolled back                                                             |
-| Real HTTP anon/ordinary/admin API + metadata/ad permissions                         | PASS                                                                                   |
-| Fixture audit                                                                       | 3 original test videos; 0 retained ads; 0 retained metadata fixtures; 0 SQL test users |
-| Playback engine / normal TV route / media-test source diff since integration commit | EMPTY                                                                                  |
-| New UI browser / five viewport screenshots                                          | **BLOCKED — saved origin permission**                                                  |
-| New Samsung regression / actual 8-hour soak / ad rotation                           | NOT RUN; rotation not implemented                                                      |
-
-No new redesign screenshots exist. Earlier integration screenshots show the previous UI and must not be presented as proof of the redesign. Browser chat approval was received, but a subsequent tool call still reported a saved permission/managed-policy denial; no workaround was attempted.
+Core: [2d85c65](https://github.com/Kushchinskyi/smilestream/commit/2d85c65). UI: [fe038a2](https://github.com/Kushchinskyi/smilestream/commit/fe038a2). Validation/documentation follow as a separate commit in the same Draft PR; final head/status are reported after push. ADMIN_GUIDE_UK.md contains the five-minute Samsung scenario; RELEASE_READINESS.md contains publication gates.

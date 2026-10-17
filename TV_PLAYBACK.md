@@ -1,5 +1,7 @@
 # Smile Stream: TV playback and central synchronization
 
+Current advertising architecture and executed test results: [DEVELOPMENT_REPORT.md](DEVELOPMENT_REPORT.md); publication gates: [RELEASE_READINESS.md](RELEASE_READINESS.md). The task-by-task notes below preserve earlier-stage history, including checks that have since been completed on the isolated test project. They do not describe the current migration-application status.
+
 ## Architecture and preserved authorization
 React 19 / TanStack Start serves the public client-only `/tv` page. Two stable HTML5 video elements preload the next clip and switch visibility on `playing`; the independent audio element is not restarted by video transitions. Original sound is enabled per video ID; music and video volume are independent and music is ducked during original-sound playback. Media recovery/watchdog and the Chromium 85 build target remain in place.
 
