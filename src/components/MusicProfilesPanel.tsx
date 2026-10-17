@@ -21,6 +21,7 @@ export function MusicProfilesPanel({
     [error, setError] = useState(""),
     [busy, setBusy] = useState(false),
     [loaded, setLoaded] = useState(false);
+  const [previewing, setPreviewing] = useState(false);
   const preview = useRef<HTMLAudioElement>(null);
   const previewQueue = useRef<string[]>([]);
   const previewIndex = useRef(0);
@@ -120,6 +121,7 @@ export function MusicProfilesPanel({
       )}
       <audio
         ref={preview}
+        hidden={!previewing}
         controls
         aria-label="Предпрослуховування профілю"
         onEnded={() => {
@@ -199,6 +201,7 @@ export function MusicProfilesPanel({
               disabled={busy || !p.track_urls.some((url) => library.includes(url))}
               onClick={() => {
                 if (preview.current) {
+                  setPreviewing(true);
                   previewQueue.current = p.track_urls.filter((url) => library.includes(url));
                   previewIndex.current = 0;
                   preview.current.src = previewQueue.current[0]!;

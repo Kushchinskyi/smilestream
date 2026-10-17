@@ -242,7 +242,13 @@ function TvPage() {
           className="tv-start flex flex-col items-center justify-center gap-6 p-8 text-center"
         >
           <h1 className="text-3xl">Smile Stream</h1>
-          <p>{picking ? "Оберіть музичний профіль" : status}</p>
+          <p>
+            {picking
+              ? "Оберіть музичний профіль"
+              : !started && items?.length
+                ? `${items.length} роликів у плейлисті`
+                : status}
+          </p>
           {integrationAdClockLabel && <p>{integrationAdClockLabel}</p>}
           {items?.length === 0 && <p>Плейлист порожній; оновлення автоматично.</p>}
           {syncStatus && <p>{syncStatus}</p>}
@@ -266,7 +272,7 @@ function TvPage() {
                   </small>
                 </button>
               ))}
-              {!profiles.length && (
+              {!profiles.length && baseAudio.current.musicUrls.length > 0 && (
                 <button
                   className="rounded border p-5 text-2xl"
                   onClick={() => chooseProfile(LEGACY_MUSIC)}
