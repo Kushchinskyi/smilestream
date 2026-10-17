@@ -64,3 +64,13 @@ Bun is unavailable. Checks used installed dependencies via direct Node entrypoin
 - Pairing/per-device config, real heartbeat/telemetry, working-hours schedules and full restore/import remain separate unfinished scope. No production-ready claim.
 
 Core: [2d85c65](https://github.com/Kushchinskyi/smilestream/commit/2d85c65). UI: [fe038a2](https://github.com/Kushchinskyi/smilestream/commit/fe038a2). Validation/documentation follow as a separate commit in the same Draft PR; final head/status are reported after push. ADMIN_GUIDE_UK.md contains the five-minute Samsung scenario; RELEASE_READINESS.md contains publication gates.
+
+# Release/content preparation — 17 October 2026
+
+User-confirmed active Lovable branch: main. Existing Lovable project still reports original main SHA 4c335929; feature work has not been merged or published. Production audit through Lovable was read-only: 25 active videos, 3 screens, one Auth user/role, original three public tables with RLS. No production migration, content insert or Lovable configuration mutation was performed.
+
+Added LOVABLE_RELEASE_PLAN.md (seven existing migration hashes, Cloud backup steps, separate approval gates, rollback), RELEASE_USER_GUIDE.md, catalog JSON/CSV and an offline append-only review planner with five Node tests. Playback/admin implementation and dependencies are unchanged. Git bundle verification, separate clone and fsck passed. Application-data snapshot is private/ignored; it is not a full Auth/Storage backup. Full Cloud export and DB restore remain outstanding.
+
+Content results: 95 Mixkit pages audited; 17 Free (all duplicates of existing videos), 43 Restricted excluded, 35 deferred after HTTP 429. Twelve new Pexels candidates have direct URLs and ffprobe metadata: three HD H.264 and nine needing normalization. Thirty-two music candidates total about 9h42 by source metadata; 29 HTTP/MP3 probes pass. Visual/listening QC, stable hosting and public-performance clearance remain open; no materials marked import-ready, purchased or inserted. Offline plan correctly holds all twelve new videos. This does not fulfill a library of 95 newly cleared clips; specific technology coverage gaps are recorded in content/README.md.
+
+Validation: TypeScript passes; 104 Vitest tests / 15 files pass; 16 Node tests (11 existing isolation guards + 5 new planner tests) pass; ESLint on new scripts passes; normal cloudflare-module production build passes; media/integration artifact isolation checks pass. Local TV HTTP 200. Bun unavailable, lock unchanged; no new dependency install. No repeated long Samsung ad test or browser screenshot run. User's successful physical TV acceptance is retained separately from automated results.

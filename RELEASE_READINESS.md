@@ -6,7 +6,7 @@
 
 - Work stays on `feature/seamless-tv-audio`, PR [#1](https://github.com/Kushchinskyi/smilestream/pull/1).
 - Only Supabase `dhvfrnlxskqjnefndztu` has received the new migrations/tests. Production URL/credentials were not used for these operations.
-- Dual-video/music architecture is retained. Additive ad scheduling/handoff hooks in TvPlayback and an independent ad snapshot poll in /tv require hardware acceptance.
+- Dual-video/music architecture is retained. The user has now confirmed physical Samsung acceptance of ad scheduling, continuous music, original audio/ducking, remote control and admin synchronization.
 - No existing videos were deleted or reordered by setup. SQL fixture/order tests roll back.
 - No paid project or plan upgrade was requested. Existing test project remains the previously approved Free project.
 
@@ -33,7 +33,7 @@ Verify anon, ordinary user and admin rights through both SQL role impersonation 
 ## Release blockers
 
 - Browser smoke/responsive review at **1440, 1280, 1024, 768 and 390 px has NOT been performed for the redesign**. Browser tool access to localhost is blocked by a saved permission despite the user's chat approval. No alternate browser, headless shell or CDP workaround was used. User must unblock the actual browser permission or review screenshots manually before release.
-- Ad scheduling/rotation/natural-end insertion/error fallback/main resume are implemented and automatically tested, but the NEW ad flow has not run on a physical Samsung. Execute the five-minute scenario in ADMIN_GUIDE_UK.md and a real long soak, then independently review.
+- Physical Samsung acceptance of the new ad flow is confirmed by the user. No additional long advertising test is required for this preparation step. Full eight-hour telemetry was not captured.
 - Screen pairing, device credentials, per-screen playlists/volume, heartbeat, telemetry and command transport are not implemented. The UI reports unavailable data.
 - Schedules/time-of-day volume and working hours are not implemented. Europe/Kyiv is used for displayed timestamps only.
 - Full restore/import of playlist/ads/screens/schedules is not implemented; audio import is validated and staged only.
@@ -45,7 +45,7 @@ Verify anon, ordinary user and admin rights through both SQL role impersonation 
 
 ## Actual validation for this advertising increment
 
-TypeScript, 104 Vitest tests/15 files, ESLint changed modules, production/chrome85 build, isolated integration build, fresh media harness build, 11 Node guard tests and artifact/password scans pass. SQL role tests and actual Auth/Data API tests pass on test only, including two independent anonymous HTTP clients and fixture cleanup/config restore. These are not two rendered browser clients, physical Samsung acceptance or eight-hour stability results. DEVELOPMENT_REPORT.md describes exact scope.
+TypeScript, 104 Vitest tests/15 files, ESLint changed modules, production/chrome85 build, isolated integration build, fresh media harness build, 11 Node guard tests and artifact/password scans pass. SQL role tests and actual Auth/Data API tests pass on test only, including two independent anonymous HTTP clients and fixture cleanup/config restore. Automated API clients are not rendered browser clients or eight-hour stability results. Separately, the user has confirmed physical Samsung acceptance. DEVELOPMENT_REPORT.md describes exact scope.
 
 Browser access remains blocked by the saved permission for http://127.0.0.1:4173. Allow that origin in browser access permissions and authorize retry (or ask the managing administrator to remove the policy); exact settings-menu navigation is unverified. Do not bypass through another browser/headless/CDP. No new screenshots exist at the five requested widths.
 
@@ -67,3 +67,7 @@ Browser access remains blocked by the saved permission for http://127.0.0.1:4173
 ## Controlled publication sequence
 
 Finish visual/accessibility and hardware checks → resolve review findings → independently review Draft PR and SQL → verify immutable dependency lock → back up and test restore → obtain explicit production SQL permission → apply reviewed migrations in order → permission checks → obtain merge/deploy permission → coordinate GitHub/Lovable branch handling → deploy approved build → monitor actual logs and perform rollback if needed. This document performs none of those production actions.
+
+## Transfer preparation update — 17 October 2026
+
+See LOVABLE_RELEASE_PLAN.md for confirmed main/Lovable alignment, read-only production inventory, verified Git backup restore, exact seven migration hashes and separate SQL/merge/Publish approval gates. Full private Cloud/Auth/Storage backup and DB restore remain required. content/README.md records licensing/codec/QC limits and the offline append-only review planner; no content was inserted. The live backend and main remain unchanged.
