@@ -149,8 +149,11 @@ export function AudioSettingsPanel({
       <div className="info-banner">
         <AudioLines size={20} />
         <span>
-          Музика 40% × приглушення 25% = 10% під час оригінального звуку. Дозвіл звуку вмикається
-          окремо для кожного відео у відеотеці.
+          {dirty ? "Чернетка" : "Збережені значення"}:{" "}
+          {settings.videoVolume === 0
+            ? `оригінальний звук 0% — приглушення не діє, музика ${Math.round(settings.musicVolume * 100)}%.`
+            : `музика ${Math.round(settings.musicVolume * 100)}% × приглушення ${Math.round(settings.duckVolume * 100)}% = ${Math.round(settings.musicVolume * settings.duckVolume * 100)}% під час оригінального звуку.`}{" "}
+          Дозвіл звуку вмикається окремо для кожного відео у відеотеці або рекламній бібліотеці.
         </span>
       </div>
       <section className="panel">

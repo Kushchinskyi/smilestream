@@ -2,6 +2,8 @@ import { beforeEach, describe, it, expect, vi } from "vitest";
 import { render, screen, fireEvent, cleanup } from "@testing-library/react";
 import { afterEach } from "vitest";
 import { selectVideos, validateVideo, exportLibrary, parseAudioImport } from "@/lib/admin-library";
+import { formatCycleDuration } from "@/lib/admin-library";
+import { MediaCover } from "@/components/MediaCover";
 import { DEFAULT_AUDIO } from "@/lib/audio-settings";
 import { VideoLibrary } from "@/components/VideoLibrary";
 import { AudioSettingsPanel } from "@/components/AudioSettingsPanel";
@@ -24,6 +26,42 @@ afterEach(() => {
   vi.restoreAllMocks();
 });
 describe("admin library safety and UX", () => {
+  it("formats explicit cycle duration and uses a fallback when cover fails", () => {
+    expect(formatCycleDuration(5 + 10 + 15)).toBe("30 с");
+    expect(formatCycleDuration(3665)).toBe("1 год 1 хв 5 с");
+    const ui = render(<MediaCover url="https://example.com/cover.jpg" />);
+    fireEvent.error(ui.container.querySelector("img")!);
+    expect(ui.container.querySelector("img")).toBeNull();
+    expect(ui.container.querySelector("svg")).not.toBeNull();
+  });
+  it("calculates ducking from current draft and explains zero video volume", () => {
+    const props = {
+      settings: { ...DEFAULT_AUDIO, musicVolume: 1, duckVolume: 0.25 },
+      onChange: vi.fn(),
+      labels: {},
+      onLabels: vi.fn(),
+      onSave: vi.fn(),
+      saving: false,
+      dirty: true,
+      error: "",
+    };
+    const ui = render(<AudioSettingsPanel {...props} />);
+    expect(screen.getByText(/Чернетка: музика 100% × приглушення 25% = 25%/)).toBeInTheDocument();
+    ui.rerender(<AudioSettingsPanel {...props} settings={{ ...props.settings, videoVolume: 0 }} />);
+    expect(
+      screen.getByText(/оригінальний звук 0% — приглушення не діє, музика 100%/),
+    ).toBeInTheDocument();
+    ui.rerender(
+      <AudioSettingsPanel
+        {...props}
+        dirty={false}
+        settings={{ ...props.settings, musicVolume: 0, duckVolume: 1 }}
+      />,
+    );
+    expect(
+      screen.getByText(/Збережені значення: музика 0% × приглушення 100% = 0%/),
+    ).toBeInTheDocument();
+  });
   it("keeps advertisement inventory explicitly separate from TV broadcasting", () => {
     render(
       <VideoLibrary
@@ -41,7 +79,7 @@ describe("admin library safety and UX", () => {
     );
     expect(screen.getByRole("heading", { name: /Рекламна бібліотека/ })).toBeInTheDocument();
     expect(screen.queryByLabelText("Категорія")).not.toBeInTheDocument();
-    expect(screen.getByText(/Покази ще не підключені/)).toBeInTheDocument();
+    expect(screen.getByText(/ввімкніть рекламні блоки/)).toBeInTheDocument();
   });
   it("validates HTTPS, credentials, duration, title and preserves active flag", () => {
     const v = videos[0]!;

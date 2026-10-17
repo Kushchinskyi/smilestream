@@ -11,7 +11,21 @@ export const CATEGORIES = {
   sterilization: "Стерилізація",
   other: "Інше",
 };
-export type MediaMetadata = { kind: string; source_key: string; label: string; category: string };
+export type MediaMetadata = {
+  kind: string;
+  source_key: string;
+  label: string;
+  category: string;
+  cover_url?: string;
+};
+export function formatCycleDuration(seconds: number) {
+  const value = Math.max(0, Math.floor(seconds)),
+    hours = Math.floor(value / 3600),
+    minutes = Math.floor((value % 3600) / 60);
+  return [hours ? `${hours} год` : "", minutes ? `${minutes} хв` : "", `${value % 60} с`]
+    .filter(Boolean)
+    .join(" ");
+}
 export function validateVideo<
   T extends {
     title: string;
@@ -65,6 +79,7 @@ export function exportLibrary(videos: Video[], audio: AudioSettings, metadata: M
       source_key: m.source_key,
       label: m.label,
       category: m.category,
+      cover_url: m.cover_url || "",
     })),
   };
 }

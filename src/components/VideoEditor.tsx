@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { CATEGORIES, validateVideo } from "@/lib/admin-library";
 import type { Video } from "@/lib/backend";
+import { isMusicUrl } from "@/lib/audio-settings";
 export type VideoDraft = {
   title: string;
   url: string;
@@ -18,15 +19,22 @@ export function VideoEditor({
   onSave,
   onDelete,
   showCategory = true,
+  coverUrl = "",
 }: {
   video: Video | null;
   category: string;
   original: boolean;
   order: number;
   onClose: () => void;
-  onSave: (draft: VideoDraft, category: string, original: boolean) => Promise<void>;
+  onSave: (
+    draft: VideoDraft,
+    category: string,
+    original: boolean,
+    coverUrl: string,
+  ) => Promise<void>;
   onDelete: () => Promise<void>;
   showCategory?: boolean;
+  coverUrl?: string;
 }) {
   const [draft, setDraft] = useState<VideoDraft>(
     video
@@ -39,6 +47,7 @@ export function VideoEditor({
         }
       : { title: "", url: "", duration_seconds: 0, sort_order: order, is_active: true },
   );
+  const [cover, setCover] = useState(coverUrl);
   const [cat, setCat] = useState(category),
     [sound, setSound] = useState(original),
     [busy, setBusy] = useState(false),
@@ -58,7 +67,8 @@ export function VideoEditor({
           : { title: "", url: "", duration_seconds: 0, sort_order: order, is_active: true },
       ) ||
     cat !== category ||
-    sound !== original;
+    sound !== original ||
+    cover !== coverUrl;
   function close() {
     if (!busy && (!dirty || confirm("Відхилити незбережені зміни відео?"))) onClose();
   }
@@ -74,7 +84,7 @@ export function VideoEditor({
         <DialogDescription>
           {showCategory
             ? "Пряме HTTPS-посилання. Зміни застосуються до наступних відтворень на ТВ."
-            : "Рекламна бібліотека. Автоматичний показ на ТВ ще не підключений."}
+            : "Окрема рекламна бібліотека. Показ залежить від налаштувань рекламних блоків."}
         </DialogDescription>
         <form
           className="editor-form"
@@ -83,8 +93,10 @@ export function VideoEditor({
             setError("");
             try {
               const clean = validateVideo(draft);
+              if (cover && !isMusicUrl(cover))
+                throw new Error("Обкладинка: потрібне коректне HTTPS-посилання");
               setBusy(true);
-              await onSave(clean, cat, sound);
+              await onSave(clean, cat, sound, cover);
             } catch (err) {
               setError((err as Error).message);
             } finally {
@@ -114,6 +126,20 @@ export function VideoEditor({
                 setDraft({ ...draft, url: e.target.value });
               }}
             />
+          </label>
+          <label>
+            Обкладинка (необов’язково)
+            <input
+              type="url"
+              value={cover}
+              maxLength={2048}
+              placeholder="https://…/cover.jpg"
+              onChange={(e) => setCover(e.target.value)}
+            />
+            <small>
+              Власне посилання на зображення. Якщо воно недоступне, показуємо відеозаглушку.
+              Автоматичне витягування з MP4 не виконується.
+            </small>
           </label>
           <div className="form-grid">
             {showCategory && (

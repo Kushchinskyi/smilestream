@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import type { Video } from "@/lib/backend";
 import { formatDuration } from "@/lib/backend";
+import { MediaCover } from "./MediaCover";
 import { CATEGORIES, selectVideos, type MediaMetadata } from "@/lib/admin-library";
 type Props = {
   advertisement?: boolean;
@@ -159,7 +160,7 @@ export function VideoLibrary({
               {videos.length
                 ? "Спробуйте змінити пошук або фільтри."
                 : advertisement
-                  ? "Додайте MP4 до окремої рекламної бібліотеки. Покази ще не підключені."
+                  ? "Додайте MP4 до окремої рекламної бібліотеки та ввімкніть рекламні блоки."
                   : "Додайте пряме HTTPS-посилання на MP4. Активні відео з’являться на телевізорах."}
             </p>
           </div>
@@ -200,7 +201,7 @@ export function VideoLibrary({
                       aria-label={`Переглянути ${v.title}`}
                       onClick={() => onPreview(v)}
                     >
-                      <Film size={26} />
+                      <MediaCover key={meta?.cover_url || "empty"} url={meta?.cover_url || ""} />
                       <span>
                         <Play size={13} />
                         {formatDuration(v.duration_seconds)}

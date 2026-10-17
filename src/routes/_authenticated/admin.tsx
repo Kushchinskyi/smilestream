@@ -28,6 +28,7 @@ import { fetchAudio, writeAudio } from "@/lib/playback-api";
 import { readAdminVideos, readAdminMetadata } from "@/lib/admin-api";
 import {
   downloadJson,
+  formatCycleDuration,
   exportLibrary,
   parseAudioImport,
   type MediaMetadata,
@@ -52,6 +53,7 @@ function AdminPage() {
     [labels, setLabels] = useState<Record<string, string>>({}),
     [savedLabels, setSavedLabels] = useState<Record<string, string>>({});
   const [loading, setLoading] = useState(true),
+    [adDirty, setAdDirty] = useState(false),
     [error, setError] = useState(""),
     [audioError, setAudioError] = useState(""),
     [saving, setSaving] = useState(false),
@@ -102,7 +104,8 @@ function AdminPage() {
   }, [admin]);
   function go(next: AdminSection) {
     if (next === section) return;
-    if (dirty && !confirm("Відхилити незбережені зміни звуку?")) return;
+    if ((dirty || adDirty) && !confirm("Відхилити незбережені зміни?")) return;
+    setAdDirty(false);
     if (dirty) {
       setAudio(savedAudio);
       setLabels(savedLabels);
@@ -239,7 +242,7 @@ function AdminPage() {
                   {
                     icon: Clock,
                     label: "Тривалість циклу",
-                    value: formatDuration(total),
+                    value: formatCycleDuration(total),
                     note: "За вказаними тривалостями",
                   },
                   {
@@ -353,7 +356,7 @@ function AdminPage() {
             />
           )}
           {section === "screens" && <ScreenLibrary />}
-          {section === "ads" && <AdvertisementLibrary />}
+          {section === "ads" && <AdvertisementLibrary onDirtyChange={setAdDirty} />}
           {section === "diagnostics" && (
             <>
               <div className="page-heading">
@@ -457,14 +460,18 @@ function AdminPage() {
               <section className="panel">
                 <h2>Реклама та розклад</h2>
                 <p>
-                  Плануються окремими модулями. У цій версії реклама не вставляється, розклад не
-                  керує трансляціями. Поточний плейлист працює безперервно.
+                  Рекламні блоки налаштовуються в розділі «Реклама». Розклад робочих годин ще не
+                  керує трансляціями.
                 </p>
               </section>
             </>
           )}
           {editing !== undefined && (
             <VideoEditor
+              coverUrl={
+                metadata.find((m) => m.kind === "video" && m.source_key === editing?.id)
+                  ?.cover_url || ""
+              }
               key={editing?.id || "new"}
               video={editing}
               category={
@@ -474,7 +481,12 @@ function AdminPage() {
               original={savedAudio.originalIds.includes(editing?.id || "")}
               order={(videos[videos.length - 1]?.sort_order || 0) + 1}
               onClose={() => setEditing(undefined)}
-              onSave={async (draft: VideoDraft, category: string, sound: boolean) => {
+              onSave={async (
+                draft: VideoDraft,
+                category: string,
+                sound: boolean,
+                cover_url: string,
+              ) => {
                 if (dirty) throw new Error("Спочатку збережіть або відхиліть чернетку звуку.");
                 if (
                   videos.some((v) => v.id !== editing?.id && v.url === draft.url) &&
@@ -493,7 +505,7 @@ function AdminPage() {
                   throw new Error("Не вдалося зберегти відео. Перевірте мережу й права.");
                 const m = await supabase
                   .from("media_metadata")
-                  .upsert({ kind: "video", source_key: r.data.id, label: "", category });
+                  .upsert({ kind: "video", source_key: r.data.id, label: "", category, cover_url });
                 if (m.error) {
                   setEditing(r.data);
                   toast.error("Відео вже збережено. Категорію потрібно повторно зберегти.");
