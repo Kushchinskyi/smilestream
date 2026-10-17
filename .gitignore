@@ -13,6 +13,7 @@ dist-ssr
 .output
 .media-test-output/
 .integration-test-output/
+supabase/.temp/
 .vinxi
 .tanstack/**
 .nitro

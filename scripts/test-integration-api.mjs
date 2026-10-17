@@ -101,6 +101,21 @@ try {
   console.log(
     "PASS: authenticated admin UPDATE RETURNING; invalid values/id updates rejected; settings unchanged",
   );
+  for (const [name, c] of [
+    ["anon", anon],
+    ["ordinary", user],
+    ["admin", admin],
+  ]) {
+    const metadata = await c.from("media_metadata").select("*").limit(1);
+    if (name === "anon") assert(metadata.error);
+    else {
+      assert.equal(metadata.error, null);
+      if (name === "ordinary") assert.deepEqual(metadata.data, []);
+    }
+    const invalidOrder = await c.rpc("reorder_videos", { ordered_ids: [] });
+    assert(invalidOrder.error, `${name}: invalid reorder must be rejected`);
+  }
+  console.log("PASS: metadata access and invalid reorder denied through real Data API");
 } finally {
   await Promise.all([
     user.auth.signOut({ scope: "local" }),

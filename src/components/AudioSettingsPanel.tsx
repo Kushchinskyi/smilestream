@@ -1,192 +1,299 @@
-import { useEffect, useState } from "react";
-import { toast } from "sonner";
-import { readAudio, validateAudio, DEFAULT_AUDIO } from "@/lib/audio-settings";
-import type { Video } from "@/lib/backend";
-import { fetchAudio, writeAudio } from "@/lib/playback-api";
-
-export function AudioSettingsPanel({ videos }: { videos: Video[] }) {
-  const [settings, setSettings] = useState(DEFAULT_AUDIO);
-  const [urls, setUrls] = useState("");
-  const [loading, setLoading] = useState(true);
-  const [saving, setSaving] = useState(false);
-  const [error, setError] = useState("");
-  const [reload, setReload] = useState(0);
+import { useEffect, useRef, useState, type CSSProperties } from "react";
+import {
+  Music2,
+  Volume2,
+  AudioLines,
+  Plus,
+  Play,
+  Square,
+  Trash2,
+  ArrowUp,
+  ArrowDown,
+  Save,
+} from "lucide-react";
+import type { AudioSettings } from "@/lib/audio-settings";
+import { isMusicUrl, MAX_MUSIC_URLS } from "@/lib/audio-settings";
+type Props = {
+  settings: AudioSettings;
+  onChange: (s: AudioSettings) => void;
+  labels: Record<string, string>;
+  onLabels: (labels: Record<string, string>) => void;
+  onSave: () => void;
+  saving: boolean;
+  dirty: boolean;
+  error: string;
+};
+export function AudioSettingsPanel({
+  settings,
+  onChange,
+  labels,
+  onLabels,
+  onSave,
+  saving,
+  dirty,
+  error,
+}: Props) {
+  const audio = useRef<HTMLAudioElement>(null);
   useEffect(() => {
-    let alive = true;
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 12000);
-    setLoading(true);
-    setError("");
-    fetchAudio(controller.signal)
-      .then((s) => {
-        if (alive) {
-          setSettings(s);
-          setUrls(s.musicUrls.join("\n"));
-        }
-      })
-      .catch(() => {
-        if (alive)
-          setError(
-            "Не вдалося завантажити налаштування. Перевірте мережу та застосування міграції.",
-          );
-      })
-      .finally(() => {
-        clearTimeout(timeout);
-        if (alive) setLoading(false);
-      });
+    const node = audio.current;
     return () => {
-      alive = false;
-      clearTimeout(timeout);
-      controller.abort();
+      node?.pause();
+      node?.removeAttribute("src");
+      node?.load();
     };
-  }, [reload]);
-  async function save() {
-    const musicUrls = urls
-      .split(/\r?\n/)
-      .map((s) => s.trim())
-      .filter(Boolean);
-    let draft;
-    try {
-      draft = validateAudio({ ...settings, musicUrls });
-    } catch (error) {
-      toast.error((error as Error).message);
-      return;
+  }, []);
+  const [preview, setPreview] = useState<number | null>(null),
+    [previewError, setPreviewError] = useState("");
+  const lastLevels = useRef({ musicVolume: 0.35, videoVolume: 1 });
+  function updateTrack(index: number, url: string) {
+    if (preview === index) {
+      audio.current?.pause();
+      setPreview(null);
     }
-    try {
-      setSaving(true);
-      await writeAudio(draft);
-      toast.success("Налаштування збережено для всіх ТВ. Оновлення приблизно через 10 секунд.");
-    } catch {
-      toast.error(
-        "Не вдалося підтвердити збереження. Перевірте мережу, права адміністратора та міграцію; перечитайте налаштування.",
-      );
-    } finally {
-      setSaving(false);
+    const urls = [...settings.musicUrls],
+      previous = urls[index]!;
+    urls[index] = url;
+    onChange({ ...settings, musicUrls: urls });
+    if (labels[previous]) {
+      const next = { ...labels, [url]: labels[previous]! };
+      delete next[previous];
+      onLabels(next);
     }
   }
+  function move(index: number, delta: number) {
+    const urls = [...settings.musicUrls],
+      next = index + delta;
+    if (next < 0 || next >= urls.length) return;
+    [urls[index], urls[next]] = [urls[next]!, urls[index]!];
+    onChange({ ...settings, musicUrls: urls });
+    setPreview(null);
+    audio.current?.pause();
+  }
   return (
-    <section className="mt-8 space-y-4 rounded-xl border bg-card p-6">
-      <h2 className="text-xl font-semibold">Музика та звук ТВ</h2>
-      <p>
-        Налаштування зберігаються централізовано та автоматично застосовуються на відкритих ТВ
-        приблизно через 10 секунд. Імпорт змінює лише чернетку до натискання «Зберегти звук».
-      </p>
-      {loading && <p>Завантаження…</p>}
-      {error && <p role="alert">{error}</p>}
-      <button
-        disabled={loading || saving}
-        className="rounded border px-4 py-2"
-        onClick={() => setReload((n) => n + 1)}
-      >
-        Перечитати з сервера (замінити чернетку)
-      </button>
-      <fieldset disabled={loading || saving || !!error} className="space-y-4">
-        <label className="block">
-          Музика: прямі HTTPS URL MP3/AAC, по одному в рядку
-          <textarea
-            className="mt-2 block w-full rounded border p-2"
-            value={urls}
-            onChange={(e) => setUrls(e.target.value)}
-          />
-        </label>
-        {(["musicVolume", "videoVolume", "duckVolume"] as const).map((key, i) => (
-          <label className="block" key={key}>
+    <>
+      <div className="page-heading">
+        <div>
+          <p className="eyebrow">АТМОСФЕРА КЛІНІКИ</p>
+          <h1>Музика та звук</h1>
+          <p>Незалежні канали. Спокійний фон. Чіткий оригінальний звук.</p>
+        </div>
+        <span className={`save-state ${dirty ? "pending" : ""}`} role="status">
+          {saving ? "Збереження…" : error ? "Помилка" : dirty ? "Зміни не збережено" : "Збережено"}
+        </span>
+      </div>
+      <div className="volume-grid">
+        {(
+          [
             {
-              [
-                "Гучність музики",
-                "Гучність оригінального звуку",
-                "Частка гучності музики під час оригінального звуку",
-              ][i]
-            }
-            : {Math.round(settings[key] * 100)}%
+              key: "musicVolume",
+              title: "Фонова музика",
+              description: "Постійний музичний супровід між усіма роликами.",
+              Icon: Music2,
+            },
+            {
+              key: "videoVolume",
+              title: "Оригінальний звук",
+              description: "Гучність роликів, для яких увімкнено оригінальний звук.",
+              Icon: Volume2,
+            },
+            {
+              key: "duckVolume",
+              title: "Приглушення музики",
+              description:
+                "Частка фонової гучності під час звуку відео. 0% — тиша, 100% — без приглушення.",
+              Icon: AudioLines,
+            },
+          ] as const
+        ).map(({ key, title, description, Icon }) => (
+          <section className="panel volume-card" key={key}>
+            <div className="volume-heading">
+              <span className="icon-tile">
+                <Icon size={22} />
+              </span>
+              <output>
+                {Math.round(settings[key] * 100)}
+                <small>%</small>
+              </output>
+            </div>
+            <h2>{title}</h2>
+            <p>{description}</p>
             <input
-              className="ml-4"
+              aria-label={title}
               type="range"
               min="0"
               max="1"
               step="0.01"
               value={settings[key]}
-              onChange={(e) => setSettings({ ...settings, [key]: Number(e.target.value) })}
+              style={{ "--level": `${settings[key] * 100}%` } as CSSProperties}
+              onChange={(e) => onChange({ ...settings, [key]: Number(e.target.value) })}
             />
-          </label>
+            <div className="range-labels">
+              <span>0%</span>
+              <span>100%</span>
+            </div>
+            {key !== "duckVolume" && (
+              <button
+                className="text-button"
+                onClick={() => {
+                  const value = settings[key];
+                  if (value > 0) lastLevels.current[key] = value;
+                  onChange({ ...settings, [key]: value > 0 ? 0 : lastLevels.current[key] });
+                }}
+              >
+                {settings[key] === 0 ? "Увімкнути канал" : "Вимкнути канал"}
+              </button>
+            )}
+          </section>
         ))}
-        <p>Відтворювати оригінальний звук у роликах (інші ролики без звуку):</p>
-        {videos.map((v) => (
-          <label key={v.id} className="block">
-            <input
-              type="checkbox"
-              checked={settings.originalIds.includes(v.id)}
-              onChange={(e) =>
-                setSettings({
-                  ...settings,
-                  originalIds: e.target.checked
-                    ? [...settings.originalIds, v.id]
-                    : settings.originalIds.filter((id) => id !== v.id),
-                })
-              }
-            />{" "}
-            {v.title}
-          </label>
-        ))}
-        <button className="rounded border px-4 py-2" onClick={save}>
+      </div>
+      <div className="info-banner">
+        <AudioLines size={20} />
+        <span>
+          Музика 40% × приглушення 25% = 10% під час оригінального звуку. Дозвіл звуку вмикається
+          окремо для кожного відео у відеотеці.
+        </span>
+      </div>
+      <section className="panel">
+        <div className="panel-heading">
+          <div>
+            <h2>
+              Музична бібліотека <span className="count-badge">{settings.musicUrls.length}</span>
+            </h2>
+            <p>
+              Зміни залишаються чернеткою до збереження. Прослуховування — лише на цьому пристрої.
+            </p>
+          </div>
+          <button
+            className="button secondary"
+            disabled={settings.musicUrls.length >= MAX_MUSIC_URLS}
+            onClick={() => onChange({ ...settings, musicUrls: [...settings.musicUrls, ""] })}
+          >
+            <Plus size={17} />
+            Додати композицію
+          </button>
+        </div>
+        <audio
+          ref={audio}
+          preload="none"
+          onError={() => {
+            setPreviewError("Не вдалося відтворити файл. Перевірте URL, формат і мережу.");
+            setPreview(null);
+          }}
+          onEnded={() => setPreview(null)}
+        />
+        {settings.musicUrls.length === 0 ? (
+          <div className="empty-state">
+            <Music2 size={32} />
+            <h3>Ваша музична бібліотека</h3>
+            <p>Додайте першу композицію за прямим HTTPS-посиланням.</p>
+          </div>
+        ) : (
+          <ol className="track-list">
+            {settings.musicUrls.map((url, index) => (
+              <li key={index} className="track-row">
+                <span className="track-number">{String(index + 1).padStart(2, "0")}</span>
+                <button
+                  className="icon-button"
+                  aria-label={
+                    preview === index
+                      ? "Зупинити прослуховування"
+                      : `Прослухати композицію ${index + 1}`
+                  }
+                  disabled={!isMusicUrl(url)}
+                  onClick={() => {
+                    setPreviewError("");
+                    if (preview === index) {
+                      audio.current?.pause();
+                      setPreview(null);
+                      return;
+                    }
+                    audio.current!.src = url;
+                    setPreview(index);
+                    void audio.current!.play().catch(() => {
+                      setPreviewError("Не вдалося запустити прослуховування.");
+                      setPreview(null);
+                    });
+                  }}
+                >
+                  {preview === index ? <Square size={16} /> : <Play size={16} />}
+                </button>
+                <div className="track-fields">
+                  <input
+                    aria-label={`Назва композиції ${index + 1}`}
+                    maxLength={160}
+                    placeholder={`Композиція ${index + 1} — вкажіть назву`}
+                    value={labels[url] || ""}
+                    onChange={(e) => onLabels({ ...labels, [url]: e.target.value })}
+                  />
+                  <input
+                    aria-label={`URL композиції ${index + 1}`}
+                    type="url"
+                    placeholder="https://…/music.mp3"
+                    value={url}
+                    onChange={(e) => updateTrack(index, e.target.value)}
+                  />
+                  {url && !isMusicUrl(url) && (
+                    <span className="field-error">Потрібне коректне HTTPS-посилання</span>
+                  )}
+                </div>
+                <div className="row-actions">
+                  <button
+                    className="icon-button"
+                    aria-label={`Підняти композицію ${index + 1}`}
+                    disabled={index === 0}
+                    onClick={() => move(index, -1)}
+                  >
+                    <ArrowUp size={16} />
+                  </button>
+                  <button
+                    className="icon-button"
+                    aria-label={`Опустити композицію ${index + 1}`}
+                    disabled={index === settings.musicUrls.length - 1}
+                    onClick={() => move(index, 1)}
+                  >
+                    <ArrowDown size={16} />
+                  </button>
+                  <button
+                    className="icon-button danger"
+                    aria-label={`Прибрати композицію ${index + 1}`}
+                    onClick={() => {
+                      if (!confirm("Прибрати композицію з чернетки?")) return;
+                      audio.current?.pause();
+                      setPreview(null);
+                      onChange({
+                        ...settings,
+                        musicUrls: settings.musicUrls.filter((_, i) => i !== index),
+                      });
+                    }}
+                  >
+                    <Trash2 size={16} />
+                  </button>
+                </div>
+              </li>
+            ))}
+          </ol>
+        )}
+        {previewError && (
+          <p role="alert" className="error-banner">
+            {previewError}
+          </p>
+        )}
+      </section>
+      <div className="save-bar">
+        <div>
+          <strong>{dirty ? "Є незбережені зміни" : "Усі зміни збережено"}</strong>
+          <p>Телевізори отримають налаштування приблизно за 10 секунд.</p>
+          {error && (
+            <p className="field-error" role="alert">
+              {error}
+            </p>
+          )}
+        </div>
+        <button className="button primary" disabled={!dirty || saving} onClick={onSave}>
+          <Save size={18} />
           {saving ? "Збереження…" : "Зберегти звук"}
-        </button>{" "}
-        <button
-          className="rounded border px-4 py-2"
-          onClick={() => {
-            const url = URL.createObjectURL(
-              new Blob(
-                [
-                  JSON.stringify({
-                    ...settings,
-                    musicUrls: urls
-                      .split(/\r?\n/)
-                      .map((s) => s.trim())
-                      .filter(Boolean),
-                  }),
-                ],
-                { type: "application/json" },
-              ),
-            );
-            const a = document.createElement("a");
-            a.href = url;
-            a.download = "smile-audio.json";
-            a.click();
-            setTimeout(() => URL.revokeObjectURL(url), 1000);
-          }}
-        >
-          Експорт
         </button>
-        <label className="block">
-          Імпорт налаштувань{" "}
-          <input
-            type="file"
-            accept="application/json"
-            onChange={async (e) => {
-              const file = e.target.files?.[0];
-              if (!file) return;
-              try {
-                if (file.size > 2 * 1024 * 1024) throw new Error("Файл перевищує 2 МБ");
-                const s = validateAudio(JSON.parse(await file.text()));
-                setSettings(s);
-                setUrls(s.musicUrls.join("\n"));
-              } catch (error) {
-                toast.error((error as Error).message || "Некоректний JSON");
-              }
-            }}
-          />
-        </label>
-        <button
-          className="rounded border px-4 py-2"
-          onClick={() => {
-            const s = readAudio();
-            setSettings(s);
-            setUrls(s.musicUrls.join("\n"));
-          }}
-        >
-          Імпортувати попередні локальні налаштування в чернетку
-        </button>
-      </fieldset>
-    </section>
+      </div>
+    </>
   );
 }
