@@ -14,4 +14,9 @@ describe("App routing", () => {
 
     expect(matches.at(-1)?.routeId).not.toBe(rootRouteId);
   });
+  it("keeps /tv outside the authenticated route and its auth guard", () => {
+    const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
+    const ids = router.matchRoutes("/tv").map((match) => match.routeId);
+    expect(ids).toEqual([rootRouteId, "/tv"]);
+  });
 });

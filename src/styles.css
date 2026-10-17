@@ -70,11 +70,70 @@
 }
 
 @layer base {
-  * { border-color: var(--color-border); }
+  * {
+    border-color: var(--color-border);
+  }
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
   }
-  h1, h2, h3 { font-family: var(--font-display); letter-spacing: -0.02em; }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Critical TV UI stays outside Tailwind's cascade layers for Chromium 85. */
+.tv-screen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.tv-screen .tv-start {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  text-align: center;
+}
+.tv-screen h1 {
+  font-size: 32px;
+  margin: 16px;
+}
+.tv-screen p {
+  margin: 12px 0;
+}
+.tv-screen .tv-status {
+  padding: 24px;
+}
+.tv-screen button {
+  color: #fff;
+  background: #143e4c;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 16px 24px;
+  margin: 8px;
+  min-height: 64px;
+  font-size: 24px;
+  line-height: 1.3;
+  cursor: pointer;
+}
+.tv-screen button:focus {
+  outline: 4px solid #37dec3;
+  outline-offset: 4px;
 }
