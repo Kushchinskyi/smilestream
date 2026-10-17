@@ -63,6 +63,9 @@ describe("public TV page with missing settings migration", () => {
     await act(async () => {
       container.querySelector("button")!.click();
     });
+    await act(async () => {
+      container.querySelector("button")!.click();
+    });
     expect(HTMLMediaElement.prototype.play).toHaveBeenCalled();
     await act(async () => {
       await vi.advanceTimersByTimeAsync(10000);
@@ -80,6 +83,9 @@ describe("public TV page with missing settings migration", () => {
     expect(document.activeElement).toBe(start);
     await act(async () => {
       start.click();
+    });
+    await act(async () => {
+      container.querySelector("button")!.click();
     });
     await act(async () => {
       await vi.advanceTimersByTimeAsync(8000);

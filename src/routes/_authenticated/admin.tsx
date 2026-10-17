@@ -17,6 +17,7 @@ import { useIsAdmin } from "@/hooks/use-is-admin";
 import { useUnsaved } from "@/hooks/use-unsaved";
 import { AdminShell, SECTIONS, type AdminSection } from "@/components/AdminShell";
 import { AudioSettingsPanel } from "@/components/AudioSettingsPanel";
+import { MusicProfilesPanel } from "@/components/MusicProfilesPanel";
 import { VideoLibrary } from "@/components/VideoLibrary";
 import { VideoEditor, type VideoDraft } from "@/components/VideoEditor";
 import { ScreenLibrary } from "@/components/ScreenLibrary";
@@ -65,7 +66,7 @@ function AdminPage() {
   const dirty =
     JSON.stringify(audio) !== JSON.stringify(savedAudio) ||
     JSON.stringify(labels) !== JSON.stringify(savedLabels);
-  useUnsaved(dirty || editing !== undefined);
+  useUnsaved(dirty || adDirty || editing !== undefined);
   async function load() {
     const controller = new AbortController();
     const deadline = setTimeout(() => controller.abort(), 12000);
@@ -356,6 +357,14 @@ function AdminPage() {
             />
           )}
           {section === "screens" && <ScreenLibrary />}
+          {lastSync && section === "profiles" && (
+            <MusicProfilesPanel
+              library={savedAudio.musicUrls}
+              labels={savedLabels}
+              volume={savedAudio.musicVolume}
+              onDirtyChange={setAdDirty}
+            />
+          )}
           {section === "ads" && <AdvertisementLibrary onDirtyChange={setAdDirty} />}
           {section === "diagnostics" && (
             <>

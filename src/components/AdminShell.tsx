@@ -18,6 +18,7 @@ export const SECTIONS = [
   { id: "videos", label: "Відеотека", icon: Library },
   { id: "ads", label: "Реклама", icon: Megaphone },
   { id: "audio", label: "Музика та звук", icon: Music2 },
+  { id: "profiles", label: "Музичні профілі", icon: Music2 },
   { id: "screens", label: "Екрани", icon: Monitor },
   { id: "diagnostics", label: "Діагностика", icon: Activity },
   { id: "settings", label: "Налаштування", icon: Settings2 },
