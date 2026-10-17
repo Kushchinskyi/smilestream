@@ -1,19 +1,18 @@
 // Offline admission only. Does not fetch, upload, execute SQL or alter the live catalog.
+import { readFileSync } from "node:fs";
+const retiredHashes = new Set(
+  JSON.parse(
+    readFileSync(new URL("../content/music-retired-recordings.json", import.meta.url), "utf8"),
+  ).recordings.map((track) => track.sha256),
+);
 export function premiumRejectionReasons(track) {
   const reasons = [];
-  const review = track.listening;
-  if (
-    review?.status !== "confirmed" ||
-    ![4, 5].includes(review.premiumFit) ||
-    !review.reviewer?.trim() ||
-    !review.reviewedAt ||
-    review.recordingSha256 !== track.technical?.sha256 ||
-    !review.notes?.trim()
-  )
-    reasons.push(
-      "потребує прослуховування: confirmed Premium Fit 4–5 for these exact bytes required",
-    );
-  if (track.legacyRejectedByClinic) reasons.push("previous selection rejected by clinic");
+  // Clinic policy 2026-10-18: human listening is informative, not an import gate.
+  // Metadata suitability must still be documented; no fabricated listening score.
+  if (track.styleAudit?.status !== "metadata_fit" || !track.styleAudit.evidence?.length)
+    reasons.push("documented genre/arrangement metadata fit required");
+  if (track.legacyRejectedByClinic || retiredHashes.has(track.technical?.sha256))
+    reasons.push("previous selection rejected by clinic");
   const rights = track.replacementRights;
   if (
     rights?.status !== "cleared" ||
@@ -48,7 +47,7 @@ export function premiumRejectionReasons(track) {
 }
 
 export function assertPremiumBatch(tracks) {
-  if (!tracks.length) throw Error("No approved replacement: keep current catalog");
+  if (!tracks.length) throw Error("No approved replacement: run without background music");
   const seen = new Set();
   for (const track of tracks) {
     const reasons = premiumRejectionReasons(track);

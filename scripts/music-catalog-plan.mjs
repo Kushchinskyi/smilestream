@@ -14,6 +14,8 @@ const https = (text) => {
 export function admitted(track, evidenceIds) {
   return (
     track.status === "verified" &&
+    track.importState !== "removed" &&
+    !track.legacyRejectedByClinic &&
     https(track.url) &&
     https(track.sourceUrl) &&
     https(track.licenseUrl) &&

@@ -111,3 +111,20 @@ it("deleted selection falls back to default and empty selection remains silent",
   expect(mocks.settings.mock.lastCall?.[0].musicUrls).toEqual([]);
   expect(mocks.start).toHaveBeenCalledTimes(1);
 });
+it("central library removal silences a remembered profile before profile polling catches up", () => {
+  localStorage.setItem(PROFILE_KEY, p.id);
+  setup();
+  fireEvent.click(screen.getByRole("button", { name: /Дивитися/ }));
+  fireEvent.click(screen.getByRole("button", { name: /Piano/ }));
+  expect(mocks.settings.mock.lastCall?.[0].musicUrls).toEqual(p.track_urls);
+  const starts = mocks.start.mock.calls.length;
+  feed(fetchAudio, { ...DEFAULT_AUDIO, musicUrls: [] });
+  expect(mocks.settings.mock.lastCall?.[0].musicUrls).toEqual([]);
+  // An old profile response cannot resurrect URLs removed from the central library.
+  feed(fetchMusicProfiles, [p]);
+  expect(mocks.settings.mock.lastCall?.[0].musicUrls).toEqual([]);
+  feed(fetchMusicProfiles, [{ ...p, track_urls: [] }]);
+  expect(mocks.settings.mock.lastCall?.[0].musicUrls).toEqual([]);
+  expect(mocks.start).toHaveBeenCalledTimes(starts);
+  expect(mocks.dispose).not.toHaveBeenCalled();
+});

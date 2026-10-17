@@ -4,27 +4,45 @@
   "profiles": [
     {
       "profile": "Jazz & Lounge",
-      "researchCandidates": 10
+      "researchCandidates": 10,
+      "target": 15,
+      "min": 10,
+      "max": 20
     },
     {
       "profile": "Lo-Fi & Chillhop",
-      "researchCandidates": 10
+      "researchCandidates": 10,
+      "target": 15,
+      "min": 10,
+      "max": 20
     },
     {
       "profile": "Ambient & Relax",
-      "researchCandidates": 10
+      "researchCandidates": 10,
+      "target": 15,
+      "min": 10,
+      "max": 20
     },
     {
       "profile": "Deep House & Chill Electronic",
-      "researchCandidates": 10
+      "researchCandidates": 10,
+      "target": 15,
+      "min": 10,
+      "max": 20
     },
     {
       "profile": "Soft Rock & Acoustic",
-      "researchCandidates": 10
+      "researchCandidates": 10,
+      "target": 15,
+      "min": 10,
+      "max": 20
     },
     {
       "profile": "Modern Pop & Nu-Disco",
-      "researchCandidates": 10
+      "researchCandidates": 10,
+      "target": 15,
+      "min": 10,
+      "max": 20
     }
   ],
   "tracks": [
@@ -42,7 +60,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -52,7 +70,41 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "restaurant",
+          "groove",
+          "lounge",
+          "Jazz",
+          "bass guitar",
+          "waiting",
+          "Cooking",
+          "coffee",
+          "cafe",
+          "cafetería",
+          "restaurante",
+          "elevator",
+          "bar",
+          "groovy",
+          "rhythm",
+          "drums",
+          "heavy",
+          "guitar"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/01840d16-209b-d939-6333-36bfbf0546a1"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "06ab6f7a-077c-45de-bf00-0ed687c28afe",
@@ -68,7 +120,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -78,7 +130,48 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "carefree",
+          "Lofi",
+          "Chill",
+          "Vlog",
+          "Hip Hop",
+          "simple",
+          "casual",
+          "piano",
+          "fresh",
+          "jazzy",
+          "Cooking",
+          "instrumental",
+          "easygoing",
+          "Exciting",
+          "tutorial",
+          "lounge",
+          "How To",
+          "beat",
+          "explainer",
+          "study",
+          "food",
+          "friendly",
+          "groovy",
+          "urban",
+          "flow"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/06ab6f7a-077c-45de-bf00-0ed687c28afe"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "39a7e116-785c-4b46-809e-de2b3f1323d5",
@@ -94,7 +187,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -104,7 +197,49 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Chill",
+          "luxury",
+          "beat",
+          "erotic",
+          "Night",
+          "Relaxing",
+          "Hip Hop",
+          "stylish",
+          "Jazz",
+          "soul",
+          "lifestyle",
+          "lounge",
+          "sensual",
+          "sexy",
+          "urban",
+          "Romantic",
+          "love",
+          "sophisticated",
+          "r&b",
+          "seductive",
+          "floating",
+          "luxurious",
+          "instrumental",
+          "dreamy",
+          "intimate",
+          "Funky"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/39a7e116-785c-4b46-809e-de2b3f1323d5"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "3b8280eb-dc65-4288-96db-d2f36de03cc9",
@@ -120,7 +255,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -130,7 +265,38 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Hip Hop/Rap",
+        "labels": [
+          "Lofi",
+          "Hip Hop",
+          "beat",
+          "jazzy",
+          "lounge",
+          "urban",
+          "Vlog",
+          "drums",
+          "Cool",
+          "Chill",
+          "Aesthetic",
+          "instrumental",
+          "sophisticated",
+          "Retro",
+          "smooth"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/3b8280eb-dc65-4288-96db-d2f36de03cc9"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "5d35077b-64b1-44a1-a33c-43c1d4ef7840",
@@ -146,7 +312,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -156,7 +322,37 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Hip Hop/Rap",
+        "labels": [
+          "Lofi",
+          "Hip Hop",
+          "beat",
+          "Jazz",
+          "positive",
+          "Aesthetic",
+          "lounge",
+          "Chill",
+          "instrumental",
+          "Retro",
+          "smooth",
+          "Relaxing",
+          "laidback",
+          "bright"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/5d35077b-64b1-44a1-a33c-43c1d4ef7840"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "6003b954-985c-4ced-8b6b-d571cfebb0f0",
@@ -172,7 +368,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -182,7 +378,39 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Easy Listening",
+        "labels": [
+          "Hip Hop",
+          "Chill",
+          "beat",
+          "laidback",
+          "nostalgic",
+          "evening",
+          "vintage",
+          "hazy",
+          "warm",
+          "Aesthetic",
+          "Jazz",
+          "Relaxing",
+          "dreamy",
+          "cafe",
+          "lounge",
+          "floating"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/6003b954-985c-4ced-8b6b-d571cfebb0f0"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "7e4d6faf-3dda-44cf-9ae4-bf6e045589fa",
@@ -198,7 +426,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -208,7 +436,45 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Hip Hop/Rap",
+        "labels": [
+          "luxury",
+          "Hip Hop",
+          "Jazz",
+          "Chill",
+          "beat",
+          "Aesthetic",
+          "lounge",
+          "instrumental",
+          "Retro",
+          "smooth",
+          "Relaxing",
+          "laidback",
+          "nostalgic",
+          "exclusive",
+          "Night",
+          "elegant",
+          "classy",
+          "sophisticated",
+          "warm",
+          "swing",
+          "drums",
+          "soulful"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/7e4d6faf-3dda-44cf-9ae4-bf6e045589fa"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "c7c31884-f971-4430-8190-31b1f79f3e68",
@@ -224,7 +490,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -234,7 +500,39 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Easy Listening",
+        "labels": [
+          "Relaxing",
+          "Lofi",
+          "instrumental",
+          "Jazz",
+          "walking",
+          "Vlog",
+          "Chill",
+          "beat",
+          "laidback",
+          "jazzy",
+          "gentle",
+          "lounge",
+          "downtempo",
+          "smooth",
+          "cafe",
+          "Night"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/c7c31884-f971-4430-8190-31b1f79f3e68"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "cc3d9f0e-53a1-405f-812b-abea2e3fb8be",
@@ -250,7 +548,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -260,7 +558,45 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "luxury",
+          "Hip Hop",
+          "Vlog",
+          "Jazz",
+          "lounge",
+          "Chill",
+          "sophisticated",
+          "cafe",
+          "city",
+          "smooth",
+          "Retro",
+          "beat",
+          "cozy",
+          "vintage",
+          "groovy",
+          "enchanting",
+          "luxurious",
+          "instrumental",
+          "elegant",
+          "classy",
+          "evening",
+          "Lofi"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/cc3d9f0e-53a1-405f-812b-abea2e3fb8be"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "de375052-13a2-1a5c-7da4-283f7daf7c94",
@@ -276,7 +612,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -286,7 +622,40 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "italian",
+          "Jazz",
+          "cozy",
+          "restaurant",
+          "Christmas",
+          "lounge",
+          "Chill",
+          "instrumental",
+          "sax",
+          "Cooking",
+          "Vlog",
+          "Morning",
+          "old school",
+          "vintage",
+          "Romantic",
+          "france",
+          "europe"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/de375052-13a2-1a5c-7da4-283f7daf7c94"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "f5096754-4ce7-f995-4ce8-25daef51ade9",
@@ -302,7 +671,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -312,7 +681,46 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Aesthetic",
+          "Relaxing",
+          "Chill",
+          "Lofi",
+          "piano",
+          "cute",
+          "instrumental",
+          "Vlog",
+          "How To",
+          "downtempo",
+          "beat",
+          "cassette",
+          "Retro",
+          "Intro",
+          "sweet",
+          "simple",
+          "mellow",
+          "easy",
+          "study",
+          "focus",
+          "outro",
+          "Cooking",
+          "chillhop"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/f5096754-4ce7-f995-4ce8-25daef51ade9"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "0ca27c3d-b234-46c3-82a0-67b334299711",
@@ -328,7 +736,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -338,7 +746,45 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Hip Hop/Rap",
+        "labels": [
+          "lounge",
+          "Lofi",
+          "beat",
+          "Chill",
+          "Aesthetic",
+          "instrumental",
+          "smooth",
+          "Relaxing",
+          "laidback",
+          "bright",
+          "Vlog",
+          "simple",
+          "nostalgic",
+          "birds",
+          "Nature",
+          "Morning",
+          "chillhop",
+          "cozy",
+          "airy",
+          "easy",
+          "study",
+          "vocal chops"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/0ca27c3d-b234-46c3-82a0-67b334299711"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "158e9227-d671-4280-b14c-cf228c52cc64",
@@ -354,7 +800,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -364,7 +810,41 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Lofi",
+          "casual",
+          "Vlog",
+          "beat",
+          "Aesthetic",
+          "Hip Hop",
+          "cozy",
+          "simple",
+          "homely",
+          "mellow",
+          "Night",
+          "instrumental",
+          "study",
+          "Relaxing",
+          "gentle",
+          "jazzy",
+          "nostalgic",
+          "chillhop"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/158e9227-d671-4280-b14c-cf228c52cc64"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "202f6745-784e-97aa-73c5-50653f5bdf16",
@@ -380,7 +860,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -390,7 +870,41 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Lofi",
+          "Night",
+          "Aesthetic",
+          "chillhop",
+          "beat",
+          "study",
+          "Vlog",
+          "Relaxing",
+          "mellow",
+          "Chill",
+          "drums",
+          "autumn",
+          "easy",
+          "guitar",
+          "piano",
+          "focus",
+          "simple",
+          "sentimental"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/202f6745-784e-97aa-73c5-50653f5bdf16"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "372fbc6c-b365-4159-97d9-0a83f88295e9",
@@ -406,7 +920,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -416,7 +930,38 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Instrumental",
+        "labels": [
+          "Chill",
+          "Hip Hop",
+          "beat",
+          "Aesthetic",
+          "piano",
+          "Vlog",
+          "mellow",
+          "Intro",
+          "cozy",
+          "Lofi",
+          "instrumental",
+          "Retro",
+          "chillhop",
+          "Relaxing",
+          "voice"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/372fbc6c-b365-4159-97d9-0a83f88295e9"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "56193a8c-d821-4a73-83ed-9e96f3e6caa2",
@@ -432,7 +977,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -442,7 +987,37 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Instrumental",
+        "labels": [
+          "Aesthetic",
+          "Chill",
+          "cozy",
+          "Relaxing",
+          "Lofi",
+          "beat",
+          "Night",
+          "dreamy",
+          "instrumental",
+          "chillhop",
+          "simple",
+          "fresh",
+          "Vlog",
+          "piano"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/56193a8c-d821-4a73-83ed-9e96f3e6caa2"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "5b515798-1d49-4c3d-9783-d7a2a78b5781",
@@ -458,7 +1033,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -468,7 +1043,42 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Instrumental",
+        "labels": [
+          "cozy",
+          "Aesthetic",
+          "Chill",
+          "Lofi",
+          "beat",
+          "Relaxing",
+          "piano",
+          "Night",
+          "instrumental",
+          "mellow",
+          "chillhop",
+          "simple",
+          "indoor",
+          "moody",
+          "Vlog",
+          "slow",
+          "autumn",
+          "homely",
+          "study"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/5b515798-1d49-4c3d-9783-d7a2a78b5781"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "5fa52877-d009-fd7f-d417-6e45d055aaac",
@@ -484,7 +1094,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -494,7 +1104,35 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Lofi",
+          "anime",
+          "beat",
+          "chillhop",
+          "Chill",
+          "Happy",
+          "whistle",
+          "joy",
+          "hopeful",
+          "melody",
+          "positive",
+          "Vlog"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/5fa52877-d009-fd7f-d417-6e45d055aaac"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "654e7631-341d-4af6-a40b-0f38039365c1",
@@ -510,7 +1148,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -520,7 +1158,35 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Instrumental",
+        "labels": [
+          "Vlog",
+          "chillhop",
+          "instrumental",
+          "Lofi",
+          "beat",
+          "piano",
+          "casual",
+          "Relaxing",
+          "mellow",
+          "lifestyle",
+          "Retro",
+          "autumn"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/654e7631-341d-4af6-a40b-0f38039365c1"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "667c016c-10b4-ee0a-21ed-a8606f750dbc",
@@ -536,7 +1202,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -546,7 +1212,41 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "spring",
+          "Aesthetic",
+          "Chill",
+          "Uplifting",
+          "Lofi",
+          "bright",
+          "Relaxing",
+          "Morning",
+          "piano",
+          "positive",
+          "Happy",
+          "beat",
+          "mellow",
+          "joyful",
+          "hopeful",
+          "Vlog",
+          "sweet",
+          "chillhop"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/667c016c-10b4-ee0a-21ed-a8606f750dbc"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "0455e5fe-58a0-005e-2207-d13b5f94c711",
@@ -562,7 +1262,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -572,7 +1272,41 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "minimal",
+          "Relaxing",
+          "Ambient",
+          "piano",
+          "Drone",
+          "mellow",
+          "dreamy",
+          "Calm",
+          "simple",
+          "Chill",
+          "Timelapse",
+          "serene",
+          "Nature",
+          "reflective",
+          "evocative",
+          "slow",
+          "atmospheric",
+          "Meditative"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/0455e5fe-58a0-005e-2207-d13b5f94c711"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "0cf661e0-f6dd-4501-b890-f80a963dde87",
@@ -588,7 +1322,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -598,7 +1332,47 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Soundtrack",
+        "labels": [
+          "neutral",
+          "piano",
+          "documentary",
+          "beds",
+          "balanced",
+          "factual",
+          "Calm",
+          "unobtrusive",
+          "informative",
+          "steady",
+          "atmospheric",
+          "simple",
+          "soundscape",
+          "Ambient",
+          "Nature",
+          "Drone",
+          "Timelapse",
+          "airy",
+          "minimal",
+          "Peaceful",
+          "gentle",
+          "storytelling",
+          "soft",
+          "narration"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/0cf661e0-f6dd-4501-b890-f80a963dde87"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "128458fc-9ba2-416d-8554-bec39631b384",
@@ -614,7 +1388,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -624,7 +1398,52 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Soundtrack",
+        "labels": [
+          "soundscape",
+          "Ambient",
+          "Peaceful",
+          "atmospheric",
+          "neutral",
+          "documentary",
+          "beds",
+          "balanced",
+          "factual",
+          "Calm",
+          "unobtrusive",
+          "steady",
+          "floating",
+          "piano",
+          "dreamy",
+          "Meditative",
+          "Relaxing",
+          "ethereal",
+          "Cinematic",
+          "serene",
+          "Nature",
+          "Drone",
+          "Timelapse",
+          "soothing",
+          "airy",
+          "study",
+          "sleep",
+          "meditation",
+          "narration"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/128458fc-9ba2-416d-8554-bec39631b384"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "2eb6c87d-2352-4961-8054-1a9963766e2e",
@@ -640,7 +1459,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -650,7 +1469,45 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Easy Listening",
+        "labels": [
+          "Ambient",
+          "beat",
+          "Timelapse",
+          "Modern",
+          "Chill",
+          "atmospheric",
+          "Drone",
+          "immersive",
+          "Emotional",
+          "simple",
+          "airy",
+          "floating",
+          "Electronic",
+          "voices",
+          "Cool",
+          "piano",
+          "aerial",
+          "Night",
+          "Technology",
+          "dreamy",
+          "evolving",
+          "city"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/2eb6c87d-2352-4961-8054-1a9963766e2e"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "308e78f1-7026-4b8e-9624-013986cdeb87",
@@ -666,7 +1523,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -676,7 +1533,42 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "beat",
+          "Chill",
+          "piano",
+          "Cool",
+          "instrumental",
+          "airy",
+          "Drone",
+          "simple",
+          "Ambient",
+          "floating",
+          "dreamy",
+          "atmospheric",
+          "Emotional",
+          "Timelapse",
+          "Night",
+          "ethereal",
+          "downtempo",
+          "evolving",
+          "Electronic"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/308e78f1-7026-4b8e-9624-013986cdeb87"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "3aff8d54-7167-4ee6-bf4d-1420523c6269",
@@ -692,7 +1584,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -702,7 +1594,49 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "New Age",
+        "labels": [
+          "Meditative",
+          "Peaceful",
+          "slow",
+          "piano",
+          "Calm",
+          "serene",
+          "quiet",
+          "atmospheric",
+          "sensitive",
+          "simple",
+          "melody",
+          "Ambient",
+          "introspection",
+          "relaxation",
+          "floating",
+          "soothing",
+          "tranquil",
+          "unwind",
+          "Emotional",
+          "focus",
+          "reflective",
+          "immersive",
+          "soft",
+          "dreamy",
+          "breathing",
+          "sentimental"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/3aff8d54-7167-4ee6-bf4d-1420523c6269"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "3b50d9e7-9d1e-942b-f735-fe699531815c",
@@ -718,7 +1652,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -728,7 +1662,47 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "dreamy",
+          "relief",
+          "Movie",
+          "Ambient",
+          "hopeful",
+          "Chill",
+          "waves",
+          "Cinematic",
+          "Emotional",
+          "piano",
+          "documentary",
+          "succesful",
+          "warm",
+          "expressive",
+          "sentimental",
+          "ocean",
+          "joy",
+          "excitement",
+          "build up",
+          "reflective",
+          "waiting",
+          "motivational",
+          "storytelling",
+          "nostalgic"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/3b50d9e7-9d1e-942b-f735-fe699531815c"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "5af22e8a-cdec-421f-92a7-90eaafe71b97",
@@ -744,7 +1718,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -754,7 +1728,47 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Soundtrack",
+        "labels": [
+          "documentary",
+          "unobtrusive",
+          "piano",
+          "neutral",
+          "balanced",
+          "beds",
+          "factual",
+          "Calm",
+          "informative",
+          "steady",
+          "simple",
+          "slow",
+          "atmospheric",
+          "Ambient",
+          "soundscape",
+          "Nature",
+          "Drone",
+          "Timelapse",
+          "minimal",
+          "Peaceful",
+          "gentle",
+          "storytelling",
+          "soft",
+          "narration"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/5af22e8a-cdec-421f-92a7-90eaafe71b97"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "70a9e65c-1d42-399e-a065-d05d3fe41896",
@@ -770,7 +1784,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -780,7 +1794,51 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Meditative",
+          "slow",
+          "Nature",
+          "Ambient",
+          "piano",
+          "Cinematic",
+          "nostalgia",
+          "birds",
+          "soothing",
+          "Peaceful",
+          "nostalgic",
+          "spring",
+          "reflective",
+          "Drone",
+          "Timelapse",
+          "Calm",
+          "easy",
+          "quiet",
+          "gentle",
+          "Relaxing",
+          "tranquil",
+          "zen",
+          "serene",
+          "healing",
+          "atmospheric",
+          "contemplative",
+          "Sad",
+          "somber"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "obvious_mismatch",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/70a9e65c-1d42-399e-a065-d05d3fe41896"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "75b57065-8942-4043-b508-39ee3bbc614a",
@@ -796,7 +1854,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -806,7 +1864,49 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Soundtrack",
+        "labels": [
+          "soundscape",
+          "informative",
+          "simple",
+          "neutral",
+          "documentary",
+          "beds",
+          "balanced",
+          "Peaceful",
+          "factual",
+          "Calm",
+          "minimal",
+          "unobtrusive",
+          "steady",
+          "Ambient",
+          "Drone",
+          "Timelapse",
+          "airy",
+          "gentle",
+          "storytelling",
+          "soft",
+          "narration",
+          "piano",
+          "Technology",
+          "reflective",
+          "slow",
+          "melody"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/75b57065-8942-4043-b508-39ee3bbc614a"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "f8a154cc-47cb-8220-ee4f-8e22fa1f52bc",
@@ -822,7 +1922,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -832,7 +1932,36 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "atmospheric",
+          "Chill",
+          "melodic",
+          "beat",
+          "House",
+          "deep",
+          "mellow",
+          "addictive",
+          "fresh",
+          "dynamic",
+          "Hype",
+          "Cool",
+          "dreamy"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/f8a154cc-47cb-8220-ee4f-8e22fa1f52bc"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "0701e4b6-fd97-4568-8228-654decf85265",
@@ -848,7 +1977,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -858,7 +1987,32 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "deep",
+          "House",
+          "Night",
+          "beat",
+          "driving",
+          "Electronic",
+          "Cool",
+          "dynamic",
+          "simple"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/0701e4b6-fd97-4568-8228-654decf85265"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "159a51ba-bc7d-6e53-c8a2-7bdbfef5c129",
@@ -874,7 +2028,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -884,7 +2038,36 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "80s",
+          "House",
+          "beat",
+          "Night",
+          "deep",
+          "bouncy",
+          "dynamic",
+          "Vlog",
+          "Advertising",
+          "instrumental",
+          "Cool",
+          "Timelapse",
+          "Funky"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/159a51ba-bc7d-6e53-c8a2-7bdbfef5c129"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "1cef70e7-c222-d1e5-fb17-2ad850b118aa",
@@ -900,7 +2083,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -910,7 +2093,37 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "deep",
+          "House",
+          "Cool",
+          "future",
+          "Workout",
+          "beat",
+          "intense",
+          "Electronic",
+          "Energetic",
+          "Powerful",
+          "lyrics",
+          "female",
+          "running",
+          "fitness"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/1cef70e7-c222-d1e5-fb17-2ad850b118aa"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "3d0cd393-54ab-a30a-997b-afca7484c948",
@@ -926,7 +2139,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -936,7 +2149,33 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "House",
+          "deep",
+          "slap",
+          "beat",
+          "melodic",
+          "dynamic",
+          "Sports",
+          "Cool",
+          "Travel",
+          "Adventure"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/3d0cd393-54ab-a30a-997b-afca7484c948"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "3f036e19-e318-4e6e-bd25-8a86b58f45c2",
@@ -952,7 +2191,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -962,7 +2201,35 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "New Age",
+        "labels": [
+          "Mysterious",
+          "Ambient",
+          "Night",
+          "atmospheric",
+          "dark",
+          "Sad",
+          "immersive",
+          "melancholy",
+          "floating",
+          "Emotional",
+          "deep",
+          "somber"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "obvious_mismatch",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/3f036e19-e318-4e6e-bd25-8a86b58f45c2"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "4992bcb6-427b-d41f-7efd-56ce6f689587",
@@ -978,7 +2245,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -988,7 +2255,38 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "deep",
+          "House",
+          "Cool",
+          "Night",
+          "Workout",
+          "beat",
+          "Electronic",
+          "future",
+          "dynamic",
+          "intense",
+          "Gaming",
+          "EDM",
+          "Advertising",
+          "futuristic",
+          "Powerful"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/4992bcb6-427b-d41f-7efd-56ce6f689587"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "4b6a8c63-9688-d427-b2c2-ac7541d52356",
@@ -1004,7 +2302,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1014,7 +2312,35 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "dynamic",
+          "House",
+          "Electronic",
+          "sax",
+          "deep",
+          "Cool",
+          "Travel",
+          "Adventure",
+          "saxophone",
+          "beat",
+          "Energetic",
+          "futuristic"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/4b6a8c63-9688-d427-b2c2-ac7541d52356"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "4c33c998-e04a-13a0-7345-b7bcd15493c1",
@@ -1030,7 +2356,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1040,7 +2366,38 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "deep",
+          "House",
+          "Summer",
+          "vibes",
+          "Chill",
+          "ibiza",
+          "beat",
+          "Adventure",
+          "beach",
+          "guitar",
+          "instrumental",
+          "sunset",
+          "Night",
+          "lounge",
+          "Emotional"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/4c33c998-e04a-13a0-7345-b7bcd15493c1"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "50440375-e8e6-5df7-9cdc-0997532f86c0",
@@ -1056,7 +2413,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1066,7 +2423,37 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "deep",
+          "House",
+          "Mysterious",
+          "groovy",
+          "instrumental",
+          "beat",
+          "dreamy",
+          "Night",
+          "ominous",
+          "hypnotic",
+          "nocturnal",
+          "bass",
+          "weird",
+          "Cool"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/50440375-e8e6-5df7-9cdc-0997532f86c0"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "e9df589f-1286-e430-d5a2-7acbfc9b3ffb",
@@ -1082,7 +2469,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1092,7 +2479,51 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "positive",
+          "guitar",
+          "cheerful",
+          "Intro",
+          "Uplifting",
+          "Kids",
+          "Travel",
+          "Summer",
+          "Happy",
+          "Cooking",
+          "Advertising",
+          "birthday",
+          "bright",
+          "celebration",
+          "Fun",
+          "playful",
+          "optimistic",
+          "abstract",
+          "inspirational",
+          "soft",
+          "strings",
+          "whistle",
+          "school",
+          "holiday",
+          "engaging",
+          "children",
+          "acoustic",
+          "joyful"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/e9df589f-1286-e430-d5a2-7acbfc9b3ffb"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "4b0e5836-596a-b937-fbd1-fdff19772f83",
@@ -1108,7 +2539,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1118,7 +2549,42 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "percussion",
+          "drums",
+          "instrumental",
+          "acoustic",
+          "rhythmic",
+          "jungle",
+          "Upbeat",
+          "journey",
+          "cultural",
+          "simple",
+          "Adventure",
+          "tribal",
+          "ethnic",
+          "ceremony",
+          "exploration",
+          "traditional",
+          "roots",
+          "groovy",
+          "foreign"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/4b0e5836-596a-b937-fbd1-fdff19772f83"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "acffc6ff-ecec-9217-c532-6ddd1b506283",
@@ -1134,7 +2600,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1144,7 +2610,37 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "american",
+          "western",
+          "guitar",
+          "acoustic",
+          "country",
+          "rhythmic",
+          "driven",
+          "moody",
+          "prairie",
+          "evocative",
+          "cowboy",
+          "Adventure",
+          "rustic",
+          "wanderlust"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/acffc6ff-ecec-9217-c532-6ddd1b506283"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "12ac0635-cdd3-4a19-a28f-d5d807278052",
@@ -1160,7 +2656,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1170,7 +2666,40 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Instrumental",
+        "labels": [
+          "guitar",
+          "Kids",
+          "Chill",
+          "playful",
+          "innocent",
+          "children",
+          "beat",
+          "sentimental",
+          "rhythmic",
+          "friendly",
+          "acoustic",
+          "family",
+          "cozy",
+          "cartoonish",
+          "cute",
+          "bright",
+          "lighthearted"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/12ac0635-cdd3-4a19-a28f-d5d807278052"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "140fa163-6bd3-47d6-b186-bd0b7533a740",
@@ -1186,7 +2715,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1196,7 +2725,36 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Instrumental",
+        "labels": [
+          "guitar",
+          "beat",
+          "melancholy",
+          "autumn",
+          "thoughtful",
+          "heartfelt",
+          "acoustic",
+          "dreamy",
+          "handclap",
+          "reflective",
+          "simple",
+          "Mysterious",
+          "Chill"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/140fa163-6bd3-47d6-b186-bd0b7533a740"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "24b9fe90-4745-4743-b27e-122303f52cb6",
@@ -1212,7 +2770,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1222,7 +2780,41 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Instrumental",
+        "labels": [
+          "rhythmic",
+          "joyful",
+          "bright",
+          "Fun",
+          "Uplifting",
+          "playful",
+          "guitar",
+          "beat",
+          "curious",
+          "Kids",
+          "smiling",
+          "Cooking",
+          "children",
+          "friendly",
+          "cheerful",
+          "acoustic",
+          "bouncy",
+          "family"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/24b9fe90-4745-4743-b27e-122303f52cb6"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "25b07db9-e62f-41d2-8609-5a882f3ef948",
@@ -1238,7 +2830,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1248,7 +2840,43 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Easy Listening",
+        "labels": [
+          "gentle",
+          "ukulele",
+          "simple",
+          "acoustic",
+          "Peaceful",
+          "Sad",
+          "reflective",
+          "percussion",
+          "quiet",
+          "lighthearted",
+          "soft",
+          "Emotional",
+          "slow",
+          "guitar",
+          "strings",
+          "unwind",
+          "thoughtful",
+          "melody",
+          "mellow",
+          "Calm"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "obvious_mismatch",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/25b07db9-e62f-41d2-8609-5a882f3ef948"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "2f19165c-a9ae-4a1e-ab49-1aee42b115e4",
@@ -1264,7 +2892,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1274,7 +2902,53 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "cozy",
+          "acoustic",
+          "guitar",
+          "slow",
+          "nostalgic",
+          "Calm",
+          "dreamy",
+          "clean",
+          "Emotional",
+          "gentle",
+          "reflective",
+          "journey",
+          "Peaceful",
+          "simple",
+          "soft",
+          "warm",
+          "Chill",
+          "responsible",
+          "atmospheric",
+          "joyful",
+          "Vlog",
+          "downtempo",
+          "easygoing",
+          "friendly",
+          "sentimental",
+          "Relaxing",
+          "memories",
+          "unwind",
+          "mindful",
+          "melancholic"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/2f19165c-a9ae-4a1e-ab49-1aee42b115e4"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "353d9dce-7e9a-b136-330f-3a532b28d512",
@@ -1290,7 +2964,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1300,7 +2974,34 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "lush",
+          "guitar",
+          "acoustic",
+          "minimalistic",
+          "hopeful",
+          "slow",
+          "longing",
+          "simple",
+          "sweet",
+          "desire",
+          "downtempo"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/353d9dce-7e9a-b136-330f-3a532b28d512"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "430fbd18-f360-4463-bf82-b514c0c4a182",
@@ -1316,7 +3017,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1326,7 +3027,38 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Instrumental",
+        "labels": [
+          "Kids",
+          "playful",
+          "guitar",
+          "innocent",
+          "children",
+          "beat",
+          "rhythmic",
+          "friendly",
+          "acoustic",
+          "Chill",
+          "family",
+          "cozy",
+          "cartoonish",
+          "cute",
+          "exploring"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/430fbd18-f360-4463-bf82-b514c0c4a182"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "b7dca04d-98c2-a7fc-6caf-8b85492e9492",
@@ -1342,7 +3074,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1352,7 +3084,51 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "trendy",
+          "Disco",
+          "Funky",
+          "Energetic",
+          "Cool",
+          "Upbeat",
+          "Party",
+          "Advertising",
+          "Fun",
+          "Exciting",
+          "futuristic",
+          "groovy",
+          "fashion",
+          "stylish",
+          "tailor",
+          "runway",
+          "instrumental",
+          "rhythmic",
+          "vintage",
+          "beat",
+          "Retro",
+          "synths",
+          "event",
+          "strings",
+          "catchy",
+          "slick",
+          "Intro",
+          "80s"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/b7dca04d-98c2-a7fc-6caf-8b85492e9492"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "c79703ae-9644-7036-ec61-d2ad4026c0ec",
@@ -1368,7 +3144,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1378,7 +3154,42 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Medieval",
+          "Cinematic",
+          "Adventure",
+          "Movie",
+          "ancient",
+          "Epic",
+          "discovery",
+          "magnificent",
+          "legendary",
+          "orchestra",
+          "intense",
+          "film",
+          "Inspiring",
+          "thrilling",
+          "trailer",
+          "build up",
+          "fairy tale",
+          "exhilerating",
+          "orchestral"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "obvious_mismatch",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/c79703ae-9644-7036-ec61-d2ad4026c0ec"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "e18627b1-2ce9-624c-4d91-1b1f96e25c5c",
@@ -1394,7 +3205,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1404,7 +3215,37 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "bouncy",
+          "Funky",
+          "drums",
+          "beat",
+          "Cool",
+          "Retro",
+          "80s",
+          "old school",
+          "Hip Hop",
+          "Advertising",
+          "instrumental",
+          "Disco",
+          "dynamic",
+          "groovy"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/e18627b1-2ce9-624c-4d91-1b1f96e25c5c"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "4488447b-2571-249a-c60f-1a6565f3455d",
@@ -1420,7 +3261,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1430,7 +3271,40 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Energetic",
+          "Funky",
+          "Disco",
+          "Upbeat",
+          "Dance",
+          "Party",
+          "vocoders",
+          "event",
+          "Cool",
+          "80s",
+          "Retro",
+          "groovy",
+          "instrumental",
+          "Advertising",
+          "beat",
+          "catchy",
+          "synths"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/4488447b-2571-249a-c60f-1a6565f3455d"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "4e451dd5-8955-5804-8ede-abeadb65c913",
@@ -1446,7 +3320,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1456,7 +3330,40 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Disco",
+          "Funky",
+          "event",
+          "guitar",
+          "Cool",
+          "Dance",
+          "80s",
+          "Party",
+          "Retro",
+          "groovy",
+          "rhythmic",
+          "instrumental",
+          "Advertising",
+          "beat",
+          "catchy",
+          "synths",
+          "vintage"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/4e451dd5-8955-5804-8ede-abeadb65c913"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "52f9571c-44a4-97bc-0e26-d8d5b3542ae1",
@@ -1472,7 +3379,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1482,7 +3389,46 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Disco",
+          "catchy",
+          "Uplifting",
+          "celebration",
+          "Funky",
+          "rhythmic",
+          "Advertising",
+          "Fun",
+          "Cool",
+          "string",
+          "Dance",
+          "melody",
+          "synths",
+          "bongos",
+          "bright",
+          "instrumental",
+          "80s",
+          "success",
+          "Party",
+          "Retro",
+          "groovy",
+          "jam",
+          "Intro"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/52f9571c-44a4-97bc-0e26-d8d5b3542ae1"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "55565d5d-a311-accd-3e21-95f58f2b829f",
@@ -1498,7 +3444,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1508,7 +3454,41 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "french",
+          "Disco",
+          "Dance",
+          "Funky",
+          "nightclub",
+          "Cool",
+          "jam",
+          "flip",
+          "techno",
+          "Party",
+          "Retro",
+          "beat",
+          "instrumental",
+          "Advertising",
+          "Electronic",
+          "drums",
+          "80s",
+          "old school"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/55565d5d-a311-accd-3e21-95f58f2b829f"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "58ce355e-9db1-1181-4d76-c6f2cf4b39f0",
@@ -1524,7 +3504,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1534,7 +3514,41 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Funky",
+          "Chill",
+          "Disco",
+          "Fun",
+          "Vlog",
+          "Retro",
+          "Cool",
+          "Advertising",
+          "instrumental",
+          "beat",
+          "groovy",
+          "good vibes",
+          "fresh",
+          "event",
+          "rhythmic",
+          "Energetic",
+          "vintage",
+          "vibrant"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/58ce355e-9db1-1181-4d76-c6f2cf4b39f0"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "5d74da71-f734-07b9-5ab9-39545dc6416c",
@@ -1550,7 +3564,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1560,7 +3574,36 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Dance",
+          "Funky",
+          "Energetic",
+          "Party",
+          "fresh",
+          "House",
+          "Disco",
+          "Cool",
+          "ibiza",
+          "Upbeat",
+          "Advertising",
+          "lively",
+          "Fun"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/5d74da71-f734-07b9-5ab9-39545dc6416c"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     },
     {
       "id": "7260971e-9849-8d5e-e710-bd9bae49e33c",
@@ -1576,7 +3619,7 @@
       "technicalStatus": "not_audited",
       "listening": {
         "status": "needs_listening",
-        "label": "потребує прослуховування",
+        "label": "Потребує прослуховування",
         "premiumFit": null,
         "automaticPremiumFit": null
       },
@@ -1586,7 +3629,48 @@
         "publicMp3Hosting": false,
         "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
       },
-      "approvedForRotation": false
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "groovy",
+          "synths",
+          "Disco",
+          "Retro",
+          "soulful",
+          "drums",
+          "Funky",
+          "Advertising",
+          "rhythmic",
+          "beat",
+          "instrumental",
+          "nu-disco",
+          "Cool",
+          "guitar"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/7260971e-9849-8d5e-e710-bd9bae49e33c"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
     }
-  ]
+  ],
+  "targetUniqueTracks": {
+    "min": 60,
+    "preferred": 90,
+    "max": 120
+  },
+  "targetPerMainProfile": {
+    "min": 10,
+    "preferred": 15,
+    "max": 20
+  },
+  "listeningBlocksImport": false
 }

@@ -20,6 +20,7 @@ test("retired initial import command refuses before rewriting live catalog artif
 const track = () => ({
   id: "fixture",
   url: "https://example.org/music.mp3",
+  styleAudit: { status: "metadata_fit", evidence: ["fixture-source-metadata"] },
   listening: {
     status: "confirmed",
     premiumFit: 4,
@@ -47,21 +48,31 @@ const track = () => ({
     browserPlaybackConfirmed: true,
   },
 });
-test("automatic score cannot substitute for confirmed listening", () => {
+test("needs-listening does not block technically and legally admitted metadata-fit tracks", () => {
   const t = track();
-  t.listening = { status: "automatic", premiumFit: 5 };
-  assert.throws(() => assertPremiumBatch([t]), /прослуховування/);
+  t.listening = { status: "needs_listening", premiumFit: null };
+  assertPremiumBatch([t]);
+  assert.equal(t.listening.premiumFit, null);
 });
-test("rating belongs to exact recording; low scores and rejected legacy tracks fail", () => {
+test("missing metadata assessment and rejected legacy recordings fail", () => {
   for (const change of [
-    (t) => (t.listening.premiumFit = 3),
-    (t) => (t.listening.recordingSha256 = "b".repeat(64)),
+    (t) => (t.styleAudit.status = "not_audited"),
+    (t) => (t.styleAudit.evidence = []),
     (t) => (t.legacyRejectedByClinic = true),
   ]) {
     const t = track();
     change(t);
     assert.throws(() => assertPremiumBatch([t]));
   }
+});
+test("renaming or rehosting a retired recording cannot bypass its byte hash exclusion", () => {
+  const retired = JSON.parse(
+    readFileSync(new URL("../content/music-retired-recordings.json", import.meta.url), "utf8"),
+  );
+  const t = track();
+  t.technical.sha256 = retired.recordings[0].sha256;
+  t.url = "https://example.org/renamed.mp3";
+  assert.throws(() => assertPremiumBatch([t]), /previous selection/);
 });
 test("hosting, clinic rights and actual technical checks are independently required", () => {
   for (const change of [
@@ -76,7 +87,7 @@ test("hosting, clinic rights and actual technical checks are independently requi
   }
 });
 test("empty replacement and duplicates fail; audit is pure", () => {
-  assert.throws(() => assertPremiumBatch([]), /keep current/);
+  assert.throws(() => assertPremiumBatch([]), /without background/);
   const t = track(),
     before = JSON.stringify(t);
   assertPremiumBatch([t]);

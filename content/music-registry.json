@@ -1,7 +1,17 @@
 {
   "schemaVersion": 1,
   "checkedAt": "2026-10-17",
-  "targetAssignments": 350,
+  "targetAssignments": {
+    "uniqueMin": 60,
+    "uniquePreferred": 90,
+    "uniqueMax": 120,
+    "perMainProfile": {
+      "min": 10,
+      "preferred": 15,
+      "max": 20
+    },
+    "automix": "derived from six profiles"
+  },
   "policy": "Only verified original recordings. No legal_review imports. No assumption that royalty-free/CC0 overrides non-waivable local rights. Clearance is based on primary creator permission/dedication and source authority; not a legal opinion.",
   "humanListeningLimitation": "No claim of complete human listening or physical Samsung testing. Full-file decoding, loudness measurement and primary genre/mood screening were performed for selected files.",
   "profiles": [
@@ -233,8 +243,8 @@
       },
       "attribution": "Acoustic Guitar #1 — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:57.306Z",
@@ -284,9 +294,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 174.4228,
-      "sourceAudioUrl": "https://audionautix.com/Music/AcousticGuitar1.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/AcousticGuitar1.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-0a7350744b6c6c3a",
@@ -314,8 +325,8 @@
       },
       "attribution": "Acoustic Shuffle — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:59.579Z",
@@ -365,9 +376,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 162.955025,
-      "sourceAudioUrl": "https://audionautix.com/Music/AcousticShuffle.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/AcousticShuffle.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-330885e9608a744c",
@@ -395,8 +407,8 @@
       },
       "attribution": "Autumn Sunset — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:01.456Z",
@@ -446,9 +458,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 96.3215,
-      "sourceAudioUrl": "https://audionautix.com/Music/AutumnSunset.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/AutumnSunset.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-be27fefb5b9a6f10",
@@ -476,8 +489,8 @@
       },
       "attribution": "Cold Morning — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:02.613Z",
@@ -527,9 +540,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 164.522378,
-      "sourceAudioUrl": "https://audionautix.com/Music/ColdMorning.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/ColdMorning.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-015d9366dc24e684",
@@ -557,8 +571,8 @@
       },
       "attribution": "Cool Steel Breeze — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:03.556Z",
@@ -608,9 +622,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 188.5028,
-      "sourceAudioUrl": "https://audionautix.com/Music/CoolSteelBreeze.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/CoolSteelBreeze.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-8a5649ad978d272a",
@@ -675,8 +690,8 @@
       },
       "attribution": "Green Leaves — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:04.546Z",
@@ -726,9 +741,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 220.685656,
-      "sourceAudioUrl": "https://audionautix.com/Music/GreenLeaves.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/GreenLeaves.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-968dd7e727571b63",
@@ -830,8 +846,8 @@
       },
       "attribution": "Landra's Dream — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:06.388Z",
@@ -881,9 +897,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 88.924025,
-      "sourceAudioUrl": "https://audionautix.com/Music/LandrasDream.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/LandrasDream.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-3a22cc04830490da",
@@ -911,8 +928,8 @@
       },
       "attribution": "One Fine Day — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:07.867Z",
@@ -962,9 +979,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 103.3207,
-      "sourceAudioUrl": "https://audionautix.com/Music/OneFineDay.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/OneFineDay.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-a416c0ce8cd6310c",
@@ -1029,8 +1047,8 @@
       },
       "attribution": "Paper Wings — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:09.211Z",
@@ -1080,9 +1098,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 196.5485,
-      "sourceAudioUrl": "https://audionautix.com/Music/PaperWings.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/PaperWings.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-03577089f06d8bc1",
@@ -1147,8 +1166,8 @@
       },
       "attribution": "Redwood Trail — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:09.399Z",
@@ -1198,9 +1217,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 118.3379,
-      "sourceAudioUrl": "https://audionautix.com/Music/RedwoodTrail.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/RedwoodTrail.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-1d112bfd45a8ef0f",
@@ -1365,8 +1385,8 @@
       },
       "attribution": "Serenity — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:13.145Z",
@@ -1416,9 +1436,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 110.217,
-      "sourceAudioUrl": "https://audionautix.com/Music/Serenity.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/Serenity.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-d6031489eee07af6",
@@ -1446,8 +1467,8 @@
       },
       "attribution": "Solo Acoustic #3 — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:13.611Z",
@@ -1497,9 +1518,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 126.644825,
-      "sourceAudioUrl": "https://audionautix.com/Music/SoloAcoustic3.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/SoloAcoustic3.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-fb3defff44f55198",
@@ -1527,8 +1549,8 @@
       },
       "attribution": "Solo Acoustic #5 — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:13.993Z",
@@ -1578,9 +1600,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 141.404025,
-      "sourceAudioUrl": "https://audionautix.com/Music/SoloAcoustic5.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/SoloAcoustic5.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-66f515ef71f2b08f",
@@ -1682,8 +1705,8 @@
       },
       "attribution": "Walk In The Park Full — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:16.298Z",
@@ -1733,9 +1756,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 165.175456,
-      "sourceAudioUrl": "https://audionautix.com/Music/WalkInTheParkFull.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/WalkInTheParkFull.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-79b80b4a07fab5c8",
@@ -1763,8 +1787,8 @@
       },
       "attribution": "Words — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:17.186Z",
@@ -1814,9 +1838,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 155.567189,
-      "sourceAudioUrl": "https://audionautix.com/Music/Words.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/Words.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-934e34453d552465",
@@ -1881,8 +1906,8 @@
       },
       "attribution": "12 Mornings — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:20.774Z",
@@ -1932,9 +1957,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 153.399,
-      "sourceAudioUrl": "https://audionautix.com/Music/12Mornings.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/12Mornings.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-759bfc88d0fd50c0",
@@ -1962,8 +1988,8 @@
       },
       "attribution": "Alison — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:23.256Z",
@@ -2013,9 +2039,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 175.78115,
-      "sourceAudioUrl": "https://audionautix.com/Music/Alison.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/Alison.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-6906bab5e57b1ed4",
@@ -2154,8 +2181,8 @@
       },
       "attribution": "Emily Walks Away — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:24.923Z",
@@ -2205,9 +2232,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 183.4633,
-      "sourceAudioUrl": "https://audionautix.com/Music/EmilyWalksAway.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/EmilyWalksAway.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-605679e281001968",
@@ -2235,8 +2263,8 @@
       },
       "attribution": "Go Not Gently — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:25.818Z",
@@ -2286,9 +2314,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 194.772175,
-      "sourceAudioUrl": "https://audionautix.com/Music/GoNotGently.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/GoNotGently.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-48be6c99afe27f83",
@@ -2316,8 +2345,8 @@
       },
       "attribution": "Hope Against Hope — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:26.255Z",
@@ -2367,9 +2396,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 101.097075,
-      "sourceAudioUrl": "https://audionautix.com/Music/HopeAgainstHope.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/HopeAgainstHope.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-a314348ae5a3c7ac",
@@ -2397,8 +2427,8 @@
       },
       "attribution": "In The Field — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:28.104Z",
@@ -2448,9 +2478,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 107.7354,
-      "sourceAudioUrl": "https://audionautix.com/Music/InTheField.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/InTheField.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-38d8a531f9a4b4ba",
@@ -2478,8 +2509,8 @@
       },
       "attribution": "Lazy Day — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:28.797Z",
@@ -2529,9 +2560,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 133.88395,
-      "sourceAudioUrl": "https://audionautix.com/Music/LazyDay.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/LazyDay.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-bec52b874272fe84",
@@ -2596,8 +2628,8 @@
       },
       "attribution": "Med Tempo Rock — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:30.656Z",
@@ -2647,9 +2679,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 247.706,
-      "sourceAudioUrl": "https://audionautix.com/Music/MedTempoRock.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/MedTempoRock.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-57c7b5bdcd726900",
@@ -2677,8 +2710,8 @@
       },
       "attribution": "Medium Rock — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:31.842Z",
@@ -2728,9 +2761,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 233.803938,
-      "sourceAudioUrl": "https://audionautix.com/Music/MediumRock.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/MediumRock.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-24b8741690135ebe",
@@ -2758,8 +2792,8 @@
       },
       "attribution": "Pioneers — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:32.165Z",
@@ -2809,9 +2843,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 173.43015,
-      "sourceAudioUrl": "https://audionautix.com/Music/Pioneers.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/Pioneers.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-751dae7047790ee9",
@@ -2913,8 +2948,8 @@
       },
       "attribution": "Shadow Of Truth — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:34.043Z",
@@ -2964,9 +2999,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 250.047278,
-      "sourceAudioUrl": "https://audionautix.com/Music/ShadowOfTruth.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/ShadowOfTruth.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-89c6fcea93304173",
@@ -3179,8 +3215,8 @@
       },
       "attribution": "Triangle — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:35.981Z",
@@ -3230,9 +3266,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 220.973,
-      "sourceAudioUrl": "https://audionautix.com/Music/Triangle.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/Triangle.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-1d055830c6528b84",
@@ -3334,8 +3371,8 @@
       },
       "attribution": "Acrylic On Canvas — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:51.971Z",
@@ -3385,9 +3422,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 121.211325,
-      "sourceAudioUrl": "https://audionautix.com/Music/AcrylicOnCanvas.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/AcrylicOnCanvas.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-868a273e5a0f8286",
@@ -3415,8 +3453,8 @@
       },
       "attribution": "Algorithm — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:53.778Z",
@@ -3466,9 +3504,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 226.067689,
-      "sourceAudioUrl": "https://audionautix.com/Music/Algorithm.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/Algorithm.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-5928d370f0d0352e",
@@ -4188,8 +4227,8 @@
       },
       "attribution": "Acoustic Meditation — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:17.604Z",
@@ -4239,9 +4278,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 194.5632,
-      "sourceAudioUrl": "https://audionautix.com/Music/AcousticMeditation2.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/AcousticMeditation2.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-177c528c1f97b814",
@@ -4554,8 +4594,8 @@
       },
       "attribution": "Thingamajig — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:19.809Z",
@@ -4605,9 +4645,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 233.61945,
-      "sourceAudioUrl": "https://audionautix.com/Music/Thingamajig.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/Thingamajig.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-a4c74dc9cce2539a",
@@ -5031,8 +5072,8 @@
       },
       "attribution": "Okey Dokey Smokey — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:20.829Z",
@@ -5082,9 +5123,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 148.848925,
-      "sourceAudioUrl": "https://audionautix.com/Music/OkeyDokeySmokey.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/OkeyDokeySmokey.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-694e5c64d0a31155",
@@ -5297,8 +5339,8 @@
       },
       "attribution": "Sideways Samba — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:20.830Z",
@@ -5348,9 +5390,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 190.9583,
-      "sourceAudioUrl": "https://audionautix.com/Music/SidewaysSamba.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/SidewaysSamba.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-be44bed76796126a",
@@ -5378,8 +5421,8 @@
       },
       "attribution": "Standard Jazz Bars — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:24.392Z",
@@ -5429,9 +5472,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 182.212067,
-      "sourceAudioUrl": "https://audionautix.com/Music/StandardJazzBars.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/StandardJazzBars.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-a586104e65ce592f",
@@ -5459,8 +5503,8 @@
       },
       "attribution": "Code Blue — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:24.826Z",
@@ -5510,9 +5554,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 142.741063,
-      "sourceAudioUrl": "https://audionautix.com/Music/CodeBlue.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/CodeBlue.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-b45700f7e61f29cb",
@@ -5540,8 +5585,8 @@
       },
       "attribution": "Cop A Feel — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:27.565Z",
@@ -5591,9 +5636,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 148.6138,
-      "sourceAudioUrl": "https://audionautix.com/Music/CopAFeel.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/CopAFeel.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-4f8de0532ac75caa",
@@ -5658,8 +5704,8 @@
       },
       "attribution": "Dat Groove Full Track — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:28.382Z",
@@ -5709,9 +5755,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 129.648925,
-      "sourceAudioUrl": "https://audionautix.com/Music/DatGrooveFullTrack.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/DatGrooveFullTrack.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-4783de00bff4ff17",
@@ -5776,8 +5823,8 @@
       },
       "attribution": "Fat Caps — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:31.157Z",
@@ -5827,9 +5874,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 178.47495,
-      "sourceAudioUrl": "https://audionautix.com/Music/FatCaps.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/FatCaps.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-8033f7524fab268d",
@@ -6005,8 +6053,8 @@
       },
       "attribution": "Smooth Sailing Full Track — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:32.336Z",
@@ -6056,9 +6104,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 336.016256,
-      "sourceAudioUrl": "https://audionautix.com/Music/SmoothSailingFullTrack.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/SmoothSailingFullTrack.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-5c0c8e0e3e31ab5b",
@@ -6086,8 +6135,8 @@
       },
       "attribution": "Summer Sidewalk — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:34.461Z",
@@ -6137,9 +6186,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 148.9534,
-      "sourceAudioUrl": "https://audionautix.com/Music/SummerSidewalk.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/SummerSidewalk.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-dc7190063ead174d",
@@ -6204,8 +6254,8 @@
       },
       "attribution": "Beautiful Daughter — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:36.768Z",
@@ -6255,9 +6305,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 164.026844,
-      "sourceAudioUrl": "https://audionautix.com/Music/Beautiful%20Daughter.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/Beautiful%20Daughter.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-e9d0cf0268634e80",
@@ -6285,8 +6336,8 @@
       },
       "attribution": "Jellyfish — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:37.837Z",
@@ -6336,9 +6387,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 202.140071,
-      "sourceAudioUrl": "https://audionautix.com/Music/Jellyfish.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/Jellyfish.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-eb5eeaff96bb90c2",
@@ -6429,8 +6481,8 @@
       },
       "attribution": "Trippin Coffee — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:39.333Z",
@@ -6480,9 +6532,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 213.842375,
-      "sourceAudioUrl": "https://audionautix.com/Music/TrippinCoffee.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/TrippinCoffee.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-3645c566406e4e11",
@@ -6510,8 +6563,8 @@
       },
       "attribution": "Tropical Contact — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:41.067Z",
@@ -6561,9 +6614,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 205.0612,
-      "sourceAudioUrl": "https://audionautix.com/Music/TropicalContact.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/TropicalContact.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-f57a37394ac1a4ba",
@@ -6591,8 +6645,8 @@
       },
       "attribution": "Namaste — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:43.289Z",
@@ -6642,9 +6696,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 327.8954,
-      "sourceAudioUrl": "https://audionautix.com/Music/Namaste.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/Namaste.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-334cbb15a62e26cb",
@@ -6672,8 +6727,8 @@
       },
       "attribution": "Navajo Night — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:43.328Z",
@@ -6723,9 +6778,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 1440.05865,
-      "sourceAudioUrl": "https://audionautix.com/Music/NavajoNight.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/NavajoNight.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-282d2247f23af15d",
@@ -6753,8 +6809,8 @@
       },
       "attribution": "Ohm — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:44.714Z",
@@ -6804,9 +6860,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 369.1134,
-      "sourceAudioUrl": "https://audionautix.com/Music/Ohm.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/Ohm.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-52ad90abfbbaa385",
@@ -6834,8 +6891,8 @@
       },
       "attribution": "Running Waters — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:48.754Z",
@@ -6885,9 +6942,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 166.559925,
-      "sourceAudioUrl": "https://audionautix.com/Music/RunningWaters.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/RunningWaters.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-0c6d8c62fe998642",
@@ -7026,8 +7084,8 @@
       },
       "attribution": "Groovy Baby — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:35.981Z",
@@ -7077,9 +7135,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 147.93785,
-      "sourceAudioUrl": "https://audionautix.com/Music/GroovyBaby.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/GroovyBaby.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-7316fb22aca3fdae",
@@ -8587,8 +8646,8 @@
       },
       "attribution": "Forever Believe — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:37.859Z",
@@ -8638,9 +8697,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 162.3574,
-      "sourceAudioUrl": "https://audionautix.com/Music/ForeverBelieve.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/ForeverBelieve.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-708baec4656da913",
@@ -8916,8 +8976,8 @@
       },
       "attribution": "Pop Star — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:41.034Z",
@@ -8967,9 +9027,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 132.026056,
-      "sourceAudioUrl": "https://audionautix.com/Music/PopStar.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/PopStar.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-0033cdcf3a031711",
@@ -9789,8 +9850,8 @@
       },
       "attribution": "Inner Journey — Jason Shaw / Audionautix.com. CC BY 4.0. Unmodified recording; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:55.406Z",
@@ -9840,9 +9901,10 @@
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 202.687278,
-      "sourceAudioUrl": "https://audionautix.com/Music/InnerJourney.mp3"
+      "sourceAudioUrl": "https://audionautix.com/Music/InnerJourney.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "audionautix-ec6ec27a7306b98d",
@@ -10236,8 +10298,8 @@
       },
       "attribution": "Chills — Holizna. CC0 1.0. Original file; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:43:30.185Z",
@@ -10287,9 +10349,10 @@
         "method": "Primary composer description + full-file decode and EBU R128 measurement where selected",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 174.96,
-      "sourceAudioUrl": "https://opengameart.org/sites/default/files/01_holiznacc0_-_chills_0.mp3"
+      "sourceAudioUrl": "https://opengameart.org/sites/default/files/01_holiznacc0_-_chills_0.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "oga-contemplation-0",
@@ -10373,8 +10436,8 @@
       },
       "attribution": "Cozy Puzzle In-Game 3 — MintoDog. CC0 1.0. Original file; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:43:30.218Z",
@@ -10424,9 +10487,10 @@
         "method": "Primary composer description + full-file decode and EBU R128 measurement where selected",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 124.473469,
-      "sourceAudioUrl": "https://opengameart.org/sites/default/files/cozy_puzzle_in-game_3_bpm108.mp3"
+      "sourceAudioUrl": "https://opengameart.org/sites/default/files/cozy_puzzle_in-game_3_bpm108.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "oga-remember-this-shadow",
@@ -10450,8 +10514,8 @@
       },
       "attribution": "Remember this shadow — Komiku / Loyalty Freak Music. CC0 1.0. Original file; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:43:34.199Z",
@@ -10504,9 +10568,10 @@
         "method": "Primary composer description + full-file decode and EBU R128 measurement where selected",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 213.159184,
-      "sourceAudioUrl": "https://opengameart.org/sites/default/files/Komiku%20-%20It%27s%20time%20for%20adventure%20vol%202%20-%2011%20Remember%20this%20shadow_0.mp3"
+      "sourceAudioUrl": "https://opengameart.org/sites/default/files/Komiku%20-%20It%27s%20time%20for%20adventure%20vol%202%20-%2011%20Remember%20this%20shadow_0.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "oga-hypnotic-chill-extended-4-minute-mix",
@@ -10598,8 +10663,8 @@
       },
       "attribution": "Synthwave 4k — The Cynic Project. CC0 1.0. Original file; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:43:34.667Z",
@@ -10652,9 +10717,10 @@
         "method": "Primary composer description + full-file decode and EBU R128 measurement where selected",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 157.936327,
-      "sourceAudioUrl": "https://opengameart.org/sites/default/files/001_Synthwave_4k_0.mp3"
+      "sourceAudioUrl": "https://opengameart.org/sites/default/files/001_Synthwave_4k_0.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "oga-calm-ambient-2-synthwave-15k",
@@ -10809,8 +10875,8 @@
       },
       "attribution": "Classical Pop (Instrumental) — Alex McCulloch. CC0 1.0. Original file; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:43:37.966Z",
@@ -10860,9 +10926,10 @@
         "method": "Primary composer description + full-file decode and EBU R128 measurement where selected",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 84.004438,
-      "sourceAudioUrl": "https://opengameart.org/sites/default/files/ClassicalPop%20%28Instrumental%29_0.mp3"
+      "sourceAudioUrl": "https://opengameart.org/sites/default/files/ClassicalPop%20%28Instrumental%29_0.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "oga-just-you-and-me-guitar",
@@ -10886,8 +10953,8 @@
       },
       "attribution": "Just you and me Guitar — Alex McCulloch. CC0 1.0. Original file; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:43:39.446Z",
@@ -10937,9 +11004,10 @@
         "method": "Primary composer description + full-file decode and EBU R128 measurement where selected",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 99.056327,
-      "sourceAudioUrl": "https://opengameart.org/sites/default/files/Just%20you%20and%20me_2.mp3"
+      "sourceAudioUrl": "https://opengameart.org/sites/default/files/Just%20you%20and%20me_2.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "oga-serenade-guitar",
@@ -10997,8 +11065,8 @@
       },
       "attribution": "The love cycle (Guitar) — Alex McCulloch. CC0 1.0. Original file; playback volume/ducking only.",
       "checkedAt": "2026-10-17",
-      "status": "verified",
-      "reason": "Original creator license and complete MP3 decode confirmed; source genre/mood screened.",
+      "status": "rejected",
+      "reason": "Clinic rejected legacy selection; removed from all production references and Storage on 2026-10-18. Historical technical/rights evidence is retained only as audit metadata.",
       "technical": {
         "status": "decoded",
         "checkedAt": "2026-10-17T19:43:39.518Z",
@@ -11048,9 +11116,10 @@
         "method": "Primary composer description + full-file decode and EBU R128 measurement where selected",
         "humanFullListen": false
       },
-      "importState": "imported",
+      "importState": "removed",
       "durationSeconds": 102.870225,
-      "sourceAudioUrl": "https://opengameart.org/sites/default/files/The%20love%20Cycle%20%28Guitar%29_0.mp3"
+      "sourceAudioUrl": "https://opengameart.org/sites/default/files/The%20love%20Cycle%20%28Guitar%29_0.mp3",
+      "legacyRejectedByClinic": true
     },
     {
       "id": "oga-good-morning",
@@ -17972,8 +18041,8 @@
     "projectId": "97741ecf-233f-4766-a5a8-1900f0aca92d",
     "importedAt": "2026-10-17T19:53:21.799Z",
     "codeCommit": "e45e17aff105b7aa50680553e4971f103c6b46ce",
-    "uniqueRecordings": 59,
-    "assignments": 109,
+    "uniqueRecordings": 0,
+    "assignments": 0,
     "profiles": 7,
     "videoCountBefore": 25,
     "videoCountAfter": 25,
@@ -17982,22 +18051,24 @@
     "storage": {
       "bucket": "smilestream-music",
       "public": true,
-      "objects": 59,
-      "bytes": 359968294,
+      "objects": 0,
+      "bytes": 0,
       "sourceCopiesUnmodified": true,
       "newPublicBucketsBlockedAgain": true,
       "anonymousWritesAllowed": false,
-      "checkedAt": "2026-10-17T20:54:09.618Z"
-    }
+      "checkedAt": "2026-10-18"
+    },
+    "previousImport": {
+      "importedAt": "2026-10-17T19:53:21.799Z",
+      "uniqueRecordings": 59,
+      "assignments": 109
+    },
+    "retiredAt": "2026-10-18"
   },
   "replacementPolicy": {
     "requestedAt": "2026-10-18",
-    "legacySelection": "rejected_by_clinic",
-    "requiredConfirmedPremiumFit": [
-      4,
-      5
-    ],
-    "newRotationApproved": false,
-    "note": "Historical verified status means old technical/rights audit, not premium listening approval. Keep live until qualified replacement is ready."
+    "legacySelection": "removed_no_reuse",
+    "listeningBlocksImport": false,
+    "note": "Needs-listening is informative. Require documented metadata fit, actual technical audit and rights clearance. Never restore retired recordings."
   }
 }
