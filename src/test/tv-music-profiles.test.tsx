@@ -60,6 +60,12 @@ beforeEach(() => {
   localStorage.clear();
 });
 afterEach(cleanup);
+it("public music credits are reachable from the TV start without starting playback", () => {
+  setup();
+  expect(screen.getByRole("button", { name: "Автори музики та ліцензії" })).toBeVisible();
+  expect(screen.getByText(/Музика: Jason Shaw/)).toBeVisible();
+  expect(mocks.start).not.toHaveBeenCalled();
+});
 it("Watch opens picker; Samsung arrows/OK navigate, selection starts existing engine", () => {
   setup();
   fireEvent.click(screen.getByRole("button", { name: /Дивитися/ }));
