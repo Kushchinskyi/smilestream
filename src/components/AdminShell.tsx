@@ -9,12 +9,14 @@ import {
   ArrowUpRight,
   LogOut,
   HeartPulse,
+  Megaphone,
 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import "@/admin.css";
 export const SECTIONS = [
   { id: "overview", label: "Огляд", icon: LayoutDashboard },
   { id: "videos", label: "Відеотека", icon: Library },
+  { id: "ads", label: "Реклама", icon: Megaphone },
   { id: "audio", label: "Музика та звук", icon: Music2 },
   { id: "screens", label: "Екрани", icon: Monitor },
   { id: "diagnostics", label: "Діагностика", icon: Activity },

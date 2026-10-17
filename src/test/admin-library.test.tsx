@@ -24,6 +24,25 @@ afterEach(() => {
   vi.restoreAllMocks();
 });
 describe("admin library safety and UX", () => {
+  it("keeps advertisement inventory explicitly separate from TV broadcasting", () => {
+    render(
+      <VideoLibrary
+        advertisement
+        videos={[]}
+        metadata={[]}
+        originalIds={[]}
+        busy={false}
+        onEdit={vi.fn()}
+        onPreview={vi.fn()}
+        onActive={vi.fn()}
+        onOriginal={vi.fn()}
+        onReorder={vi.fn()}
+      />,
+    );
+    expect(screen.getByRole("heading", { name: /Рекламна бібліотека/ })).toBeInTheDocument();
+    expect(screen.queryByLabelText("Категорія")).not.toBeInTheDocument();
+    expect(screen.getByText(/Покази ще не підключені/)).toBeInTheDocument();
+  });
   it("validates HTTPS, credentials, duration, title and preserves active flag", () => {
     const v = videos[0]!;
     expect(validateVideo(v).is_active).toBe(true);

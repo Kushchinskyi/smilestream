@@ -8,6 +8,36 @@ export type Database = {
   };
   public: {
     Tables: {
+      advertisements: {
+        Row: {
+          id: string;
+          title: string;
+          url: string;
+          duration_seconds: number;
+          sort_order: number;
+          is_active: boolean;
+          original_sound: boolean;
+          created_at: string;
+        };
+        Insert: {
+          id?: string;
+          title: string;
+          url: string;
+          duration_seconds?: number;
+          sort_order?: number;
+          is_active?: boolean;
+          original_sound?: boolean;
+        };
+        Update: {
+          title?: string;
+          url?: string;
+          duration_seconds?: number;
+          sort_order?: number;
+          is_active?: boolean;
+          original_sound?: boolean;
+        };
+        Relationships: [];
+      };
       media_metadata: {
         Row: { kind: string; source_key: string; label: string; category: string };
         Insert: { kind: string; source_key: string; label?: string; category?: string };
@@ -126,6 +156,7 @@ export type Database = {
       [_ in never]: never;
     };
     Functions: {
+      reorder_advertisements: { Args: { ordered_ids: string[] }; Returns: undefined };
       reorder_videos: { Args: { ordered_ids: string[] }; Returns: undefined };
       has_role: {
         Args: {

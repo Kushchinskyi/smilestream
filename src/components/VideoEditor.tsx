@@ -17,6 +17,7 @@ export function VideoEditor({
   onClose,
   onSave,
   onDelete,
+  showCategory = true,
 }: {
   video: Video | null;
   category: string;
@@ -25,6 +26,7 @@ export function VideoEditor({
   onClose: () => void;
   onSave: (draft: VideoDraft, category: string, original: boolean) => Promise<void>;
   onDelete: () => Promise<void>;
+  showCategory?: boolean;
 }) {
   const [draft, setDraft] = useState<VideoDraft>(
     video
@@ -70,7 +72,9 @@ export function VideoEditor({
       <DialogContent className="admin-dialog">
         <DialogTitle>{video ? "Редагувати відео" : "Додати відео"}</DialogTitle>
         <DialogDescription>
-          Пряме HTTPS-посилання. Зміни застосуються до наступних відтворень на ТВ.
+          {showCategory
+            ? "Пряме HTTPS-посилання. Зміни застосуються до наступних відтворень на ТВ."
+            : "Рекламна бібліотека. Автоматичний показ на ТВ ще не підключений."}
         </DialogDescription>
         <form
           className="editor-form"
@@ -112,16 +116,18 @@ export function VideoEditor({
             />
           </label>
           <div className="form-grid">
-            <label>
-              Категорія
-              <select value={cat} onChange={(e) => setCat(e.target.value)}>
-                {Object.entries(CATEGORIES).map(([id, label]) => (
-                  <option key={id} value={id}>
-                    {label}
-                  </option>
-                ))}
-              </select>
-            </label>
+            {showCategory && (
+              <label>
+                Категорія
+                <select value={cat} onChange={(e) => setCat(e.target.value)}>
+                  {Object.entries(CATEGORIES).map(([id, label]) => (
+                    <option key={id} value={id}>
+                      {label}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            )}
             <label>
               Тривалість, сек
               <input
@@ -183,7 +189,11 @@ export function VideoEditor({
             />
             <span>
               <strong>Активний ролик</strong>
-              <small>Буде доданий до черги на телевізорах</small>
+              <small>
+                {showCategory
+                  ? "Буде доданий до черги на телевізорах"
+                  : "Позначити як доступний у рекламній бібліотеці"}
+              </small>
             </span>
           </label>
           <label className="check-row">

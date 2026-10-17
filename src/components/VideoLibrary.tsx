@@ -16,6 +16,7 @@ import type { Video } from "@/lib/backend";
 import { formatDuration } from "@/lib/backend";
 import { CATEGORIES, selectVideos, type MediaMetadata } from "@/lib/admin-library";
 type Props = {
+  advertisement?: boolean;
   videos: Video[];
   metadata: MediaMetadata[];
   originalIds: string[];
@@ -36,6 +37,7 @@ export function VideoLibrary({
   onActive,
   onOriginal,
   onReorder,
+  advertisement = false,
 }: Props) {
   const [query, setQuery] = useState(""),
     [filter, setFilter] = useState("all"),
@@ -67,13 +69,14 @@ export function VideoLibrary({
         <div>
           <p className="eyebrow">КОНТЕНТ ДЛЯ ВАШИХ ПАЦІЄНТІВ</p>
           <h1>
-            Відеотека <span className="count-badge">{videos.length}</span>
+            {advertisement ? "Рекламна бібліотека" : "Відеотека"}{" "}
+            <span className="count-badge">{videos.length}</span>
           </h1>
           <p>Керуйте порядком, активністю та оригінальним звуком роликів.</p>
         </div>
         <button className="button primary" onClick={() => onEdit(null)}>
           <Plus size={18} />
-          Додати відео
+          {advertisement ? "Додати рекламу" : "Додати відео"}
         </button>
       </div>
       <section className="panel library-panel">
@@ -90,21 +93,23 @@ export function VideoLibrary({
               }}
             />
           </label>
-          <select
-            aria-label="Категорія"
-            value={category}
-            onChange={(e) => {
-              setCategory(e.target.value);
-              setPage(0);
-            }}
-          >
-            <option value="all">Усі категорії</option>
-            {Object.entries(CATEGORIES).map(([id, label]) => (
-              <option key={id} value={id}>
-                {label}
-              </option>
-            ))}
-          </select>
+          {!advertisement && (
+            <select
+              aria-label="Категорія"
+              value={category}
+              onChange={(e) => {
+                setCategory(e.target.value);
+                setPage(0);
+              }}
+            >
+              <option value="all">Усі категорії</option>
+              {Object.entries(CATEGORIES).map(([id, label]) => (
+                <option key={id} value={id}>
+                  {label}
+                </option>
+              ))}
+            </select>
+          )}
           <select
             aria-label="Активність"
             value={filter}
@@ -153,7 +158,9 @@ export function VideoLibrary({
             <p>
               {videos.length
                 ? "Спробуйте змінити пошук або фільтри."
-                : "Додайте пряме HTTPS-посилання на MP4. Активні відео з’являться на телевізорах."}
+                : advertisement
+                  ? "Додайте MP4 до окремої рекламної бібліотеки. Покази ще не підключені."
+                  : "Додайте пряме HTTPS-посилання на MP4. Активні відео з’являться на телевізорах."}
             </p>
           </div>
         ) : (
@@ -293,8 +300,10 @@ export function VideoLibrary({
         </div>
       </section>
       <p className="subtle-note">
-        Перетягніть рядок, щоб змінити порядок, або скористайтеся стрілками. Поточне відео на ТВ
-        завершиться перед оновленням черги.
+        Перетягніть рядок, щоб змінити порядок, або скористайтеся стрілками.{" "}
+        {advertisement
+          ? "Рекламна бібліотека не змінює поточну трансляцію."
+          : "Поточне відео на ТВ завершиться перед оновленням черги."}
       </p>
     </>
   );

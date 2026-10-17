@@ -116,6 +116,20 @@ try {
     assert(invalidOrder.error, `${name}: invalid reorder must be rejected`);
   }
   console.log("PASS: metadata access and invalid reorder denied through real Data API");
+  for (const [name, c] of [
+    ["anon", anon],
+    ["ordinary", user],
+    ["admin", admin],
+  ]) {
+    const inventory = await c.from("advertisements").select("id").limit(1);
+    if (name === "anon") assert(inventory.error);
+    else {
+      assert.equal(inventory.error, null);
+      if (name === "ordinary") assert.deepEqual(inventory.data, []);
+    }
+    assert((await c.rpc("reorder_advertisements", { ordered_ids: null })).error);
+  }
+  console.log("PASS: advertisement inventory RLS and null reorder guard");
 } finally {
   await Promise.all([
     user.auth.signOut({ scope: "local" }),

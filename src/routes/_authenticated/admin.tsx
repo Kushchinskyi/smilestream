@@ -20,6 +20,7 @@ import { AudioSettingsPanel } from "@/components/AudioSettingsPanel";
 import { VideoLibrary } from "@/components/VideoLibrary";
 import { VideoEditor, type VideoDraft } from "@/components/VideoEditor";
 import { ScreenLibrary } from "@/components/ScreenLibrary";
+import { AdvertisementLibrary } from "@/components/AdvertisementLibrary";
 import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { type Video, formatDuration } from "@/lib/backend";
 import { DEFAULT_AUDIO, validateAudio, type AudioSettings } from "@/lib/audio-settings";
@@ -352,6 +353,7 @@ function AdminPage() {
             />
           )}
           {section === "screens" && <ScreenLibrary />}
+          {section === "ads" && <AdvertisementLibrary />}
           {section === "diagnostics" && (
             <>
               <div className="page-heading">
