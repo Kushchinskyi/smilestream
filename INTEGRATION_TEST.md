@@ -1,5 +1,7 @@
 # Smile Stream — Supabase integration test
 
+Обновление Smile Stream 2.0: новые UI/метаданные/рекламная библиотека и актуальные ограничения описаны в [DEVELOPMENT_REPORT.md](DEVELOPMENT_REPORT.md), порядок миграций — [RELEASE_READINESS.md](RELEASE_READINESS.md). Результаты ниже относятся к исходному интеграционному этапу.
+
 ## Изолированное окружение
 
 Создан с разрешения пользователя отдельный проект **smilestream-integration-test**:
