@@ -1,0 +1,1592 @@
+{
+  "checkedAt": "2026-10-18",
+  "purpose": "Metadata research only, not import manifest",
+  "profiles": [
+    {
+      "profile": "Jazz & Lounge",
+      "researchCandidates": 10
+    },
+    {
+      "profile": "Lo-Fi & Chillhop",
+      "researchCandidates": 10
+    },
+    {
+      "profile": "Ambient & Relax",
+      "researchCandidates": 10
+    },
+    {
+      "profile": "Deep House & Chill Electronic",
+      "researchCandidates": 10
+    },
+    {
+      "profile": "Soft Rock & Acoustic",
+      "researchCandidates": 10
+    },
+    {
+      "profile": "Modern Pop & Nu-Disco",
+      "researchCandidates": 10
+    }
+  ],
+  "tracks": [
+    {
+      "id": "01840d16-209b-d939-6333-36bfbf0546a1",
+      "title": "Restaurant Groove",
+      "artist": "Walen",
+      "candidateProfile": "Jazz & Lounge",
+      "durationSeconds": 133.38068,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/01840d16-209b-d939-6333-36bfbf0546a1",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/01840d16-209b-d939-6333-36bfbf0546a1/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "06ab6f7a-077c-45de-bf00-0ed687c28afe",
+      "title": "glimmer",
+      "artist": "massobeats",
+      "candidateProfile": "Jazz & Lounge",
+      "durationSeconds": 151.17015,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/06ab6f7a-077c-45de-bf00-0ed687c28afe",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/06ab6f7a-077c-45de-bf00-0ed687c28afe/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "39a7e116-785c-4b46-809e-de2b3f1323d5",
+      "title": "Sexy Touch",
+      "artist": "Dagored",
+      "candidateProfile": "Jazz & Lounge",
+      "durationSeconds": 126,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/39a7e116-785c-4b46-809e-de2b3f1323d5",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/39a7e116-785c-4b46-809e-de2b3f1323d5/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "3b8280eb-dc65-4288-96db-d2f36de03cc9",
+      "title": "Coffee & Vinyl",
+      "artist": "Aventure",
+      "candidateProfile": "Jazz & Lounge",
+      "durationSeconds": 143.36841,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/3b8280eb-dc65-4288-96db-d2f36de03cc9",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/3b8280eb-dc65-4288-96db-d2f36de03cc9/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "5d35077b-64b1-44a1-a33c-43c1d4ef7840",
+      "title": "Iced Tea",
+      "artist": "Aventure",
+      "candidateProfile": "Jazz & Lounge",
+      "durationSeconds": 158.8125,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/5d35077b-64b1-44a1-a33c-43c1d4ef7840",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/5d35077b-64b1-44a1-a33c-43c1d4ef7840/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "6003b954-985c-4ced-8b6b-d571cfebb0f0",
+      "title": "Smooth Nostalgia",
+      "artist": "Aventure",
+      "candidateProfile": "Jazz & Lounge",
+      "durationSeconds": 150.66667,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/6003b954-985c-4ced-8b6b-d571cfebb0f0",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/6003b954-985c-4ced-8b6b-d571cfebb0f0/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "7e4d6faf-3dda-44cf-9ae4-bf6e045589fa",
+      "title": "Soulful Luxe",
+      "artist": "Aventure",
+      "candidateProfile": "Jazz & Lounge",
+      "durationSeconds": 168,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/7e4d6faf-3dda-44cf-9ae4-bf6e045589fa",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/7e4d6faf-3dda-44cf-9ae4-bf6e045589fa/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "c7c31884-f971-4430-8190-31b1f79f3e68",
+      "title": "Monday Routine",
+      "artist": "Aventure",
+      "candidateProfile": "Jazz & Lounge",
+      "durationSeconds": 143.44827,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/c7c31884-f971-4430-8190-31b1f79f3e68",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/c7c31884-f971-4430-8190-31b1f79f3e68/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "cc3d9f0e-53a1-405f-812b-abea2e3fb8be",
+      "title": "city",
+      "artist": "massobeats",
+      "candidateProfile": "Jazz & Lounge",
+      "durationSeconds": 139.68384,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/cc3d9f0e-53a1-405f-812b-abea2e3fb8be",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/cc3d9f0e-53a1-405f-812b-abea2e3fb8be/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "de375052-13a2-1a5c-7da4-283f7daf7c94",
+      "title": "Italy",
+      "artist": "Aylex",
+      "candidateProfile": "Jazz & Lounge",
+      "durationSeconds": 192.96155,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/de375052-13a2-1a5c-7da4-283f7daf7c94",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/de375052-13a2-1a5c-7da4-283f7daf7c94/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "f5096754-4ce7-f995-4ce8-25daef51ade9",
+      "title": "honey jam",
+      "artist": "massobeats",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "durationSeconds": 133.24168,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/f5096754-4ce7-f995-4ce8-25daef51ade9",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/f5096754-4ce7-f995-4ce8-25daef51ade9/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "0ca27c3d-b234-46c3-82a0-67b334299711",
+      "title": "Poolside",
+      "artist": "Aventure",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "durationSeconds": 138.24,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/0ca27c3d-b234-46c3-82a0-67b334299711",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/0ca27c3d-b234-46c3-82a0-67b334299711/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "158e9227-d671-4280-b14c-cf228c52cc64",
+      "title": "downtown",
+      "artist": "massobeats",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "durationSeconds": 156.3482,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/158e9227-d671-4280-b14c-cf228c52cc64",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/158e9227-d671-4280-b14c-cf228c52cc64/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "202f6745-784e-97aa-73c5-50653f5bdf16",
+      "title": "noon",
+      "artist": "massobeats",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "durationSeconds": 188.11765,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/202f6745-784e-97aa-73c5-50653f5bdf16",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/202f6745-784e-97aa-73c5-50653f5bdf16/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "372fbc6c-b365-4159-97d9-0a83f88295e9",
+      "title": "missed call",
+      "artist": "massobeats",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "durationSeconds": 144.12108,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/372fbc6c-b365-4159-97d9-0a83f88295e9",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/372fbc6c-b365-4159-97d9-0a83f88295e9/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "56193a8c-d821-4a73-83ed-9e96f3e6caa2",
+      "title": "petals",
+      "artist": "massobeats",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "durationSeconds": 134.40625,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/56193a8c-d821-4a73-83ed-9e96f3e6caa2",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/56193a8c-d821-4a73-83ed-9e96f3e6caa2/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "5b515798-1d49-4c3d-9783-d7a2a78b5781",
+      "title": "moonlit",
+      "artist": "massobeats",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "durationSeconds": 169.52344,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/5b515798-1d49-4c3d-9783-d7a2a78b5781",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/5b515798-1d49-4c3d-9783-d7a2a78b5781/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "5fa52877-d009-fd7f-d417-6e45d055aaac",
+      "title": "Imagine",
+      "artist": "Lukrembo",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "durationSeconds": 154,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/5fa52877-d009-fd7f-d417-6e45d055aaac",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/5fa52877-d009-fd7f-d417-6e45d055aaac/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "654e7631-341d-4af6-a40b-0f38039365c1",
+      "title": "citrus",
+      "artist": "massobeats",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "durationSeconds": 136.38126,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/654e7631-341d-4af6-a40b-0f38039365c1",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/654e7631-341d-4af6-a40b-0f38039365c1/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "667c016c-10b4-ee0a-21ed-a8606f750dbc",
+      "title": "floral",
+      "artist": "massobeats",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "durationSeconds": 146.82812,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/667c016c-10b4-ee0a-21ed-a8606f750dbc",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/667c016c-10b4-ee0a-21ed-a8606f750dbc/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "0455e5fe-58a0-005e-2207-d13b5f94c711",
+      "title": "Make a Stand",
+      "artist": "Filo Starquez",
+      "candidateProfile": "Ambient & Relax",
+      "durationSeconds": 155.87265,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/0455e5fe-58a0-005e-2207-d13b5f94c711",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/0455e5fe-58a0-005e-2207-d13b5f94c711/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "0cf661e0-f6dd-4501-b890-f80a963dde87",
+      "title": "Light Through Glass",
+      "artist": "Zolvi",
+      "candidateProfile": "Ambient & Relax",
+      "durationSeconds": 137.46913,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/0cf661e0-f6dd-4501-b890-f80a963dde87",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/0cf661e0-f6dd-4501-b890-f80a963dde87/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "128458fc-9ba2-416d-8554-bec39631b384",
+      "title": "Distant Clarity",
+      "artist": "Zolvi",
+      "candidateProfile": "Ambient & Relax",
+      "durationSeconds": 134.48863,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/128458fc-9ba2-416d-8554-bec39631b384",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/128458fc-9ba2-416d-8554-bec39631b384/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "2eb6c87d-2352-4961-8054-1a9963766e2e",
+      "title": "Harbour",
+      "artist": "Johny Grimes",
+      "candidateProfile": "Ambient & Relax",
+      "durationSeconds": 167.09615,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/2eb6c87d-2352-4961-8054-1a9963766e2e",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/2eb6c87d-2352-4961-8054-1a9963766e2e/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "308e78f1-7026-4b8e-9624-013986cdeb87",
+      "title": "Genesis",
+      "artist": "Johny Grimes",
+      "candidateProfile": "Ambient & Relax",
+      "durationSeconds": 125.557686,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/308e78f1-7026-4b8e-9624-013986cdeb87",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/308e78f1-7026-4b8e-9624-013986cdeb87/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "3aff8d54-7167-4ee6-bf4d-1420523c6269",
+      "title": "Swanlake",
+      "artist": "Zambolino",
+      "candidateProfile": "Ambient & Relax",
+      "durationSeconds": 149.25755,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/3aff8d54-7167-4ee6-bf4d-1420523c6269",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/3aff8d54-7167-4ee6-bf4d-1420523c6269/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "3b50d9e7-9d1e-942b-f735-fe699531815c",
+      "title": "Wandering",
+      "artist": "Epic Spectrum",
+      "candidateProfile": "Ambient & Relax",
+      "durationSeconds": 154.08,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/3b50d9e7-9d1e-942b-f735-fe699531815c",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/3b50d9e7-9d1e-942b-f735-fe699531815c/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "5af22e8a-cdec-421f-92a7-90eaafe71b97",
+      "title": "Open Framework",
+      "artist": "Zolvi",
+      "candidateProfile": "Ambient & Relax",
+      "durationSeconds": 127.24139,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/5af22e8a-cdec-421f-92a7-90eaafe71b97",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/5af22e8a-cdec-421f-92a7-90eaafe71b97/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "70a9e65c-1d42-399e-a065-d05d3fe41896",
+      "title": "Timeless",
+      "artist": "Epic Spectrum",
+      "candidateProfile": "Ambient & Relax",
+      "durationSeconds": 120,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/70a9e65c-1d42-399e-a065-d05d3fe41896",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/70a9e65c-1d42-399e-a065-d05d3fe41896/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "75b57065-8942-4043-b508-39ee3bbc614a",
+      "title": "Gentle Progression",
+      "artist": "Zolvi",
+      "candidateProfile": "Ambient & Relax",
+      "durationSeconds": 142.10526,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/75b57065-8942-4043-b508-39ee3bbc614a",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/75b57065-8942-4043-b508-39ee3bbc614a/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "f8a154cc-47cb-8220-ee4f-8e22fa1f52bc",
+      "title": "Aurora",
+      "artist": "Luke Bergs",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "durationSeconds": 162.00195,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/f8a154cc-47cb-8220-ee4f-8e22fa1f52bc",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/f8a154cc-47cb-8220-ee4f-8e22fa1f52bc/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "0701e4b6-fd97-4568-8228-654decf85265",
+      "title": "Rolling",
+      "artist": "HiLau",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "durationSeconds": 160.02612,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/0701e4b6-fd97-4568-8228-654decf85265",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/0701e4b6-fd97-4568-8228-654decf85265/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "159a51ba-bc7d-6e53-c8a2-7bdbfef5c129",
+      "title": "Falling",
+      "artist": "tubebackr",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "durationSeconds": 174.1593,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/159a51ba-bc7d-6e53-c8a2-7bdbfef5c129",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/159a51ba-bc7d-6e53-c8a2-7bdbfef5c129/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "1cef70e7-c222-d1e5-fb17-2ad850b118aa",
+      "title": "Shadows",
+      "artist": "Popsicles",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "durationSeconds": 191.6129,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/1cef70e7-c222-d1e5-fb17-2ad850b118aa",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/1cef70e7-c222-d1e5-fb17-2ad850b118aa/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "3d0cd393-54ab-a30a-997b-afca7484c948",
+      "title": "Feel Alive",
+      "artist": "Nebulite",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "durationSeconds": 159.49994,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/3d0cd393-54ab-a30a-997b-afca7484c948",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/3d0cd393-54ab-a30a-997b-afca7484c948/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "3f036e19-e318-4e6e-bd25-8a86b58f45c2",
+      "title": "glass house",
+      "artist": "numbthefeelings",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "durationSeconds": 146.34148,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/3f036e19-e318-4e6e-bd25-8a86b58f45c2",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/3f036e19-e318-4e6e-bd25-8a86b58f45c2/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "4992bcb6-427b-d41f-7efd-56ce6f689587",
+      "title": "Moonshine",
+      "artist": "tubebackr",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "durationSeconds": 196.23969,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/4992bcb6-427b-d41f-7efd-56ce6f689587",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/4992bcb6-427b-d41f-7efd-56ce6f689587/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "4b6a8c63-9688-d427-b2c2-ac7541d52356",
+      "title": "Sunrise",
+      "artist": "tubebackr",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "durationSeconds": 185.54622,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/4b6a8c63-9688-d427-b2c2-ac7541d52356",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/4b6a8c63-9688-d427-b2c2-ac7541d52356/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "4c33c998-e04a-13a0-7345-b7bcd15493c1",
+      "title": "Ibiza Vibes",
+      "artist": "Walen",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "durationSeconds": 131.26562,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/4c33c998-e04a-13a0-7345-b7bcd15493c1",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/4c33c998-e04a-13a0-7345-b7bcd15493c1/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "50440375-e8e6-5df7-9cdc-0997532f86c0",
+      "title": "Decadence",
+      "artist": "tubebackr",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "durationSeconds": 186.66667,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/50440375-e8e6-5df7-9cdc-0997532f86c0",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/50440375-e8e6-5df7-9cdc-0997532f86c0/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "e9df589f-1286-e430-d5a2-7acbfc9b3ffb",
+      "title": "Synergy",
+      "artist": "Aylex",
+      "candidateProfile": "Soft Rock & Acoustic",
+      "durationSeconds": 150.46635,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/e9df589f-1286-e430-d5a2-7acbfc9b3ffb",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/e9df589f-1286-e430-d5a2-7acbfc9b3ffb/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "4b0e5836-596a-b937-fbd1-fdff19772f83",
+      "title": "Drum Story",
+      "artist": "Pufino",
+      "candidateProfile": "Soft Rock & Acoustic",
+      "durationSeconds": 120,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/4b0e5836-596a-b937-fbd1-fdff19772f83",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/4b0e5836-596a-b937-fbd1-fdff19772f83/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "acffc6ff-ecec-9217-c532-6ddd1b506283",
+      "title": "Joshua Tree",
+      "artist": "Guillermo Guareschi",
+      "candidateProfile": "Soft Rock & Acoustic",
+      "durationSeconds": 149.60667,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/acffc6ff-ecec-9217-c532-6ddd1b506283",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/acffc6ff-ecec-9217-c532-6ddd1b506283/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "12ac0635-cdd3-4a19-a28f-d5d807278052",
+      "title": "Rainbow",
+      "artist": "Aetheric",
+      "candidateProfile": "Soft Rock & Acoustic",
+      "durationSeconds": 188.42274,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/12ac0635-cdd3-4a19-a28f-d5d807278052",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/12ac0635-cdd3-4a19-a28f-d5d807278052/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "140fa163-6bd3-47d6-b186-bd0b7533a740",
+      "title": "When Autumn Calls",
+      "artist": "Zambolino",
+      "candidateProfile": "Soft Rock & Acoustic",
+      "durationSeconds": 166.49985,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/140fa163-6bd3-47d6-b186-bd0b7533a740",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/140fa163-6bd3-47d6-b186-bd0b7533a740/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "24b9fe90-4745-4743-b27e-122303f52cb6",
+      "title": "School Bus",
+      "artist": "Aetheric",
+      "candidateProfile": "Soft Rock & Acoustic",
+      "durationSeconds": 135.42688,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/24b9fe90-4745-4743-b27e-122303f52cb6",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/24b9fe90-4745-4743-b27e-122303f52cb6/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "25b07db9-e62f-41d2-8609-5a882f3ef948",
+      "title": "Uke Waves",
+      "artist": "Aylex",
+      "candidateProfile": "Soft Rock & Acoustic",
+      "durationSeconds": 129.23558,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/25b07db9-e62f-41d2-8609-5a882f3ef948",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/25b07db9-e62f-41d2-8609-5a882f3ef948/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "2f19165c-a9ae-4a1e-ab49-1aee42b115e4",
+      "title": "Slow and Sweet",
+      "artist": "Dagored",
+      "candidateProfile": "Soft Rock & Acoustic",
+      "durationSeconds": 130.90909,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/2f19165c-a9ae-4a1e-ab49-1aee42b115e4",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/2f19165c-a9ae-4a1e-ab49-1aee42b115e4/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "353d9dce-7e9a-b136-330f-3a532b28d512",
+      "title": "Acoustic Heaven",
+      "artist": "Guillermo Guareschi",
+      "candidateProfile": "Soft Rock & Acoustic",
+      "durationSeconds": 177.40468,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/353d9dce-7e9a-b136-330f-3a532b28d512",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/353d9dce-7e9a-b136-330f-3a532b28d512/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "430fbd18-f360-4463-bf82-b514c0c4a182",
+      "title": "Playtime",
+      "artist": "Aetheric",
+      "candidateProfile": "Soft Rock & Acoustic",
+      "durationSeconds": 159.07144,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/430fbd18-f360-4463-bf82-b514c0c4a182",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/430fbd18-f360-4463-bf82-b514c0c4a182/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "b7dca04d-98c2-a7fc-6caf-8b85492e9492",
+      "title": "See Me Through",
+      "artist": "Burgundy",
+      "candidateProfile": "Modern Pop & Nu-Disco",
+      "durationSeconds": 122.06898,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/b7dca04d-98c2-a7fc-6caf-8b85492e9492",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/b7dca04d-98c2-a7fc-6caf-8b85492e9492/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "c79703ae-9644-7036-ec61-d2ad4026c0ec",
+      "title": "Adventures Begin",
+      "artist": "Pufino",
+      "candidateProfile": "Modern Pop & Nu-Disco",
+      "durationSeconds": 158.62498,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/c79703ae-9644-7036-ec61-d2ad4026c0ec",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/c79703ae-9644-7036-ec61-d2ad4026c0ec/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "e18627b1-2ce9-624c-4d91-1b1f96e25c5c",
+      "title": "Dream Potion",
+      "artist": "tubebackr",
+      "candidateProfile": "Modern Pop & Nu-Disco",
+      "durationSeconds": 213.78152,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/e18627b1-2ce9-624c-4d91-1b1f96e25c5c",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/e18627b1-2ce9-624c-4d91-1b1f96e25c5c/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "4488447b-2571-249a-c60f-1a6565f3455d",
+      "title": "Like You Mean It",
+      "artist": "Burgundy",
+      "candidateProfile": "Modern Pop & Nu-Disco",
+      "durationSeconds": 127.74193,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/4488447b-2571-249a-c60f-1a6565f3455d",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/4488447b-2571-249a-c60f-1a6565f3455d/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "4e451dd5-8955-5804-8ede-abeadb65c913",
+      "title": "Tell Me",
+      "artist": "Burgundy",
+      "candidateProfile": "Modern Pop & Nu-Disco",
+      "durationSeconds": 141,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/4e451dd5-8955-5804-8ede-abeadb65c913",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/4e451dd5-8955-5804-8ede-abeadb65c913/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "52f9571c-44a4-97bc-0e26-d8d5b3542ae1",
+      "title": "Triumph",
+      "artist": "Burgundy",
+      "candidateProfile": "Modern Pop & Nu-Disco",
+      "durationSeconds": 138.78258,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/52f9571c-44a4-97bc-0e26-d8d5b3542ae1",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/52f9571c-44a4-97bc-0e26-d8d5b3542ae1/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "55565d5d-a311-accd-3e21-95f58f2b829f",
+      "title": "Get Yours, Get Out",
+      "artist": "Burgundy",
+      "candidateProfile": "Modern Pop & Nu-Disco",
+      "durationSeconds": 135.27272,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/55565d5d-a311-accd-3e21-95f58f2b829f",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/55565d5d-a311-accd-3e21-95f58f2b829f/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "58ce355e-9db1-1181-4d76-c6f2cf4b39f0",
+      "title": "Dream On",
+      "artist": "Moavii",
+      "candidateProfile": "Modern Pop & Nu-Disco",
+      "durationSeconds": 161.55739,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/58ce355e-9db1-1181-4d76-c6f2cf4b39f0",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/58ce355e-9db1-1181-4d76-c6f2cf4b39f0/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "5d74da71-f734-07b9-5ab9-39545dc6416c",
+      "title": "Sunlight",
+      "artist": "Luke Bergs",
+      "candidateProfile": "Modern Pop & Nu-Disco",
+      "durationSeconds": 195.7317,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/5d74da71-f734-07b9-5ab9-39545dc6416c",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/5d74da71-f734-07b9-5ab9-39545dc6416c/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    },
+    {
+      "id": "7260971e-9849-8d5e-e710-bd9bae49e33c",
+      "title": "Time Slip",
+      "artist": "Burgundy",
+      "candidateProfile": "Modern Pop & Nu-Disco",
+      "durationSeconds": 120.64517,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/7260971e-9849-8d5e-e710-bd9bae49e33c",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/7260971e-9849-8d5e-e710-bd9bae49e33c/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false
+    }
+  ]
+}

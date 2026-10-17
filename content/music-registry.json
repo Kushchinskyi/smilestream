@@ -160,6 +160,13 @@
       "checkedAt": "2026-10-17",
       "sha256": "28cbf57b7803f2630dcb05512fca9149bb8ab895b4060e232652853867860ded",
       "scope": "Ukrainian IP Office business guide explains CC licensing for commercial/public use with conditions; does not prove rights to any individual recording or a blanket exemption from mandatory remuneration."
+    },
+    {
+      "id": "audionautix-historical-release",
+      "url": "https://www.audionautix.com/Saved/CCrelease.jpg",
+      "checkedAt": "2026-10-17",
+      "sha256": "92a2441aacc943a06c12853fe3df9de99c744103d98e77af70b25216070e9ce7",
+      "scope": "Signed historical 2010 CC 3.0 statement identifies Jason Shaw as sole creator/composer and owner; corroborates provenance, not the current CC BY 4.0 license and not a clinic-specific executed contract."
     }
   ],
   "tracks": [
@@ -209,7 +216,7 @@
       "tempo": "Medium",
       "mood": "Calming, Cool, Relaxing",
       "sourceUrl": "https://audionautix.com/free-music/acoustic",
-      "url": "https://audionautix.com/Music/AcousticGuitar1.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/f1209ad05fbf7386.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -218,7 +225,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -231,12 +239,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:57.306Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/AcousticGuitar1.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/f1209ad05fbf7386.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/6983153",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:01.483Z"
         },
         "sha256": "1e2aaf14b6f90ce86062750c4bfc4d10d3c09e01a2e3ba96b244a3f950af9a8b",
         "bytes": 6983153,
@@ -253,15 +261,32 @@
         "loudnessRangeLu": 1.8,
         "truePeakDb": 0.7,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/AcousticGuitar1.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/6983153",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "1e2aaf14b6f90ce86062750c4bfc4d10d3c09e01a2e3ba96b244a3f950af9a8b",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 12.736399,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.686Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 174.4228
+      "importState": "imported",
+      "durationSeconds": 174.4228,
+      "sourceAudioUrl": "https://audionautix.com/Music/AcousticGuitar1.mp3"
     },
     {
       "id": "audionautix-0a7350744b6c6c3a",
@@ -272,7 +297,7 @@
       "tempo": "Medium",
       "mood": "Calming, Grooving, Bright",
       "sourceUrl": "https://audionautix.com/free-music/acoustic",
-      "url": "https://audionautix.com/Music/AcousticShuffle.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/0a7350744b6c6c3a.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -281,7 +306,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -294,12 +320,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:59.579Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/AcousticShuffle.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/0a7350744b6c6c3a.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/6569962",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:05.311Z"
         },
         "sha256": "23c61c8df9d664f4b2cca2681367ad2f232afd716451e501eaf7d612dd49188f",
         "bytes": 6569962,
@@ -316,15 +342,32 @@
         "loudnessRangeLu": 2.7,
         "truePeakDb": 0.3,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/AcousticShuffle.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/6569962",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "23c61c8df9d664f4b2cca2681367ad2f232afd716451e501eaf7d612dd49188f",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.387669,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 162.955025
+      "importState": "imported",
+      "durationSeconds": 162.955025,
+      "sourceAudioUrl": "https://audionautix.com/Music/AcousticShuffle.mp3"
     },
     {
       "id": "audionautix-330885e9608a744c",
@@ -335,7 +378,7 @@
       "tempo": "Slow",
       "mood": "Calming, Relaxing",
       "sourceUrl": "https://audionautix.com/free-music/acoustic",
-      "url": "https://audionautix.com/Music/AutumnSunset.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/330885e9608a744c.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -344,7 +387,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -357,12 +401,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:01.456Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/AutumnSunset.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/330885e9608a744c.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/1545240",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:03.743Z"
         },
         "sha256": "d1f25feccd8af5cfe22ca1ed6afa901a5f97cbf976b93fc46096a2bd83315034",
         "bytes": 1545240,
@@ -379,15 +423,32 @@
         "loudnessRangeLu": 2.1,
         "truePeakDb": 0.6,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/AutumnSunset.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/1545240",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "d1f25feccd8af5cfe22ca1ed6afa901a5f97cbf976b93fc46096a2bd83315034",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.28039,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 96.3215
+      "importState": "imported",
+      "durationSeconds": 96.3215,
+      "sourceAudioUrl": "https://audionautix.com/Music/AutumnSunset.mp3"
     },
     {
       "id": "audionautix-be27fefb5b9a6f10",
@@ -398,7 +459,7 @@
       "tempo": "Slow",
       "mood": "Driving, Dark, Calming",
       "sourceUrl": "https://audionautix.com/free-music/acoustic",
-      "url": "https://audionautix.com/Music/ColdMorning.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/be27fefb5b9a6f10.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -407,7 +468,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -420,12 +482,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:02.613Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/ColdMorning.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/be27fefb5b9a6f10.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/6584991",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:02.824Z"
         },
         "sha256": "7fef315f78a79294be6e2d71fa8135b2d23a1bf5b8f80f5f97debedb72875459",
         "bytes": 6584991,
@@ -442,15 +504,32 @@
         "loudnessRangeLu": 5,
         "truePeakDb": -0.5,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/ColdMorning.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/6584991",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "7fef315f78a79294be6e2d71fa8135b2d23a1bf5b8f80f5f97debedb72875459",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.386009,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 164.522378
+      "importState": "imported",
+      "durationSeconds": 164.522378,
+      "sourceAudioUrl": "https://audionautix.com/Music/ColdMorning.mp3"
     },
     {
       "id": "audionautix-015d9366dc24e684",
@@ -461,7 +540,7 @@
       "tempo": "Medium",
       "mood": "Calming, Relaxing, Bright",
       "sourceUrl": "https://audionautix.com/free-music/acoustic",
-      "url": "https://audionautix.com/Music/CoolSteelBreeze.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/015d9366dc24e684.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -470,7 +549,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -483,12 +563,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:03.556Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/CoolSteelBreeze.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/015d9366dc24e684.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/7592600",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:04.197Z"
         },
         "sha256": "b89acc3f4c0860bf97e4f63877aec22936909139a19b8ec5dda3aa9b96d9ab07",
         "bytes": 7592600,
@@ -505,15 +585,32 @@
         "loudnessRangeLu": 2.2,
         "truePeakDb": 1.1,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/CoolSteelBreeze.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/7592600",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "b89acc3f4c0860bf97e4f63877aec22936909139a19b8ec5dda3aa9b96d9ab07",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.37797,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 188.5028
+      "importState": "imported",
+      "durationSeconds": 188.5028,
+      "sourceAudioUrl": "https://audionautix.com/Music/CoolSteelBreeze.mp3"
     },
     {
       "id": "audionautix-8a5649ad978d272a",
@@ -561,7 +658,7 @@
       "tempo": "Slow",
       "mood": "Calming, Relaxing, Uplifting",
       "sourceUrl": "https://audionautix.com/free-music/acoustic",
-      "url": "https://audionautix.com/Music/GreenLeaves.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/7c52ef9e712b0b74.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -570,7 +667,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -583,12 +681,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:04.546Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/GreenLeaves.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/7c52ef9e712b0b74.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/8835467",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:06.300Z"
         },
         "sha256": "340912d7cf910829afaac4e1ea19986796382e90e931b603f9b80d8dbf65f2b8",
         "bytes": 8835467,
@@ -605,15 +703,32 @@
         "loudnessRangeLu": 2.6,
         "truePeakDb": 1.5,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/GreenLeaves.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/8835467",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "340912d7cf910829afaac4e1ea19986796382e90e931b603f9b80d8dbf65f2b8",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.250134,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 220.685656
+      "importState": "imported",
+      "durationSeconds": 220.685656,
+      "sourceAudioUrl": "https://audionautix.com/Music/GreenLeaves.mp3"
     },
     {
       "id": "audionautix-968dd7e727571b63",
@@ -698,7 +813,7 @@
       "tempo": "Medium",
       "mood": "Bright, Relaxing, Uplifting",
       "sourceUrl": "https://audionautix.com/free-music/acoustic",
-      "url": "https://audionautix.com/Music/LandrasDream.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/48693532c4db5ff1.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -707,7 +822,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -720,12 +836,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:06.388Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/LandrasDream.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/48693532c4db5ff1.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/3561057",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:05.395Z"
         },
         "sha256": "568b8a5aa95bd8437f3036390aaedb05292757a7b6ae90a28f8324a14055ffc7",
         "bytes": 3561057,
@@ -742,15 +858,32 @@
         "loudnessRangeLu": 1.9,
         "truePeakDb": -0.1,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/LandrasDream.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/3561057",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "568b8a5aa95bd8437f3036390aaedb05292757a7b6ae90a28f8324a14055ffc7",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.246552,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 88.924025
+      "importState": "imported",
+      "durationSeconds": 88.924025,
+      "sourceAudioUrl": "https://audionautix.com/Music/LandrasDream.mp3"
     },
     {
       "id": "audionautix-3a22cc04830490da",
@@ -761,7 +894,7 @@
       "tempo": "Slow",
       "mood": "Calming, Relaxing, Soothing",
       "sourceUrl": "https://audionautix.com/free-music/acoustic",
-      "url": "https://audionautix.com/Music/OneFineDay.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/3a22cc04830490da.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -770,7 +903,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -783,12 +917,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:07.867Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/OneFineDay.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/3a22cc04830490da.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/2070510",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:06.351Z"
         },
         "sha256": "b463c9c420f0d12eba79382f8d2ce592b09a191c6b231a03e082198d9fb58eb9",
         "bytes": 2070510,
@@ -805,15 +939,32 @@
         "loudnessRangeLu": 2.9,
         "truePeakDb": 0.6,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/OneFineDay.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/2070510",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "b463c9c420f0d12eba79382f8d2ce592b09a191c6b231a03e082198d9fb58eb9",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.416477,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 103.3207
+      "importState": "imported",
+      "durationSeconds": 103.3207,
+      "sourceAudioUrl": "https://audionautix.com/Music/OneFineDay.mp3"
     },
     {
       "id": "audionautix-a416c0ce8cd6310c",
@@ -861,7 +1012,7 @@
       "tempo": "Slow",
       "mood": "Calming, Relaxing, Bright",
       "sourceUrl": "https://audionautix.com/free-music/acoustic",
-      "url": "https://audionautix.com/Music/PaperWings.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/9b2ff5d4695b4f6d.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -870,7 +1021,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -883,12 +1035,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:09.211Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/PaperWings.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/9b2ff5d4695b4f6d.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/7914263",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:07.092Z"
         },
         "sha256": "020d986129ae6bac1abc3c240fda777b87f50d5de364e98ebf0625da3bb86173",
         "bytes": 7914263,
@@ -905,15 +1057,32 @@
         "loudnessRangeLu": 4.6,
         "truePeakDb": 1,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/PaperWings.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/7914263",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "020d986129ae6bac1abc3c240fda777b87f50d5de364e98ebf0625da3bb86173",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.214462,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 196.5485
+      "importState": "imported",
+      "durationSeconds": 196.5485,
+      "sourceAudioUrl": "https://audionautix.com/Music/PaperWings.mp3"
     },
     {
       "id": "audionautix-03577089f06d8bc1",
@@ -961,7 +1130,7 @@
       "tempo": "Medium",
       "mood": "Soothing, Bouncy, Bright",
       "sourceUrl": "https://audionautix.com/free-music/acoustic",
-      "url": "https://audionautix.com/Music/RedwoodTrail.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/ab1c2f6a91f24901.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -970,7 +1139,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -983,12 +1153,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:09.399Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/RedwoodTrail.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/ab1c2f6a91f24901.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/4741802",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:07.540Z"
         },
         "sha256": "d3e4723cb99d10b25af64a5ec65589d2d21eebe759448f2b766684c33b2e9199",
         "bytes": 4741802,
@@ -1005,15 +1175,32 @@
         "loudnessRangeLu": 1.7,
         "truePeakDb": -0.2,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/RedwoodTrail.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/4741802",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "d3e4723cb99d10b25af64a5ec65589d2d21eebe759448f2b766684c33b2e9199",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.236473,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 118.3379
+      "importState": "imported",
+      "durationSeconds": 118.3379,
+      "sourceAudioUrl": "https://audionautix.com/Music/RedwoodTrail.mp3"
     },
     {
       "id": "audionautix-1d112bfd45a8ef0f",
@@ -1161,7 +1348,7 @@
       "tempo": "Slow",
       "mood": "Calming, Relaxing",
       "sourceUrl": "https://audionautix.com/free-music/acoustic",
-      "url": "https://audionautix.com/Music/Serenity.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/0e782a26b90b20cd.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -1170,7 +1357,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -1183,12 +1371,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:13.145Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/Serenity.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/0e782a26b90b20cd.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/2208436",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:07.546Z"
         },
         "sha256": "f755b5df1ae6a29b4fa652e66b54fce910987756bb0d54d4b6e3fa5ba308e38f",
         "bytes": 2208436,
@@ -1205,15 +1393,32 @@
         "loudnessRangeLu": 4.1,
         "truePeakDb": 0.4,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/Serenity.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/2208436",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "f755b5df1ae6a29b4fa652e66b54fce910987756bb0d54d4b6e3fa5ba308e38f",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.267298,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 110.217
+      "importState": "imported",
+      "durationSeconds": 110.217,
+      "sourceAudioUrl": "https://audionautix.com/Music/Serenity.mp3"
     },
     {
       "id": "audionautix-d6031489eee07af6",
@@ -1224,7 +1429,7 @@
       "tempo": "Slow",
       "mood": "Relaxing, Calming, Bright",
       "sourceUrl": "https://audionautix.com/free-music/acoustic",
-      "url": "https://audionautix.com/Music/SoloAcoustic3.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/d6031489eee07af6.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -1233,7 +1438,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -1246,12 +1452,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:13.611Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/SoloAcoustic3.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/d6031489eee07af6.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/5089138",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:08.638Z"
         },
         "sha256": "ba6f3e1c034dc6816061494071d09ce734c4674a59929e3765d83d7a849b5cbd",
         "bytes": 5089138,
@@ -1268,15 +1474,32 @@
         "loudnessRangeLu": 2.2,
         "truePeakDb": 0,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/SoloAcoustic3.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/5089138",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "ba6f3e1c034dc6816061494071d09ce734c4674a59929e3765d83d7a849b5cbd",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.203946,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 126.644825
+      "importState": "imported",
+      "durationSeconds": 126.644825,
+      "sourceAudioUrl": "https://audionautix.com/Music/SoloAcoustic3.mp3"
     },
     {
       "id": "audionautix-fb3defff44f55198",
@@ -1287,7 +1510,7 @@
       "tempo": "Medium",
       "mood": "Bright, Pensive, Calming",
       "sourceUrl": "https://audionautix.com/free-music/acoustic",
-      "url": "https://audionautix.com/Music/SoloAcoustic5.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/fb3defff44f55198.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -1296,7 +1519,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -1309,12 +1533,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:13.993Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/SoloAcoustic5.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/fb3defff44f55198.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/5708246",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:09.182Z"
         },
         "sha256": "e6611ad84d851ec87dcea24e7883f3385668f0dc2f5bf2aa25535343430e99c1",
         "bytes": 5708246,
@@ -1331,15 +1555,32 @@
         "loudnessRangeLu": 3.2,
         "truePeakDb": 0.4,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/SoloAcoustic5.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/5708246",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "e6611ad84d851ec87dcea24e7883f3385668f0dc2f5bf2aa25535343430e99c1",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.399098,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 141.404025
+      "importState": "imported",
+      "durationSeconds": 141.404025,
+      "sourceAudioUrl": "https://audionautix.com/Music/SoloAcoustic5.mp3"
     },
     {
       "id": "audionautix-66f515ef71f2b08f",
@@ -1424,7 +1665,7 @@
       "tempo": "Medium",
       "mood": "Bouncy, Driving, Relaxing",
       "sourceUrl": "https://audionautix.com/free-music/acoustic",
-      "url": "https://audionautix.com/Music/WalkInTheParkFull.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/d4423889ef1f4466.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -1433,7 +1674,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -1446,12 +1688,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:16.298Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/WalkInTheParkFull.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/d4423889ef1f4466.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/6612915",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:09.188Z"
         },
         "sha256": "0eb518d46895b64df9f86b128738760c124fbd51c4770ade9bae2f2ca438ad6f",
         "bytes": 6612915,
@@ -1468,15 +1710,32 @@
         "loudnessRangeLu": 2.3,
         "truePeakDb": 0.1,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/WalkInTheParkFull.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/6612915",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "0eb518d46895b64df9f86b128738760c124fbd51c4770ade9bae2f2ca438ad6f",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.243487,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 165.175456
+      "importState": "imported",
+      "durationSeconds": 165.175456,
+      "sourceAudioUrl": "https://audionautix.com/Music/WalkInTheParkFull.mp3"
     },
     {
       "id": "audionautix-79b80b4a07fab5c8",
@@ -1487,7 +1746,7 @@
       "tempo": "Medium",
       "mood": "Relaxing, Bright, Uplifting",
       "sourceUrl": "https://audionautix.com/free-music/acoustic",
-      "url": "https://audionautix.com/Music/Words.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/79b80b4a07fab5c8.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -1496,7 +1755,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -1509,12 +1769,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:17.186Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/Words.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/79b80b4a07fab5c8.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/2495115",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:09.510Z"
         },
         "sha256": "363353fbbd60ec0d70c6bb19c2bb5c951be7c29c7acc42ba3dff0d0872861e2c",
         "bytes": 2495115,
@@ -1531,15 +1791,32 @@
         "loudnessRangeLu": 6.1,
         "truePeakDb": -0.4,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/Words.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/2495115",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "363353fbbd60ec0d70c6bb19c2bb5c951be7c29c7acc42ba3dff0d0872861e2c",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.354333,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 155.567189
+      "importState": "imported",
+      "durationSeconds": 155.567189,
+      "sourceAudioUrl": "https://audionautix.com/Music/Words.mp3"
     },
     {
       "id": "audionautix-934e34453d552465",
@@ -1587,7 +1864,7 @@
       "tempo": "Slow",
       "mood": "Calming, Relaxing, Uplifting",
       "sourceUrl": "https://audionautix.com/free-music/easy-listening",
-      "url": "https://audionautix.com/Music/12Mornings.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/0b682003142d9efe.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -1596,7 +1873,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -1609,12 +1887,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:20.774Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/12Mornings.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/0b682003142d9efe.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/2503614",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:10.158Z"
         },
         "sha256": "6f5b011c6ba61c25209397914ac4d956d425bdb82803bd17428ffb2e629cdbc4",
         "bytes": 2503614,
@@ -1631,15 +1909,32 @@
         "loudnessRangeLu": 4.1,
         "truePeakDb": 1.1,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/12Mornings.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/2503614",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "6f5b011c6ba61c25209397914ac4d956d425bdb82803bd17428ffb2e629cdbc4",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.371561,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 153.399
+      "importState": "imported",
+      "durationSeconds": 153.399,
+      "sourceAudioUrl": "https://audionautix.com/Music/12Mornings.mp3"
     },
     {
       "id": "audionautix-759bfc88d0fd50c0",
@@ -1650,7 +1945,7 @@
       "tempo": "Medium",
       "mood": "Uplifting, Bouncy, Relaxing",
       "sourceUrl": "https://audionautix.com/free-music/easy-listening",
-      "url": "https://audionautix.com/Music/Alison.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/759bfc88d0fd50c0.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -1659,7 +1954,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -1672,12 +1968,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:23.256Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/Alison.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/759bfc88d0fd50c0.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/7035342",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:10.782Z"
         },
         "sha256": "7ce0832e146e79c0eba798d2472f445b445221a5fa5a05d837b94e4d14104907",
         "bytes": 7035342,
@@ -1694,15 +1990,32 @@
         "loudnessRangeLu": 7,
         "truePeakDb": 0.3,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/Alison.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/7035342",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "7ce0832e146e79c0eba798d2472f445b445221a5fa5a05d837b94e4d14104907",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.376935,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 175.78115
+      "importState": "imported",
+      "durationSeconds": 175.78115,
+      "sourceAudioUrl": "https://audionautix.com/Music/Alison.mp3"
     },
     {
       "id": "audionautix-6906bab5e57b1ed4",
@@ -1824,7 +2137,7 @@
       "tempo": "Medium",
       "mood": "Relaxing, Driving, Uplifting",
       "sourceUrl": "https://audionautix.com/free-music/easy-listening",
-      "url": "https://audionautix.com/Music/EmilyWalksAway.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/4d75ca756836e26a.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -1833,7 +2146,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -1846,12 +2160,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:24.923Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/EmilyWalksAway.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/4d75ca756836e26a.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/3673884",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:10.997Z"
         },
         "sha256": "a2fc4bd3b99249aa04f72d66731458b252329368794caff4e3b1da319a60f91a",
         "bytes": 3673884,
@@ -1868,15 +2182,32 @@
         "loudnessRangeLu": 5.2,
         "truePeakDb": 0.3,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/EmilyWalksAway.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/3673884",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "a2fc4bd3b99249aa04f72d66731458b252329368794caff4e3b1da319a60f91a",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.273833,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 183.4633
+      "importState": "imported",
+      "durationSeconds": 183.4633,
+      "sourceAudioUrl": "https://audionautix.com/Music/EmilyWalksAway.mp3"
     },
     {
       "id": "audionautix-605679e281001968",
@@ -1887,7 +2218,7 @@
       "tempo": "Medium",
       "mood": "Relaxing, Driving, Uplifting",
       "sourceUrl": "https://audionautix.com/free-music/easy-listening",
-      "url": "https://audionautix.com/Music/GoNotGently.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/605679e281001968.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -1896,7 +2227,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -1909,12 +2241,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:25.818Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/GoNotGently.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/605679e281001968.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/7794983",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:12.123Z"
         },
         "sha256": "1249094aeef855e12598647c5f97e2e303a97a89d2c3740f8e086a967de56645",
         "bytes": 7794983,
@@ -1931,15 +2263,32 @@
         "loudnessRangeLu": 5.5,
         "truePeakDb": -0.4,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/GoNotGently.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/7794983",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "1249094aeef855e12598647c5f97e2e303a97a89d2c3740f8e086a967de56645",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.270961,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 194.772175
+      "importState": "imported",
+      "durationSeconds": 194.772175,
+      "sourceAudioUrl": "https://audionautix.com/Music/GoNotGently.mp3"
     },
     {
       "id": "audionautix-48be6c99afe27f83",
@@ -1950,7 +2299,7 @@
       "tempo": "Medium",
       "mood": "Bouncy, Driving, Uplifting",
       "sourceUrl": "https://audionautix.com/free-music/easy-listening",
-      "url": "https://audionautix.com/Music/HopeAgainstHope.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/48be6c99afe27f83.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -1959,7 +2308,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -1972,12 +2322,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:26.255Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/HopeAgainstHope.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/48be6c99afe27f83.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/4047979",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:12.040Z"
         },
         "sha256": "f4e7a5f4601de492904253a8d6a7a9b1b2e0716b8cbd15bcd3de898a486c9bd3",
         "bytes": 4047979,
@@ -1994,15 +2344,32 @@
         "loudnessRangeLu": 1.3,
         "truePeakDb": 0.4,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/HopeAgainstHope.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/4047979",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "f4e7a5f4601de492904253a8d6a7a9b1b2e0716b8cbd15bcd3de898a486c9bd3",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.335211,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 101.097075
+      "importState": "imported",
+      "durationSeconds": 101.097075,
+      "sourceAudioUrl": "https://audionautix.com/Music/HopeAgainstHope.mp3"
     },
     {
       "id": "audionautix-a314348ae5a3c7ac",
@@ -2013,7 +2380,7 @@
       "tempo": "Medium",
       "mood": "Bouncy, Relaxing, Uplifting",
       "sourceUrl": "https://audionautix.com/free-music/easy-listening",
-      "url": "https://audionautix.com/Music/InTheField.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/a314348ae5a3c7ac.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -2022,7 +2389,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -2035,12 +2403,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:28.104Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/InTheField.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/a314348ae5a3c7ac.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/2158804",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:12.001Z"
         },
         "sha256": "f36293b704cf97f073257f33e109fd8a1472e5536d5a547b416c116923331299",
         "bytes": 2158804,
@@ -2057,15 +2425,32 @@
         "loudnessRangeLu": 4.1,
         "truePeakDb": 0.9,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/InTheField.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/2158804",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "f36293b704cf97f073257f33e109fd8a1472e5536d5a547b416c116923331299",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.353449,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 107.7354
+      "importState": "imported",
+      "durationSeconds": 107.7354,
+      "sourceAudioUrl": "https://audionautix.com/Music/InTheField.mp3"
     },
     {
       "id": "audionautix-38d8a531f9a4b4ba",
@@ -2076,7 +2461,7 @@
       "tempo": "Slow",
       "mood": "Bouncy, Relaxing, Uplifting",
       "sourceUrl": "https://audionautix.com/free-music/easy-listening",
-      "url": "https://audionautix.com/Music/LazyDay.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/38d8a531f9a4b4ba.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -2085,7 +2470,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -2098,12 +2484,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:28.797Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/LazyDay.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/38d8a531f9a4b4ba.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/2681775",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:13.065Z"
         },
         "sha256": "9dd7d07928d3fad8e986f23437f94c51e0918daf8f47ec771b9fd9ec2c6f7128",
         "bytes": 2681775,
@@ -2120,15 +2506,32 @@
         "loudnessRangeLu": 3.5,
         "truePeakDb": 0.5,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/LazyDay.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/2681775",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "9dd7d07928d3fad8e986f23437f94c51e0918daf8f47ec771b9fd9ec2c6f7128",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.284618,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 133.88395
+      "importState": "imported",
+      "durationSeconds": 133.88395,
+      "sourceAudioUrl": "https://audionautix.com/Music/LazyDay.mp3"
     },
     {
       "id": "audionautix-bec52b874272fe84",
@@ -2176,7 +2579,7 @@
       "tempo": "Medium",
       "mood": "Bouncy, Relaxing, Uplifting",
       "sourceUrl": "https://audionautix.com/free-music/easy-listening",
-      "url": "https://audionautix.com/Music/MedTempoRock.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/ee7dbfee68698306.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -2185,7 +2588,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -2198,12 +2602,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:30.656Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/MedTempoRock.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/ee7dbfee68698306.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/3967392",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:13.128Z"
         },
         "sha256": "dcf608a5a9e21276648399765716eff6ff37a4269e233ffde4c0b0c1a24291e9",
         "bytes": 3967392,
@@ -2220,15 +2624,32 @@
         "loudnessRangeLu": 3.5,
         "truePeakDb": 1.3,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/MedTempoRock.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/3967392",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "dcf608a5a9e21276648399765716eff6ff37a4269e233ffde4c0b0c1a24291e9",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.331304,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 247.706
+      "importState": "imported",
+      "durationSeconds": 247.706,
+      "sourceAudioUrl": "https://audionautix.com/Music/MedTempoRock.mp3"
     },
     {
       "id": "audionautix-57c7b5bdcd726900",
@@ -2239,7 +2660,7 @@
       "tempo": "Medium",
       "mood": "Driving, Relaxing, Uplifting",
       "sourceUrl": "https://audionautix.com/free-music/easy-listening",
-      "url": "https://audionautix.com/Music/MediumRock.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/57c7b5bdcd726900.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -2248,7 +2669,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -2261,12 +2683,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:31.842Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/MediumRock.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/57c7b5bdcd726900.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/3744959",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:13.595Z"
         },
         "sha256": "d0aa81fa7b3dc6fba2c40564485019400855bf2eac8dee67b34cf980caa87172",
         "bytes": 3744959,
@@ -2283,15 +2705,32 @@
         "loudnessRangeLu": 3.7,
         "truePeakDb": -0.9,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/MediumRock.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/3744959",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "d0aa81fa7b3dc6fba2c40564485019400855bf2eac8dee67b34cf980caa87172",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.279125,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 233.803938
+      "importState": "imported",
+      "durationSeconds": 233.803938,
+      "sourceAudioUrl": "https://audionautix.com/Music/MediumRock.mp3"
     },
     {
       "id": "audionautix-24b8741690135ebe",
@@ -2302,7 +2741,7 @@
       "tempo": "Medium",
       "mood": "Bouncy, Relaxing, Calming",
       "sourceUrl": "https://audionautix.com/free-music/easy-listening",
-      "url": "https://audionautix.com/Music/Pioneers.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/24b8741690135ebe.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -2311,7 +2750,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -2324,12 +2764,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:32.165Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/Pioneers.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/24b8741690135ebe.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/6941302",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:15.514Z"
         },
         "sha256": "28b551438773c1a388b511e7e750dc3c52e857392cdb5b5adff9a1617158cb77",
         "bytes": 6941302,
@@ -2346,15 +2786,32 @@
         "loudnessRangeLu": 7.9,
         "truePeakDb": 0,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/Pioneers.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/6941302",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "28b551438773c1a388b511e7e750dc3c52e857392cdb5b5adff9a1617158cb77",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.357299,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 173.43015
+      "importState": "imported",
+      "durationSeconds": 173.43015,
+      "sourceAudioUrl": "https://audionautix.com/Music/Pioneers.mp3"
     },
     {
       "id": "audionautix-751dae7047790ee9",
@@ -2439,7 +2896,7 @@
       "tempo": "Medium",
       "mood": "Driving, Calming, Bright",
       "sourceUrl": "https://audionautix.com/free-music/easy-listening",
-      "url": "https://audionautix.com/Music/ShadowOfTruth.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/281c28b724059574.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -2448,7 +2905,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -2461,12 +2919,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:34.043Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/ShadowOfTruth.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/281c28b724059574.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/10118619",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:15.492Z"
         },
         "sha256": "4d9401f48c0915fc74662347c954a505d8acba178791218fb6d0ea3c1dfc851f",
         "bytes": 10118619,
@@ -2483,15 +2941,32 @@
         "loudnessRangeLu": 4.9,
         "truePeakDb": 0.3,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/ShadowOfTruth.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/10118619",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "4d9401f48c0915fc74662347c954a505d8acba178791218fb6d0ea3c1dfc851f",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.30358,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 250.047278
+      "importState": "imported",
+      "durationSeconds": 250.047278,
+      "sourceAudioUrl": "https://audionautix.com/Music/ShadowOfTruth.mp3"
     },
     {
       "id": "audionautix-89c6fcea93304173",
@@ -2687,7 +3162,7 @@
       "tempo": "Medium",
       "mood": "Relaxing, Calming, Dark",
       "sourceUrl": "https://audionautix.com/free-music/easy-listening",
-      "url": "https://audionautix.com/Music/Triangle.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/bccc7667a9535a87.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -2696,7 +3171,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -2709,12 +3185,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:35.981Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/Triangle.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/bccc7667a9535a87.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/8846938",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:16.115Z"
         },
         "sha256": "33c322692869168bcebc3eae1fe8e855187036be55f6d4fdeb03f901f6b5c937",
         "bytes": 8846938,
@@ -2731,15 +3207,32 @@
         "loudnessRangeLu": 3.2,
         "truePeakDb": 0.1,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/Triangle.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/8846938",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "33c322692869168bcebc3eae1fe8e855187036be55f6d4fdeb03f901f6b5c937",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.272119,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 220.973
+      "importState": "imported",
+      "durationSeconds": 220.973,
+      "sourceAudioUrl": "https://audionautix.com/Music/Triangle.mp3"
     },
     {
       "id": "audionautix-1d055830c6528b84",
@@ -2824,7 +3317,7 @@
       "tempo": "Medium",
       "mood": "",
       "sourceUrl": "https://audionautix.com/free-music/electronic",
-      "url": "https://audionautix.com/Music/AcrylicOnCanvas.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/305b7d8ccef883b3.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -2833,7 +3326,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -2846,12 +3340,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:51.971Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/AcrylicOnCanvas.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/305b7d8ccef883b3.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/5794413",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:17.657Z"
         },
         "sha256": "cb6d444d7b350279bc288e140373951bad0664c3b088bcb9bcf9baa5e7856438",
         "bytes": 5794413,
@@ -2868,15 +3362,32 @@
         "loudnessRangeLu": 4.7,
         "truePeakDb": -0.2,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/AcrylicOnCanvas.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/5794413",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "cb6d444d7b350279bc288e140373951bad0664c3b088bcb9bcf9baa5e7856438",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.307286,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 121.211325
+      "importState": "imported",
+      "durationSeconds": 121.211325,
+      "sourceAudioUrl": "https://audionautix.com/Music/AcrylicOnCanvas.mp3"
     },
     {
       "id": "audionautix-868a273e5a0f8286",
@@ -2887,7 +3398,7 @@
       "tempo": "Medium",
       "mood": "Groove, Meloncholy",
       "sourceUrl": "https://audionautix.com/free-music/electronic",
-      "url": "https://audionautix.com/Music/Algorithm.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/868a273e5a0f8286.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -2896,7 +3407,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -2909,12 +3421,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:53.778Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/Algorithm.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/868a273e5a0f8286.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/7570360",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:17.675Z"
         },
         "sha256": "175eec31907b63c31d5728aa772cfe9a36f29752f1d22b646ec915e60e5ff5ad",
         "bytes": 7570360,
@@ -2931,15 +3443,32 @@
         "loudnessRangeLu": 6.3,
         "truePeakDb": 1.1,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/Algorithm.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/7570360",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "175eec31907b63c31d5728aa772cfe9a36f29752f1d22b646ec915e60e5ff5ad",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.308248,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 226.067689
+      "importState": "imported",
+      "durationSeconds": 226.067689,
+      "sourceAudioUrl": "https://audionautix.com/Music/Algorithm.mp3"
     },
     {
       "id": "audionautix-5928d370f0d0352e",
@@ -3642,7 +4171,7 @@
       "tempo": "Slow",
       "mood": "Calming, Relaxing",
       "sourceUrl": "https://audionautix.com/free-music/folk",
-      "url": "https://audionautix.com/Music/AcousticMeditation2.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/62cbdaf4b6267967.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -3651,7 +4180,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -3664,12 +4194,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:17.604Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/AcousticMeditation2.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/62cbdaf4b6267967.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/7786624",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:18.142Z"
         },
         "sha256": "b3fa77b55a11054fe9a4de1651453044c61f32e2ed519b534c7513988332da1f",
         "bytes": 7786624,
@@ -3686,15 +4216,32 @@
         "loudnessRangeLu": 2.3,
         "truePeakDb": -0.2,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/AcousticMeditation2.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/7786624",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "b3fa77b55a11054fe9a4de1651453044c61f32e2ed519b534c7513988332da1f",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.273825,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 194.5632
+      "importState": "imported",
+      "durationSeconds": 194.5632,
+      "sourceAudioUrl": "https://audionautix.com/Music/AcousticMeditation2.mp3"
     },
     {
       "id": "audionautix-177c528c1f97b814",
@@ -3990,7 +4537,7 @@
       "tempo": "Medium",
       "mood": "Driving, Relaxing, Uplifting",
       "sourceUrl": "https://audionautix.com/free-music/folk",
-      "url": "https://audionautix.com/Music/Thingamajig.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/8933c5790d4ac9ca.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -3999,7 +4546,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -4012,12 +4560,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:19.809Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/Thingamajig.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/8933c5790d4ac9ca.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/4676485",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:18.941Z"
         },
         "sha256": "bcec8345aeac9e6236c40a046f466c0ca1d823f2eb26dc752fbf0c2515bc2358",
         "bytes": 4676485,
@@ -4034,15 +4582,32 @@
         "loudnessRangeLu": 4.8,
         "truePeakDb": 0.7,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/Thingamajig.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/4676485",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "bcec8345aeac9e6236c40a046f466c0ca1d823f2eb26dc752fbf0c2515bc2358",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.298351,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 233.61945
+      "importState": "imported",
+      "durationSeconds": 233.61945,
+      "sourceAudioUrl": "https://audionautix.com/Music/Thingamajig.mp3"
     },
     {
       "id": "audionautix-a4c74dc9cce2539a",
@@ -4449,7 +5014,7 @@
       "tempo": "Medium",
       "mood": "Bouncy, Grooving, Relaxing",
       "sourceUrl": "https://audionautix.com/free-music/jazz",
-      "url": "https://audionautix.com/Music/OkeyDokeySmokey.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/9f1748b5a615c467.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -4458,7 +5023,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -4471,12 +5037,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:20.829Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/OkeyDokeySmokey.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/9f1748b5a615c467.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/5959869",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:19.966Z"
         },
         "sha256": "bce32357d3cc7b94e1c9667bf2d105836308d10d8ee145ab7b10f9b0984cf99b",
         "bytes": 5959869,
@@ -4493,15 +5059,32 @@
         "loudnessRangeLu": 2.1,
         "truePeakDb": 0.2,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/OkeyDokeySmokey.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/5959869",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "bce32357d3cc7b94e1c9667bf2d105836308d10d8ee145ab7b10f9b0984cf99b",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.296934,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 148.848925
+      "importState": "imported",
+      "durationSeconds": 148.848925,
+      "sourceAudioUrl": "https://audionautix.com/Music/OkeyDokeySmokey.mp3"
     },
     {
       "id": "audionautix-694e5c64d0a31155",
@@ -4580,7 +5163,7 @@
     {
       "id": "audionautix-fa3ab78b391fd9b2",
       "title": "Plumber's Rag",
-      "artist": "Jason Shaw",
+      "artist": "Guest composer (unconfirmed)",
       "candidateProfile": "Jazz & Lounge",
       "genre": "Jazz",
       "tempo": "Medium",
@@ -4697,7 +5280,7 @@
       "tempo": "Medium",
       "mood": "Relaxing, Calming, Bright",
       "sourceUrl": "https://audionautix.com/free-music/jazz",
-      "url": "https://audionautix.com/Music/SidewaysSamba.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/3a361f6ae49e810b.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -4706,7 +5289,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -4719,12 +5303,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:20.830Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/SidewaysSamba.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/3a361f6ae49e810b.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/7642428",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:20.127Z"
         },
         "sha256": "2ee432954197d30320b95a915d3c029e446130f5eb0490347c87bb535dc7e159",
         "bytes": 7642428,
@@ -4741,15 +5325,32 @@
         "loudnessRangeLu": 2.4,
         "truePeakDb": 0.4,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/SidewaysSamba.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/7642428",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "2ee432954197d30320b95a915d3c029e446130f5eb0490347c87bb535dc7e159",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.279209,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 190.9583
+      "importState": "imported",
+      "durationSeconds": 190.9583,
+      "sourceAudioUrl": "https://audionautix.com/Music/SidewaysSamba.mp3"
     },
     {
       "id": "audionautix-be44bed76796126a",
@@ -4760,7 +5361,7 @@
       "tempo": "Slow",
       "mood": "Relaxing, Melancholy, Smooth",
       "sourceUrl": "https://audionautix.com/free-music/jazz",
-      "url": "https://audionautix.com/Music/StandardJazzBars.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/be44bed76796126a.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -4769,7 +5370,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -4782,12 +5384,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:24.392Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/StandardJazzBars.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/be44bed76796126a.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/2921697",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:19.979Z"
         },
         "sha256": "cf1318e0def6108c3f41fc16348367184946516c20f3db86297f316006b60ba6",
         "bytes": 2921697,
@@ -4804,15 +5406,32 @@
         "loudnessRangeLu": 9.6,
         "truePeakDb": -2.5,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/StandardJazzBars.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/2921697",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "cf1318e0def6108c3f41fc16348367184946516c20f3db86297f316006b60ba6",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.251374,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 182.212067
+      "importState": "imported",
+      "durationSeconds": 182.212067,
+      "sourceAudioUrl": "https://audionautix.com/Music/StandardJazzBars.mp3"
     },
     {
       "id": "audionautix-a586104e65ce592f",
@@ -4823,7 +5442,7 @@
       "tempo": "Medium",
       "mood": "Grooving, Driving, Relaxing",
       "sourceUrl": "https://audionautix.com/free-music/jazz-funk",
-      "url": "https://audionautix.com/Music/CodeBlue.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/a586104e65ce592f.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -4832,7 +5451,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -4845,12 +5465,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:24.826Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/CodeBlue.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/a586104e65ce592f.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/2287953",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:20.991Z"
         },
         "sha256": "70876688557f36ccad6dd7d172a5c4e9ec603bd1856b960fb64bafa0163b04d9",
         "bytes": 2287953,
@@ -4867,15 +5487,32 @@
         "loudnessRangeLu": 4.2,
         "truePeakDb": 0.2,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/CodeBlue.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/2287953",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "70876688557f36ccad6dd7d172a5c4e9ec603bd1856b960fb64bafa0163b04d9",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.331257,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 142.741063
+      "importState": "imported",
+      "durationSeconds": 142.741063,
+      "sourceAudioUrl": "https://audionautix.com/Music/CodeBlue.mp3"
     },
     {
       "id": "audionautix-b45700f7e61f29cb",
@@ -4886,7 +5523,7 @@
       "tempo": "Medium",
       "mood": "Bright, Relaxing, Bouncy",
       "sourceUrl": "https://audionautix.com/free-music/jazz-funk",
-      "url": "https://audionautix.com/Music/CopAFeel.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/b45700f7e61f29cb.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -4895,7 +5532,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -4908,12 +5546,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:27.565Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/CopAFeel.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/b45700f7e61f29cb.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/5948648",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:21.889Z"
         },
         "sha256": "535a35ef5b915d0113fe1a6ffe92861a3313a6c380a36d88f4657be3a72bfdcf",
         "bytes": 5948648,
@@ -4930,15 +5568,32 @@
         "loudnessRangeLu": 2.8,
         "truePeakDb": 0.3,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/CopAFeel.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/5948648",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "535a35ef5b915d0113fe1a6ffe92861a3313a6c380a36d88f4657be3a72bfdcf",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.253977,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 148.6138
+      "importState": "imported",
+      "durationSeconds": 148.6138,
+      "sourceAudioUrl": "https://audionautix.com/Music/CopAFeel.mp3"
     },
     {
       "id": "audionautix-4f8de0532ac75caa",
@@ -4986,7 +5641,7 @@
       "tempo": "Medium",
       "mood": "Grooving, Cool, Relaxing",
       "sourceUrl": "https://audionautix.com/free-music/jazz-funk",
-      "url": "https://audionautix.com/Music/DatGrooveFullTrack.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/35361cf819f2e6c2.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -4995,7 +5650,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -5008,12 +5664,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:28.382Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/DatGrooveFullTrack.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/35361cf819f2e6c2.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/5194234",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:21.818Z"
         },
         "sha256": "dba99c2cbc31383a6fe14659be0d0c3325c3a29252494763473121731a30173a",
         "bytes": 5194234,
@@ -5030,15 +5686,32 @@
         "loudnessRangeLu": 1.2,
         "truePeakDb": -0.2,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/DatGrooveFullTrack.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/5194234",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "dba99c2cbc31383a6fe14659be0d0c3325c3a29252494763473121731a30173a",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.363403,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 129.648925
+      "importState": "imported",
+      "durationSeconds": 129.648925,
+      "sourceAudioUrl": "https://audionautix.com/Music/DatGrooveFullTrack.mp3"
     },
     {
       "id": "audionautix-4783de00bff4ff17",
@@ -5086,7 +5759,7 @@
       "tempo": "Medium",
       "mood": "Relaxing, Driving, Bouncy",
       "sourceUrl": "https://audionautix.com/free-music/jazz-funk",
-      "url": "https://audionautix.com/Music/FatCaps.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/e2d55380053d724d.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -5095,7 +5768,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -5108,12 +5782,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:31.157Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/FatCaps.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/e2d55380053d724d.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/3573595",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:22.356Z"
         },
         "sha256": "3cf9c565ed91289a17760e8c02f1517987c713c8e51029ddc0d0aae1c2c1f09a",
         "bytes": 3573595,
@@ -5130,15 +5804,32 @@
         "loudnessRangeLu": 3.4,
         "truePeakDb": 0.3,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/FatCaps.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/3573595",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "3cf9c565ed91289a17760e8c02f1517987c713c8e51029ddc0d0aae1c2c1f09a",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.274255,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 178.47495
+      "importState": "imported",
+      "durationSeconds": 178.47495,
+      "sourceAudioUrl": "https://audionautix.com/Music/FatCaps.mp3"
     },
     {
       "id": "audionautix-8033f7524fab268d",
@@ -5297,7 +5988,7 @@
       "tempo": "Medium",
       "mood": "Grooving, Bouncy, Relaxing",
       "sourceUrl": "https://audionautix.com/free-music/jazz-funk",
-      "url": "https://audionautix.com/Music/SmoothSailingFullTrack.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/1c911b86141dd024.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -5306,7 +5997,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -5319,12 +6011,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:32.336Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/SmoothSailingFullTrack.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/1c911b86141dd024.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/13446597",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:25.413Z"
         },
         "sha256": "72ed104c04c079016ae92193161729f494f0a68e66be8824f0e81af10388c337",
         "bytes": 13446597,
@@ -5341,15 +6033,32 @@
         "loudnessRangeLu": 3.4,
         "truePeakDb": 0.5,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/SmoothSailingFullTrack.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/13446597",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "72ed104c04c079016ae92193161729f494f0a68e66be8824f0e81af10388c337",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.269429,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 336.016256
+      "importState": "imported",
+      "durationSeconds": 336.016256,
+      "sourceAudioUrl": "https://audionautix.com/Music/SmoothSailingFullTrack.mp3"
     },
     {
       "id": "audionautix-5c0c8e0e3e31ab5b",
@@ -5360,7 +6069,7 @@
       "tempo": "Medium",
       "mood": "Bouncy, Bright, Relaxing",
       "sourceUrl": "https://audionautix.com/free-music/jazz-funk",
-      "url": "https://audionautix.com/Music/SummerSidewalk.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/5c0c8e0e3e31ab5b.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -5369,7 +6078,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -5382,12 +6092,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:34.461Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/SummerSidewalk.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/5c0c8e0e3e31ab5b.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/5962232",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:23.550Z"
         },
         "sha256": "36d9d3e293792a881509f8fe03680ad1c8f072a90135920b5ddd6519b4f5c686",
         "bytes": 5962232,
@@ -5404,15 +6114,32 @@
         "loudnessRangeLu": 7.3,
         "truePeakDb": -0.8,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/SummerSidewalk.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/5962232",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "36d9d3e293792a881509f8fe03680ad1c8f072a90135920b5ddd6519b4f5c686",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.258236,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 148.9534
+      "importState": "imported",
+      "durationSeconds": 148.9534,
+      "sourceAudioUrl": "https://audionautix.com/Music/SummerSidewalk.mp3"
     },
     {
       "id": "audionautix-dc7190063ead174d",
@@ -5460,7 +6187,7 @@
       "tempo": "Medium",
       "mood": "Pensive, Moody, Dark",
       "sourceUrl": "https://audionautix.com/free-music/lo-fi",
-      "url": "https://audionautix.com/Music/Beautiful%20Daughter.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/d5604612f9b1292c.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -5469,7 +6196,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -5482,12 +6210,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:36.768Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/Beautiful%20Daughter.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/d5604612f9b1292c.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/5324390",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:24.092Z"
         },
         "sha256": "53d86100f9ee170873372092e876f0c1e529cba2112f3b31672b8208bc9b3687",
         "bytes": 5324390,
@@ -5504,15 +6232,32 @@
         "loudnessRangeLu": 6.6,
         "truePeakDb": 0,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/Beautiful%20Daughter.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/5324390",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "53d86100f9ee170873372092e876f0c1e529cba2112f3b31672b8208bc9b3687",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.341997,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 164.026844
+      "importState": "imported",
+      "durationSeconds": 164.026844,
+      "sourceAudioUrl": "https://audionautix.com/Music/Beautiful%20Daughter.mp3"
     },
     {
       "id": "audionautix-e9d0cf0268634e80",
@@ -5523,7 +6268,7 @@
       "tempo": "Medium",
       "mood": "Groove, Bright, Energy",
       "sourceUrl": "https://audionautix.com/free-music/lo-fi",
-      "url": "https://audionautix.com/Music/Jellyfish.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/e9d0cf0268634e80.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -5532,7 +6277,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -5545,12 +6291,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:37.837Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/Jellyfish.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/e9d0cf0268634e80.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/6339527",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:25.304Z"
         },
         "sha256": "bd5abebe180e8c780a025235c96662d369bd7e15e2b9a83d87b3707162333283",
         "bytes": 6339527,
@@ -5567,15 +6313,32 @@
         "loudnessRangeLu": 8.5,
         "truePeakDb": 1.1,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/Jellyfish.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/6339527",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "bd5abebe180e8c780a025235c96662d369bd7e15e2b9a83d87b3707162333283",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.382628,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 202.140071
+      "importState": "imported",
+      "durationSeconds": 202.140071,
+      "sourceAudioUrl": "https://audionautix.com/Music/Jellyfish.mp3"
     },
     {
       "id": "audionautix-eb5eeaff96bb90c2",
@@ -5649,7 +6412,7 @@
       "tempo": "Medium",
       "mood": "Groove, Bouncy, Happy",
       "sourceUrl": "https://audionautix.com/free-music/lo-fi",
-      "url": "https://audionautix.com/Music/TrippinCoffee.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/6fbdf4b5f90c4895.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -5658,7 +6421,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -5671,12 +6435,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:39.333Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/TrippinCoffee.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/6fbdf4b5f90c4895.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/6845861",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:26.031Z"
         },
         "sha256": "68b3cd2384a579b435e307afc68d8bc24ad15cb1af11f7be456aa23b58367417",
         "bytes": 6845861,
@@ -5693,15 +6457,32 @@
         "loudnessRangeLu": 6.3,
         "truePeakDb": 0.7,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/TrippinCoffee.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/6845861",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "68b3cd2384a579b435e307afc68d8bc24ad15cb1af11f7be456aa23b58367417",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.282762,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 213.842375
+      "importState": "imported",
+      "durationSeconds": 213.842375,
+      "sourceAudioUrl": "https://audionautix.com/Music/TrippinCoffee.mp3"
     },
     {
       "id": "audionautix-3645c566406e4e11",
@@ -5712,7 +6493,7 @@
       "tempo": "Medium",
       "mood": "Cool, Chill, Bossa Nova, Jazz",
       "sourceUrl": "https://audionautix.com/free-music/lo-fi",
-      "url": "https://audionautix.com/Music/TropicalContact.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/3645c566406e4e11.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -5721,7 +6502,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -5734,12 +6516,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:41.067Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/TropicalContact.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/3645c566406e4e11.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/9314606",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:28.308Z"
         },
         "sha256": "d1d9f183156ac74a53c9859d3cdc9f3644f08663573a1aee42c147ee9fe6abfd",
         "bytes": 9314606,
@@ -5756,15 +6538,32 @@
         "loudnessRangeLu": 3.8,
         "truePeakDb": -0.4,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/TropicalContact.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/9314606",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "d1d9f183156ac74a53c9859d3cdc9f3644f08663573a1aee42c147ee9fe6abfd",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.384428,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 205.0612
+      "importState": "imported",
+      "durationSeconds": 205.0612,
+      "sourceAudioUrl": "https://audionautix.com/Music/TropicalContact.mp3"
     },
     {
       "id": "audionautix-f57a37394ac1a4ba",
@@ -5775,7 +6574,7 @@
       "tempo": "Slow",
       "mood": "Calming, Relaxing, Grooving",
       "sourceUrl": "https://audionautix.com/free-music/meditative",
-      "url": "https://audionautix.com/Music/Namaste.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/f57a37394ac1a4ba.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -5784,7 +6583,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -5797,12 +6597,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:43.289Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/Namaste.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/f57a37394ac1a4ba.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/6562004",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:27.721Z"
         },
         "sha256": "f93cabd0a0322d624d83285cec767e86d1371bef5f663d1874ad37c6324d2e11",
         "bytes": 6562004,
@@ -5819,15 +6619,32 @@
         "loudnessRangeLu": 4.6,
         "truePeakDb": -1.9,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/Namaste.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/6562004",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "f93cabd0a0322d624d83285cec767e86d1371bef5f663d1874ad37c6324d2e11",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.239647,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 327.8954
+      "importState": "imported",
+      "durationSeconds": 327.8954,
+      "sourceAudioUrl": "https://audionautix.com/Music/Namaste.mp3"
     },
     {
       "id": "audionautix-334cbb15a62e26cb",
@@ -5838,7 +6655,7 @@
       "tempo": "Slow",
       "mood": "Calming, Relaxing, Meditation",
       "sourceUrl": "https://audionautix.com/free-music/meditative",
-      "url": "https://audionautix.com/Music/NavajoNight.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/334cbb15a62e26cb.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -5847,7 +6664,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -5860,12 +6678,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:43.328Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/NavajoNight.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/334cbb15a62e26cb.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/28805269",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:32.933Z"
         },
         "sha256": "707526d4e4eb2bf97bc2f21607db6f9f22367245d83f0ba77868de1f33a2ef58",
         "bytes": 28805269,
@@ -5882,15 +6700,32 @@
         "loudnessRangeLu": 1.3,
         "truePeakDb": -2.1,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/NavajoNight.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/28805269",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "707526d4e4eb2bf97bc2f21607db6f9f22367245d83f0ba77868de1f33a2ef58",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.207034,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 1440.05865
+      "importState": "imported",
+      "durationSeconds": 1440.05865,
+      "sourceAudioUrl": "https://audionautix.com/Music/NavajoNight.mp3"
     },
     {
       "id": "audionautix-282d2247f23af15d",
@@ -5901,7 +6736,7 @@
       "tempo": "Slow",
       "mood": "Calming, Relaxing, Dark",
       "sourceUrl": "https://audionautix.com/free-music/meditative",
-      "url": "https://audionautix.com/Music/Ohm.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/282d2247f23af15d.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -5910,7 +6745,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -5923,12 +6759,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:44.714Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/Ohm.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/282d2247f23af15d.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/14816225",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:32.434Z"
         },
         "sha256": "ccabcd1bce21ff38442b6265b7f6fd1d28e227a8fc40428077a98e6e5974524e",
         "bytes": 14816225,
@@ -5945,15 +6781,32 @@
         "loudnessRangeLu": 9.2,
         "truePeakDb": -0.1,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/Ohm.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/14816225",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "ccabcd1bce21ff38442b6265b7f6fd1d28e227a8fc40428077a98e6e5974524e",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.295388,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 369.1134
+      "importState": "imported",
+      "durationSeconds": 369.1134,
+      "sourceAudioUrl": "https://audionautix.com/Music/Ohm.mp3"
     },
     {
       "id": "audionautix-52ad90abfbbaa385",
@@ -5964,7 +6817,7 @@
       "tempo": "Medium",
       "mood": "Calming, Relaxing",
       "sourceUrl": "https://audionautix.com/free-music/meditative",
-      "url": "https://audionautix.com/Music/RunningWaters.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/52ad90abfbbaa385.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -5973,7 +6826,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -5986,12 +6840,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:48.754Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/RunningWaters.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/52ad90abfbbaa385.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/6666493",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:30.615Z"
         },
         "sha256": "01c7103d17387a0de1cdddb25be8d2f60f8869a6b02cc833af6b10c4c7afa4d3",
         "bytes": 6666493,
@@ -6008,15 +6862,32 @@
         "loudnessRangeLu": 4,
         "truePeakDb": -0.1,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/RunningWaters.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/6666493",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "01c7103d17387a0de1cdddb25be8d2f60f8869a6b02cc833af6b10c4c7afa4d3",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.250391,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 166.559925
+      "importState": "imported",
+      "durationSeconds": 166.559925,
+      "sourceAudioUrl": "https://audionautix.com/Music/RunningWaters.mp3"
     },
     {
       "id": "audionautix-0c6d8c62fe998642",
@@ -6138,7 +7009,7 @@
       "tempo": "Medium",
       "mood": "Grooving, Bouncy, Bright",
       "sourceUrl": "https://audionautix.com/free-music/pop-funk",
-      "url": "https://audionautix.com/Music/GroovyBaby.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/ed664e557e812bf1.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -6147,7 +7018,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -6160,12 +7032,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:35.981Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/GroovyBaby.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/ed664e557e812bf1.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/2962853",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:31.826Z"
         },
         "sha256": "b1f6ad82ee9accd6eccf26c7a5a5766176c149276ff7bab784c2def910b574ce",
         "bytes": 2962853,
@@ -6182,15 +7054,32 @@
         "loudnessRangeLu": 1.9,
         "truePeakDb": 1.3,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/GroovyBaby.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/2962853",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "b1f6ad82ee9accd6eccf26c7a5a5766176c149276ff7bab784c2def910b574ce",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.278883,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 147.93785
+      "importState": "imported",
+      "durationSeconds": 147.93785,
+      "sourceAudioUrl": "https://audionautix.com/Music/GroovyBaby.mp3"
     },
     {
       "id": "audionautix-7316fb22aca3fdae",
@@ -7681,7 +8570,7 @@
       "tempo": "Medium",
       "mood": "Uplifting, Bright, Energy",
       "sourceUrl": "https://audionautix.com/free-music/top-40",
-      "url": "https://audionautix.com/Music/ForeverBelieve.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/ad9c0d032c3c88d5.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -7690,7 +8579,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -7703,12 +8593,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:37.859Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/ForeverBelieve.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/ad9c0d032c3c88d5.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/3267890",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:32.749Z"
         },
         "sha256": "56b315ede5e73a5c2a11a55be8d910feba412d40befedf9007e3764873469e4a",
         "bytes": 3267890,
@@ -7725,15 +8615,32 @@
         "loudnessRangeLu": 3.6,
         "truePeakDb": -0.8,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/ForeverBelieve.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/3267890",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "56b315ede5e73a5c2a11a55be8d910feba412d40befedf9007e3764873469e4a",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.414848,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 162.3574
+      "importState": "imported",
+      "durationSeconds": 162.3574,
+      "sourceAudioUrl": "https://audionautix.com/Music/ForeverBelieve.mp3"
     },
     {
       "id": "audionautix-708baec4656da913",
@@ -7992,7 +8899,7 @@
       "tempo": "Medium",
       "mood": "Uplifting, Bouncy, Grooving",
       "sourceUrl": "https://audionautix.com/free-music/top-40",
-      "url": "https://audionautix.com/Music/PopStar.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/4de50ccbb31db9d1.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -8001,7 +8908,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -8014,12 +8922,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:42:41.034Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/PopStar.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/4de50ccbb31db9d1.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/5332728",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:34.310Z"
         },
         "sha256": "da2134814971f44b146437dfafd2e20208547dc00871b1d2dd0b86422f4d3db3",
         "bytes": 5332728,
@@ -8036,15 +8944,32 @@
         "loudnessRangeLu": 3.7,
         "truePeakDb": 0.3,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/PopStar.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/5332728",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "da2134814971f44b146437dfafd2e20208547dc00871b1d2dd0b86422f4d3db3",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.292023,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 132.026056
+      "importState": "imported",
+      "durationSeconds": 132.026056,
+      "sourceAudioUrl": "https://audionautix.com/Music/PopStar.mp3"
     },
     {
       "id": "audionautix-0033cdcf3a031711",
@@ -8847,7 +9772,7 @@
       "tempo": "Medium",
       "mood": "Relaxing, Driving, Calming",
       "sourceUrl": "https://audionautix.com/free-music/dance",
-      "url": "https://audionautix.com/Music/InnerJourney.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/7c61c2744c186f04.mp3",
       "license": "CC-BY-4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "rights": {
@@ -8856,7 +9781,8 @@
         "commercialPermission": "Explicit creator FAQ permission for background music in restaurants/businesses",
         "evidenceIds": [
           "audionautix-business",
-          "audionautix-license"
+          "audionautix-license",
+          "audionautix-historical-release"
         ],
         "publicPerformanceBasis": "Direct permission for this business use; not an assertion of a blanket exemption from Ukrainian mandatory remuneration",
         "attributionRequired": true
@@ -8869,12 +9795,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:41:55.406Z",
         "http": {
-          "status": 206,
-          "url": "https://audionautix.com/Music/InnerJourney.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/7c61c2744c186f04.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/8113488",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:35.265Z"
         },
         "sha256": "29e3769b2fea3e5c6de47d7fbd0e2a1173c5018ec4775c2aecc6541520120d40",
         "bytes": 8113488,
@@ -8891,15 +9817,32 @@
         "loudnessRangeLu": 3.3,
         "truePeakDb": 0.2,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://audionautix.com/Music/InnerJourney.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/8113488",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "29e3769b2fea3e5c6de47d7fbd0e2a1173c5018ec4775c2aecc6541520120d40",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.308192,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Creator genre/tempo/mood + full-file decode and EBU R128 measurement",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 202.687278
+      "importState": "imported",
+      "durationSeconds": 202.687278,
+      "sourceAudioUrl": "https://audionautix.com/Music/InnerJourney.mp3"
     },
     {
       "id": "audionautix-ec6ec27a7306b98d",
@@ -9278,7 +10221,7 @@
       "candidateProfile": "Lo-Fi & Chillhop",
       "genre": "Lo-Fi & Chillhop",
       "sourceUrl": "https://opengameart.org/content/chills",
-      "url": "https://opengameart.org/sites/default/files/01_holiznacc0_-_chills_0.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/f8339bc30e705acd.mp3",
       "license": "CC0-1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
       "rights": {
@@ -9299,12 +10242,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:43:30.185Z",
         "http": {
-          "status": 206,
-          "url": "https://opengameart.org/sites/default/files/01_holiznacc0_-_chills_0.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/f8339bc30e705acd.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/6999565",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:34.666Z"
         },
         "sha256": "88cf8c964ea08b7eca071332ce57ebb33a09838f02cccda0ade8e792c6bc6e2c",
         "bytes": 6999565,
@@ -9321,15 +10264,32 @@
         "loudnessRangeLu": 2.8,
         "truePeakDb": 0.8,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://opengameart.org/sites/default/files/01_holiznacc0_-_chills_0.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/6999565",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "88cf8c964ea08b7eca071332ce57ebb33a09838f02cccda0ade8e792c6bc6e2c",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.269648,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Primary composer description + full-file decode and EBU R128 measurement where selected",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 174.96
+      "importState": "imported",
+      "durationSeconds": 174.96,
+      "sourceAudioUrl": "https://opengameart.org/sites/default/files/01_holiznacc0_-_chills_0.mp3"
     },
     {
       "id": "oga-contemplation-0",
@@ -9398,7 +10358,7 @@
       "candidateProfile": "Soft Rock & Acoustic",
       "genre": "Soft Rock & Acoustic",
       "sourceUrl": "https://opengameart.org/content/cozy-puzzle-in-game-3",
-      "url": "https://opengameart.org/sites/default/files/cozy_puzzle_in-game_3_bpm108.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/7e80007841024f59.mp3",
       "license": "CC0-1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
       "rights": {
@@ -9419,12 +10379,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:43:30.218Z",
         "http": {
-          "status": 206,
-          "url": "https://opengameart.org/sites/default/files/cozy_puzzle_in-game_3_bpm108.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/7e80007841024f59.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/4980111",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:35.989Z"
         },
         "sha256": "819286797479011670efd54f1b15c48fb24705d49e7472de63e084a2d021d9db",
         "bytes": 4980111,
@@ -9441,15 +10401,32 @@
         "loudnessRangeLu": 1.5,
         "truePeakDb": -0.9,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://opengameart.org/sites/default/files/cozy_puzzle_in-game_3_bpm108.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/4980111",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "819286797479011670efd54f1b15c48fb24705d49e7472de63e084a2d021d9db",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.291359,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Primary composer description + full-file decode and EBU R128 measurement where selected",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 124.473469
+      "importState": "imported",
+      "durationSeconds": 124.473469,
+      "sourceAudioUrl": "https://opengameart.org/sites/default/files/cozy_puzzle_in-game_3_bpm108.mp3"
     },
     {
       "id": "oga-remember-this-shadow",
@@ -9458,7 +10435,7 @@
       "candidateProfile": "Soft Rock & Acoustic",
       "genre": "Soft Rock & Acoustic",
       "sourceUrl": "https://opengameart.org/content/remember-this-shadow",
-      "url": "https://opengameart.org/sites/default/files/Komiku%20-%20It%27s%20time%20for%20adventure%20vol%202%20-%2011%20Remember%20this%20shadow_0.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/b2acfe47d84f28df.mp3",
       "license": "CC0-1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
       "rights": {
@@ -9479,12 +10456,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:43:34.199Z",
         "http": {
-          "status": 206,
-          "url": "https://opengameart.org/sites/default/files/Komiku%20-%20It%27s%20time%20for%20adventure%20vol%202%20-%2011%20Remember%20this%20shadow_0.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/b2acfe47d84f28df.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/8684093",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:36.761Z"
         },
         "sha256": "8b8a90a63bcc958e088a430ca957694150914d28792044edb59354201636ff7c",
         "bytes": 8684093,
@@ -9504,15 +10481,32 @@
         "loudnessRangeLu": 4.7,
         "truePeakDb": -0.2,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://opengameart.org/sites/default/files/Komiku%20-%20It%27s%20time%20for%20adventure%20vol%202%20-%2011%20Remember%20this%20shadow_0.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/8684093",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "8b8a90a63bcc958e088a430ca957694150914d28792044edb59354201636ff7c",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.37741,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Primary composer description + full-file decode and EBU R128 measurement where selected",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 213.159184
+      "importState": "imported",
+      "durationSeconds": 213.159184,
+      "sourceAudioUrl": "https://opengameart.org/sites/default/files/Komiku%20-%20It%27s%20time%20for%20adventure%20vol%202%20-%2011%20Remember%20this%20shadow_0.mp3"
     },
     {
       "id": "oga-hypnotic-chill-extended-4-minute-mix",
@@ -9589,7 +10583,7 @@
       "candidateProfile": "Ambient & Relax",
       "genre": "Ambient & Relax",
       "sourceUrl": "https://opengameart.org/content/calm-ambient-1-synthwave-4k",
-      "url": "https://opengameart.org/sites/default/files/001_Synthwave_4k_0.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/141a97116990c6aa.mp3",
       "license": "CC0-1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
       "rights": {
@@ -9610,12 +10604,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:43:34.667Z",
         "http": {
-          "status": 206,
-          "url": "https://opengameart.org/sites/default/files/001_Synthwave_4k_0.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/141a97116990c6aa.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/6322668",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:37.118Z"
         },
         "sha256": "56b31f997020da1abd4092f5e82457592323717a23e4d560c5f8135d26c3b8be",
         "bytes": 6322668,
@@ -9635,15 +10629,32 @@
         "loudnessRangeLu": 6.9,
         "truePeakDb": 0,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://opengameart.org/sites/default/files/001_Synthwave_4k_0.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/6322668",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "56b31f997020da1abd4092f5e82457592323717a23e4d560c5f8135d26c3b8be",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.276011,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Primary composer description + full-file decode and EBU R128 measurement where selected",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 157.936327
+      "importState": "imported",
+      "durationSeconds": 157.936327,
+      "sourceAudioUrl": "https://opengameart.org/sites/default/files/001_Synthwave_4k_0.mp3"
     },
     {
       "id": "oga-calm-ambient-2-synthwave-15k",
@@ -9783,7 +10794,7 @@
       "candidateProfile": "Modern Pop & Nu-Disco",
       "genre": "Modern Pop & Nu-Disco",
       "sourceUrl": "https://opengameart.org/content/classical-pop-instrumental",
-      "url": "https://opengameart.org/sites/default/files/ClassicalPop%20%28Instrumental%29_0.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/7d8c64d016b61108.mp3",
       "license": "CC0-1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
       "rights": {
@@ -9804,12 +10815,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:43:37.966Z",
         "http": {
-          "status": 206,
-          "url": "https://opengameart.org/sites/default/files/ClassicalPop%20%28Instrumental%29_0.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/7d8c64d016b61108.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/1344071",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:36.763Z"
         },
         "sha256": "81423ea335963d28f51f60d6156293f6642ed1dbefcaec2d3ce68899a3a8a089",
         "bytes": 1344071,
@@ -9826,15 +10837,32 @@
         "loudnessRangeLu": 4.2,
         "truePeakDb": 0.5,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://opengameart.org/sites/default/files/ClassicalPop%20%28Instrumental%29_0.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/1344071",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "81423ea335963d28f51f60d6156293f6642ed1dbefcaec2d3ce68899a3a8a089",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.299012,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Primary composer description + full-file decode and EBU R128 measurement where selected",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 84.004438
+      "importState": "imported",
+      "durationSeconds": 84.004438,
+      "sourceAudioUrl": "https://opengameart.org/sites/default/files/ClassicalPop%20%28Instrumental%29_0.mp3"
     },
     {
       "id": "oga-just-you-and-me-guitar",
@@ -9843,7 +10871,7 @@
       "candidateProfile": "Jazz & Lounge",
       "genre": "Jazz & Lounge",
       "sourceUrl": "https://opengameart.org/content/just-you-and-me-guitar",
-      "url": "https://opengameart.org/sites/default/files/Just%20you%20and%20me_2.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/2dedda9a882ca469.mp3",
       "license": "CC0-1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
       "rights": {
@@ -9864,12 +10892,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:43:39.446Z",
         "http": {
-          "status": 206,
-          "url": "https://opengameart.org/sites/default/files/Just%20you%20and%20me_2.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/2dedda9a882ca469.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/2378022",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:37.979Z"
         },
         "sha256": "9e541c7e797a8fec766e952e0549134cca945ff038a97f32ddb19b75b67ae9f1",
         "bytes": 2378022,
@@ -9886,15 +10914,32 @@
         "loudnessRangeLu": 3.2,
         "truePeakDb": 0.5,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://opengameart.org/sites/default/files/Just%20you%20and%20me_2.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/2378022",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "9e541c7e797a8fec766e952e0549134cca945ff038a97f32ddb19b75b67ae9f1",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.333924,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Primary composer description + full-file decode and EBU R128 measurement where selected",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 99.056327
+      "importState": "imported",
+      "durationSeconds": 99.056327,
+      "sourceAudioUrl": "https://opengameart.org/sites/default/files/Just%20you%20and%20me_2.mp3"
     },
     {
       "id": "oga-serenade-guitar",
@@ -9937,7 +10982,7 @@
       "candidateProfile": "Jazz & Lounge",
       "genre": "Jazz & Lounge",
       "sourceUrl": "https://opengameart.org/content/the-love-cycle-guitar",
-      "url": "https://opengameart.org/sites/default/files/The%20love%20Cycle%20%28Guitar%29_0.mp3",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/3698c49c8daf2edf.mp3",
       "license": "CC0-1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
       "rights": {
@@ -9958,12 +11003,12 @@
         "status": "decoded",
         "checkedAt": "2026-10-17T19:43:39.518Z",
         "http": {
-          "status": 206,
-          "url": "https://opengameart.org/sites/default/files/The%20love%20Cycle%20%28Guitar%29_0.mp3",
+          "status": 200,
+          "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/3698c49c8daf2edf.mp3",
           "contentType": "audio/mpeg",
-          "contentRange": "bytes 0-4095/4114809",
-          "cors": null,
-          "acceptRanges": null
+          "rangeStatus": 206,
+          "cors": "*",
+          "checkedAt": "2026-10-17T20:53:37.564Z"
         },
         "sha256": "90e28e0393c206125827fd453eecda58decb64f38deb85f5b5c30765dbca8509",
         "bytes": 4114809,
@@ -9980,15 +11025,32 @@
         "loudnessRangeLu": 2.8,
         "truePeakDb": -0.8,
         "error": null,
-        "tizen": "MP3/stereo is supported by Chromium 85; physical Samsung playback not tested",
-        "corsNote": "No ACAO header. Existing audio element has no crossOrigin; cross-origin media playback is permitted, WebAudio/fetch decoding is not assumed."
+        "tizen": "MP3/stereo and chrome85 build compatible by specification; physical Samsung untested",
+        "corsNote": "Public project Storage, ACAO=*; full GET and Range checked anonymously with origin and Referer.",
+        "sourceHttp": {
+          "status": 206,
+          "url": "https://opengameart.org/sites/default/files/The%20love%20Cycle%20%28Guitar%29_0.mp3",
+          "contentType": "audio/mpeg",
+          "contentRange": "bytes 0-4095/4114809",
+          "cors": null,
+          "acceptRanges": null
+        },
+        "hostedSha256": "90e28e0393c206125827fd453eecda58decb64f38deb85f5b5c30765dbca8509",
+        "browser": {
+          "engine": "Desktop in-app Chromium; not a physical Samsung",
+          "played": true,
+          "currentTime": 0.271356,
+          "readyState": 4,
+          "checkedAt": "2026-10-17T20:59:18.687Z"
+        }
       },
       "curation": {
         "method": "Primary composer description + full-file decode and EBU R128 measurement where selected",
         "humanFullListen": false
       },
-      "importState": "not_imported",
-      "durationSeconds": 102.870225
+      "importState": "imported",
+      "durationSeconds": 102.870225,
+      "sourceAudioUrl": "https://opengameart.org/sites/default/files/The%20love%20Cycle%20%28Guitar%29_0.mp3"
     },
     {
       "id": "oga-good-morning",
@@ -16905,5 +17967,37 @@
       "importState": "not_imported",
       "durationSeconds": null
     }
-  ]
+  ],
+  "production": {
+    "projectId": "97741ecf-233f-4766-a5a8-1900f0aca92d",
+    "importedAt": "2026-10-17T19:53:21.799Z",
+    "codeCommit": "e45e17aff105b7aa50680553e4971f103c6b46ce",
+    "uniqueRecordings": 59,
+    "assignments": 109,
+    "profiles": 7,
+    "videoCountBefore": 25,
+    "videoCountAfter": 25,
+    "protectedDataCompared": true,
+    "anonymousReadable": true,
+    "storage": {
+      "bucket": "smilestream-music",
+      "public": true,
+      "objects": 59,
+      "bytes": 359968294,
+      "sourceCopiesUnmodified": true,
+      "newPublicBucketsBlockedAgain": true,
+      "anonymousWritesAllowed": false,
+      "checkedAt": "2026-10-17T20:54:09.618Z"
+    }
+  },
+  "replacementPolicy": {
+    "requestedAt": "2026-10-18",
+    "legacySelection": "rejected_by_clinic",
+    "requiredConfirmedPremiumFit": [
+      4,
+      5
+    ],
+    "newRotationApproved": false,
+    "note": "Historical verified status means old technical/rights audit, not premium listening approval. Keep live until qualified replacement is ready."
+  }
 }

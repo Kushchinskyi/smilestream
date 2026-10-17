@@ -1,0 +1,554 @@
+{
+  "checkedAt": "2026-10-17T21:03:49.249Z",
+  "backend": "existing-production",
+  "codeCommit": "e45e17aff105b7aa50680553e4971f103c6b46ce",
+  "anonymousRest": {
+    "profiles": 7,
+    "music": 59,
+    "videos": 25,
+    "exactProfileRowsAndTrackOrderMatch": true,
+    "exactVideoRowsMatch": true,
+    "protectedAudioMatches": true
+  },
+  "databaseReadback": {
+    "rolesUnchanged": true,
+    "authCountBefore": 1,
+    "authCountAfter": 1,
+    "screensComparedAndUnchanged": true,
+    "adsUnchanged": true,
+    "adSettingsUnchanged": true
+  },
+  "files": [
+    {
+      "id": "audionautix-f1209ad05fbf7386",
+      "url": "https://audionautix.com/Music/AcousticGuitar1.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/6983153",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:03.684Z"
+    },
+    {
+      "id": "audionautix-0a7350744b6c6c3a",
+      "url": "https://audionautix.com/Music/AcousticShuffle.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/6569962",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:04.189Z"
+    },
+    {
+      "id": "audionautix-330885e9608a744c",
+      "url": "https://audionautix.com/Music/AutumnSunset.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/1545240",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:04.360Z"
+    },
+    {
+      "id": "audionautix-be27fefb5b9a6f10",
+      "url": "https://audionautix.com/Music/ColdMorning.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/6584991",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:04.464Z"
+    },
+    {
+      "id": "audionautix-015d9366dc24e684",
+      "url": "https://audionautix.com/Music/CoolSteelBreeze.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/7592600",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:04.900Z"
+    },
+    {
+      "id": "audionautix-7c52ef9e712b0b74",
+      "url": "https://audionautix.com/Music/GreenLeaves.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/8835467",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:05.134Z"
+    },
+    {
+      "id": "audionautix-48693532c4db5ff1",
+      "url": "https://audionautix.com/Music/LandrasDream.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/3561057",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:05.258Z"
+    },
+    {
+      "id": "audionautix-3a22cc04830490da",
+      "url": "https://audionautix.com/Music/OneFineDay.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/2070510",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:05.621Z"
+    },
+    {
+      "id": "audionautix-9b2ff5d4695b4f6d",
+      "url": "https://audionautix.com/Music/PaperWings.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/7914263",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:05.850Z"
+    },
+    {
+      "id": "audionautix-ab1c2f6a91f24901",
+      "url": "https://audionautix.com/Music/RedwoodTrail.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/4741802",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:05.994Z"
+    },
+    {
+      "id": "audionautix-0e782a26b90b20cd",
+      "url": "https://audionautix.com/Music/Serenity.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/2208436",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:06.465Z"
+    },
+    {
+      "id": "audionautix-d6031489eee07af6",
+      "url": "https://audionautix.com/Music/SoloAcoustic3.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/5089138",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:06.662Z"
+    },
+    {
+      "id": "audionautix-fb3defff44f55198",
+      "url": "https://audionautix.com/Music/SoloAcoustic5.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/5708246",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:06.761Z"
+    },
+    {
+      "id": "audionautix-d4423889ef1f4466",
+      "url": "https://audionautix.com/Music/WalkInTheParkFull.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/6612915",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:07.223Z"
+    },
+    {
+      "id": "audionautix-79b80b4a07fab5c8",
+      "url": "https://audionautix.com/Music/Words.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/2495115",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:07.286Z"
+    },
+    {
+      "id": "audionautix-0b682003142d9efe",
+      "url": "https://audionautix.com/Music/12Mornings.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/2503614",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:07.560Z"
+    },
+    {
+      "id": "audionautix-759bfc88d0fd50c0",
+      "url": "https://audionautix.com/Music/Alison.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/7035342",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:07.951Z"
+    },
+    {
+      "id": "audionautix-4d75ca756836e26a",
+      "url": "https://audionautix.com/Music/EmilyWalksAway.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/3673884",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:08.008Z"
+    },
+    {
+      "id": "audionautix-605679e281001968",
+      "url": "https://audionautix.com/Music/GoNotGently.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/7794983",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:08.667Z"
+    },
+    {
+      "id": "audionautix-48be6c99afe27f83",
+      "url": "https://audionautix.com/Music/HopeAgainstHope.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/4047979",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:08.681Z"
+    },
+    {
+      "id": "audionautix-a314348ae5a3c7ac",
+      "url": "https://audionautix.com/Music/InTheField.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/2158804",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:08.721Z"
+    },
+    {
+      "id": "audionautix-57c7b5bdcd726900",
+      "url": "https://audionautix.com/Music/MediumRock.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/3744959",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:09.404Z"
+    },
+    {
+      "id": "audionautix-ee7dbfee68698306",
+      "url": "https://audionautix.com/Music/MedTempoRock.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/3967392",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:09.412Z"
+    },
+    {
+      "id": "audionautix-38d8a531f9a4b4ba",
+      "url": "https://audionautix.com/Music/LazyDay.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/2681775",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:09.450Z"
+    },
+    {
+      "id": "audionautix-281c28b724059574",
+      "url": "https://audionautix.com/Music/ShadowOfTruth.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/10118619",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:10.143Z"
+    },
+    {
+      "id": "audionautix-24b8741690135ebe",
+      "url": "https://audionautix.com/Music/Pioneers.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/6941302",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:10.176Z"
+    },
+    {
+      "id": "audionautix-bccc7667a9535a87",
+      "url": "https://audionautix.com/Music/Triangle.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/8846938",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:10.251Z"
+    },
+    {
+      "id": "audionautix-305b7d8ccef883b3",
+      "url": "https://audionautix.com/Music/AcrylicOnCanvas.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/5794413",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:10.864Z"
+    },
+    {
+      "id": "audionautix-62cbdaf4b6267967",
+      "url": "https://audionautix.com/Music/AcousticMeditation2.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/7786624",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:10.947Z"
+    },
+    {
+      "id": "audionautix-868a273e5a0f8286",
+      "url": "https://audionautix.com/Music/Algorithm.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/7570360",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:10.965Z"
+    },
+    {
+      "id": "audionautix-8933c5790d4ac9ca",
+      "url": "https://audionautix.com/Music/Thingamajig.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/4676485",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:11.643Z"
+    },
+    {
+      "id": "audionautix-3a361f6ae49e810b",
+      "url": "https://audionautix.com/Music/SidewaysSamba.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/7642428",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:11.664Z"
+    },
+    {
+      "id": "audionautix-9f1748b5a615c467",
+      "url": "https://audionautix.com/Music/OkeyDokeySmokey.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/5959869",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:11.711Z"
+    },
+    {
+      "id": "audionautix-a586104e65ce592f",
+      "url": "https://audionautix.com/Music/CodeBlue.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/2287953",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:12.409Z"
+    },
+    {
+      "id": "audionautix-be44bed76796126a",
+      "url": "https://audionautix.com/Music/StandardJazzBars.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/2921697",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:12.420Z"
+    },
+    {
+      "id": "audionautix-b45700f7e61f29cb",
+      "url": "https://audionautix.com/Music/CopAFeel.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/5948648",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:12.468Z"
+    },
+    {
+      "id": "audionautix-1c911b86141dd024",
+      "url": "https://audionautix.com/Music/SmoothSailingFullTrack.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/13446597",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:13.141Z"
+    },
+    {
+      "id": "audionautix-e2d55380053d724d",
+      "url": "https://audionautix.com/Music/FatCaps.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/3573595",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:13.188Z"
+    },
+    {
+      "id": "audionautix-35361cf819f2e6c2",
+      "url": "https://audionautix.com/Music/DatGrooveFullTrack.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/5194234",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:13.196Z"
+    },
+    {
+      "id": "audionautix-e9d0cf0268634e80",
+      "url": "https://audionautix.com/Music/Jellyfish.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/6339527",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:13.886Z"
+    },
+    {
+      "id": "audionautix-5c0c8e0e3e31ab5b",
+      "url": "https://audionautix.com/Music/SummerSidewalk.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/5962232",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:13.909Z"
+    },
+    {
+      "id": "audionautix-d5604612f9b1292c",
+      "url": "https://audionautix.com/Music/Beautiful%20Daughter.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/5324390",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:13.913Z"
+    },
+    {
+      "id": "audionautix-f57a37394ac1a4ba",
+      "url": "https://audionautix.com/Music/Namaste.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/6562004",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:14.594Z"
+    },
+    {
+      "id": "audionautix-6fbdf4b5f90c4895",
+      "url": "https://audionautix.com/Music/TrippinCoffee.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/6845861",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:14.621Z"
+    },
+    {
+      "id": "audionautix-3645c566406e4e11",
+      "url": "https://audionautix.com/Music/TropicalContact.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/9314606",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:15.179Z"
+    },
+    {
+      "id": "audionautix-334cbb15a62e26cb",
+      "url": "https://audionautix.com/Music/NavajoNight.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/28805269",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:15.345Z"
+    },
+    {
+      "id": "audionautix-282d2247f23af15d",
+      "url": "https://audionautix.com/Music/Ohm.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/14816225",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:15.353Z"
+    },
+    {
+      "id": "audionautix-52ad90abfbbaa385",
+      "url": "https://audionautix.com/Music/RunningWaters.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/6666493",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:15.898Z"
+    },
+    {
+      "id": "audionautix-ad9c0d032c3c88d5",
+      "url": "https://audionautix.com/Music/ForeverBelieve.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/3267890",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:16.066Z"
+    },
+    {
+      "id": "audionautix-ed664e557e812bf1",
+      "url": "https://audionautix.com/Music/GroovyBaby.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/2962853",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:16.113Z"
+    },
+    {
+      "id": "audionautix-4de50ccbb31db9d1",
+      "url": "https://audionautix.com/Music/PopStar.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/5332728",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:16.607Z"
+    },
+    {
+      "id": "audionautix-7c61c2744c186f04",
+      "url": "https://audionautix.com/Music/InnerJourney.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/8113488",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:16.774Z"
+    },
+    {
+      "id": "oga-chills",
+      "url": "https://opengameart.org/sites/default/files/01_holiznacc0_-_chills_0.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/6999565",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:16.876Z"
+    },
+    {
+      "id": "oga-remember-this-shadow",
+      "url": "https://opengameart.org/sites/default/files/Komiku%20-%20It%27s%20time%20for%20adventure%20vol%202%20-%2011%20Remember%20this%20shadow_0.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/8684093",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:17.353Z"
+    },
+    {
+      "id": "oga-cozy-puzzle-in-game-3",
+      "url": "https://opengameart.org/sites/default/files/cozy_puzzle_in-game_3_bpm108.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/4980111",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:17.364Z"
+    },
+    {
+      "id": "oga-calm-ambient-1-synthwave-4k",
+      "url": "https://opengameart.org/sites/default/files/001_Synthwave_4k_0.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/6322668",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:17.445Z"
+    },
+    {
+      "id": "oga-classical-pop-instrumental",
+      "url": "https://opengameart.org/sites/default/files/ClassicalPop%20%28Instrumental%29_0.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/1344071",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:17.551Z"
+    },
+    {
+      "id": "oga-just-you-and-me-guitar",
+      "url": "https://opengameart.org/sites/default/files/Just%20you%20and%20me_2.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/2378022",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:17.557Z"
+    },
+    {
+      "id": "oga-the-love-cycle-guitar",
+      "url": "https://opengameart.org/sites/default/files/The%20love%20Cycle%20%28Guitar%29_0.mp3",
+      "status": 206,
+      "contentType": "audio/mpeg",
+      "contentRange": "bytes 0-4095/4114809",
+      "bytes": 4096,
+      "checkedAt": "2026-10-17T19:50:17.645Z"
+    }
+  ]
+}
