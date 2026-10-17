@@ -34,3 +34,9 @@ TV/anon читає тільки активні профілі; authenticated adm
 Пульт моделювався у DOM-тестах (стрілки/фокус; OK — стандартний click на сфокусованій кнопці). НОВИЙ picker на фізичному Samsung ще не перевірений; попереднє hardware acceptance стосується старого потоку. Не стверджуємо реальний hardware тест нового picker. Для приймання: відкрити `/tv`, Дивитися → кілька профілів → OK; повернути панель стрілкою → змінити профіль; reload → попередній вибір відмічений; перевірити «Без музики», empty, відключення/видалення вибраного профілю, Wi-Fi reconnect, рекламу зі звуком/ducking. Усі зміни контенту робити усвідомлено в адмінці, не створювати fixture треки у production заради smoke.
 
 Адреси після розгортання: https://smilestream.lovable.app/admin?section=profiles і https://smilestream.lovable.app/tv . Фактичний статус code publish перевіряється окремо; саме застосування SQL не оновлює frontend.
+
+## Фактична публікація
+
+PR #2 (основна функціональність, d55d4a5) і PR #3 (порожні стани, 4fb6851) об'єднані звичайними merge-коммітами без переписування історії. Main release SHA `6090eda3ab9c08f5fbe612cdd71ec54e9af557ef` підтверджений Lovable API. Штатний Publish changes завершився повідомленням «Your website was updated».
+
+Browser smoke на робочому сайті: авторизована вкладка «Музичні профілі» читає таблицю без error/warn console logs; порожній audio preview не показується. На TV: «Дивитися» відкриває picker; ArrowDown/Enter перемістили фокус та запустили «Без музики»; VIDEO currentTime зростав, другий VIDEO мав readyState=4, AUDIO не мав src і був paused. Після reload picker показав «Без музики ✓», а стартовий екран — 25 роликів. Скриншоти приватно у release-proof.local. Production лишився без створених profile/track fixtures. Реальне прослуховування музичних профілів у production та новий Samsung hardware picker acceptance ще потрібні після наповнення бібліотеки.
