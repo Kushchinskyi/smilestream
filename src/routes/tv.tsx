@@ -306,6 +306,13 @@ function TvPage() {
               </button>
             </>
           )}
+          <button
+            className="rounded border px-4 py-2 text-base"
+            onClick={() => window.location.assign("/music-credits.html")}
+          >
+            Автори музики та ліцензії
+          </button>
+          <small>Музика: Jason Shaw / Audionautix.com · CC BY 4.0 та автори CC0</small>
         </div>
       )}
       {started && (controls || persistentStatus) && !blocked && !picking && (
