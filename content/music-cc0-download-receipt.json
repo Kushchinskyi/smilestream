@@ -1,0 +1,449 @@
+{
+  "checkedAt": "2026-10-18",
+  "sourceLicenseUrl": "https://howworks.ai/license",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/legalcode.en",
+  "scope": "Actual official downloads and local technical checks only. Not a production import or full legal clearance.",
+  "oldRecordingsRestored": 0,
+  "productionWrites": 0,
+  "tracks": [
+    {
+      "id": "c5b155cb-2b91-4a0f-9a8a-67fd05538a3c",
+      "title": "Sera a Venezia",
+      "sourceUrl": "https://howworks.ai/music/tracks/sera-a-venezia-c5b155",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Jazz & Lounge",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "fac1137b3a06c592a76803b002c34a60c9c6939677253419284847a7b678268f",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "fe1fde3603ad0b353477d555dc14b8fab582a59ff95103e1b9c84b1a0ee06ad7",
+        "bytes": 3802632,
+        "durationSeconds": 158.352,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 192110,
+        "fullDecode": true,
+        "integratedLufs": -13.6,
+        "loudnessRangeLu": 2.4,
+        "truePeakDbfs": -1.5,
+        "silences": [],
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    },
+    {
+      "id": "0e8e1dd8-8eeb-4f15-b3ef-da004d2d18b9",
+      "title": "Lantern in Lime",
+      "sourceUrl": "https://howworks.ai/music/tracks/lantern-in-lime-0e8e1d",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Jazz & Lounge",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "19e0adfab25b679dd976c68f3f394c95fe64aae29fbdd9dcd6d2098a80d1b7f0",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "9bb0e108a712b277cad4e709d332b750828f83aff46b6b6cfdd0fb9325ecfcc1",
+        "bytes": 3189144,
+        "durationSeconds": 127.8,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 199633,
+        "fullDecode": true,
+        "integratedLufs": -14.1,
+        "loudnessRangeLu": 3.2,
+        "truePeakDbfs": -0.8,
+        "silences": [],
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    },
+    {
+      "id": "89dea137-4177-4727-a2b2-0f5881ee8f8d",
+      "title": "Maré de Vime",
+      "sourceUrl": "https://howworks.ai/music/tracks/mar-de-vime-89dea1",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Jazz & Lounge",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "cb7947dda4f51620262e3c98b41e05542bbfc9e8c2beb00d05d0316ae9a2cb2b",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "aebcf45ba39125f7943d2f96ac7cc6141dd0b8a34e98349b3df80a817da1bc8a",
+        "bytes": 3371688,
+        "durationSeconds": 136.8,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 197174,
+        "fullDecode": true,
+        "integratedLufs": -13.9,
+        "loudnessRangeLu": 2.4,
+        "truePeakDbfs": -1.7,
+        "silences": [],
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    },
+    {
+      "id": "ca5eb5f9-8f41-426f-8ea1-ad6ae5bd2972",
+      "title": "Velvet Turnaround",
+      "sourceUrl": "https://howworks.ai/music/tracks/velvet-turnaround-ca5eb5",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Jazz & Lounge",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "b1f912a5715f2696c5dccf338d9f6002feb830520530cd3c1e2e47eb3af1193d",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "cba9ce0082a072fb9cb1f504035874c384cfe54bd24c92ed8ee9fad41ff7efb3",
+        "bytes": 3223176,
+        "durationSeconds": 138.648,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 185977,
+        "fullDecode": true,
+        "integratedLufs": -13.7,
+        "loudnessRangeLu": 3,
+        "truePeakDbfs": -0.9,
+        "silences": [],
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    },
+    {
+      "id": "afd99938-a135-4890-9ff0-538b55011b3d",
+      "title": "Too Many Times",
+      "sourceUrl": "https://howworks.ai/music/tracks/too-many-times-afd999",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Jazz & Lounge",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "7e0e17d28b259f6db10341f9db1efc3a8d5f5a219df846bd60d2b371c4552530",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "7de32e0712cb85c7ae6cceb7858f478cc4927a109033a1186320c80bb75b0044",
+        "bytes": 3413112,
+        "durationSeconds": 144.528,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 188924,
+        "fullDecode": true,
+        "integratedLufs": -14.2,
+        "loudnessRangeLu": 3.8,
+        "truePeakDbfs": -0.8,
+        "silences": [],
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    },
+    {
+      "id": "6cc7c0e8-30f0-4af3-9659-4871e02b69c3",
+      "title": "Drift Circuit",
+      "sourceUrl": "https://howworks.ai/music/tracks/drift-circuit-6cc7c0",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "ec6504097ff1b43a280a076b73e0c1e2f650c5f57a19ddece47a5d39ca38be7d",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "5e9a9364b7d7a437a45ab7f04ee2b7be66c45e769505a9af8349348b1e28c0f1",
+        "bytes": 5751270,
+        "durationSeconds": 235.584,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 195302,
+        "fullDecode": true,
+        "integratedLufs": -12.8,
+        "loudnessRangeLu": 3.2,
+        "truePeakDbfs": -1.2,
+        "silences": [],
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    },
+    {
+      "id": "dbc421a8-fc79-4b76-a44b-13114cba868c",
+      "title": "First Light Window II",
+      "sourceUrl": "https://howworks.ai/music/tracks/first-light-window-ii-dbc421",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Soft Rock & Acoustic",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "14dc2c4db1cc2c8f85f6d266272ee131b946f58e30420a5fd1f27dc6997a4c13",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "cd8661a9d51996b8987021b468cd0cf671b49582a98bb862c0e053fc67a0d044",
+        "bytes": 3629310,
+        "durationSeconds": 154.872,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 187474,
+        "fullDecode": true,
+        "integratedLufs": -13.8,
+        "loudnessRangeLu": 6.8,
+        "truePeakDbfs": -0.1,
+        "silences": [
+          {
+            "end": 154.84,
+            "duration": 1.76206
+          }
+        ],
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    },
+    {
+      "id": "27b7c6dd-7c91-4d71-8dc4-8d7115bc597b",
+      "title": "Steady Orbit",
+      "sourceUrl": "https://howworks.ai/music/tracks/steady-orbit-27b7c6",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "2952c72aa423cf4ff30e9af9461901006d5eedf535a4734b10b1e2e06d753573",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "32bdd73a270c6d016a26af2acab399e718810e1df8f81f66a425e2aa6d59a4e7",
+        "bytes": 5016030,
+        "durationSeconds": 204.864,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 195877,
+        "fullDecode": true,
+        "integratedLufs": -11.8,
+        "loudnessRangeLu": 3.4,
+        "truePeakDbfs": -1.1,
+        "silences": [],
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    },
+    {
+      "id": "71913e5e-ace4-4392-b5a7-7521f069f32a",
+      "title": "Pastoral Echo",
+      "sourceUrl": "https://howworks.ai/music/tracks/pastoral-echo-71913e",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Ambient & Relax",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "290f3bc49aefc8a4f98a4a3da031361c1dd789de03e9a58612fe9c1afd8204b5",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "29d1a8b967cdafc918aab822a4d8b19f00e18431c8d2898108b86b7679c43fe8",
+        "bytes": 4042134,
+        "durationSeconds": 168.504,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 191906,
+        "fullDecode": true,
+        "integratedLufs": -13.5,
+        "loudnessRangeLu": 4.3,
+        "truePeakDbfs": -0.3,
+        "silences": [],
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    },
+    {
+      "id": "4962ca3b-3d49-4060-be91-87a69355dfe1",
+      "title": "Open Field",
+      "sourceUrl": "https://howworks.ai/music/tracks/open-field-4962ca",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Ambient & Relax",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "42d9dc5162a6225128932dd8442b3993ffe1971e95f9d4acd453d11a5f54b688",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "db1483eaec2ed7478c21c52e92d009000d35e52f72ca7756fc8866f6d6c28d14",
+        "bytes": 3830190,
+        "durationSeconds": 159.84,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 191701,
+        "fullDecode": true,
+        "integratedLufs": -14.2,
+        "loudnessRangeLu": 4.2,
+        "truePeakDbfs": 0,
+        "silences": [
+          {
+            "end": 159.8,
+            "duration": 1.88769
+          }
+        ],
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    },
+    {
+      "id": "ea93e394-bd48-414b-98f2-d5960fb6324f",
+      "title": "Flow Pulse",
+      "sourceUrl": "https://howworks.ai/music/tracks/flow-pulse-ea93e3",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "868115d52b93ffca4141ed7c83dc77992beebb19c5fa931c84cf3e63790f7bb2",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "95a764e179dbf250300b60fac4f3176de7c1063ee3859f7a87412e5ba46ec874",
+        "bytes": 4231518,
+        "durationSeconds": 159.624,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 212074,
+        "fullDecode": true,
+        "integratedLufs": -13.3,
+        "loudnessRangeLu": 5.3,
+        "truePeakDbfs": 0,
+        "silences": [],
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    }
+  ]
+}
