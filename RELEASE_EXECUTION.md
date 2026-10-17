@@ -23,6 +23,14 @@
 
 TypeScript PASS, Vitest 104/15 PASS, Node guards/planner 16 PASS, штатная production cloudflare-module build PASS, media/integration artifact isolation PASS. Bun недоступен, dependencies/lock не менялись. Единственное build-предупреждение — избыточный vite-tsconfig-paths при поддержке paths в Vite.
 
-## Последующие шаги
+## Публикация и browser smoke — выполнено
 
-Merge, синхронизация Lovable, Publish и browser smoke требуют фактической проверки результата; сам этот файл не утверждает, что они завершены. Финальный статус будет в отчёте после выполнения.
+PR #1 переведён из Draft и объединён обычным merge без переписывания истории. Release SHA main: `f5c47fa6f3c2c79b05f097c4afe3cf9d5800734d`. API Lovable подтвердил этот SHA. Через штатный Update preview обновлена сборка, затем Publish changes; интерфейс Lovable подтвердил «Your website was updated».
+
+На `https://smilestream.lovable.app/tv` после reload загружена новая версия: два HTML5 video. Первый Mixkit 12146 воспроизводился с растущим currentTime и readyState=4, второй 4774 был предзагружен с readyState=4. Затем проверен естественный переход на 4774 (paused=false, currentTime > 2 s), следующий 4766 уже был предзагружен. Вход для TV не требовался. Тестовый backend не подключался.
+
+После самостоятельного входа владельца проверена закрытая production админка: overview, videos, ads, audio, screens, diagnostics, settings. Видеотека показывает все 25 активных строк и порядок 1–25; screens — исходные три записи. Audio читает центральные Supabase settings 35% / 100% / 15%, музыка 0 композиций; ads 0, расписание OFF / 30 минут / 1. Никакие тестовые композиции или рекламные ролики в production не добавлялись. Browser console error/warn logs при проверке админки пусты. Скриншоты сохранены приватно в release-proof.local (не в Git).
+
+Проверка админки была read-only: сохранение/редактирование/перестановка production записей специально не выполнялись. Синхронизация изменений на двух production TV, музыкальный playback и ad insertion с реальным production контентом не проверены: соответствующие библиотеки пусты. Предыдущая успешная аппаратная проверка Samsung относится к отдельной тестовой версии; новый длительный Samsung soak опубликованного сайта не выполнялся. Телеметрия устройств по-прежнему не реализована.
+
+Выпуск приложения завершён. Наполнение контентом и включение рекламы — отдельный этап.
