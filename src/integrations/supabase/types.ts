@@ -8,6 +8,38 @@ export type Database = {
   };
   public: {
     Tables: {
+      music_profiles: {
+        Row: {
+          id: string;
+          name: string;
+          description: string;
+          is_active: boolean;
+          is_default: boolean;
+          sort_order: number;
+          volume_override: number | null;
+          track_urls: string[];
+        };
+        Insert: {
+          id?: string;
+          name: string;
+          description?: string;
+          is_active?: boolean;
+          is_default?: boolean;
+          sort_order?: number;
+          volume_override?: number | null;
+          track_urls?: string[];
+        };
+        Update: {
+          name?: string;
+          description?: string;
+          is_active?: boolean;
+          is_default?: boolean;
+          sort_order?: number;
+          volume_override?: number | null;
+          track_urls?: string[];
+        };
+        Relationships: [];
+      };
       ad_playback_settings: {
         Row: { id: number; enabled: boolean; interval_minutes: number; block_count: number };
         Insert: { id?: number; enabled?: boolean; interval_minutes?: number; block_count?: number };
@@ -93,6 +125,8 @@ export type Database = {
       };
       screens: {
         Row: {
+          last_selected_music_profile_id: string | null;
+          default_music_profile_id: string | null;
           created_at: string;
           diagonal_inches: number | null;
           id: string;
@@ -101,6 +135,8 @@ export type Database = {
           pairing_code: string | null;
         };
         Insert: {
+          last_selected_music_profile_id?: string | null;
+          default_music_profile_id?: string | null;
           created_at?: string;
           diagonal_inches?: number | null;
           id?: string;
@@ -109,6 +145,8 @@ export type Database = {
           pairing_code?: string | null;
         };
         Update: {
+          last_selected_music_profile_id?: string | null;
+          default_music_profile_id?: string | null;
           created_at?: string;
           diagonal_inches?: number | null;
           id?: string;
@@ -177,6 +215,8 @@ export type Database = {
       [_ in never]: never;
     };
     Functions: {
+      save_music_profile: { Args: { profile: Json }; Returns: string };
+      reorder_music_profiles: { Args: { ordered_ids: string[] }; Returns: undefined };
       read_ad_playback: { Args: Record<string, never>; Returns: Json };
       reorder_advertisements: { Args: { ordered_ids: string[] }; Returns: undefined };
       reorder_videos: { Args: { ordered_ids: string[] }; Returns: undefined };
