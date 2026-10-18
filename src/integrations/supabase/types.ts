@@ -1,5 +1,18 @@
 export type Json = string | number | boolean | null | { [key: string]: Json | undefined } | Json[];
 
+import type {
+  VideoCategory,
+  DictionaryEntry,
+  VideoTag,
+  VideoClassification,
+  TagRelation,
+} from "@/lib/video-taxonomy";
+type TaxonomyTable<Row> = {
+  Row: Row;
+  Insert: Partial<Row>;
+  Update: Partial<Row>;
+  Relationships: [];
+};
 export type Database = {
   // Allows to automatically instantiate createClient with right options
   // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
@@ -8,6 +21,11 @@ export type Database = {
   };
   public: {
     Tables: {
+      video_categories: TaxonomyTable<VideoCategory>;
+      video_content_formats: TaxonomyTable<DictionaryEntry>;
+      video_tags: TaxonomyTable<VideoTag>;
+      video_classification: TaxonomyTable<VideoClassification>;
+      video_tag_relations: TaxonomyTable<TagRelation>;
       music_profiles: {
         Row: {
           id: string;
@@ -215,6 +233,12 @@ export type Database = {
       [_ in never]: never;
     };
     Functions: {
+      classify_videos: { Args: { p_ids: string[]; p_patch: Json }; Returns: undefined };
+      merge_video_tags: { Args: { p_source: string; p_target: string }; Returns: undefined };
+      delete_video_records: {
+        Args: { p_ids: string[]; p_confirmation: string };
+        Returns: undefined;
+      };
       save_music_profile: { Args: { profile: Json }; Returns: string };
       reorder_music_profiles: { Args: { ordered_ids: string[] }; Returns: undefined };
       read_ad_playback: { Args: Record<string, never>; Returns: Json };

@@ -1,0 +1,638 @@
+{
+  "categories": [
+    {
+      "slug": "diagnostics",
+      "name": "Діагностика та планування",
+      "description": "КЛКТ, рентгенографія, діагностичне сканування, аналіз та планування лікування.",
+      "sort_order": 1
+    },
+    {
+      "slug": "hygiene",
+      "name": "Профілактика та гігієна",
+      "description": "Професійна гігієна, щітки, пасти, іригатори, ополіскувачі, домашній догляд та профілактика.",
+      "sort_order": 2
+    },
+    {
+      "slug": "restorative",
+      "name": "Терапевтична стоматологія",
+      "description": "Карієс, композитні реставрації, адгезивні технології та пряме відновлення зубів.",
+      "sort_order": 3
+    },
+    {
+      "slug": "endodontics",
+      "name": "Ендодонтія",
+      "description": "Кореневі канали, ендодонтичні інструменти, обтурація та робота під мікроскопом.",
+      "sort_order": 4
+    },
+    {
+      "slug": "periodontics",
+      "name": "Пародонтологія",
+      "description": "Пародонт, ясна, м’які тканини та підтримувальна терапія.",
+      "sort_order": 5
+    },
+    {
+      "slug": "surgery",
+      "name": "Хірургія та імплантологія",
+      "description": "Видалення зубів, імплантація, кісткова пластика, синус-ліфтинг та хірургічні процедури.",
+      "sort_order": 6
+    },
+    {
+      "slug": "prosthodontics",
+      "name": "Ортопедична стоматологія",
+      "description": "Коронки, вініри, мости, знімні та незнімні протези, ортопедична реабілітація.",
+      "sort_order": 7
+    },
+    {
+      "slug": "orthodontics",
+      "name": "Ортодонтія",
+      "description": "Брекети, елайнери, апарати, розширення щелеп та цифрове планування переміщень.",
+      "sort_order": 8
+    },
+    {
+      "slug": "aesthetic",
+      "name": "Естетична стоматологія",
+      "description": "Відбілювання, естетичні реставрації, дизайн посмішки та естетичні перетворення.",
+      "sort_order": 9
+    },
+    {
+      "slug": "digital",
+      "name": "Цифрова стоматологія та CAD/CAM",
+      "description": "Інтраоральне сканування, CEREC, Exocad, Smile Design, CAD/CAM, 3D-друк та фрезерування.",
+      "sort_order": 10
+    },
+    {
+      "slug": "laboratory",
+      "name": "Зуботехнічна лабораторія",
+      "description": "Виготовлення коронок і протезів, кераміка, цирконій, полірування та постобробка.",
+      "sort_order": 11
+    },
+    {
+      "slug": "equipment",
+      "name": "Обладнання, матеріали та інфекційний контроль",
+      "description": "Установки, мікроскопи, інструменти, стерилізація, дезінфекція та стоматологічні матеріали.",
+      "sort_order": 12
+    }
+  ],
+  "formats": [
+    {
+      "slug": "clinical-process",
+      "name": "Реальний клінічний процес",
+      "sort_order": 1
+    },
+    {
+      "slug": "clinical-case",
+      "name": "Клінічний кейс",
+      "sort_order": 2
+    },
+    {
+      "slug": "animation",
+      "name": "3D-анімація",
+      "sort_order": 3
+    },
+    {
+      "slug": "technology-process",
+      "name": "Технологічний процес",
+      "sort_order": 4
+    },
+    {
+      "slug": "equipment-demo",
+      "name": "Демонстрація обладнання",
+      "sort_order": 5
+    },
+    {
+      "slug": "wow",
+      "name": "WOW-візуалізація",
+      "sort_order": 6
+    },
+    {
+      "slug": "education",
+      "name": "Освітнє відео",
+      "sort_order": 7
+    }
+  ],
+  "tags": [
+    {
+      "slug": "direction-implantology",
+      "name": "Імплантологія",
+      "group_key": "direction",
+      "aliases": [
+        "Імплантація",
+        "implantology"
+      ]
+    },
+    {
+      "slug": "direction-prosthodontics",
+      "name": "Протезування",
+      "group_key": "direction",
+      "aliases": [
+        "prosthodontics"
+      ]
+    },
+    {
+      "slug": "direction-orthodontics",
+      "name": "Ортодонтія",
+      "group_key": "direction",
+      "aliases": [
+        "orthodontics"
+      ]
+    },
+    {
+      "slug": "direction-endodontics",
+      "name": "Ендодонтія",
+      "group_key": "direction",
+      "aliases": [
+        "endodontics"
+      ]
+    },
+    {
+      "slug": "direction-periodontics",
+      "name": "Пародонтологія",
+      "group_key": "direction",
+      "aliases": [
+        "periodontics"
+      ]
+    },
+    {
+      "slug": "direction-restorative",
+      "name": "Терапевтична стоматологія",
+      "group_key": "direction",
+      "aliases": [
+        "restorative"
+      ]
+    },
+    {
+      "slug": "direction-prevention",
+      "name": "Профілактика",
+      "group_key": "direction",
+      "aliases": [
+        "prevention"
+      ]
+    },
+    {
+      "slug": "direction-surgery",
+      "name": "Хірургія",
+      "group_key": "direction",
+      "aliases": [
+        "surgery"
+      ]
+    },
+    {
+      "slug": "direction-aesthetic",
+      "name": "Естетична стоматологія",
+      "group_key": "direction",
+      "aliases": [
+        "aesthetic"
+      ]
+    },
+    {
+      "slug": "direction-dental-lab",
+      "name": "Зуботехніка",
+      "group_key": "direction",
+      "aliases": [
+        "dental lab"
+      ]
+    },
+    {
+      "slug": "procedure-crowns",
+      "name": "Коронки",
+      "group_key": "procedure",
+      "aliases": [
+        "crowns"
+      ]
+    },
+    {
+      "slug": "procedure-veneers",
+      "name": "Вініри",
+      "group_key": "procedure",
+      "aliases": [
+        "veneers"
+      ]
+    },
+    {
+      "slug": "procedure-bridges",
+      "name": "Мости",
+      "group_key": "procedure",
+      "aliases": [
+        "bridges"
+      ]
+    },
+    {
+      "slug": "procedure-removable-dentures",
+      "name": "Знімні протези",
+      "group_key": "procedure",
+      "aliases": [
+        "removable dentures"
+      ]
+    },
+    {
+      "slug": "procedure-aligners",
+      "name": "Елайнери",
+      "group_key": "procedure",
+      "aliases": [
+        "aligners"
+      ]
+    },
+    {
+      "slug": "procedure-braces",
+      "name": "Брекети",
+      "group_key": "procedure",
+      "aliases": [
+        "braces"
+      ]
+    },
+    {
+      "slug": "procedure-implants",
+      "name": "Імплантати",
+      "group_key": "procedure",
+      "aliases": [
+        "Імплант",
+        "Імпланти",
+        "implants"
+      ]
+    },
+    {
+      "slug": "procedure-whitening",
+      "name": "Відбілювання",
+      "group_key": "procedure",
+      "aliases": [
+        "whitening"
+      ]
+    },
+    {
+      "slug": "procedure-professional-hygiene",
+      "name": "Профгігієна",
+      "group_key": "procedure",
+      "aliases": [
+        "professional hygiene"
+      ]
+    },
+    {
+      "slug": "procedure-restorations",
+      "name": "Реставрації",
+      "group_key": "procedure",
+      "aliases": [
+        "restorations"
+      ]
+    },
+    {
+      "slug": "procedure-root-canals",
+      "name": "Лікування каналів",
+      "group_key": "procedure",
+      "aliases": [
+        "root canals"
+      ]
+    },
+    {
+      "slug": "procedure-surgical-guides",
+      "name": "Хірургічні шаблони",
+      "group_key": "procedure",
+      "aliases": [
+        "surgical guides"
+      ]
+    },
+    {
+      "slug": "procedure-toothbrushes",
+      "name": "Зубні щітки",
+      "group_key": "procedure",
+      "aliases": [
+        "toothbrushes"
+      ]
+    },
+    {
+      "slug": "procedure-irrigators",
+      "name": "Іригатори",
+      "group_key": "procedure",
+      "aliases": [
+        "irrigators"
+      ]
+    },
+    {
+      "slug": "procedure-mouthwash",
+      "name": "Ополіскувачі",
+      "group_key": "procedure",
+      "aliases": [
+        "mouthwash"
+      ]
+    },
+    {
+      "slug": "technology-cadcam",
+      "name": "CAD/CAM",
+      "group_key": "technology",
+      "aliases": [
+        "cadcam"
+      ]
+    },
+    {
+      "slug": "technology-3d-printing",
+      "name": "3D-друк",
+      "group_key": "technology",
+      "aliases": [
+        "3d printing"
+      ]
+    },
+    {
+      "slug": "technology-cerec",
+      "name": "CEREC",
+      "group_key": "technology",
+      "aliases": [
+        "cerec"
+      ]
+    },
+    {
+      "slug": "technology-exocad",
+      "name": "Exocad",
+      "group_key": "technology",
+      "aliases": [
+        "exocad"
+      ]
+    },
+    {
+      "slug": "technology-smile-design",
+      "name": "Smile Design",
+      "group_key": "technology",
+      "aliases": [
+        "smile design"
+      ]
+    },
+    {
+      "slug": "technology-smile-cloud",
+      "name": "Smile Cloud",
+      "group_key": "technology",
+      "aliases": [
+        "smile cloud"
+      ]
+    },
+    {
+      "slug": "technology-cbct",
+      "name": "КЛКТ",
+      "group_key": "technology",
+      "aliases": [
+        "cbct"
+      ]
+    },
+    {
+      "slug": "technology-intraoral-scanning",
+      "name": "Інтраоральне сканування",
+      "group_key": "technology",
+      "aliases": [
+        "intraoral scanning"
+      ]
+    },
+    {
+      "slug": "technology-milling",
+      "name": "Фрезерування",
+      "group_key": "technology",
+      "aliases": [
+        "milling"
+      ]
+    },
+    {
+      "slug": "technology-digital-planning",
+      "name": "Цифрове планування",
+      "group_key": "technology",
+      "aliases": [
+        "digital planning"
+      ]
+    },
+    {
+      "slug": "technology-3d-modeling",
+      "name": "3D-моделювання",
+      "group_key": "technology",
+      "aliases": [
+        "3d modeling"
+      ]
+    },
+    {
+      "slug": "technology-guided-surgery",
+      "name": "Навігаційна хірургія",
+      "group_key": "technology",
+      "aliases": [
+        "guided surgery"
+      ]
+    },
+    {
+      "slug": "material-zirconia",
+      "name": "Цирконій",
+      "group_key": "material",
+      "aliases": [
+        "zirconia"
+      ]
+    },
+    {
+      "slug": "material-lithium-disilicate",
+      "name": "Літійдисилікат",
+      "group_key": "material",
+      "aliases": [
+        "lithium disilicate"
+      ]
+    },
+    {
+      "slug": "material-composite",
+      "name": "Композит",
+      "group_key": "material",
+      "aliases": [
+        "composite"
+      ]
+    },
+    {
+      "slug": "material-titanium",
+      "name": "Титан",
+      "group_key": "material",
+      "aliases": [
+        "titanium"
+      ]
+    },
+    {
+      "slug": "material-photopolymer",
+      "name": "Фотополімер",
+      "group_key": "material",
+      "aliases": [
+        "photopolymer"
+      ]
+    },
+    {
+      "slug": "material-ceramics",
+      "name": "Кераміка",
+      "group_key": "material",
+      "aliases": [
+        "ceramics"
+      ]
+    },
+    {
+      "slug": "material-pmma",
+      "name": "PMMA",
+      "group_key": "material",
+      "aliases": [
+        "pmma"
+      ]
+    },
+    {
+      "slug": "material-glass-ceramics",
+      "name": "Склокераміка",
+      "group_key": "material",
+      "aliases": [
+        "glass ceramics"
+      ]
+    },
+    {
+      "slug": "stage-diagnosis",
+      "name": "Діагностика",
+      "group_key": "stage",
+      "aliases": [
+        "diagnosis"
+      ]
+    },
+    {
+      "slug": "stage-planning",
+      "name": "Планування",
+      "group_key": "stage",
+      "aliases": [
+        "planning"
+      ]
+    },
+    {
+      "slug": "stage-modeling",
+      "name": "Моделювання",
+      "group_key": "stage",
+      "aliases": [
+        "modeling"
+      ]
+    },
+    {
+      "slug": "stage-manufacture",
+      "name": "Виготовлення",
+      "group_key": "stage",
+      "aliases": [
+        "manufacture"
+      ]
+    },
+    {
+      "slug": "stage-scanning",
+      "name": "Сканування",
+      "group_key": "stage",
+      "aliases": [
+        "scanning"
+      ]
+    },
+    {
+      "slug": "stage-printing",
+      "name": "Друк",
+      "group_key": "stage",
+      "aliases": [
+        "printing"
+      ]
+    },
+    {
+      "slug": "stage-milling",
+      "name": "Фрезерування",
+      "group_key": "stage",
+      "aliases": [
+        "milling"
+      ]
+    },
+    {
+      "slug": "stage-placement",
+      "name": "Встановлення",
+      "group_key": "stage",
+      "aliases": [
+        "placement"
+      ]
+    },
+    {
+      "slug": "stage-polishing",
+      "name": "Полірування",
+      "group_key": "stage",
+      "aliases": [
+        "polishing"
+      ]
+    },
+    {
+      "slug": "stage-sterilization",
+      "name": "Стерилізація",
+      "group_key": "stage",
+      "aliases": [
+        "sterilization"
+      ]
+    },
+    {
+      "slug": "stage-result-control",
+      "name": "Контроль результату",
+      "group_key": "stage",
+      "aliases": [
+        "result control"
+      ]
+    },
+    {
+      "slug": "feature-before-after",
+      "name": "До/після",
+      "group_key": "feature",
+      "aliases": [
+        "before after"
+      ]
+    },
+    {
+      "slug": "feature-macro",
+      "name": "Макрозйомка",
+      "group_key": "feature",
+      "aliases": [
+        "macro"
+      ]
+    },
+    {
+      "slug": "feature-blood-free",
+      "name": "Без крові",
+      "group_key": "feature",
+      "aliases": [
+        "blood free"
+      ]
+    },
+    {
+      "slug": "feature-animation",
+      "name": "3D-анімація",
+      "group_key": "feature",
+      "aliases": [
+        "animation"
+      ]
+    },
+    {
+      "slug": "feature-wow",
+      "name": "WOW",
+      "group_key": "feature",
+      "aliases": [
+        "wow"
+      ]
+    },
+    {
+      "slug": "feature-real-process",
+      "name": "Реальний процес",
+      "group_key": "feature",
+      "aliases": [
+        "real process"
+      ]
+    },
+    {
+      "slug": "feature-close-up",
+      "name": "Крупний план",
+      "group_key": "feature",
+      "aliases": [
+        "close up"
+      ]
+    },
+    {
+      "slug": "feature-full-cycle",
+      "name": "Повний цикл",
+      "group_key": "feature",
+      "aliases": [
+        "full cycle"
+      ]
+    },
+    {
+      "slug": "feature-aesthetic-result",
+      "name": "Естетичний результат",
+      "group_key": "feature",
+      "aliases": [
+        "aesthetic result"
+      ]
+    }
+  ]
+}

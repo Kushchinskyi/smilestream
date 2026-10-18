@@ -1,0 +1,413 @@
+{
+  "basis": "Inspected production titles, not full visual review; no inferred blood, WOW or before/after claims",
+  "rows": [
+    {
+      "id": "63c8a3d5-7499-4882-a43b-20082e7102a2",
+      "title": "Dentist checking teeth — Mixkit 12146",
+      "url": "https://assets.mixkit.co/videos/12146/12146-720.mp4",
+      "sort_order": 1,
+      "duration_seconds": 13,
+      "category": "diagnostics",
+      "format": "clinical-process",
+      "tags": [
+        "stage-diagnosis",
+        "feature-real-process"
+      ],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "classified",
+      "evidence": "Початкова класифікація лише за фактичною назвою: Dentist checking teeth — Mixkit 12146"
+    },
+    {
+      "id": "401dcf1b-f3c3-4569-8771-bb67d28a8d15",
+      "title": "Young man in consultation with the dentist — Mixkit 4774",
+      "url": "https://assets.mixkit.co/videos/4774/4774-720.mp4",
+      "sort_order": 2,
+      "duration_seconds": 14,
+      "category": null,
+      "format": null,
+      "tags": [],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "needs_classification",
+      "evidence": "Потребує класифікації: назва не встановлює точну процедуру або формат. Young man in consultation with the dentist — Mixkit 4774"
+    },
+    {
+      "id": "8cbabb46-1924-43ca-b4aa-d1f2ed02ca37",
+      "title": "Clinic staff at a hospital reception — Mixkit 4766",
+      "url": "https://assets.mixkit.co/videos/4766/4766-720.mp4",
+      "sort_order": 3,
+      "duration_seconds": 12,
+      "category": null,
+      "format": null,
+      "tags": [],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "needs_classification",
+      "evidence": "Потребує класифікації: назва не встановлює точну процедуру або формат. Clinic staff at a hospital reception — Mixkit 4766"
+    },
+    {
+      "id": "8e7c7a32-0921-4098-b921-a3b241847615",
+      "title": "Checking dental x-rays — Mixkit 12140",
+      "url": "https://assets.mixkit.co/videos/12140/12140-720.mp4",
+      "sort_order": 4,
+      "duration_seconds": 19,
+      "category": "diagnostics",
+      "format": "clinical-process",
+      "tags": [
+        "stage-diagnosis",
+        "feature-real-process"
+      ],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "classified",
+      "evidence": "Початкова класифікація лише за фактичною назвою: Checking dental x-rays — Mixkit 12140"
+    },
+    {
+      "id": "97366a9b-e9cf-400a-a882-85345c820862",
+      "title": "Playful boy in consultation with the dentist — Mixkit 4754",
+      "url": "https://assets.mixkit.co/videos/4754/4754-720.mp4",
+      "sort_order": 5,
+      "duration_seconds": 8,
+      "category": null,
+      "format": null,
+      "tags": [],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "needs_classification",
+      "evidence": "Потребує класифікації: назва не встановлює точну процедуру або формат. Playful boy in consultation with the dentist — Mixkit 4754"
+    },
+    {
+      "id": "dd6552be-aa28-4fd4-9ae9-8f5beb7b5b6b",
+      "title": "Dentist and his assistant working with a patient — Mixkit 12139",
+      "url": "https://assets.mixkit.co/videos/12139/12139-720.mp4",
+      "sort_order": 6,
+      "duration_seconds": 12,
+      "category": null,
+      "format": null,
+      "tags": [],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "needs_classification",
+      "evidence": "Потребує класифікації: назва не встановлює точну процедуру або формат. Dentist and his assistant working with a patient — Mixkit 12139"
+    },
+    {
+      "id": "5bed71ac-e3a3-4f8b-b089-9ad83bbafd83",
+      "title": "Dentists in office — Mixkit 12149",
+      "url": "https://assets.mixkit.co/videos/12149/12149-720.mp4",
+      "sort_order": 7,
+      "duration_seconds": 16,
+      "category": null,
+      "format": null,
+      "tags": [],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "needs_classification",
+      "evidence": "Потребує класифікації: назва не встановлює точну процедуру або формат. Dentists in office — Mixkit 12149"
+    },
+    {
+      "id": "d983b3b8-bd40-4a49-9217-fe7a7b77dadc",
+      "title": "Dentist preparing to work — Mixkit 12145",
+      "url": "https://assets.mixkit.co/videos/12145/12145-720.mp4",
+      "sort_order": 8,
+      "duration_seconds": 18,
+      "category": null,
+      "format": null,
+      "tags": [],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "needs_classification",
+      "evidence": "Потребує класифікації: назва не встановлює точну процедуру або формат. Dentist preparing to work — Mixkit 12145"
+    },
+    {
+      "id": "4d0bf197-c208-4e1f-aa45-2530cac9fe01",
+      "title": "Dentist getting ready for work — Mixkit 12148",
+      "url": "https://assets.mixkit.co/videos/12148/12148-720.mp4",
+      "sort_order": 9,
+      "duration_seconds": 15,
+      "category": null,
+      "format": null,
+      "tags": [],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "needs_classification",
+      "evidence": "Потребує класифікації: назва не встановлює точну процедуру або формат. Dentist getting ready for work — Mixkit 12148"
+    },
+    {
+      "id": "e625b7bf-f9ef-4c13-a065-c5c9d547b83d",
+      "title": "Dentist explaining a denture to his patient — Mixkit 12137",
+      "url": "https://assets.mixkit.co/videos/12137/12137-720.mp4",
+      "sort_order": 10,
+      "duration_seconds": 17,
+      "category": "prosthodontics",
+      "format": "education",
+      "tags": [
+        "direction-prosthodontics"
+      ],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "classified",
+      "evidence": "Початкова класифікація лише за фактичною назвою: Dentist explaining a denture to his patient — Mixkit 12137"
+    },
+    {
+      "id": "ab3de80f-b9af-4d74-8d51-f856755fcf16",
+      "title": "Explaining how to brush your teeth — Mixkit 12150",
+      "url": "https://assets.mixkit.co/videos/12150/12150-720.mp4",
+      "sort_order": 11,
+      "duration_seconds": 15,
+      "category": "hygiene",
+      "format": "education",
+      "tags": [
+        "direction-prevention",
+        "procedure-toothbrushes"
+      ],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "classified",
+      "evidence": "Початкова класифікація лише за фактичною назвою: Explaining how to brush your teeth — Mixkit 12150"
+    },
+    {
+      "id": "d7cb3acc-facb-401b-b567-9b2329a06f37",
+      "title": "Checking dental x-ray — Mixkit 12147",
+      "url": "https://assets.mixkit.co/videos/12147/12147-720.mp4",
+      "sort_order": 12,
+      "duration_seconds": 14,
+      "category": "diagnostics",
+      "format": "clinical-process",
+      "tags": [
+        "stage-diagnosis",
+        "feature-real-process"
+      ],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "classified",
+      "evidence": "Початкова класифікація лише за фактичною назвою: Checking dental x-ray — Mixkit 12147"
+    },
+    {
+      "id": "81a96b36-cc65-4323-bf50-5018fc72ee6d",
+      "title": "Patient arriving at dental office — Mixkit 12141",
+      "url": "https://assets.mixkit.co/videos/12141/12141-720.mp4",
+      "sort_order": 13,
+      "duration_seconds": 19,
+      "category": null,
+      "format": null,
+      "tags": [],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "needs_classification",
+      "evidence": "Потребує класифікації: назва не встановлює точну процедуру або формат. Patient arriving at dental office — Mixkit 12141"
+    },
+    {
+      "id": "330a886e-c3e1-4438-8909-5877db725867",
+      "title": "Dentist and patient before surgery — Mixkit 12142",
+      "url": "https://assets.mixkit.co/videos/12142/12142-720.mp4",
+      "sort_order": 14,
+      "duration_seconds": 10,
+      "category": "surgery",
+      "format": "clinical-process",
+      "tags": [
+        "direction-surgery",
+        "feature-real-process"
+      ],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "classified",
+      "evidence": "Початкова класифікація лише за фактичною назвою: Dentist and patient before surgery — Mixkit 12142"
+    },
+    {
+      "id": "efedb2b8-7c13-4e84-9687-3435d484c959",
+      "title": "Dentist cleaning teeth — Mixkit 12144",
+      "url": "https://assets.mixkit.co/videos/12144/12144-720.mp4",
+      "sort_order": 15,
+      "duration_seconds": 17,
+      "category": "hygiene",
+      "format": "clinical-process",
+      "tags": [
+        "direction-prevention",
+        "procedure-professional-hygiene",
+        "feature-real-process"
+      ],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "classified",
+      "evidence": "Початкова класифікація лише за фактичною назвою: Dentist cleaning teeth — Mixkit 12144"
+    },
+    {
+      "id": "ce98aaa1-1d36-49ec-b3db-c154dc3809d5",
+      "title": "Dental cleaning to patient — Mixkit 12143",
+      "url": "https://assets.mixkit.co/videos/12143/12143-720.mp4",
+      "sort_order": 16,
+      "duration_seconds": 11,
+      "category": "hygiene",
+      "format": "clinical-process",
+      "tags": [
+        "direction-prevention",
+        "procedure-professional-hygiene",
+        "feature-real-process"
+      ],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "classified",
+      "evidence": "Початкова класифікація лише за фактичною назвою: Dental cleaning to patient — Mixkit 12143"
+    },
+    {
+      "id": "940db72e-39c5-458f-b234-6241278b16e1",
+      "title": "Dentist finishing a consultation — Mixkit 12138",
+      "url": "https://assets.mixkit.co/videos/12138/12138-720.mp4",
+      "sort_order": 17,
+      "duration_seconds": 13,
+      "category": null,
+      "format": null,
+      "tags": [],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "needs_classification",
+      "evidence": "Потребує класифікації: назва не встановлює точну процедуру або формат. Dentist finishing a consultation — Mixkit 12138"
+    },
+    {
+      "id": "7c2f81f8-87fa-4846-89b4-ca3d4a032706",
+      "title": "Female dentist with anesthetic — Mixkit 12151",
+      "url": "https://assets.mixkit.co/videos/12151/12151-720.mp4",
+      "sort_order": 18,
+      "duration_seconds": 10,
+      "category": null,
+      "format": null,
+      "tags": [],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "needs_classification",
+      "evidence": "Потребує класифікації: назва не встановлює точну процедуру або формат. Female dentist with anesthetic — Mixkit 12151"
+    },
+    {
+      "id": "a5671d2d-f184-4156-8eb2-fe0df8cc8674",
+      "title": "Імплантація: встановлення імпланта та коронки — 3D",
+      "url": "https://cdn.pixabay.com/video/2016/07/26/4014-176369901_large.mp4",
+      "sort_order": 19,
+      "duration_seconds": 13,
+      "category": "surgery",
+      "format": "animation",
+      "tags": [
+        "direction-implantology",
+        "direction-prosthodontics",
+        "procedure-implants",
+        "procedure-crowns",
+        "feature-animation"
+      ],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "classified",
+      "evidence": "Початкова класифікація лише за фактичною назвою: Імплантація: встановлення імпланта та коронки — 3D"
+    },
+    {
+      "id": "545de0c4-bfa8-4ff2-baf4-f2f63f0301ca",
+      "title": "Лікування кореневих каналів — 3D-візуалізація",
+      "url": "https://cdn.pixabay.com/video/2016/07/26/4015-176369904_large.mp4",
+      "sort_order": 20,
+      "duration_seconds": 30,
+      "category": "endodontics",
+      "format": "animation",
+      "tags": [
+        "direction-endodontics",
+        "procedure-root-canals",
+        "feature-animation"
+      ],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "classified",
+      "evidence": "Початкова класифікація лише за фактичною назвою: Лікування кореневих каналів — 3D-візуалізація"
+    },
+    {
+      "id": "84f63378-7d3a-44dd-85dc-2e8fdfbe3a9d",
+      "title": "Мостоподібний протез: заміщення відсутнього зуба — 3D",
+      "url": "https://cdn.pixabay.com/video/2016/07/26/4018-176369913_large.mp4",
+      "sort_order": 21,
+      "duration_seconds": 12,
+      "category": "prosthodontics",
+      "format": "animation",
+      "tags": [
+        "direction-prosthodontics",
+        "procedure-bridges",
+        "feature-animation"
+      ],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "classified",
+      "evidence": "Початкова класифікація лише за фактичною назвою: Мостоподібний протез: заміщення відсутнього зуба — 3D"
+    },
+    {
+      "id": "a0eb02de-0601-490b-ae9e-a9b732182654",
+      "title": "CEREC: сканування, цифровий дизайн і фрезерування коронки — One Visit",
+      "url": "https://www.dentsplysirona.com/content/dam/master/regions-countries/north-america/usa/campaigns-promotions/2020/single-visit-dentistry/videos/CEREC%20Overview%20Full%20Video-OneVisit.mp4.coredownload.mp4",
+      "sort_order": 22,
+      "duration_seconds": 81,
+      "category": "digital",
+      "format": "technology-process",
+      "tags": [
+        "technology-cadcam",
+        "technology-cerec",
+        "procedure-crowns",
+        "stage-scanning",
+        "stage-modeling",
+        "technology-milling"
+      ],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "classified",
+      "evidence": "Початкова класифікація лише за фактичною назвою: CEREC: сканування, цифровий дизайн і фрезерування коронки — One Visit"
+    },
+    {
+      "id": "81ec285f-97ee-4170-a0e4-3968bfcfa7c9",
+      "title": "Виготовлення протеза: фінішне полірування — макрозйомка",
+      "url": "https://videos.pexels.com/video-files/6631151/6631151-uhd_2732_1440_25fps.mp4",
+      "sort_order": 23,
+      "duration_seconds": 19,
+      "category": "laboratory",
+      "format": "technology-process",
+      "tags": [
+        "direction-dental-lab",
+        "direction-prosthodontics",
+        "stage-polishing",
+        "feature-macro"
+      ],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "classified",
+      "evidence": "Початкова класифікація лише за фактичною назвою: Виготовлення протеза: фінішне полірування — макрозйомка"
+    },
+    {
+      "id": "99c0cf37-3d07-4780-9a0c-0a8c23846989",
+      "title": "Моделювання анатомії реставрації у воску — зуботехнічна лабораторія",
+      "url": "https://videos.pexels.com/video-files/8704970/8704970-hd_1920_1080_30fps.mp4",
+      "sort_order": 24,
+      "duration_seconds": 17,
+      "category": "laboratory",
+      "format": "technology-process",
+      "tags": [
+        "direction-dental-lab",
+        "procedure-restorations",
+        "stage-modeling"
+      ],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "classified",
+      "evidence": "Початкова класифікація лише за фактичною назвою: Моделювання анатомії реставрації у воску — зуботехнічна лабораторія"
+    },
+    {
+      "id": "a7895191-7e80-406d-a2b0-3cf5d89cae9e",
+      "title": "Готовий частковий зубний протез — предметна макрозйомка",
+      "url": "https://videos.pexels.com/video-files/6631153/6631153-uhd_2732_1440_25fps.mp4",
+      "sort_order": 25,
+      "duration_seconds": 11,
+      "category": "prosthodontics",
+      "format": null,
+      "tags": [
+        "direction-prosthodontics",
+        "feature-macro"
+      ],
+      "wow_score": null,
+      "case_id": null,
+      "review_status": "needs_classification",
+      "evidence": "Потребує класифікації: назва не встановлює точну процедуру або формат. Готовий частковий зубний протез — предметна макрозйомка"
+    }
+  ]
+}

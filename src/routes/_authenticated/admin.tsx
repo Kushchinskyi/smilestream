@@ -18,7 +18,9 @@ import { useUnsaved } from "@/hooks/use-unsaved";
 import { AdminShell, SECTIONS, type AdminSection } from "@/components/AdminShell";
 import { AudioSettingsPanel } from "@/components/AudioSettingsPanel";
 import { MusicProfilesPanel } from "@/components/MusicProfilesPanel";
-import { VideoLibrary } from "@/components/VideoLibrary";
+import { ProfessionalVideoLibrary } from "@/components/ProfessionalVideoLibrary";
+import { TaxonomyDictionary } from "@/components/TaxonomyDictionary";
+import { deleteVideoRecords } from "@/lib/video-taxonomy-api";
 import { VideoEditor, type VideoDraft } from "@/components/VideoEditor";
 import { ScreenLibrary } from "@/components/ScreenLibrary";
 import { AdvertisementLibrary } from "@/components/AdvertisementLibrary";
@@ -332,7 +334,20 @@ function AdminPage() {
             </>
           )}
           {lastSync && section === "videos" && (
-            <VideoLibrary
+            <ProfessionalVideoLibrary
+              deleteAllowed={!dirty}
+              onDeleted={(ids) => {
+                setVideos((rows) => rows.filter((v) => !ids.includes(v.id)));
+                setMetadata((rows) =>
+                  rows.filter((m) => m.kind !== "video" || !ids.includes(m.source_key)),
+                );
+                const next = {
+                  ...savedAudio,
+                  originalIds: savedAudio.originalIds.filter((id) => !ids.includes(id)),
+                };
+                setAudio(next);
+                setSavedAudio(next);
+              }}
               videos={videos}
               metadata={metadata}
               originalIds={savedAudio.originalIds}
@@ -344,6 +359,7 @@ function AdminPage() {
               onReorder={(ids) => void reorder(ids)}
             />
           )}
+          {lastSync && section === "classification" && <TaxonomyDictionary videos={videos} />}
           {lastSync && section === "audio" && (
             <AudioSettingsPanel
               settings={audio}
@@ -477,6 +493,7 @@ function AdminPage() {
           )}
           {editing !== undefined && (
             <VideoEditor
+              showCategory={false}
               coverUrl={
                 metadata.find((m) => m.kind === "video" && m.source_key === editing?.id)
                   ?.cover_url || ""
@@ -546,8 +563,8 @@ function AdminPage() {
               }}
               onDelete={async () => {
                 if (!editing) return;
-                const r = await supabase.from("videos").delete().eq("id", editing.id);
-                if (r.error) throw new Error("Не вдалося видалити відео");
+                if (dirty) throw new Error("Спочатку збережіть або відхиліть чернетку звуку.");
+                await deleteVideoRecords([editing.id], "ВИДАЛИТИ 1");
                 setEditing(undefined);
                 await load();
               }}

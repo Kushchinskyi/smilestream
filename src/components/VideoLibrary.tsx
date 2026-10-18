@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import {
   Plus,
   Search,
@@ -16,7 +16,16 @@ import type { Video } from "@/lib/backend";
 import { formatDuration } from "@/lib/backend";
 import { MediaCover } from "./MediaCover";
 import { CATEGORIES, selectVideos, type MediaMetadata } from "@/lib/admin-library";
-type Props = {
+export type VideoLibraryProps = {
+  classification?: {
+    ready?: boolean;
+    filterKey: string;
+    controls: ReactNode;
+    filter: (v: Video) => boolean;
+    label: (v: Video) => string;
+    onEdit: (v: Video) => void;
+    bulk: (ids: string[]) => ReactNode;
+  };
   advertisement?: boolean;
   videos: Video[];
   metadata: MediaMetadata[];
@@ -39,7 +48,8 @@ export function VideoLibrary({
   onOriginal,
   onReorder,
   advertisement = false,
-}: Props) {
+  classification,
+}: VideoLibraryProps) {
   const [query, setQuery] = useState(""),
     [filter, setFilter] = useState("all"),
     [category, setCategory] = useState("all"),
@@ -47,7 +57,13 @@ export function VideoLibrary({
     [selected, setSelected] = useState<string[]>([]),
     [page, setPage] = useState(0),
     [drag, setDrag] = useState<string | null>(null);
-  const filtered = selectVideos(videos, query, filter, category, metadata),
+  useEffect(() => {
+    setPage(0);
+    setSelected([]);
+  }, [classification?.filterKey]);
+  const filtered = selectVideos(videos, query, filter, category, metadata).filter((v) =>
+      classification ? classification.filter(v) : true,
+    ),
     visible = filtered.slice(page * 25, (page + 1) * 25);
   function move(id: string, delta: number) {
     const ids = videos.map((v) => v.id),
@@ -94,7 +110,7 @@ export function VideoLibrary({
               }}
             />
           </label>
-          {!advertisement && (
+          {!advertisement && !classification && (
             <select
               aria-label="Категорія"
               value={category}
@@ -142,6 +158,7 @@ export function VideoLibrary({
             </button>
           </div>
         </div>
+        {classification?.controls}
         {selected.length > 0 && (
           <div className="bulk-bar">
             <strong>Обрано: {selected.length}</strong>
@@ -149,6 +166,7 @@ export function VideoLibrary({
             <button onClick={() => onActive(selected, false)}>Вимкнути</button>
             <button onClick={() => onOriginal(selected, true)}>Зі звуком</button>
             <button onClick={() => onOriginal(selected, false)}>Без звуку</button>
+            {classification?.bulk(selected.filter((id) => videos.some((v) => v.id === id)))}
             <button onClick={() => setSelected([])}>Скасувати вибір</button>
           </div>
         )}
@@ -210,7 +228,9 @@ export function VideoLibrary({
                     <div className="video-title">
                       <strong>{v.title}</strong>
                       <small>
-                        {CATEGORIES[(meta?.category || "other") as keyof typeof CATEGORIES]}
+                        {classification
+                          ? classification.label(v)
+                          : CATEGORIES[(meta?.category || "other") as keyof typeof CATEGORIES]}
                         {v.is_test ? " · Тестове відео" : ""}
                       </small>
                       <span title={v.url}>{v.url}</span>
@@ -236,6 +256,16 @@ export function VideoLibrary({
                     </button>
                   </div>
                   <div className="row-actions">
+                    {classification && (
+                      <button
+                        className="button"
+                        disabled={classification.ready === false}
+                        onClick={() => classification.onEdit(v)}
+                        aria-label={`Класифікувати ${v.title}`}
+                      >
+                        Класифікація
+                      </button>
+                    )}
                     <span className="order-number">{v.sort_order}</span>
                     <button
                       className="icon-button"
