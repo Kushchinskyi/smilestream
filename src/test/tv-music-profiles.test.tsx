@@ -60,6 +60,35 @@ beforeEach(() => {
   localStorage.clear();
 });
 afterEach(cleanup);
+it("seven profiles, no-music and back form a remote-navigable three-column picker", () => {
+  const rows = Array.from({ length: 7 }, (_, i) => ({
+    ...p,
+    id: `b1000000-0000-4000-8000-00000000000${i + 1}`,
+    name: `Profile ${i + 1}`,
+    is_default: i === 0,
+  }));
+  setup(rows);
+  fireEvent.click(screen.getByRole("button", { name: /Дивитися/ }));
+  const grid = screen.getByRole("group", { name: "Музичні профілі" });
+  expect(grid.querySelectorAll("button")).toHaveLength(9);
+  fireEvent.keyDown(window, { key: "ArrowDown" });
+  expect(screen.getByRole("button", { name: "Profile 4" })).toHaveFocus();
+  fireEvent.keyDown(window, { key: "ArrowRight" });
+  expect(screen.getByRole("button", { name: "Profile 5" })).toHaveFocus();
+  fireEvent.keyDown(window, { key: "ArrowDown" });
+  expect(screen.getByRole("button", { name: "Без музики" })).toHaveFocus();
+  fireEvent.click(document.activeElement!);
+  expect(localStorage.getItem(PROFILE_KEY)).toBe("none");
+  expect(mocks.start).toHaveBeenCalledOnce();
+  fireEvent.click(screen.getByRole("button", { name: "Музичний профіль" }));
+  expect(screen.getByRole("button", { name: /Без музики/ })).toHaveFocus();
+  feed(
+    fetchMusicProfiles,
+    rows.map((r) => ({ ...r })),
+  );
+  expect(screen.getByRole("button", { name: /Без музики/ })).toHaveFocus();
+  expect(mocks.start).toHaveBeenCalledOnce();
+});
 it("patient picker shows only names, selection and navigation, without licence or count metadata", () => {
   setup([{ ...p, description: "15 перевірених записів · CC0 · технічні дані" }]);
   expect(screen.queryByText(/Jason Shaw/)).toBeNull();
@@ -76,7 +105,7 @@ it("Watch opens picker; Samsung arrows/OK navigate, selection starts existing en
   fireEvent.click(screen.getByRole("button", { name: /Дивитися/ }));
   const first = screen.getByRole("button", { name: /Piano/ });
   expect(first).toHaveFocus();
-  fireEvent.keyDown(window, { keyCode: 40 });
+  fireEvent.keyDown(window, { keyCode: 39 });
   expect(screen.getByRole("button", { name: /Без музики/ })).toHaveFocus();
   fireEvent.click(document.activeElement!);
   expect(mocks.start).toHaveBeenCalledWith(true);

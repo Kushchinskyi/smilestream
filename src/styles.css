@@ -137,3 +137,55 @@
   outline: 4px solid #37dec3;
   outline-offset: 4px;
 }
+
+/* Full-screen patient picker: CSS grid/gap work on Chromium 85 (no flex-gap reliance). */
+.tv-screen .tv-profile-picker {
+  background: #0c171e !important;
+  padding: 3vh 4vw;
+  overflow: hidden;
+  justify-content: flex-start;
+  gap: 0;
+}
+.tv-profile-picker h1 {
+  margin: 0;
+  font-size: clamp(20px, 3vh, 36px);
+}
+.tv-profile-picker > p {
+  margin: 1vh 0 2vh;
+  font-size: clamp(16px, 2.5vh, 28px);
+  color: #acc1ca;
+}
+.tv-screen .tv-profile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: minmax(0, 1fr);
+  gap: 2vh 1.6vw;
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  padding: 10px;
+}
+.tv-screen .tv-profile-grid button {
+  margin: 0;
+  min-width: 0;
+  min-height: 0;
+  padding: 1.8vh 1.5vw;
+  background: #152933;
+  border: 2px solid #36505c;
+  border-radius: 16px;
+  font-size: clamp(18px, 2.3vw, 42px);
+  font-weight: 600;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+}
+.tv-screen .tv-profile-grid button[aria-pressed="true"] {
+  background: #16483f;
+  border-color: #42cdb1;
+  color: #d9fff4;
+}
+.tv-screen .tv-profile-grid button:focus {
+  outline: 4px solid #fff;
+  outline-offset: 3px;
+  border-color: #42e3c0;
+  box-shadow: 0 0 0 7px #207b70;
+}

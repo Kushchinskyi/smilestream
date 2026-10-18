@@ -7,6 +7,7 @@ import { startPolling } from "@/lib/playback-sync";
 import { fetchAdvertisements } from "@/lib/ad-api";
 import { integrationAdClockLabel } from "@/lib/ad-clock";
 import { DEFAULT_AUDIO } from "@/lib/audio-settings";
+import { tvGridTarget } from "@/lib/tv-grid-navigation";
 import { fetchMusicProfiles } from "@/lib/music-profile-api";
 import {
   LEGACY_MUSIC,
@@ -32,6 +33,7 @@ export const Route = createFileRoute("/tv")({
 function TvPage() {
   const surface = useRef<HTMLDivElement>(null);
   const focusDirection = useRef(1);
+  const navigationKey = useRef("");
   const [navigation, setNavigation] = useState(0);
   const first = useRef<HTMLVideoElement>(null);
   const second = useRef<HTMLVideoElement>(null);
@@ -174,6 +176,7 @@ function TvPage() {
       if (arrow || enterWithoutFocus) {
         event.preventDefault();
         focusDirection.current = key === "ArrowLeft" || key === "ArrowUp" ? -1 : 1;
+        navigationKey.current = key || "";
         setNavigation((n) => n + 1);
       }
     };
@@ -192,14 +195,27 @@ function TvPage() {
     );
     if (!buttons.length) return;
     const index = buttons.indexOf(document.activeElement as HTMLButtonElement);
+    if (surface.current?.querySelector(".tv-profile-grid")) {
+      buttons[tvGridTarget(index, buttons.length, navigationKey.current)]?.focus();
+      return;
+    }
     buttons[
       index < 0 ? 0 : (index + focusDirection.current + buttons.length) % buttons.length
     ]?.focus();
   }, [navigation]);
   useEffect(() => {
     if (!picking && started && !blocked) return;
+    if (picking) {
+      const grid = surface.current?.querySelector(".tv-profile-grid");
+      if (grid?.contains(document.activeElement)) return;
+      (
+        grid?.querySelector<HTMLButtonElement>('button[aria-pressed="true"]') ||
+        grid?.querySelector<HTMLButtonElement>("button")
+      )?.focus();
+      return;
+    }
     surface.current?.querySelector<HTMLButtonElement>("button:not([disabled])")?.focus();
-  }, [picking, started, blocked]);
+  }, [picking, started, blocked, profiles]);
   function chooseProfile(id: string) {
     const resolved = resolveProfile(profileRows.current, id);
     selected.current = resolved;
@@ -239,7 +255,10 @@ function TvPage() {
       {(!started || blocked || picking) && (
         <div
           style={{ position: "absolute", inset: 0, zIndex: 3, background: "#111" }}
-          className="tv-start flex flex-col items-center justify-center gap-6 p-8 text-center"
+          className={
+            "tv-start flex flex-col items-center justify-center gap-6 p-8 text-center" +
+            (picking ? " tv-profile-picker" : "")
+          }
         >
           <h1 className="text-3xl">Smile Stream</h1>
           <p>
@@ -252,7 +271,7 @@ function TvPage() {
           {integrationAdClockLabel && <p>{integrationAdClockLabel}</p>}
           {items?.length === 0 && <p>Плейлист порожній; оновлення автоматично.</p>}
           {picking && (
-            <div className="flex max-h-[65vh] flex-col gap-3 overflow-y-auto">
+            <div className="tv-profile-grid" role="group" aria-label="Музичні профілі">
               {profiles.map((profile) => (
                 <button
                   key={profile.id}
