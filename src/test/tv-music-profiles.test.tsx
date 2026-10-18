@@ -60,10 +60,15 @@ beforeEach(() => {
   localStorage.clear();
 });
 afterEach(cleanup);
-it("public music credits are reachable from the TV start without starting playback", () => {
-  setup();
-  expect(screen.getByRole("button", { name: "Автори музики та ліцензії" })).toBeVisible();
-  expect(screen.getByText(/Музика: Jason Shaw/)).toBeVisible();
+it("patient picker shows only names, selection and navigation, without licence or count metadata", () => {
+  setup([{ ...p, description: "15 перевірених записів · CC0 · технічні дані" }]);
+  expect(screen.queryByText(/Jason Shaw/)).toBeNull();
+  expect(screen.queryByRole("button", { name: /ліцензії/ })).toBeNull();
+  fireEvent.click(screen.getByRole("button", { name: /Дивитися/ }));
+  expect(screen.getByRole("button", { name: /^Piano/ })).toBeVisible();
+  expect(screen.queryByText(/15 перевірених/)).toBeNull();
+  expect(screen.queryByText(/За замовчуванням/)).toBeNull();
+  expect(screen.queryByText(/Без фонових треків/)).toBeNull();
   expect(mocks.start).not.toHaveBeenCalled();
 });
 it("Watch opens picker; Samsung arrows/OK navigate, selection starts existing engine", () => {

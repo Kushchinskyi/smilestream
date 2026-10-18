@@ -444,6 +444,479 @@
       },
       "storageUploaded": false,
       "profileAssigned": false
+    },
+    {
+      "id": "cf17df95-691a-451f-92bb-fb24d0d011f4",
+      "title": "Rain on Grid Paper",
+      "sourceUrl": "https://howworks.ai/music/tracks/rain-on-grid-paper-cf17df",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "1988f25a629e9cc27d3431abd8791c35781011f4c869e4cdb550f84d4d5ee92f",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "fd51a5318dbcab2a57359456885f179aa4153c4d4c672f01a5ed22cf2d961dc6",
+        "bytes": 2761110,
+        "durationSeconds": 122.592,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 180182,
+        "fullDecode": true,
+        "integratedLufs": -13.7,
+        "loudnessRangeLu": 4,
+        "truePeakDbfs": -0.7,
+        "silences": [],
+        "browserPlaybackConfirmed": false,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    },
+    {
+      "id": "c1ea47fc-158f-4489-aec1-c8c61d968739",
+      "title": "Warm Four",
+      "sourceUrl": "https://howworks.ai/music/tracks/warm-four-c1ea47",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "c14aa016374e4a9a928f40ffc1eb3d33741052678861a4fae04e06c2ec631110",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "dd885707ef8ef35f1888df9c7bd81d0e64d780029be82759d148ce835f21321a",
+        "bytes": 2959422,
+        "durationSeconds": 129,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 183530,
+        "fullDecode": true,
+        "integratedLufs": -13.8,
+        "loudnessRangeLu": 4.8,
+        "truePeakDbfs": -0.2,
+        "silences": [],
+        "browserPlaybackConfirmed": false,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    },
+    {
+      "id": "4c199d23-9a45-4a7b-8b0b-072ad266af4a",
+      "title": "Warm Vinyl Keys",
+      "sourceUrl": "https://howworks.ai/music/tracks/warm-vinyl-keys-4c199d",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "f4b245f753d639208f22657c01e39dd7dd28212adc0fb9ba83ac77ccb1be2ae9",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "2df2ae21d004d2aef1b351fb5f06c3c2a971ef08199d5248957e95c9c9132cf9",
+        "bytes": 3631686,
+        "durationSeconds": 156.12,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 186097,
+        "fullDecode": true,
+        "integratedLufs": -13.5,
+        "loudnessRangeLu": 4.7,
+        "truePeakDbfs": -0.1,
+        "silences": [],
+        "browserPlaybackConfirmed": false,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    },
+    {
+      "id": "06c42a82-2b6c-4e49-a9f8-3caae024d50f",
+      "title": "Bedtime Felt",
+      "sourceUrl": "https://howworks.ai/music/tracks/bedtime-felt-06c42a",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "79b836c05dad3d2840506d9dc43c85a83e85bf553fcff9bc1b832efcc571ba13",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "6aaa5912e848a5726aa3fd8c0cf3d6461d0ecf856d61a15653a0e2202cc4fde8",
+        "bytes": 3076950,
+        "durationSeconds": 132.072,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 186380,
+        "fullDecode": true,
+        "integratedLufs": -13.9,
+        "loudnessRangeLu": 7.6,
+        "truePeakDbfs": 0,
+        "silences": [],
+        "browserPlaybackConfirmed": false,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    },
+    {
+      "id": "41bc9e1f-fdb2-436f-a5e3-a8c60d014205",
+      "title": "Mellow Study Loop",
+      "sourceUrl": "https://howworks.ai/music/tracks/mellow-study-loop-41bc9e",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "cf07e65b002a6d505e47b95b806e7178848e3ae66a7837d55c3bf399c6ca7993",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "247b240823000eef940887a6a31aacac07e25d16ddc15877b023223987dbb6d1",
+        "bytes": 3144054,
+        "durationSeconds": 137.544,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 182868,
+        "fullDecode": true,
+        "integratedLufs": -13.5,
+        "loudnessRangeLu": 5.5,
+        "truePeakDbfs": -0.9,
+        "silences": [],
+        "browserPlaybackConfirmed": false,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    },
+    {
+      "id": "0235e78d-f9ea-48d3-9a2c-f0dbd0d1abab",
+      "title": "Desk Lamp Glow",
+      "sourceUrl": "https://howworks.ai/music/tracks/desk-lamp-glow-0235e7",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "46970675a96cd34b9225e7459f23a1504aadb10ba3d93571498d68a3fedf2e20",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "e3681b0759a9549b9d29eb0de1096f98fca3a2e77be4bfcfc3f328b204ce26a3",
+        "bytes": 3180390,
+        "durationSeconds": 138.744,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 183381,
+        "fullDecode": true,
+        "integratedLufs": -13.8,
+        "loudnessRangeLu": 4.3,
+        "truePeakDbfs": -0.7,
+        "silences": [],
+        "browserPlaybackConfirmed": false,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    },
+    {
+      "id": "f0399a23-382d-426e-9fae-5a22b402c05b",
+      "title": "Dusty Pages",
+      "sourceUrl": "https://howworks.ai/music/tracks/dusty-pages-f0399a",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "f2611a884abf413a600ceaac4f517da4ac2853444d4b389f1b9a03297ac9b5e9",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "52793afef0776564203c515a145782e1d34845ca4a4c26316a72b937e99641c8",
+        "bytes": 3322302,
+        "durationSeconds": 143.16,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 185655,
+        "fullDecode": true,
+        "integratedLufs": -13.6,
+        "loudnessRangeLu": 3.9,
+        "truePeakDbfs": -1.1,
+        "silences": [],
+        "browserPlaybackConfirmed": false,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    },
+    {
+      "id": "cb5ada5f-37a8-48d9-8785-f90e8c690b85",
+      "title": "Dusty Groove",
+      "sourceUrl": "https://howworks.ai/music/tracks/dusty-groove-cb5ada",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "e4bcb14a01eda9d386196f9dbf8b8ee7a49ccd895934d76d2cb43fa692e12039",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "51100f223e876911ce386d46e763330ebe8e95fb8150d215401640c6e4ab4d48",
+        "bytes": 3300438,
+        "durationSeconds": 148.44,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 177873,
+        "fullDecode": true,
+        "integratedLufs": -13.7,
+        "loudnessRangeLu": 7.5,
+        "truePeakDbfs": -0.5,
+        "silences": [],
+        "browserPlaybackConfirmed": false,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    },
+    {
+      "id": "8ba852ff-adc2-4727-9fae-198bb8278665",
+      "title": "Deep Work Loop",
+      "sourceUrl": "https://howworks.ai/music/tracks/deep-work-loop-8ba852",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Ambient & Relax",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "5f28c17511e23e3e800e314982dd6cd18709bd96b0f388e8f9398736e87e87dc",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "5321c46ddf1d0d24efc2230340114740f3bc3fce2b615d188b7992bdb6f1546d",
+        "bytes": 4309758,
+        "durationSeconds": 192.384,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 179214,
+        "fullDecode": true,
+        "integratedLufs": -14.3,
+        "loudnessRangeLu": 8.8,
+        "truePeakDbfs": 0.1,
+        "silences": [],
+        "browserPlaybackConfirmed": false,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    },
+    {
+      "id": "e96aa5de-defb-453d-98c6-ab66db9052c8",
+      "title": "Paper Cup Tempo",
+      "sourceUrl": "https://howworks.ai/music/tracks/paper-cup-tempo-e96aa5",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "de9b18f62a374b1029900f47b5c51e79920e9aae748d2a470e8d56b852fe435f",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "5101b8880193f9f24d32e1f4c3b2d45011e3ae90383c438f55fc7decaded2ba2",
+        "bytes": 3139350,
+        "durationSeconds": 132.6,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 189402,
+        "fullDecode": true,
+        "integratedLufs": -14.1,
+        "loudnessRangeLu": 2.2,
+        "truePeakDbfs": -1.5,
+        "silences": [
+          {
+            "end": 132.56,
+            "duration": 2.08992
+          }
+        ],
+        "browserPlaybackConfirmed": false,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    },
+    {
+      "id": "99d4f825-45f7-4738-b5e9-899ee5106271",
+      "title": "Piano Haze",
+      "sourceUrl": "https://howworks.ai/music/tracks/piano-haze-99d4f8",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "1075de86ae343c607581cd8273c601040bbefc0d2c8c25ac2621b323dfcec3cb",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "969220ec690584eac177ef0310657bd9fd246631f3d2de43d2ab570017aef9c8",
+        "bytes": 3194070,
+        "durationSeconds": 142.392,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 179452,
+        "fullDecode": true,
+        "integratedLufs": -13.8,
+        "loudnessRangeLu": 7.2,
+        "truePeakDbfs": 0,
+        "silences": [],
+        "browserPlaybackConfirmed": false,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
+    },
+    {
+      "id": "714b07c0-fe23-42c7-a6b9-aafe63e92568",
+      "title": "Pedal Bloom (2)",
+      "sourceUrl": "https://howworks.ai/music/tracks/pedal-bloom-2-714b07",
+      "publisher": "NEPENTHE DAYDREAM LLC / HowWorks",
+      "origin": "AI-generated; generation model and training provenance not independently established",
+      "candidateProfile": "Ambient & Relax",
+      "license": "CC0-1.0",
+      "individualPageLicenseConfirmed": true,
+      "licenseEvidenceSha256": "9f29a095e046152759ab528386535cbf1247ff74cbd87725c611b32bcec9e8ad",
+      "officialDownload": true,
+      "copyrightPermissionScope": "Publisher CC0 dedication of rights it holds; not a warranty of third-party clearance or exemption from non-waivable remuneration.",
+      "ukraineMandatoryRemuneration": "unresolved; no assertion that CC0 or AI origin exempts clinics from collective management obligations",
+      "status": "downloaded_technical_checked_not_imported",
+      "subjectiveStatus": "Потребує прослуховування",
+      "technical": {
+        "sha256": "cc5bb7a56d6cfc9d9ae98a53a6a7a67c2e430ddddc7b0c815f6acfcddacf70af",
+        "bytes": 3340854,
+        "durationSeconds": 144.624,
+        "codec": [
+          {
+            "name": "mp3",
+            "sampleRate": 48000,
+            "channels": 2
+          }
+        ],
+        "bitRate": 184802,
+        "fullDecode": true,
+        "integratedLufs": -13.7,
+        "loudnessRangeLu": 11.1,
+        "truePeakDbfs": 0,
+        "silences": [],
+        "browserPlaybackConfirmed": false,
+        "samsungHardwareTested": false,
+        "browserPlaybackScope": "Local HTTP copy of original downloaded bytes; playback started and currentTime advanced, readyState=4, error=null. Not a full-duration browser soak or Samsung hardware test."
+      },
+      "storageUploaded": false,
+      "profileAssigned": false
     }
   ]
 }

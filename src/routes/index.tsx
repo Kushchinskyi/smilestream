@@ -6,7 +6,11 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Dental Media Network — безкоштовне ТБ для стоматологій" },
-      { name: "description", content: "Безкоштовне стоматологічне телебачення для зон очікування клінік України. Плейлист, екрани, простий запуск на Smart TV." },
+      {
+        name: "description",
+        content:
+          "Безкоштовне стоматологічне телебачення для зон очікування клінік України. Плейлист, екрани, простий запуск на Smart TV.",
+      },
       { property: "og:title", content: "Dental Media Network" },
       { property: "og:description", content: "Безкоштовне стоматологічне ТБ для клінік України." },
       { property: "og:type", content: "website" },
@@ -17,9 +21,21 @@ export const Route = createFileRoute("/")({
 });
 
 const steps = [
-  { n: "01", t: "Відкрийте /tv на телевізорі", d: "Вбудований браузер Smart TV, без встановлення застосунків." },
-  { n: "02", t: "Натисніть «Запустити»", d: "Відео грає по колу, без звуку за замовчуванням, у повний екран." },
-  { n: "03", t: "Керуйте плейлистом", d: "Адміністратор додає, впорядковує й вимикає ролики з панелі." },
+  {
+    n: "01",
+    t: "Відкрийте /tv на телевізорі",
+    d: "Вбудований браузер Smart TV, без встановлення застосунків.",
+  },
+  {
+    n: "02",
+    t: "Натисніть «Запустити»",
+    d: "Відео грає по колу, без звуку за замовчуванням, у повний екран.",
+  },
+  {
+    n: "03",
+    t: "Керуйте плейлистом",
+    d: "Адміністратор додає, впорядковує й вимикає ролики з панелі.",
+  },
 ];
 
 function Index() {
@@ -39,8 +55,12 @@ function Index() {
             Без YouTube, без сторонньої реклами, з повним контролем плейлиста.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
-            <Button asChild size="lg" variant="teal"><Link to="/tv">Відкрити ТВ-плеєр</Link></Button>
-            <Button asChild size="lg" variant="outline"><Link to="/admin">Панель керування</Link></Button>
+            <Button asChild size="lg" variant="teal">
+              <Link to="/tv">Відкрити ТВ-плеєр</Link>
+            </Button>
+            <Button asChild size="lg" variant="outline">
+              <Link to="/admin">Панель керування</Link>
+            </Button>
           </div>
         </section>
 
@@ -53,6 +73,26 @@ function Index() {
                 <p className="mt-2 text-sm text-muted-foreground">{s.d}</p>
               </div>
             ))}
+          </div>
+        </section>
+
+        <section className="mx-auto max-w-6xl px-6 pt-16" aria-labelledby="music-rights-title">
+          <div className="rounded-2xl border bg-card p-8 md:p-10">
+            <p className="mb-3 text-sm font-semibold text-teal">Прозорість бібліотеки</p>
+            <h2 id="music-rights-title" className="text-2xl font-semibold">
+              Музика та авторські права
+            </h2>
+            <p className="mt-4 max-w-2xl text-muted-foreground">
+              Smile Stream прагне використовувати музику з документально підтвердженими вільними
+              правами, зокрема CC0. Публікуємо джерела та відомості про записи з нашої музичної
+              бібліотеки.
+            </p>
+            <Link
+              to="/music-licenses"
+              className="mt-6 inline-block font-semibold underline underline-offset-4"
+            >
+              Переглянути ліцензії та походження музики
+            </Link>
           </div>
         </section>
 
@@ -69,7 +109,8 @@ function Index() {
         </section>
       </main>
       <footer className="border-t py-8 text-center text-xs text-muted-foreground">
-        © Dental Media Network · Тестові відео: Blender Foundation (CC BY), будуть замінені власним контентом
+        © Dental Media Network · Тестові відео: Blender Foundation (CC BY), будуть замінені власним
+        контентом
       </footer>
     </div>
   );

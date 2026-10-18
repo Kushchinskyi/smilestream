@@ -245,13 +245,12 @@ function TvPage() {
           <p>
             {picking
               ? "Оберіть музичний профіль"
-              : !started && items?.length
-                ? `${items.length} роликів у плейлисті`
-                : status}
+              : blocked || !items?.length
+                ? status
+                : "Відео та музика для вашого комфорту"}
           </p>
           {integrationAdClockLabel && <p>{integrationAdClockLabel}</p>}
           {items?.length === 0 && <p>Плейлист порожній; оновлення автоматично.</p>}
-          {syncStatus && <p>{syncStatus}</p>}
           {picking && (
             <div className="flex max-h-[65vh] flex-col gap-3 overflow-y-auto">
               {profiles.map((profile) => (
@@ -262,14 +261,7 @@ function TvPage() {
                   onClick={() => chooseProfile(profile.id)}
                 >
                   {profile.name}
-                  {profile.is_default ? " · За замовчуванням" : ""}
                   {choice === profile.id ? " ✓" : ""}
-                  <small className="block text-base">
-                    {profile.description}
-                    {!profile.track_urls.some((url) => baseAudio.current.musicUrls.includes(url))
-                      ? " · Без фонових треків"
-                      : ""}
-                  </small>
                 </button>
               ))}
               {!profiles.length && baseAudio.current.musicUrls.length > 0 && (
@@ -306,13 +298,6 @@ function TvPage() {
               </button>
             </>
           )}
-          <button
-            className="rounded border px-4 py-2 text-base"
-            onClick={() => window.location.assign("/music-credits.html")}
-          >
-            Автори музики та ліцензії
-          </button>
-          <small>Музика: Jason Shaw / Audionautix.com · CC BY 4.0 та автори CC0</small>
         </div>
       )}
       {started && (controls || persistentStatus) && !blocked && !picking && (
@@ -327,9 +312,8 @@ function TvPage() {
           }}
           className="tv-status space-y-4 p-6"
         >
-          <p role="status">{status}</p>
+          {persistentStatus && <p role="status">{status}</p>}
           {integrationAdClockLabel && <p>{integrationAdClockLabel}</p>}
-          {syncStatus && <p>{syncStatus}</p>}
           <div className="flex flex-wrap gap-4">
             <button className="rounded border p-4" onClick={() => setPicking(true)}>
               Музичний профіль
