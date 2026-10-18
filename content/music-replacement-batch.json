@@ -39,7 +39,7 @@
         "trimmedSeconds": 6.684343000000013
       },
       "subjectiveStatus": "Потребує прослуховування",
-      "importState": "prepared"
+      "importState": "imported"
     },
     {
       "id": "holizna-cd4e6513b6103a90",
@@ -78,7 +78,7 @@
         "trimmedSeconds": 2.424438000000009
       },
       "subjectiveStatus": "Потребує прослуховування",
-      "importState": "prepared"
+      "importState": "imported"
     },
     {
       "id": "holizna-be310862fb30b080",
@@ -117,7 +117,7 @@
         "trimmedSeconds": 0
       },
       "subjectiveStatus": "Потребує прослуховування",
-      "importState": "prepared"
+      "importState": "imported"
     },
     {
       "id": "holizna-9b7c957fc469fafd",
@@ -156,7 +156,7 @@
         "trimmedSeconds": 0
       },
       "subjectiveStatus": "Потребує прослуховування",
-      "importState": "prepared"
+      "importState": "imported"
     },
     {
       "id": "holizna-ead6f7819e56bed5",
@@ -195,7 +195,7 @@
         "trimmedSeconds": 0
       },
       "subjectiveStatus": "Потребує прослуховування",
-      "importState": "prepared"
+      "importState": "imported"
     },
     {
       "id": "holizna-5ef5ec9e72623df9",
@@ -234,7 +234,7 @@
         "trimmedSeconds": 5.410036999999988
       },
       "subjectiveStatus": "Потребує прослуховування",
-      "importState": "prepared"
+      "importState": "imported"
     },
     {
       "id": "holizna-a94e7cbd66be6be8",
@@ -273,7 +273,7 @@
         "trimmedSeconds": 0
       },
       "subjectiveStatus": "Потребує прослуховування",
-      "importState": "prepared"
+      "importState": "imported"
     },
     {
       "id": "holizna-b30eef3df16ab742",
@@ -312,7 +312,7 @@
         "trimmedSeconds": 10.173298000000017
       },
       "subjectiveStatus": "Потребує прослуховування",
-      "importState": "prepared"
+      "importState": "imported"
     },
     {
       "id": "holizna-249cbce1bc409857",
@@ -351,7 +351,7 @@
         "trimmedSeconds": 4.177402999999998
       },
       "subjectiveStatus": "Потребує прослуховування",
-      "importState": "prepared"
+      "importState": "imported"
     },
     {
       "id": "holizna-597f0b8f77d09c48",
@@ -390,7 +390,7 @@
         "trimmedSeconds": 2.2271419999999864
       },
       "subjectiveStatus": "Потребує прослуховування",
-      "importState": "prepared"
+      "importState": "imported"
     },
     {
       "id": "holizna-b767de41ae6e6b85",
@@ -429,7 +429,7 @@
         "trimmedSeconds": 0
       },
       "subjectiveStatus": "Потребує прослуховування",
-      "importState": "prepared"
+      "importState": "imported"
     },
     {
       "id": "holizna-ddb21a5aa0c80da6",
@@ -468,7 +468,7 @@
         "trimmedSeconds": 0
       },
       "subjectiveStatus": "Потребує прослуховування",
-      "importState": "prepared"
+      "importState": "imported"
     },
     {
       "id": "holizna-779923835270286d",
@@ -507,7 +507,7 @@
         "trimmedSeconds": 2.680281999999977
       },
       "subjectiveStatus": "Потребує прослуховування",
-      "importState": "prepared"
+      "importState": "imported"
     },
     {
       "id": "holizna-0c9edd85dc1ae9ac",
@@ -546,7 +546,7 @@
         "trimmedSeconds": 0
       },
       "subjectiveStatus": "Потребує прослуховування",
-      "importState": "prepared"
+      "importState": "imported"
     },
     {
       "id": "holizna-ecfe0e349bd7207a",
@@ -585,7 +585,9 @@
         "trimmedSeconds": 5.673453000000023
       },
       "subjectiveStatus": "Потребує прослуховування",
-      "importState": "prepared"
+      "importState": "imported"
     }
-  ]
+  ],
+  "importedAt": "2026-10-18",
+  "productionVerified": true
 }
