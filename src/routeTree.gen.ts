@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
 import { Route as AuthRouteImport } from './routes/auth'
+import { Route as MusicLicensesRouteImport } from './routes/music-licenses'
 import { Route as TvRouteImport } from './routes/tv'
 import { Route as AuthenticatedAdminRouteImport } from './routes/_authenticated/admin'
 import { Route as AuthenticatedScreensRouteImport } from './routes/_authenticated/screens'
@@ -28,6 +29,11 @@ const AuthenticatedRouteRoute = AuthenticatedRouteRouteImport.update({
 const AuthRoute = AuthRouteImport.update({
   id: '/auth',
   path: '/auth',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MusicLicensesRoute = MusicLicensesRouteImport.update({
+  id: '/music-licenses',
+  path: '/music-licenses',
   getParentRoute: () => rootRouteImport,
 } as any)
 const TvRoute = TvRouteImport.update({
@@ -49,6 +55,7 @@ const AuthenticatedScreensRoute = AuthenticatedScreensRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
+  '/music-licenses': typeof MusicLicensesRoute
   '/tv': typeof TvRoute
   '/admin': typeof AuthenticatedAdminRoute
   '/screens': typeof AuthenticatedScreensRoute
@@ -56,6 +63,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/auth': typeof AuthRoute
+  '/music-licenses': typeof MusicLicensesRoute
   '/tv': typeof TvRoute
   '/admin': typeof AuthenticatedAdminRoute
   '/screens': typeof AuthenticatedScreensRoute
@@ -65,20 +73,22 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/_authenticated': typeof AuthenticatedRouteRouteWithChildren
   '/auth': typeof AuthRoute
+  '/music-licenses': typeof MusicLicensesRoute
   '/tv': typeof TvRoute
   '/_authenticated/admin': typeof AuthenticatedAdminRoute
   '/_authenticated/screens': typeof AuthenticatedScreensRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/auth' | '/tv' | '/admin' | '/screens'
+  fullPaths: '/' | '/auth' | '/music-licenses' | '/tv' | '/admin' | '/screens'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/auth' | '/tv' | '/admin' | '/screens'
+  to: '/' | '/auth' | '/music-licenses' | '/tv' | '/admin' | '/screens'
   id:
     | '__root__'
     | '/'
     | '/_authenticated'
     | '/auth'
+    | '/music-licenses'
     | '/tv'
     | '/_authenticated/admin'
     | '/_authenticated/screens'
@@ -88,6 +98,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AuthenticatedRouteRoute: typeof AuthenticatedRouteRouteWithChildren
   AuthRoute: typeof AuthRoute
+  MusicLicensesRoute: typeof MusicLicensesRoute
   TvRoute: typeof TvRoute
 }
 
@@ -112,6 +123,13 @@ declare module '@tanstack/react-router' {
       path: '/auth'
       fullPath: '/auth'
       preLoaderRoute: typeof AuthRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/music-licenses': {
+      id: '/music-licenses'
+      path: '/music-licenses'
+      fullPath: '/music-licenses'
+      preLoaderRoute: typeof MusicLicensesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tv': {
@@ -155,6 +173,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AuthenticatedRouteRoute: AuthenticatedRouteRouteWithChildren,
   AuthRoute: AuthRoute,
+  MusicLicensesRoute: MusicLicensesRoute,
   TvRoute: TvRoute,
 }
 export const routeTree = rootRouteImport

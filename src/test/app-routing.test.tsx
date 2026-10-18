@@ -19,4 +19,11 @@ describe("App routing", () => {
     const ids = router.matchRoutes("/tv").map((match) => match.routeId);
     expect(ids).toEqual([rootRouteId, "/tv"]);
   });
+  it("exposes the licence register without an auth guard", () => {
+    const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
+    expect(router.matchRoutes("/music-licenses").map((match) => match.routeId)).toEqual([
+      rootRouteId,
+      "/music-licenses",
+    ]);
+  });
 });

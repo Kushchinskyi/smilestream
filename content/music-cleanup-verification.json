@@ -1,0 +1,497 @@
+{
+  "checkedAt": "2026-10-18",
+  "projectId": "97741ecf-233f-4766-a5a8-1900f0aca92d",
+  "removed": {
+    "musicUrls": 59,
+    "profileAssignments": 109,
+    "metadataRows": 59,
+    "storageObjects": 59,
+    "storageBytes": 359968294
+  },
+  "remaining": {
+    "musicUrls": 0,
+    "profileAssignments": 0,
+    "metadataRows": 0,
+    "storageObjects": 0
+  },
+  "profileIdsAndParametersPreserved": true,
+  "levelsAndOriginalIdsPreserved": true,
+  "protectedBefore": {
+    "ad_settings": [
+      {
+        "block_count": 1,
+        "enabled": false,
+        "id": 1,
+        "interval_minutes": 30
+      }
+    ],
+    "ads": null,
+    "auth_count": 1,
+    "roles": "57a24ec6f5c56bd53c4ad5233c4d4991",
+    "screens": "188c3ef9cad0784bb287ca320d3515ee",
+    "video_count": 25,
+    "videos": "1ef26b9529ddaa4238fd33f7165826e9"
+  },
+  "protectedAfter": {
+    "ad_settings": [
+      {
+        "block_count": 1,
+        "enabled": false,
+        "id": 1,
+        "interval_minutes": 30
+      }
+    ],
+    "ads": null,
+    "auth_count": 1,
+    "roles": "57a24ec6f5c56bd53c4ad5233c4d4991",
+    "screens": "188c3ef9cad0784bb287ca320d3515ee",
+    "video_count": 25,
+    "videos": "1ef26b9529ddaa4238fd33f7165826e9"
+  },
+  "noOtherBucketReferencesInInspectedTables": true,
+  "deletedUrlChecks": [
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/be27fefb5b9a6f10.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/330885e9608a744c.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/0a7350744b6c6c3a.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/f1209ad05fbf7386.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/3a22cc04830490da.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/7c52ef9e712b0b74.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/48693532c4db5ff1.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/015d9366dc24e684.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/ab1c2f6a91f24901.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/0e782a26b90b20cd.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/d6031489eee07af6.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/fb3defff44f55198.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/d4423889ef1f4466.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/9b2ff5d4695b4f6d.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/79b80b4a07fab5c8.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/759bfc88d0fd50c0.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/0b682003142d9efe.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/4d75ca756836e26a.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/605679e281001968.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/48be6c99afe27f83.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/ee7dbfee68698306.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/a314348ae5a3c7ac.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/38d8a531f9a4b4ba.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/281c28b724059574.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/57c7b5bdcd726900.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/24b8741690135ebe.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/bccc7667a9535a87.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/868a273e5a0f8286.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/305b7d8ccef883b3.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/62cbdaf4b6267967.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/8933c5790d4ac9ca.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/9f1748b5a615c467.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/be44bed76796126a.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/3a361f6ae49e810b.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/a586104e65ce592f.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/35361cf819f2e6c2.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/e2d55380053d724d.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/b45700f7e61f29cb.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/1c911b86141dd024.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/5c0c8e0e3e31ab5b.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/e9d0cf0268634e80.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/3645c566406e4e11.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/6fbdf4b5f90c4895.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/f57a37394ac1a4ba.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/d5604612f9b1292c.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/282d2247f23af15d.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/334cbb15a62e26cb.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/52ad90abfbbaa385.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/ed664e557e812bf1.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/4de50ccbb31db9d1.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/7c61c2744c186f04.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/ad9c0d032c3c88d5.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/f8339bc30e705acd.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/7e80007841024f59.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/b2acfe47d84f28df.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/141a97116990c6aa.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/7d8c64d016b61108.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/2dedda9a882ca469.mp3",
+      "status": 400
+    },
+    {
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/3698c49c8daf2edf.mp3",
+      "status": 400
+    }
+  ],
+  "browserProfiles": [
+    {
+      "profile": "Jazz & Lounge",
+      "media": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "src": "https://videos.pexels.com/video-files/6631151/6631151-uhd_2732_1440_25fps.mp4",
+          "tag": "VIDEO",
+          "time": 0
+        },
+        {
+          "error": null,
+          "paused": false,
+          "ready": 4,
+          "src": "https://www.dentsplysirona.com/content/dam/master/regions-countries/north-america/usa/campaigns-promotions/2020/single-visit-dentistry/videos/CEREC%20Overview%20Full%20Video-OneVisit.mp4.coredownload.mp4",
+          "tag": "VIDEO",
+          "time": 29.137842
+        },
+        {
+          "error": null,
+          "paused": true,
+          "ready": 0,
+          "src": null,
+          "tag": "AUDIO",
+          "time": 0
+        }
+      ]
+    },
+    {
+      "profile": "Lo-Fi & Chillhop",
+      "media": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "src": "https://videos.pexels.com/video-files/6631151/6631151-uhd_2732_1440_25fps.mp4",
+          "tag": "VIDEO",
+          "time": 0
+        },
+        {
+          "error": null,
+          "paused": false,
+          "ready": 4,
+          "src": "https://www.dentsplysirona.com/content/dam/master/regions-countries/north-america/usa/campaigns-promotions/2020/single-visit-dentistry/videos/CEREC%20Overview%20Full%20Video-OneVisit.mp4.coredownload.mp4",
+          "tag": "VIDEO",
+          "time": 29.733896
+        },
+        {
+          "error": null,
+          "paused": true,
+          "ready": 0,
+          "src": null,
+          "tag": "AUDIO",
+          "time": 0
+        }
+      ]
+    },
+    {
+      "profile": "Ambient & Relax",
+      "media": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "src": "https://videos.pexels.com/video-files/6631151/6631151-uhd_2732_1440_25fps.mp4",
+          "tag": "VIDEO",
+          "time": 0
+        },
+        {
+          "error": null,
+          "paused": false,
+          "ready": 4,
+          "src": "https://www.dentsplysirona.com/content/dam/master/regions-countries/north-america/usa/campaigns-promotions/2020/single-visit-dentistry/videos/CEREC%20Overview%20Full%20Video-OneVisit.mp4.coredownload.mp4",
+          "tag": "VIDEO",
+          "time": 30.329125
+        },
+        {
+          "error": null,
+          "paused": true,
+          "ready": 0,
+          "src": null,
+          "tag": "AUDIO",
+          "time": 0
+        }
+      ]
+    },
+    {
+      "profile": "Deep House & Chill Electronic",
+      "media": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "src": "https://videos.pexels.com/video-files/6631151/6631151-uhd_2732_1440_25fps.mp4",
+          "tag": "VIDEO",
+          "time": 0
+        },
+        {
+          "error": null,
+          "paused": false,
+          "ready": 4,
+          "src": "https://www.dentsplysirona.com/content/dam/master/regions-countries/north-america/usa/campaigns-promotions/2020/single-visit-dentistry/videos/CEREC%20Overview%20Full%20Video-OneVisit.mp4.coredownload.mp4",
+          "tag": "VIDEO",
+          "time": 30.906388
+        },
+        {
+          "error": null,
+          "paused": true,
+          "ready": 0,
+          "src": null,
+          "tag": "AUDIO",
+          "time": 0
+        }
+      ]
+    },
+    {
+      "profile": "Soft Rock & Acoustic",
+      "media": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "src": "https://videos.pexels.com/video-files/6631151/6631151-uhd_2732_1440_25fps.mp4",
+          "tag": "VIDEO",
+          "time": 0
+        },
+        {
+          "error": null,
+          "paused": false,
+          "ready": 4,
+          "src": "https://www.dentsplysirona.com/content/dam/master/regions-countries/north-america/usa/campaigns-promotions/2020/single-visit-dentistry/videos/CEREC%20Overview%20Full%20Video-OneVisit.mp4.coredownload.mp4",
+          "tag": "VIDEO",
+          "time": 31.490636
+        },
+        {
+          "error": null,
+          "paused": true,
+          "ready": 0,
+          "src": null,
+          "tag": "AUDIO",
+          "time": 0
+        }
+      ]
+    },
+    {
+      "profile": "Modern Pop & Nu-Disco",
+      "media": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "src": "https://videos.pexels.com/video-files/6631151/6631151-uhd_2732_1440_25fps.mp4",
+          "tag": "VIDEO",
+          "time": 0
+        },
+        {
+          "error": null,
+          "paused": false,
+          "ready": 4,
+          "src": "https://www.dentsplysirona.com/content/dam/master/regions-countries/north-america/usa/campaigns-promotions/2020/single-visit-dentistry/videos/CEREC%20Overview%20Full%20Video-OneVisit.mp4.coredownload.mp4",
+          "tag": "VIDEO",
+          "time": 32.074446
+        },
+        {
+          "error": null,
+          "paused": true,
+          "ready": 0,
+          "src": null,
+          "tag": "AUDIO",
+          "time": 0
+        }
+      ]
+    },
+    {
+      "profile": "Автомікс",
+      "media": [
+        {
+          "error": null,
+          "paused": true,
+          "ready": 4,
+          "src": "https://videos.pexels.com/video-files/6631151/6631151-uhd_2732_1440_25fps.mp4",
+          "tag": "VIDEO",
+          "time": 0
+        },
+        {
+          "error": null,
+          "paused": false,
+          "ready": 4,
+          "src": "https://www.dentsplysirona.com/content/dam/master/regions-countries/north-america/usa/campaigns-promotions/2020/single-visit-dentistry/videos/CEREC%20Overview%20Full%20Video-OneVisit.mp4.coredownload.mp4",
+          "tag": "VIDEO",
+          "time": 32.658132
+        },
+        {
+          "error": null,
+          "paused": true,
+          "ready": 0,
+          "src": null,
+          "tag": "AUDIO",
+          "time": 0
+        }
+      ]
+    }
+  ],
+  "physicalSamsungTested": false,
+  "newImported": 0
+}

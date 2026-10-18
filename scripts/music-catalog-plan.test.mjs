@@ -3,11 +3,32 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { admitted, prepareMusicCatalog, musicImportSql } from "./music-catalog-plan.mjs";
 
-const registry = JSON.parse(
+const currentRegistry = JSON.parse(
   readFileSync(new URL("../content/music-registry.json", import.meta.url)),
 );
+// Historical initial-planner fixtures only. Current production has retired these
+// recordings: restoring a fixture in memory is not an import plan or live catalog.
+const registry = {
+  ...currentRegistry,
+  tracks: currentRegistry.tracks.map((track) =>
+    track.importState === "removed"
+      ? {
+          ...track,
+          status: "verified",
+          importState: "historical_test_fixture",
+          legacyRejectedByClinic: false,
+        }
+      : track,
+  ),
+};
 const evidence = new Set(registry.evidence.map((item) => item.id));
 const verified = registry.tracks.find((track) => track.status === "verified");
+test("retired production recordings cannot enter the historical planner", () => {
+  const retired = currentRegistry.tracks.filter((track) => track.importState === "removed");
+  assert.equal(retired.length, 59);
+  for (const track of retired) assert.equal(Boolean(admitted(track, evidence)), false);
+  assert.equal(prepareMusicCatalog(currentRegistry).tracks.length, 0);
+});
 test("only decoded MP3 with primary rights evidence and attribution enters a plan", () => {
   assert.equal(admitted(verified, evidence), true);
   for (const status of ["legal_review", "rejected", "unavailable"]) {

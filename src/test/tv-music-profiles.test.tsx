@@ -60,10 +60,15 @@ beforeEach(() => {
   localStorage.clear();
 });
 afterEach(cleanup);
-it("public music credits are reachable from the TV start without starting playback", () => {
-  setup();
-  expect(screen.getByRole("button", { name: "Автори музики та ліцензії" })).toBeVisible();
-  expect(screen.getByText(/Музика: Jason Shaw/)).toBeVisible();
+it("patient picker shows only names, selection and navigation, without licence or count metadata", () => {
+  setup([{ ...p, description: "15 перевірених записів · CC0 · технічні дані" }]);
+  expect(screen.queryByText(/Jason Shaw/)).toBeNull();
+  expect(screen.queryByRole("button", { name: /ліцензії/ })).toBeNull();
+  fireEvent.click(screen.getByRole("button", { name: /Дивитися/ }));
+  expect(screen.getByRole("button", { name: /^Piano/ })).toBeVisible();
+  expect(screen.queryByText(/15 перевірених/)).toBeNull();
+  expect(screen.queryByText(/За замовчуванням/)).toBeNull();
+  expect(screen.queryByText(/Без фонових треків/)).toBeNull();
   expect(mocks.start).not.toHaveBeenCalled();
 });
 it("Watch opens picker; Samsung arrows/OK navigate, selection starts existing engine", () => {
@@ -110,4 +115,21 @@ it("deleted selection falls back to default and empty selection remains silent",
   feed(fetchMusicProfiles, [next]);
   expect(mocks.settings.mock.lastCall?.[0].musicUrls).toEqual([]);
   expect(mocks.start).toHaveBeenCalledTimes(1);
+});
+it("central library removal silences a remembered profile before profile polling catches up", () => {
+  localStorage.setItem(PROFILE_KEY, p.id);
+  setup();
+  fireEvent.click(screen.getByRole("button", { name: /Дивитися/ }));
+  fireEvent.click(screen.getByRole("button", { name: /Piano/ }));
+  expect(mocks.settings.mock.lastCall?.[0].musicUrls).toEqual(p.track_urls);
+  const starts = mocks.start.mock.calls.length;
+  feed(fetchAudio, { ...DEFAULT_AUDIO, musicUrls: [] });
+  expect(mocks.settings.mock.lastCall?.[0].musicUrls).toEqual([]);
+  // An old profile response cannot resurrect URLs removed from the central library.
+  feed(fetchMusicProfiles, [p]);
+  expect(mocks.settings.mock.lastCall?.[0].musicUrls).toEqual([]);
+  feed(fetchMusicProfiles, [{ ...p, track_urls: [] }]);
+  expect(mocks.settings.mock.lastCall?.[0].musicUrls).toEqual([]);
+  expect(mocks.start).toHaveBeenCalledTimes(starts);
+  expect(mocks.dispose).not.toHaveBeenCalled();
 });

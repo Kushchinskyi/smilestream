@@ -1,6 +1,14 @@
 import { readFile, writeFile } from "node:fs/promises";
 import { prepareMusicCatalog, musicImportSql } from "./music-catalog-plan.mjs";
 
+// Retired initial-import tool. Historical planner/tests remain reproducible, but this
+// command must not regenerate legacy assignments or issue another initial import.
+if (process.argv[1]) {
+  throw new Error(
+    "Legacy catalog generation retired after clinic rejection. Prepare a separately audited premium replacement; preserve current profiles and credits.",
+  );
+}
+
 const registry = JSON.parse(
   await readFile(new URL("../content/music-registry.json", import.meta.url), "utf8"),
 );

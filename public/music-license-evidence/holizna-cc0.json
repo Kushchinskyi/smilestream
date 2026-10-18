@@ -1,0 +1,262 @@
+{
+  "checkedAt": "2026-10-18",
+  "evidenceKind": "Public curated source excerpts and hashes; not a complete HTML archive or legal opinion",
+  "rightsScope": "Creator CC0 dedication of rights held; does not waive non-waivable Ukrainian remuneration or warrant third-party rights",
+  "sources": [
+    {
+      "url": "https://holiznacc0.bandcamp.com/",
+      "checkedAt": "2026-10-18",
+      "httpStatus": 200,
+      "htmlSha256": "188b80f7ddaa54a4e5998726b13c652ef25cf64f8c7420070f92bc8861a499d2",
+      "excerpt": "I am dedicating my archive of music to the creative commons via CC0."
+    },
+    {
+      "url": "https://opengameart.org/content/lo-fi-and-chill-collection",
+      "checkedAt": "2026-10-18",
+      "httpStatus": 200,
+      "htmlSha256": "8063e22b32cf8ac72561bf276ef8c88097903c16d4a3e3c8f88db0cc6626f418",
+      "excerpt": "This music is public domain Cc0, so use it how you want!"
+    },
+    {
+      "url": "https://opengameart.org/content/happy-lo-fi-lofi-collection",
+      "checkedAt": "2026-10-18",
+      "httpStatus": 200,
+      "htmlSha256": "48f82bd5dad7ed8b08246c9b031f5f4b2a28ed9c558b9c9cdeb1fdc3f681f3e4",
+      "excerpt": "This music is public domain Cc0, so use it how you want!"
+    },
+    {
+      "url": "https://opengameart.org/content/chill-beats-collection",
+      "checkedAt": "2026-10-18",
+      "httpStatus": 200,
+      "htmlSha256": "a6df4e943cc088d3585b71b132d1ab4eb5cd22e4e8fffb6223745a836d5ed980",
+      "excerpt": "This music is public domain Cc0, so use it how you want!"
+    }
+  ],
+  "recordings": [
+    {
+      "id": "holizna-3587921a8b3d447b",
+      "title": "Everything You Ever Dreamed",
+      "artist": "HoliznaCC0",
+      "sourceUrl": "https://opengameart.org/content/lo-fi-and-chill-collection",
+      "archive": "lo-fi_and_chill_lofi_collection.zip",
+      "archiveEntry": "Lo-Fi And Chill (Lofi Collection)/02 HoliznaCC0 - Everything You Ever Dreamed.mp3",
+      "originalSha256": "c5a2e0aa16cd92df54bb76322ab49e83b0bff5c30e751fe74d3a603e3ddb030f",
+      "distributedSha256": "19a92417bd43a3f49f8f08ae7a424b932063d70ed3631f1ac89ab7bc2259faf8",
+      "derivative": {
+        "gainDb": -7.4,
+        "trimEndSeconds": 213.39729,
+        "trimmedSeconds": 6.684343000000013
+      }
+    },
+    {
+      "id": "holizna-cd4e6513b6103a90",
+      "title": "Keeping Cool",
+      "artist": "HoliznaCC0",
+      "sourceUrl": "https://opengameart.org/content/lo-fi-and-chill-collection",
+      "archive": "lo-fi_and_chill_lofi_collection.zip",
+      "archiveEntry": "Lo-Fi And Chill (Lofi Collection)/02 HoliznaCC0 - Keeping Cool.mp3",
+      "originalSha256": "229c07722dad8ecbdd82a683c5fe7f691cf07fe3d109df9d870d9b09b4a6784b",
+      "distributedSha256": "940182e24cb55ad692154a013b5c11cc734db67d14144d073a43b490c8fd85a2",
+      "derivative": {
+        "gainDb": -6.699999999999999,
+        "trimEndSeconds": 150.73148,
+        "trimmedSeconds": 2.424438000000009
+      }
+    },
+    {
+      "id": "holizna-be310862fb30b080",
+      "title": "Windows Down",
+      "artist": "HoliznaCC0",
+      "sourceUrl": "https://opengameart.org/content/lo-fi-and-chill-collection",
+      "archive": "lo-fi_and_chill_lofi_collection.zip",
+      "archiveEntry": "Lo-Fi And Chill (Lofi Collection)/02 HoliznaCC0 - Windows Down.mp3.mp3",
+      "originalSha256": "54dc5dfb84c8ea71fa16866c4ad14d10ae4063e68d03f0f284156826ad882fac",
+      "distributedSha256": "da2240c5871f64b0efcb51cd30a2161157c4f2c563b191afefbce92d4d04e680",
+      "derivative": {
+        "gainDb": -4.199999999999999,
+        "trimEndSeconds": 165.799184,
+        "trimmedSeconds": 0
+      }
+    },
+    {
+      "id": "holizna-9b7c957fc469fafd",
+      "title": "Morning Coffee",
+      "artist": "HoliznaCC0",
+      "sourceUrl": "https://opengameart.org/content/lo-fi-and-chill-collection",
+      "archive": "lo-fi_and_chill_lofi_collection_2.zip",
+      "archiveEntry": "Lo-Fi And Chill (Lofi Collection) 2/09 HoliznaCC0 - Morning Coffee.mp3",
+      "originalSha256": "91de2d8f409730a7fa9b0d94f52d5637d7f913e8cee11d54e462a99b06a86758",
+      "distributedSha256": "6a8a4dbf1e34aeda0c70755a297c4464fd5f20a423fb23d11ec2881f686966cc",
+      "derivative": {
+        "gainDb": -5.800000000000001,
+        "trimEndSeconds": 192,
+        "trimmedSeconds": 0
+      }
+    },
+    {
+      "id": "holizna-ead6f7819e56bed5",
+      "title": "A Little Shade",
+      "artist": "HoliznaCC0",
+      "sourceUrl": "https://opengameart.org/content/lo-fi-and-chill-collection",
+      "archive": "lo-fi_and_chill_lofi_collection_2.zip",
+      "archiveEntry": "Lo-Fi And Chill (Lofi Collection) 2/10 HoliznaCC0 - A Little Shade.mp3",
+      "originalSha256": "89958d422cac586da882319e9129ce0b737a6aa65839970002df0cbb1cdced8f",
+      "distributedSha256": "a4e730c2a5f160b7002cc0a43527db8f81ff49e9ed32d8c630c61ab91e563f2c",
+      "derivative": {
+        "gainDb": -7,
+        "trimEndSeconds": 178.573061,
+        "trimmedSeconds": 0
+      }
+    },
+    {
+      "id": "holizna-5ef5ec9e72623df9",
+      "title": "Pretty Little Lies",
+      "artist": "HoliznaCC0",
+      "sourceUrl": "https://opengameart.org/content/lo-fi-and-chill-collection",
+      "archive": "lo-fi_and_chill_lofi_collection_3.zip",
+      "archiveEntry": "Lo-Fi And Chill (Lofi Collection) 3/03 HoliznaCC0 - Pretty Little Lies.mp3",
+      "originalSha256": "54c93ff8236fc19d4060cddb5d21a6f4a9cb6113aaa9f97200c2ca0730175aff",
+      "distributedSha256": "3ba89730b069677285825db92037fc00a1f9cc26c9bad5c2d26d8732331a3b05",
+      "derivative": {
+        "gainDb": -2.7,
+        "trimEndSeconds": 204.58833,
+        "trimmedSeconds": 5.410036999999988
+      }
+    },
+    {
+      "id": "holizna-a94e7cbd66be6be8",
+      "title": "Something In the Air",
+      "artist": "HoliznaCC0",
+      "sourceUrl": "https://opengameart.org/content/lo-fi-and-chill-collection",
+      "archive": "lo-fi_and_chill_lofi_collection_3.zip",
+      "archiveEntry": "Lo-Fi And Chill (Lofi Collection) 3/04 HoliznaCC0 - Something In the Air.mp3",
+      "originalSha256": "934f53a409b4178b86055cbea80936ce084d5820e26db6034d625175a4200a02",
+      "distributedSha256": "fd581092551d40bccd89b06a3f4e28d92eb734bea50a98f0cddc82666fbd97cc",
+      "derivative": {
+        "gainDb": -5,
+        "trimEndSeconds": 131.996735,
+        "trimmedSeconds": 0
+      }
+    },
+    {
+      "id": "holizna-b30eef3df16ab742",
+      "title": "Waves",
+      "artist": "HoliznaCC0",
+      "sourceUrl": "https://opengameart.org/content/lo-fi-and-chill-collection",
+      "archive": "lo-fi_and_chill_lofi_collection_3.zip",
+      "archiveEntry": "Lo-Fi And Chill (Lofi Collection) 3/04 HoliznaCC0 - Waves.mp3.mp3",
+      "originalSha256": "cc3ae08b3099d700204e84e6868eba1add9c07b64e21153d14ba6907b46d6ab4",
+      "distributedSha256": "e477c9b193b70942439b2bf9c22c8de19524b79e53213aa60e867b5958fff544",
+      "derivative": {
+        "gainDb": -5.199999999999999,
+        "trimEndSeconds": 130.39159999999998,
+        "trimmedSeconds": 10.173298000000017
+      }
+    },
+    {
+      "id": "holizna-249cbce1bc409857",
+      "title": "Creature Comforts",
+      "artist": "HoliznaCC0",
+      "sourceUrl": "https://opengameart.org/content/lo-fi-and-chill-collection",
+      "archive": "lo-fi_and_chill_lofi_collection_3.zip",
+      "archiveEntry": "Lo-Fi And Chill (Lofi Collection) 3/23 HoliznaCC0 - Creature Comforts.mp3",
+      "originalSha256": "07982da35ea272ff4c4dab555f024816d34c341bc079640dcbc372228cc5572b",
+      "distributedSha256": "af3f63799ebb51308d49ce8d99034fc76ecc8804a618636c7727cfb06e73099f",
+      "derivative": {
+        "gainDb": -2.3000000000000007,
+        "trimEndSeconds": 170.68627,
+        "trimmedSeconds": 4.177402999999998
+      }
+    },
+    {
+      "id": "holizna-597f0b8f77d09c48",
+      "title": "Blue Skies",
+      "artist": "HoliznaCC0",
+      "sourceUrl": "https://opengameart.org/content/happy-lo-fi-lofi-collection",
+      "archive": "happy_lo-fi_lofi_collection.zip",
+      "archiveEntry": "Happy Lo-Fi (Lofi Collection)/03 HoliznaCC0 - Blue Skies.mp3.mp3",
+      "originalSha256": "1b5916797fe6341663a7172d8f653e95691d9462be51537c56ebfaabd81b8696",
+      "distributedSha256": "5a5878dac15a0b053562eb73805013e9b07bf0b7d4e3bfd0d9db7b705e85b5b0",
+      "derivative": {
+        "gainDb": -6.6,
+        "trimEndSeconds": 173.36796,
+        "trimmedSeconds": 2.2271419999999864
+      }
+    },
+    {
+      "id": "holizna-b767de41ae6e6b85",
+      "title": "Clouds",
+      "artist": "HoliznaCC0",
+      "sourceUrl": "https://opengameart.org/content/happy-lo-fi-lofi-collection",
+      "archive": "happy_lo-fi_lofi_collection.zip",
+      "archiveEntry": "Happy Lo-Fi (Lofi Collection)/21 HoliznaCC0 - Clouds.mp3",
+      "originalSha256": "ae970bdaf997065c5b5ea3520c909514f3a4ed2c84521a83eed1325bffaa26c9",
+      "distributedSha256": "910009db68d7fd0853dcd9eb04599049468d028cdf7304395fe48cef9580bc46",
+      "derivative": {
+        "gainDb": -6,
+        "trimEndSeconds": 229.694694,
+        "trimmedSeconds": 0
+      }
+    },
+    {
+      "id": "holizna-ddb21a5aa0c80da6",
+      "title": "Letting Go Of The Past",
+      "artist": "HoliznaCC0",
+      "sourceUrl": "https://opengameart.org/content/happy-lo-fi-lofi-collection",
+      "archive": "happy_lo-fi_lofi_collection.zip",
+      "archiveEntry": "Happy Lo-Fi (Lofi Collection)/16 HoliznaCC0 - Letting Go Of The Past.mp3",
+      "originalSha256": "9897c9d28ebedc86b14ba810d69992e914b7fbf6c1d8ecec9ff3efd07397ab1a",
+      "distributedSha256": "64b50889797f83231e6641b30d81d61943a6c9b9196d2e94a87c350a1f4a6047",
+      "derivative": {
+        "gainDb": -4.800000000000001,
+        "trimEndSeconds": 179.617959,
+        "trimmedSeconds": 0
+      }
+    },
+    {
+      "id": "holizna-779923835270286d",
+      "title": "City In The Rearview",
+      "artist": "HoliznaCC0",
+      "sourceUrl": "https://opengameart.org/content/chill-beats-collection",
+      "archive": "chill_beats.zip",
+      "archiveEntry": "Chill Beats/01 HoliznaCC0 - City In The Rearview.mp3",
+      "originalSha256": "7bed6ce57a2430b22cc54f005bc0d111aa0bbbf4243b9081db12d0168369b91b",
+      "distributedSha256": "19b44917c5ede6a85bc99acabfd45e767829f9977ce92b9697fa3909e7919036",
+      "derivative": {
+        "gainDb": -7.300000000000001,
+        "trimEndSeconds": 173.01931000000002,
+        "trimmedSeconds": 2.680281999999977
+      }
+    },
+    {
+      "id": "holizna-0c9edd85dc1ae9ac",
+      "title": "Old Age",
+      "artist": "HoliznaCC0",
+      "sourceUrl": "https://opengameart.org/content/chill-beats-collection",
+      "archive": "chill_beats.zip",
+      "archiveEntry": "Chill Beats/06 HoliznaCC0 - Old Age.mp3",
+      "originalSha256": "6931b7ae6e4f247132b7425977cb71cc6692af9ce7dc6141e7e382746407af75",
+      "distributedSha256": "1b387d434ab60b712b56e51966584767d801051815e7bbd591e78415828efed8",
+      "derivative": {
+        "gainDb": -5.800000000000001,
+        "trimEndSeconds": 213.916735,
+        "trimmedSeconds": 0
+      }
+    },
+    {
+      "id": "holizna-ecfe0e349bd7207a",
+      "title": "Autumn",
+      "artist": "HoliznaCC0",
+      "sourceUrl": "https://opengameart.org/content/chill-beats-collection",
+      "archive": "chill_beats.zip",
+      "archiveEntry": "Chill Beats/28 HoliznaCC0 - Autumn.mp3",
+      "originalSha256": "c12190c1c3587e61580078d01c54d4ab7ab1f742857dc07b9d9d712735631b1a",
+      "distributedSha256": "8db3d2acb1eae2c87ed195bfebb15f0ff019f3aec895896a0642e009297cb90d",
+      "derivative": {
+        "gainDb": -6.199999999999999,
+        "trimEndSeconds": 164.17470999999998,
+        "trimmedSeconds": 5.673453000000023
+      }
+    }
+  ]
+}

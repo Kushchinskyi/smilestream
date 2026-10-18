@@ -1,0 +1,3676 @@
+{
+  "checkedAt": "2026-10-18",
+  "purpose": "Metadata research only, not import manifest",
+  "profiles": [
+    {
+      "profile": "Jazz & Lounge",
+      "researchCandidates": 10,
+      "target": 15,
+      "min": 10,
+      "max": 20
+    },
+    {
+      "profile": "Lo-Fi & Chillhop",
+      "researchCandidates": 10,
+      "target": 15,
+      "min": 10,
+      "max": 20
+    },
+    {
+      "profile": "Ambient & Relax",
+      "researchCandidates": 10,
+      "target": 15,
+      "min": 10,
+      "max": 20
+    },
+    {
+      "profile": "Deep House & Chill Electronic",
+      "researchCandidates": 10,
+      "target": 15,
+      "min": 10,
+      "max": 20
+    },
+    {
+      "profile": "Soft Rock & Acoustic",
+      "researchCandidates": 10,
+      "target": 15,
+      "min": 10,
+      "max": 20
+    },
+    {
+      "profile": "Modern Pop & Nu-Disco",
+      "researchCandidates": 10,
+      "target": 15,
+      "min": 10,
+      "max": 20
+    }
+  ],
+  "tracks": [
+    {
+      "id": "01840d16-209b-d939-6333-36bfbf0546a1",
+      "title": "Restaurant Groove",
+      "artist": "Walen",
+      "candidateProfile": "Jazz & Lounge",
+      "durationSeconds": 133.38068,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/01840d16-209b-d939-6333-36bfbf0546a1",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/01840d16-209b-d939-6333-36bfbf0546a1/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "restaurant",
+          "groove",
+          "lounge",
+          "Jazz",
+          "bass guitar",
+          "waiting",
+          "Cooking",
+          "coffee",
+          "cafe",
+          "cafetería",
+          "restaurante",
+          "elevator",
+          "bar",
+          "groovy",
+          "rhythm",
+          "drums",
+          "heavy",
+          "guitar"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/01840d16-209b-d939-6333-36bfbf0546a1"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "06ab6f7a-077c-45de-bf00-0ed687c28afe",
+      "title": "glimmer",
+      "artist": "massobeats",
+      "candidateProfile": "Jazz & Lounge",
+      "durationSeconds": 151.17015,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/06ab6f7a-077c-45de-bf00-0ed687c28afe",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/06ab6f7a-077c-45de-bf00-0ed687c28afe/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "carefree",
+          "Lofi",
+          "Chill",
+          "Vlog",
+          "Hip Hop",
+          "simple",
+          "casual",
+          "piano",
+          "fresh",
+          "jazzy",
+          "Cooking",
+          "instrumental",
+          "easygoing",
+          "Exciting",
+          "tutorial",
+          "lounge",
+          "How To",
+          "beat",
+          "explainer",
+          "study",
+          "food",
+          "friendly",
+          "groovy",
+          "urban",
+          "flow"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/06ab6f7a-077c-45de-bf00-0ed687c28afe"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "39a7e116-785c-4b46-809e-de2b3f1323d5",
+      "title": "Sexy Touch",
+      "artist": "Dagored",
+      "candidateProfile": "Jazz & Lounge",
+      "durationSeconds": 126,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/39a7e116-785c-4b46-809e-de2b3f1323d5",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/39a7e116-785c-4b46-809e-de2b3f1323d5/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Chill",
+          "luxury",
+          "beat",
+          "erotic",
+          "Night",
+          "Relaxing",
+          "Hip Hop",
+          "stylish",
+          "Jazz",
+          "soul",
+          "lifestyle",
+          "lounge",
+          "sensual",
+          "sexy",
+          "urban",
+          "Romantic",
+          "love",
+          "sophisticated",
+          "r&b",
+          "seductive",
+          "floating",
+          "luxurious",
+          "instrumental",
+          "dreamy",
+          "intimate",
+          "Funky"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/39a7e116-785c-4b46-809e-de2b3f1323d5"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "3b8280eb-dc65-4288-96db-d2f36de03cc9",
+      "title": "Coffee & Vinyl",
+      "artist": "Aventure",
+      "candidateProfile": "Jazz & Lounge",
+      "durationSeconds": 143.36841,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/3b8280eb-dc65-4288-96db-d2f36de03cc9",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/3b8280eb-dc65-4288-96db-d2f36de03cc9/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Hip Hop/Rap",
+        "labels": [
+          "Lofi",
+          "Hip Hop",
+          "beat",
+          "jazzy",
+          "lounge",
+          "urban",
+          "Vlog",
+          "drums",
+          "Cool",
+          "Chill",
+          "Aesthetic",
+          "instrumental",
+          "sophisticated",
+          "Retro",
+          "smooth"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/3b8280eb-dc65-4288-96db-d2f36de03cc9"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "5d35077b-64b1-44a1-a33c-43c1d4ef7840",
+      "title": "Iced Tea",
+      "artist": "Aventure",
+      "candidateProfile": "Jazz & Lounge",
+      "durationSeconds": 158.8125,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/5d35077b-64b1-44a1-a33c-43c1d4ef7840",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/5d35077b-64b1-44a1-a33c-43c1d4ef7840/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Hip Hop/Rap",
+        "labels": [
+          "Lofi",
+          "Hip Hop",
+          "beat",
+          "Jazz",
+          "positive",
+          "Aesthetic",
+          "lounge",
+          "Chill",
+          "instrumental",
+          "Retro",
+          "smooth",
+          "Relaxing",
+          "laidback",
+          "bright"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/5d35077b-64b1-44a1-a33c-43c1d4ef7840"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "6003b954-985c-4ced-8b6b-d571cfebb0f0",
+      "title": "Smooth Nostalgia",
+      "artist": "Aventure",
+      "candidateProfile": "Jazz & Lounge",
+      "durationSeconds": 150.66667,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/6003b954-985c-4ced-8b6b-d571cfebb0f0",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/6003b954-985c-4ced-8b6b-d571cfebb0f0/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Easy Listening",
+        "labels": [
+          "Hip Hop",
+          "Chill",
+          "beat",
+          "laidback",
+          "nostalgic",
+          "evening",
+          "vintage",
+          "hazy",
+          "warm",
+          "Aesthetic",
+          "Jazz",
+          "Relaxing",
+          "dreamy",
+          "cafe",
+          "lounge",
+          "floating"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/6003b954-985c-4ced-8b6b-d571cfebb0f0"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "7e4d6faf-3dda-44cf-9ae4-bf6e045589fa",
+      "title": "Soulful Luxe",
+      "artist": "Aventure",
+      "candidateProfile": "Jazz & Lounge",
+      "durationSeconds": 168,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/7e4d6faf-3dda-44cf-9ae4-bf6e045589fa",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/7e4d6faf-3dda-44cf-9ae4-bf6e045589fa/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Hip Hop/Rap",
+        "labels": [
+          "luxury",
+          "Hip Hop",
+          "Jazz",
+          "Chill",
+          "beat",
+          "Aesthetic",
+          "lounge",
+          "instrumental",
+          "Retro",
+          "smooth",
+          "Relaxing",
+          "laidback",
+          "nostalgic",
+          "exclusive",
+          "Night",
+          "elegant",
+          "classy",
+          "sophisticated",
+          "warm",
+          "swing",
+          "drums",
+          "soulful"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/7e4d6faf-3dda-44cf-9ae4-bf6e045589fa"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "c7c31884-f971-4430-8190-31b1f79f3e68",
+      "title": "Monday Routine",
+      "artist": "Aventure",
+      "candidateProfile": "Jazz & Lounge",
+      "durationSeconds": 143.44827,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/c7c31884-f971-4430-8190-31b1f79f3e68",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/c7c31884-f971-4430-8190-31b1f79f3e68/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Easy Listening",
+        "labels": [
+          "Relaxing",
+          "Lofi",
+          "instrumental",
+          "Jazz",
+          "walking",
+          "Vlog",
+          "Chill",
+          "beat",
+          "laidback",
+          "jazzy",
+          "gentle",
+          "lounge",
+          "downtempo",
+          "smooth",
+          "cafe",
+          "Night"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/c7c31884-f971-4430-8190-31b1f79f3e68"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "cc3d9f0e-53a1-405f-812b-abea2e3fb8be",
+      "title": "city",
+      "artist": "massobeats",
+      "candidateProfile": "Jazz & Lounge",
+      "durationSeconds": 139.68384,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/cc3d9f0e-53a1-405f-812b-abea2e3fb8be",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/cc3d9f0e-53a1-405f-812b-abea2e3fb8be/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "luxury",
+          "Hip Hop",
+          "Vlog",
+          "Jazz",
+          "lounge",
+          "Chill",
+          "sophisticated",
+          "cafe",
+          "city",
+          "smooth",
+          "Retro",
+          "beat",
+          "cozy",
+          "vintage",
+          "groovy",
+          "enchanting",
+          "luxurious",
+          "instrumental",
+          "elegant",
+          "classy",
+          "evening",
+          "Lofi"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/cc3d9f0e-53a1-405f-812b-abea2e3fb8be"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "de375052-13a2-1a5c-7da4-283f7daf7c94",
+      "title": "Italy",
+      "artist": "Aylex",
+      "candidateProfile": "Jazz & Lounge",
+      "durationSeconds": 192.96155,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/de375052-13a2-1a5c-7da4-283f7daf7c94",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/de375052-13a2-1a5c-7da4-283f7daf7c94/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "italian",
+          "Jazz",
+          "cozy",
+          "restaurant",
+          "Christmas",
+          "lounge",
+          "Chill",
+          "instrumental",
+          "sax",
+          "Cooking",
+          "Vlog",
+          "Morning",
+          "old school",
+          "vintage",
+          "Romantic",
+          "france",
+          "europe"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/de375052-13a2-1a5c-7da4-283f7daf7c94"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "f5096754-4ce7-f995-4ce8-25daef51ade9",
+      "title": "honey jam",
+      "artist": "massobeats",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "durationSeconds": 133.24168,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/f5096754-4ce7-f995-4ce8-25daef51ade9",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/f5096754-4ce7-f995-4ce8-25daef51ade9/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Aesthetic",
+          "Relaxing",
+          "Chill",
+          "Lofi",
+          "piano",
+          "cute",
+          "instrumental",
+          "Vlog",
+          "How To",
+          "downtempo",
+          "beat",
+          "cassette",
+          "Retro",
+          "Intro",
+          "sweet",
+          "simple",
+          "mellow",
+          "easy",
+          "study",
+          "focus",
+          "outro",
+          "Cooking",
+          "chillhop"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/f5096754-4ce7-f995-4ce8-25daef51ade9"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "0ca27c3d-b234-46c3-82a0-67b334299711",
+      "title": "Poolside",
+      "artist": "Aventure",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "durationSeconds": 138.24,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/0ca27c3d-b234-46c3-82a0-67b334299711",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/0ca27c3d-b234-46c3-82a0-67b334299711/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Hip Hop/Rap",
+        "labels": [
+          "lounge",
+          "Lofi",
+          "beat",
+          "Chill",
+          "Aesthetic",
+          "instrumental",
+          "smooth",
+          "Relaxing",
+          "laidback",
+          "bright",
+          "Vlog",
+          "simple",
+          "nostalgic",
+          "birds",
+          "Nature",
+          "Morning",
+          "chillhop",
+          "cozy",
+          "airy",
+          "easy",
+          "study",
+          "vocal chops"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/0ca27c3d-b234-46c3-82a0-67b334299711"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "158e9227-d671-4280-b14c-cf228c52cc64",
+      "title": "downtown",
+      "artist": "massobeats",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "durationSeconds": 156.3482,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/158e9227-d671-4280-b14c-cf228c52cc64",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/158e9227-d671-4280-b14c-cf228c52cc64/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Lofi",
+          "casual",
+          "Vlog",
+          "beat",
+          "Aesthetic",
+          "Hip Hop",
+          "cozy",
+          "simple",
+          "homely",
+          "mellow",
+          "Night",
+          "instrumental",
+          "study",
+          "Relaxing",
+          "gentle",
+          "jazzy",
+          "nostalgic",
+          "chillhop"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/158e9227-d671-4280-b14c-cf228c52cc64"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "202f6745-784e-97aa-73c5-50653f5bdf16",
+      "title": "noon",
+      "artist": "massobeats",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "durationSeconds": 188.11765,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/202f6745-784e-97aa-73c5-50653f5bdf16",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/202f6745-784e-97aa-73c5-50653f5bdf16/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Lofi",
+          "Night",
+          "Aesthetic",
+          "chillhop",
+          "beat",
+          "study",
+          "Vlog",
+          "Relaxing",
+          "mellow",
+          "Chill",
+          "drums",
+          "autumn",
+          "easy",
+          "guitar",
+          "piano",
+          "focus",
+          "simple",
+          "sentimental"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/202f6745-784e-97aa-73c5-50653f5bdf16"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "372fbc6c-b365-4159-97d9-0a83f88295e9",
+      "title": "missed call",
+      "artist": "massobeats",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "durationSeconds": 144.12108,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/372fbc6c-b365-4159-97d9-0a83f88295e9",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/372fbc6c-b365-4159-97d9-0a83f88295e9/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Instrumental",
+        "labels": [
+          "Chill",
+          "Hip Hop",
+          "beat",
+          "Aesthetic",
+          "piano",
+          "Vlog",
+          "mellow",
+          "Intro",
+          "cozy",
+          "Lofi",
+          "instrumental",
+          "Retro",
+          "chillhop",
+          "Relaxing",
+          "voice"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/372fbc6c-b365-4159-97d9-0a83f88295e9"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "56193a8c-d821-4a73-83ed-9e96f3e6caa2",
+      "title": "petals",
+      "artist": "massobeats",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "durationSeconds": 134.40625,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/56193a8c-d821-4a73-83ed-9e96f3e6caa2",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/56193a8c-d821-4a73-83ed-9e96f3e6caa2/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Instrumental",
+        "labels": [
+          "Aesthetic",
+          "Chill",
+          "cozy",
+          "Relaxing",
+          "Lofi",
+          "beat",
+          "Night",
+          "dreamy",
+          "instrumental",
+          "chillhop",
+          "simple",
+          "fresh",
+          "Vlog",
+          "piano"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/56193a8c-d821-4a73-83ed-9e96f3e6caa2"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "5b515798-1d49-4c3d-9783-d7a2a78b5781",
+      "title": "moonlit",
+      "artist": "massobeats",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "durationSeconds": 169.52344,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/5b515798-1d49-4c3d-9783-d7a2a78b5781",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/5b515798-1d49-4c3d-9783-d7a2a78b5781/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Instrumental",
+        "labels": [
+          "cozy",
+          "Aesthetic",
+          "Chill",
+          "Lofi",
+          "beat",
+          "Relaxing",
+          "piano",
+          "Night",
+          "instrumental",
+          "mellow",
+          "chillhop",
+          "simple",
+          "indoor",
+          "moody",
+          "Vlog",
+          "slow",
+          "autumn",
+          "homely",
+          "study"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/5b515798-1d49-4c3d-9783-d7a2a78b5781"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "5fa52877-d009-fd7f-d417-6e45d055aaac",
+      "title": "Imagine",
+      "artist": "Lukrembo",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "durationSeconds": 154,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/5fa52877-d009-fd7f-d417-6e45d055aaac",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/5fa52877-d009-fd7f-d417-6e45d055aaac/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Lofi",
+          "anime",
+          "beat",
+          "chillhop",
+          "Chill",
+          "Happy",
+          "whistle",
+          "joy",
+          "hopeful",
+          "melody",
+          "positive",
+          "Vlog"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/5fa52877-d009-fd7f-d417-6e45d055aaac"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "654e7631-341d-4af6-a40b-0f38039365c1",
+      "title": "citrus",
+      "artist": "massobeats",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "durationSeconds": 136.38126,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/654e7631-341d-4af6-a40b-0f38039365c1",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/654e7631-341d-4af6-a40b-0f38039365c1/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Instrumental",
+        "labels": [
+          "Vlog",
+          "chillhop",
+          "instrumental",
+          "Lofi",
+          "beat",
+          "piano",
+          "casual",
+          "Relaxing",
+          "mellow",
+          "lifestyle",
+          "Retro",
+          "autumn"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/654e7631-341d-4af6-a40b-0f38039365c1"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "667c016c-10b4-ee0a-21ed-a8606f750dbc",
+      "title": "floral",
+      "artist": "massobeats",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "durationSeconds": 146.82812,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/667c016c-10b4-ee0a-21ed-a8606f750dbc",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/667c016c-10b4-ee0a-21ed-a8606f750dbc/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "spring",
+          "Aesthetic",
+          "Chill",
+          "Uplifting",
+          "Lofi",
+          "bright",
+          "Relaxing",
+          "Morning",
+          "piano",
+          "positive",
+          "Happy",
+          "beat",
+          "mellow",
+          "joyful",
+          "hopeful",
+          "Vlog",
+          "sweet",
+          "chillhop"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/667c016c-10b4-ee0a-21ed-a8606f750dbc"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "0455e5fe-58a0-005e-2207-d13b5f94c711",
+      "title": "Make a Stand",
+      "artist": "Filo Starquez",
+      "candidateProfile": "Ambient & Relax",
+      "durationSeconds": 155.87265,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/0455e5fe-58a0-005e-2207-d13b5f94c711",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/0455e5fe-58a0-005e-2207-d13b5f94c711/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "minimal",
+          "Relaxing",
+          "Ambient",
+          "piano",
+          "Drone",
+          "mellow",
+          "dreamy",
+          "Calm",
+          "simple",
+          "Chill",
+          "Timelapse",
+          "serene",
+          "Nature",
+          "reflective",
+          "evocative",
+          "slow",
+          "atmospheric",
+          "Meditative"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/0455e5fe-58a0-005e-2207-d13b5f94c711"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "0cf661e0-f6dd-4501-b890-f80a963dde87",
+      "title": "Light Through Glass",
+      "artist": "Zolvi",
+      "candidateProfile": "Ambient & Relax",
+      "durationSeconds": 137.46913,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/0cf661e0-f6dd-4501-b890-f80a963dde87",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/0cf661e0-f6dd-4501-b890-f80a963dde87/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Soundtrack",
+        "labels": [
+          "neutral",
+          "piano",
+          "documentary",
+          "beds",
+          "balanced",
+          "factual",
+          "Calm",
+          "unobtrusive",
+          "informative",
+          "steady",
+          "atmospheric",
+          "simple",
+          "soundscape",
+          "Ambient",
+          "Nature",
+          "Drone",
+          "Timelapse",
+          "airy",
+          "minimal",
+          "Peaceful",
+          "gentle",
+          "storytelling",
+          "soft",
+          "narration"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/0cf661e0-f6dd-4501-b890-f80a963dde87"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "128458fc-9ba2-416d-8554-bec39631b384",
+      "title": "Distant Clarity",
+      "artist": "Zolvi",
+      "candidateProfile": "Ambient & Relax",
+      "durationSeconds": 134.48863,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/128458fc-9ba2-416d-8554-bec39631b384",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/128458fc-9ba2-416d-8554-bec39631b384/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Soundtrack",
+        "labels": [
+          "soundscape",
+          "Ambient",
+          "Peaceful",
+          "atmospheric",
+          "neutral",
+          "documentary",
+          "beds",
+          "balanced",
+          "factual",
+          "Calm",
+          "unobtrusive",
+          "steady",
+          "floating",
+          "piano",
+          "dreamy",
+          "Meditative",
+          "Relaxing",
+          "ethereal",
+          "Cinematic",
+          "serene",
+          "Nature",
+          "Drone",
+          "Timelapse",
+          "soothing",
+          "airy",
+          "study",
+          "sleep",
+          "meditation",
+          "narration"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/128458fc-9ba2-416d-8554-bec39631b384"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "2eb6c87d-2352-4961-8054-1a9963766e2e",
+      "title": "Harbour",
+      "artist": "Johny Grimes",
+      "candidateProfile": "Ambient & Relax",
+      "durationSeconds": 167.09615,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/2eb6c87d-2352-4961-8054-1a9963766e2e",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/2eb6c87d-2352-4961-8054-1a9963766e2e/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Easy Listening",
+        "labels": [
+          "Ambient",
+          "beat",
+          "Timelapse",
+          "Modern",
+          "Chill",
+          "atmospheric",
+          "Drone",
+          "immersive",
+          "Emotional",
+          "simple",
+          "airy",
+          "floating",
+          "Electronic",
+          "voices",
+          "Cool",
+          "piano",
+          "aerial",
+          "Night",
+          "Technology",
+          "dreamy",
+          "evolving",
+          "city"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/2eb6c87d-2352-4961-8054-1a9963766e2e"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "308e78f1-7026-4b8e-9624-013986cdeb87",
+      "title": "Genesis",
+      "artist": "Johny Grimes",
+      "candidateProfile": "Ambient & Relax",
+      "durationSeconds": 125.557686,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/308e78f1-7026-4b8e-9624-013986cdeb87",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/308e78f1-7026-4b8e-9624-013986cdeb87/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "beat",
+          "Chill",
+          "piano",
+          "Cool",
+          "instrumental",
+          "airy",
+          "Drone",
+          "simple",
+          "Ambient",
+          "floating",
+          "dreamy",
+          "atmospheric",
+          "Emotional",
+          "Timelapse",
+          "Night",
+          "ethereal",
+          "downtempo",
+          "evolving",
+          "Electronic"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/308e78f1-7026-4b8e-9624-013986cdeb87"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "3aff8d54-7167-4ee6-bf4d-1420523c6269",
+      "title": "Swanlake",
+      "artist": "Zambolino",
+      "candidateProfile": "Ambient & Relax",
+      "durationSeconds": 149.25755,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/3aff8d54-7167-4ee6-bf4d-1420523c6269",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/3aff8d54-7167-4ee6-bf4d-1420523c6269/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "New Age",
+        "labels": [
+          "Meditative",
+          "Peaceful",
+          "slow",
+          "piano",
+          "Calm",
+          "serene",
+          "quiet",
+          "atmospheric",
+          "sensitive",
+          "simple",
+          "melody",
+          "Ambient",
+          "introspection",
+          "relaxation",
+          "floating",
+          "soothing",
+          "tranquil",
+          "unwind",
+          "Emotional",
+          "focus",
+          "reflective",
+          "immersive",
+          "soft",
+          "dreamy",
+          "breathing",
+          "sentimental"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/3aff8d54-7167-4ee6-bf4d-1420523c6269"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "3b50d9e7-9d1e-942b-f735-fe699531815c",
+      "title": "Wandering",
+      "artist": "Epic Spectrum",
+      "candidateProfile": "Ambient & Relax",
+      "durationSeconds": 154.08,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/3b50d9e7-9d1e-942b-f735-fe699531815c",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/3b50d9e7-9d1e-942b-f735-fe699531815c/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "dreamy",
+          "relief",
+          "Movie",
+          "Ambient",
+          "hopeful",
+          "Chill",
+          "waves",
+          "Cinematic",
+          "Emotional",
+          "piano",
+          "documentary",
+          "succesful",
+          "warm",
+          "expressive",
+          "sentimental",
+          "ocean",
+          "joy",
+          "excitement",
+          "build up",
+          "reflective",
+          "waiting",
+          "motivational",
+          "storytelling",
+          "nostalgic"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/3b50d9e7-9d1e-942b-f735-fe699531815c"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "5af22e8a-cdec-421f-92a7-90eaafe71b97",
+      "title": "Open Framework",
+      "artist": "Zolvi",
+      "candidateProfile": "Ambient & Relax",
+      "durationSeconds": 127.24139,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/5af22e8a-cdec-421f-92a7-90eaafe71b97",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/5af22e8a-cdec-421f-92a7-90eaafe71b97/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Soundtrack",
+        "labels": [
+          "documentary",
+          "unobtrusive",
+          "piano",
+          "neutral",
+          "balanced",
+          "beds",
+          "factual",
+          "Calm",
+          "informative",
+          "steady",
+          "simple",
+          "slow",
+          "atmospheric",
+          "Ambient",
+          "soundscape",
+          "Nature",
+          "Drone",
+          "Timelapse",
+          "minimal",
+          "Peaceful",
+          "gentle",
+          "storytelling",
+          "soft",
+          "narration"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/5af22e8a-cdec-421f-92a7-90eaafe71b97"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "70a9e65c-1d42-399e-a065-d05d3fe41896",
+      "title": "Timeless",
+      "artist": "Epic Spectrum",
+      "candidateProfile": "Ambient & Relax",
+      "durationSeconds": 120,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/70a9e65c-1d42-399e-a065-d05d3fe41896",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/70a9e65c-1d42-399e-a065-d05d3fe41896/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Meditative",
+          "slow",
+          "Nature",
+          "Ambient",
+          "piano",
+          "Cinematic",
+          "nostalgia",
+          "birds",
+          "soothing",
+          "Peaceful",
+          "nostalgic",
+          "spring",
+          "reflective",
+          "Drone",
+          "Timelapse",
+          "Calm",
+          "easy",
+          "quiet",
+          "gentle",
+          "Relaxing",
+          "tranquil",
+          "zen",
+          "serene",
+          "healing",
+          "atmospheric",
+          "contemplative",
+          "Sad",
+          "somber"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "obvious_mismatch",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/70a9e65c-1d42-399e-a065-d05d3fe41896"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "75b57065-8942-4043-b508-39ee3bbc614a",
+      "title": "Gentle Progression",
+      "artist": "Zolvi",
+      "candidateProfile": "Ambient & Relax",
+      "durationSeconds": 142.10526,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/75b57065-8942-4043-b508-39ee3bbc614a",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/75b57065-8942-4043-b508-39ee3bbc614a/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Soundtrack",
+        "labels": [
+          "soundscape",
+          "informative",
+          "simple",
+          "neutral",
+          "documentary",
+          "beds",
+          "balanced",
+          "Peaceful",
+          "factual",
+          "Calm",
+          "minimal",
+          "unobtrusive",
+          "steady",
+          "Ambient",
+          "Drone",
+          "Timelapse",
+          "airy",
+          "gentle",
+          "storytelling",
+          "soft",
+          "narration",
+          "piano",
+          "Technology",
+          "reflective",
+          "slow",
+          "melody"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/75b57065-8942-4043-b508-39ee3bbc614a"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "f8a154cc-47cb-8220-ee4f-8e22fa1f52bc",
+      "title": "Aurora",
+      "artist": "Luke Bergs",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "durationSeconds": 162.00195,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/f8a154cc-47cb-8220-ee4f-8e22fa1f52bc",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/f8a154cc-47cb-8220-ee4f-8e22fa1f52bc/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "atmospheric",
+          "Chill",
+          "melodic",
+          "beat",
+          "House",
+          "deep",
+          "mellow",
+          "addictive",
+          "fresh",
+          "dynamic",
+          "Hype",
+          "Cool",
+          "dreamy"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/f8a154cc-47cb-8220-ee4f-8e22fa1f52bc"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "0701e4b6-fd97-4568-8228-654decf85265",
+      "title": "Rolling",
+      "artist": "HiLau",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "durationSeconds": 160.02612,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/0701e4b6-fd97-4568-8228-654decf85265",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/0701e4b6-fd97-4568-8228-654decf85265/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "deep",
+          "House",
+          "Night",
+          "beat",
+          "driving",
+          "Electronic",
+          "Cool",
+          "dynamic",
+          "simple"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/0701e4b6-fd97-4568-8228-654decf85265"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "159a51ba-bc7d-6e53-c8a2-7bdbfef5c129",
+      "title": "Falling",
+      "artist": "tubebackr",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "durationSeconds": 174.1593,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/159a51ba-bc7d-6e53-c8a2-7bdbfef5c129",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/159a51ba-bc7d-6e53-c8a2-7bdbfef5c129/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "80s",
+          "House",
+          "beat",
+          "Night",
+          "deep",
+          "bouncy",
+          "dynamic",
+          "Vlog",
+          "Advertising",
+          "instrumental",
+          "Cool",
+          "Timelapse",
+          "Funky"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/159a51ba-bc7d-6e53-c8a2-7bdbfef5c129"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "1cef70e7-c222-d1e5-fb17-2ad850b118aa",
+      "title": "Shadows",
+      "artist": "Popsicles",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "durationSeconds": 191.6129,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/1cef70e7-c222-d1e5-fb17-2ad850b118aa",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/1cef70e7-c222-d1e5-fb17-2ad850b118aa/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "deep",
+          "House",
+          "Cool",
+          "future",
+          "Workout",
+          "beat",
+          "intense",
+          "Electronic",
+          "Energetic",
+          "Powerful",
+          "lyrics",
+          "female",
+          "running",
+          "fitness"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/1cef70e7-c222-d1e5-fb17-2ad850b118aa"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "3d0cd393-54ab-a30a-997b-afca7484c948",
+      "title": "Feel Alive",
+      "artist": "Nebulite",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "durationSeconds": 159.49994,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/3d0cd393-54ab-a30a-997b-afca7484c948",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/3d0cd393-54ab-a30a-997b-afca7484c948/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "House",
+          "deep",
+          "slap",
+          "beat",
+          "melodic",
+          "dynamic",
+          "Sports",
+          "Cool",
+          "Travel",
+          "Adventure"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/3d0cd393-54ab-a30a-997b-afca7484c948"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "3f036e19-e318-4e6e-bd25-8a86b58f45c2",
+      "title": "glass house",
+      "artist": "numbthefeelings",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "durationSeconds": 146.34148,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/3f036e19-e318-4e6e-bd25-8a86b58f45c2",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/3f036e19-e318-4e6e-bd25-8a86b58f45c2/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "New Age",
+        "labels": [
+          "Mysterious",
+          "Ambient",
+          "Night",
+          "atmospheric",
+          "dark",
+          "Sad",
+          "immersive",
+          "melancholy",
+          "floating",
+          "Emotional",
+          "deep",
+          "somber"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "obvious_mismatch",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/3f036e19-e318-4e6e-bd25-8a86b58f45c2"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "4992bcb6-427b-d41f-7efd-56ce6f689587",
+      "title": "Moonshine",
+      "artist": "tubebackr",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "durationSeconds": 196.23969,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/4992bcb6-427b-d41f-7efd-56ce6f689587",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/4992bcb6-427b-d41f-7efd-56ce6f689587/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "deep",
+          "House",
+          "Cool",
+          "Night",
+          "Workout",
+          "beat",
+          "Electronic",
+          "future",
+          "dynamic",
+          "intense",
+          "Gaming",
+          "EDM",
+          "Advertising",
+          "futuristic",
+          "Powerful"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/4992bcb6-427b-d41f-7efd-56ce6f689587"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "4b6a8c63-9688-d427-b2c2-ac7541d52356",
+      "title": "Sunrise",
+      "artist": "tubebackr",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "durationSeconds": 185.54622,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/4b6a8c63-9688-d427-b2c2-ac7541d52356",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/4b6a8c63-9688-d427-b2c2-ac7541d52356/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "dynamic",
+          "House",
+          "Electronic",
+          "sax",
+          "deep",
+          "Cool",
+          "Travel",
+          "Adventure",
+          "saxophone",
+          "beat",
+          "Energetic",
+          "futuristic"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/4b6a8c63-9688-d427-b2c2-ac7541d52356"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "4c33c998-e04a-13a0-7345-b7bcd15493c1",
+      "title": "Ibiza Vibes",
+      "artist": "Walen",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "durationSeconds": 131.26562,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/4c33c998-e04a-13a0-7345-b7bcd15493c1",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/4c33c998-e04a-13a0-7345-b7bcd15493c1/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "deep",
+          "House",
+          "Summer",
+          "vibes",
+          "Chill",
+          "ibiza",
+          "beat",
+          "Adventure",
+          "beach",
+          "guitar",
+          "instrumental",
+          "sunset",
+          "Night",
+          "lounge",
+          "Emotional"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/4c33c998-e04a-13a0-7345-b7bcd15493c1"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "50440375-e8e6-5df7-9cdc-0997532f86c0",
+      "title": "Decadence",
+      "artist": "tubebackr",
+      "candidateProfile": "Deep House & Chill Electronic",
+      "durationSeconds": 186.66667,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/50440375-e8e6-5df7-9cdc-0997532f86c0",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/50440375-e8e6-5df7-9cdc-0997532f86c0/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "deep",
+          "House",
+          "Mysterious",
+          "groovy",
+          "instrumental",
+          "beat",
+          "dreamy",
+          "Night",
+          "ominous",
+          "hypnotic",
+          "nocturnal",
+          "bass",
+          "weird",
+          "Cool"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/50440375-e8e6-5df7-9cdc-0997532f86c0"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "e9df589f-1286-e430-d5a2-7acbfc9b3ffb",
+      "title": "Synergy",
+      "artist": "Aylex",
+      "candidateProfile": "Soft Rock & Acoustic",
+      "durationSeconds": 150.46635,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/e9df589f-1286-e430-d5a2-7acbfc9b3ffb",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/e9df589f-1286-e430-d5a2-7acbfc9b3ffb/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "positive",
+          "guitar",
+          "cheerful",
+          "Intro",
+          "Uplifting",
+          "Kids",
+          "Travel",
+          "Summer",
+          "Happy",
+          "Cooking",
+          "Advertising",
+          "birthday",
+          "bright",
+          "celebration",
+          "Fun",
+          "playful",
+          "optimistic",
+          "abstract",
+          "inspirational",
+          "soft",
+          "strings",
+          "whistle",
+          "school",
+          "holiday",
+          "engaging",
+          "children",
+          "acoustic",
+          "joyful"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/e9df589f-1286-e430-d5a2-7acbfc9b3ffb"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "4b0e5836-596a-b937-fbd1-fdff19772f83",
+      "title": "Drum Story",
+      "artist": "Pufino",
+      "candidateProfile": "Soft Rock & Acoustic",
+      "durationSeconds": 120,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/4b0e5836-596a-b937-fbd1-fdff19772f83",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/4b0e5836-596a-b937-fbd1-fdff19772f83/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "percussion",
+          "drums",
+          "instrumental",
+          "acoustic",
+          "rhythmic",
+          "jungle",
+          "Upbeat",
+          "journey",
+          "cultural",
+          "simple",
+          "Adventure",
+          "tribal",
+          "ethnic",
+          "ceremony",
+          "exploration",
+          "traditional",
+          "roots",
+          "groovy",
+          "foreign"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/4b0e5836-596a-b937-fbd1-fdff19772f83"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "acffc6ff-ecec-9217-c532-6ddd1b506283",
+      "title": "Joshua Tree",
+      "artist": "Guillermo Guareschi",
+      "candidateProfile": "Soft Rock & Acoustic",
+      "durationSeconds": 149.60667,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/acffc6ff-ecec-9217-c532-6ddd1b506283",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/acffc6ff-ecec-9217-c532-6ddd1b506283/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "american",
+          "western",
+          "guitar",
+          "acoustic",
+          "country",
+          "rhythmic",
+          "driven",
+          "moody",
+          "prairie",
+          "evocative",
+          "cowboy",
+          "Adventure",
+          "rustic",
+          "wanderlust"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/acffc6ff-ecec-9217-c532-6ddd1b506283"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "12ac0635-cdd3-4a19-a28f-d5d807278052",
+      "title": "Rainbow",
+      "artist": "Aetheric",
+      "candidateProfile": "Soft Rock & Acoustic",
+      "durationSeconds": 188.42274,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/12ac0635-cdd3-4a19-a28f-d5d807278052",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/12ac0635-cdd3-4a19-a28f-d5d807278052/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Instrumental",
+        "labels": [
+          "guitar",
+          "Kids",
+          "Chill",
+          "playful",
+          "innocent",
+          "children",
+          "beat",
+          "sentimental",
+          "rhythmic",
+          "friendly",
+          "acoustic",
+          "family",
+          "cozy",
+          "cartoonish",
+          "cute",
+          "bright",
+          "lighthearted"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/12ac0635-cdd3-4a19-a28f-d5d807278052"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "140fa163-6bd3-47d6-b186-bd0b7533a740",
+      "title": "When Autumn Calls",
+      "artist": "Zambolino",
+      "candidateProfile": "Soft Rock & Acoustic",
+      "durationSeconds": 166.49985,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/140fa163-6bd3-47d6-b186-bd0b7533a740",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/140fa163-6bd3-47d6-b186-bd0b7533a740/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Instrumental",
+        "labels": [
+          "guitar",
+          "beat",
+          "melancholy",
+          "autumn",
+          "thoughtful",
+          "heartfelt",
+          "acoustic",
+          "dreamy",
+          "handclap",
+          "reflective",
+          "simple",
+          "Mysterious",
+          "Chill"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/140fa163-6bd3-47d6-b186-bd0b7533a740"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "24b9fe90-4745-4743-b27e-122303f52cb6",
+      "title": "School Bus",
+      "artist": "Aetheric",
+      "candidateProfile": "Soft Rock & Acoustic",
+      "durationSeconds": 135.42688,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/24b9fe90-4745-4743-b27e-122303f52cb6",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/24b9fe90-4745-4743-b27e-122303f52cb6/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Instrumental",
+        "labels": [
+          "rhythmic",
+          "joyful",
+          "bright",
+          "Fun",
+          "Uplifting",
+          "playful",
+          "guitar",
+          "beat",
+          "curious",
+          "Kids",
+          "smiling",
+          "Cooking",
+          "children",
+          "friendly",
+          "cheerful",
+          "acoustic",
+          "bouncy",
+          "family"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/24b9fe90-4745-4743-b27e-122303f52cb6"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "25b07db9-e62f-41d2-8609-5a882f3ef948",
+      "title": "Uke Waves",
+      "artist": "Aylex",
+      "candidateProfile": "Soft Rock & Acoustic",
+      "durationSeconds": 129.23558,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/25b07db9-e62f-41d2-8609-5a882f3ef948",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/25b07db9-e62f-41d2-8609-5a882f3ef948/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Easy Listening",
+        "labels": [
+          "gentle",
+          "ukulele",
+          "simple",
+          "acoustic",
+          "Peaceful",
+          "Sad",
+          "reflective",
+          "percussion",
+          "quiet",
+          "lighthearted",
+          "soft",
+          "Emotional",
+          "slow",
+          "guitar",
+          "strings",
+          "unwind",
+          "thoughtful",
+          "melody",
+          "mellow",
+          "Calm"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "obvious_mismatch",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/25b07db9-e62f-41d2-8609-5a882f3ef948"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "2f19165c-a9ae-4a1e-ab49-1aee42b115e4",
+      "title": "Slow and Sweet",
+      "artist": "Dagored",
+      "candidateProfile": "Soft Rock & Acoustic",
+      "durationSeconds": 130.90909,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/2f19165c-a9ae-4a1e-ab49-1aee42b115e4",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/2f19165c-a9ae-4a1e-ab49-1aee42b115e4/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "cozy",
+          "acoustic",
+          "guitar",
+          "slow",
+          "nostalgic",
+          "Calm",
+          "dreamy",
+          "clean",
+          "Emotional",
+          "gentle",
+          "reflective",
+          "journey",
+          "Peaceful",
+          "simple",
+          "soft",
+          "warm",
+          "Chill",
+          "responsible",
+          "atmospheric",
+          "joyful",
+          "Vlog",
+          "downtempo",
+          "easygoing",
+          "friendly",
+          "sentimental",
+          "Relaxing",
+          "memories",
+          "unwind",
+          "mindful",
+          "melancholic"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/2f19165c-a9ae-4a1e-ab49-1aee42b115e4"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "353d9dce-7e9a-b136-330f-3a532b28d512",
+      "title": "Acoustic Heaven",
+      "artist": "Guillermo Guareschi",
+      "candidateProfile": "Soft Rock & Acoustic",
+      "durationSeconds": 177.40468,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/353d9dce-7e9a-b136-330f-3a532b28d512",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/353d9dce-7e9a-b136-330f-3a532b28d512/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "lush",
+          "guitar",
+          "acoustic",
+          "minimalistic",
+          "hopeful",
+          "slow",
+          "longing",
+          "simple",
+          "sweet",
+          "desire",
+          "downtempo"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/353d9dce-7e9a-b136-330f-3a532b28d512"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "430fbd18-f360-4463-bf82-b514c0c4a182",
+      "title": "Playtime",
+      "artist": "Aetheric",
+      "candidateProfile": "Soft Rock & Acoustic",
+      "durationSeconds": 159.07144,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/430fbd18-f360-4463-bf82-b514c0c4a182",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/430fbd18-f360-4463-bf82-b514c0c4a182/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Instrumental",
+        "labels": [
+          "Kids",
+          "playful",
+          "guitar",
+          "innocent",
+          "children",
+          "beat",
+          "rhythmic",
+          "friendly",
+          "acoustic",
+          "Chill",
+          "family",
+          "cozy",
+          "cartoonish",
+          "cute",
+          "exploring"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/430fbd18-f360-4463-bf82-b514c0c4a182"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "b7dca04d-98c2-a7fc-6caf-8b85492e9492",
+      "title": "See Me Through",
+      "artist": "Burgundy",
+      "candidateProfile": "Modern Pop & Nu-Disco",
+      "durationSeconds": 122.06898,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/b7dca04d-98c2-a7fc-6caf-8b85492e9492",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/b7dca04d-98c2-a7fc-6caf-8b85492e9492/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "trendy",
+          "Disco",
+          "Funky",
+          "Energetic",
+          "Cool",
+          "Upbeat",
+          "Party",
+          "Advertising",
+          "Fun",
+          "Exciting",
+          "futuristic",
+          "groovy",
+          "fashion",
+          "stylish",
+          "tailor",
+          "runway",
+          "instrumental",
+          "rhythmic",
+          "vintage",
+          "beat",
+          "Retro",
+          "synths",
+          "event",
+          "strings",
+          "catchy",
+          "slick",
+          "Intro",
+          "80s"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/b7dca04d-98c2-a7fc-6caf-8b85492e9492"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "c79703ae-9644-7036-ec61-d2ad4026c0ec",
+      "title": "Adventures Begin",
+      "artist": "Pufino",
+      "candidateProfile": "Modern Pop & Nu-Disco",
+      "durationSeconds": 158.62498,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/c79703ae-9644-7036-ec61-d2ad4026c0ec",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/c79703ae-9644-7036-ec61-d2ad4026c0ec/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Medieval",
+          "Cinematic",
+          "Adventure",
+          "Movie",
+          "ancient",
+          "Epic",
+          "discovery",
+          "magnificent",
+          "legendary",
+          "orchestra",
+          "intense",
+          "film",
+          "Inspiring",
+          "thrilling",
+          "trailer",
+          "build up",
+          "fairy tale",
+          "exhilerating",
+          "orchestral"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "obvious_mismatch",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/c79703ae-9644-7036-ec61-d2ad4026c0ec"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "e18627b1-2ce9-624c-4d91-1b1f96e25c5c",
+      "title": "Dream Potion",
+      "artist": "tubebackr",
+      "candidateProfile": "Modern Pop & Nu-Disco",
+      "durationSeconds": 213.78152,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/e18627b1-2ce9-624c-4d91-1b1f96e25c5c",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/e18627b1-2ce9-624c-4d91-1b1f96e25c5c/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "bouncy",
+          "Funky",
+          "drums",
+          "beat",
+          "Cool",
+          "Retro",
+          "80s",
+          "old school",
+          "Hip Hop",
+          "Advertising",
+          "instrumental",
+          "Disco",
+          "dynamic",
+          "groovy"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/e18627b1-2ce9-624c-4d91-1b1f96e25c5c"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "4488447b-2571-249a-c60f-1a6565f3455d",
+      "title": "Like You Mean It",
+      "artist": "Burgundy",
+      "candidateProfile": "Modern Pop & Nu-Disco",
+      "durationSeconds": 127.74193,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/4488447b-2571-249a-c60f-1a6565f3455d",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/4488447b-2571-249a-c60f-1a6565f3455d/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Energetic",
+          "Funky",
+          "Disco",
+          "Upbeat",
+          "Dance",
+          "Party",
+          "vocoders",
+          "event",
+          "Cool",
+          "80s",
+          "Retro",
+          "groovy",
+          "instrumental",
+          "Advertising",
+          "beat",
+          "catchy",
+          "synths"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/4488447b-2571-249a-c60f-1a6565f3455d"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "4e451dd5-8955-5804-8ede-abeadb65c913",
+      "title": "Tell Me",
+      "artist": "Burgundy",
+      "candidateProfile": "Modern Pop & Nu-Disco",
+      "durationSeconds": 141,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/4e451dd5-8955-5804-8ede-abeadb65c913",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/4e451dd5-8955-5804-8ede-abeadb65c913/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Disco",
+          "Funky",
+          "event",
+          "guitar",
+          "Cool",
+          "Dance",
+          "80s",
+          "Party",
+          "Retro",
+          "groovy",
+          "rhythmic",
+          "instrumental",
+          "Advertising",
+          "beat",
+          "catchy",
+          "synths",
+          "vintage"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/4e451dd5-8955-5804-8ede-abeadb65c913"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "52f9571c-44a4-97bc-0e26-d8d5b3542ae1",
+      "title": "Triumph",
+      "artist": "Burgundy",
+      "candidateProfile": "Modern Pop & Nu-Disco",
+      "durationSeconds": 138.78258,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/52f9571c-44a4-97bc-0e26-d8d5b3542ae1",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/52f9571c-44a4-97bc-0e26-d8d5b3542ae1/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Disco",
+          "catchy",
+          "Uplifting",
+          "celebration",
+          "Funky",
+          "rhythmic",
+          "Advertising",
+          "Fun",
+          "Cool",
+          "string",
+          "Dance",
+          "melody",
+          "synths",
+          "bongos",
+          "bright",
+          "instrumental",
+          "80s",
+          "success",
+          "Party",
+          "Retro",
+          "groovy",
+          "jam",
+          "Intro"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/52f9571c-44a4-97bc-0e26-d8d5b3542ae1"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "55565d5d-a311-accd-3e21-95f58f2b829f",
+      "title": "Get Yours, Get Out",
+      "artist": "Burgundy",
+      "candidateProfile": "Modern Pop & Nu-Disco",
+      "durationSeconds": 135.27272,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/55565d5d-a311-accd-3e21-95f58f2b829f",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/55565d5d-a311-accd-3e21-95f58f2b829f/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "french",
+          "Disco",
+          "Dance",
+          "Funky",
+          "nightclub",
+          "Cool",
+          "jam",
+          "flip",
+          "techno",
+          "Party",
+          "Retro",
+          "beat",
+          "instrumental",
+          "Advertising",
+          "Electronic",
+          "drums",
+          "80s",
+          "old school"
+        ],
+        "lyrics": "\"\"",
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/55565d5d-a311-accd-3e21-95f58f2b829f"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "58ce355e-9db1-1181-4d76-c6f2cf4b39f0",
+      "title": "Dream On",
+      "artist": "Moavii",
+      "candidateProfile": "Modern Pop & Nu-Disco",
+      "durationSeconds": 161.55739,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/58ce355e-9db1-1181-4d76-c6f2cf4b39f0",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/58ce355e-9db1-1181-4d76-c6f2cf4b39f0/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Funky",
+          "Chill",
+          "Disco",
+          "Fun",
+          "Vlog",
+          "Retro",
+          "Cool",
+          "Advertising",
+          "instrumental",
+          "beat",
+          "groovy",
+          "good vibes",
+          "fresh",
+          "event",
+          "rhythmic",
+          "Energetic",
+          "vintage",
+          "vibrant"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/58ce355e-9db1-1181-4d76-c6f2cf4b39f0"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "5d74da71-f734-07b9-5ab9-39545dc6416c",
+      "title": "Sunlight",
+      "artist": "Luke Bergs",
+      "candidateProfile": "Modern Pop & Nu-Disco",
+      "durationSeconds": 195.7317,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/5d74da71-f734-07b9-5ab9-39545dc6416c",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/5d74da71-f734-07b9-5ab9-39545dc6416c/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "Dance",
+          "Funky",
+          "Energetic",
+          "Party",
+          "fresh",
+          "House",
+          "Disco",
+          "Cool",
+          "ibiza",
+          "Upbeat",
+          "Advertising",
+          "lively",
+          "Fun"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/5d74da71-f734-07b9-5ab9-39545dc6416c"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    },
+    {
+      "id": "7260971e-9849-8d5e-e710-bd9bae49e33c",
+      "title": "Time Slip",
+      "artist": "Burgundy",
+      "candidateProfile": "Modern Pop & Nu-Disco",
+      "durationSeconds": 120.64517,
+      "sourceUrl": "https://api.freetouse.com/v3/music/tracks/7260971e-9849-8d5e-e710-bd9bae49e33c",
+      "licenseUrl": "https://freetouse.com/license",
+      "url": "https://eu.data.freetouse.com/music/tracks/7260971e-9849-8d5e-e710-bd9bae49e33c/file/mp3/file.mp3",
+      "checkedAt": "2026-10-18",
+      "metadataOnly": true,
+      "technicalStatus": "not_audited",
+      "listening": {
+        "status": "needs_listening",
+        "label": "Потребує прослуховування",
+        "premiumFit": null,
+        "automaticPremiumFit": null
+      },
+      "replacementRights": {
+        "status": "legal_review",
+        "commercialClinicUkraine": false,
+        "publicMp3Hosting": false,
+        "reason": "Free license excludes commercial digital products; public MP3 redistribution and clinic performance need express clearance."
+      },
+      "approvedForRotation": false,
+      "sourceMetadata": {
+        "genre": "Electronic",
+        "labels": [
+          "groovy",
+          "synths",
+          "Disco",
+          "Retro",
+          "soulful",
+          "drums",
+          "Funky",
+          "Advertising",
+          "rhythmic",
+          "beat",
+          "instrumental",
+          "nu-disco",
+          "Cool",
+          "guitar"
+        ],
+        "lyrics": null,
+        "bpm": null,
+        "instruments": null,
+        "metadataFetched": true
+      },
+      "styleAudit": {
+        "status": "needs_metadata_review",
+        "evidence": [
+          "https://api.freetouse.com/v3/music/tracks/7260971e-9849-8d5e-e710-bd9bae49e33c"
+        ],
+        "note": "Provider metadata only. No human listening or vocal detection performed."
+      }
+    }
+  ],
+  "targetUniqueTracks": {
+    "min": 60,
+    "preferred": 90,
+    "max": 120
+  },
+  "targetPerMainProfile": {
+    "min": 10,
+    "preferred": 15,
+    "max": 20
+  },
+  "listeningBlocksImport": false
+}

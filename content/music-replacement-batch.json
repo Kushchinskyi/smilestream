@@ -1,0 +1,591 @@
+{
+  "checkedAt": "2026-10-18",
+  "rightsScope": "Publisher CC0 permissions verified; no exemption from Ukrainian mandatory remuneration asserted.",
+  "tracks": [
+    {
+      "id": "holizna-3587921a8b3d447b",
+      "title": "Everything You Ever Dreamed",
+      "artist": "HoliznaCC0",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/holizna-3587921a8b3d447b-bg.mp3",
+      "sourceUrl": "https://opengameart.org/content/lo-fi-and-chill-collection",
+      "license": "CC0-1.0",
+      "checkedAt": "2026-10-18",
+      "publisherPermission": "CC0 declaration verified on creator archive and uploader collection; only rights held by affirmer are covered",
+      "statutoryRemuneration": "not claimed exempt; clinic obligations remain separate",
+      "sourceArchive": "lo-fi_and_chill_lofi_collection.zip",
+      "sourceEntry": "Lo-Fi And Chill (Lofi Collection)/02 HoliznaCC0 - Everything You Ever Dreamed.mp3",
+      "sourceSha256": "c5a2e0aa16cd92df54bb76322ab49e83b0bff5c30e751fe74d3a603e3ddb030f",
+      "technical": {
+        "sha256": "19a92417bd43a3f49f8f08ae7a424b932063d70ed3631f1ac89ab7bc2259faf8",
+        "bytes": 5123387,
+        "durationSeconds": 213.446531,
+        "codec": {
+          "codec_name": "mp3",
+          "channels": 2,
+          "sample_rate": "44100",
+          "bit_rate": "192000"
+        },
+        "decoded": true,
+        "integratedLufs": -18.3,
+        "loudnessRangeLu": 4.8,
+        "truePeakDbfs": -7.2,
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false
+      },
+      "derivative": {
+        "gainDb": -7.4,
+        "trimEndSeconds": 213.39729,
+        "trimmedSeconds": 6.684343000000013
+      },
+      "subjectiveStatus": "Потребує прослуховування",
+      "importState": "prepared"
+    },
+    {
+      "id": "holizna-cd4e6513b6103a90",
+      "title": "Keeping Cool",
+      "artist": "HoliznaCC0",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/holizna-cd4e6513b6103a90-bg.mp3",
+      "sourceUrl": "https://opengameart.org/content/lo-fi-and-chill-collection",
+      "license": "CC0-1.0",
+      "checkedAt": "2026-10-18",
+      "publisherPermission": "CC0 declaration verified on creator archive and uploader collection; only rights held by affirmer are covered",
+      "statutoryRemuneration": "not claimed exempt; clinic obligations remain separate",
+      "sourceArchive": "lo-fi_and_chill_lofi_collection.zip",
+      "sourceEntry": "Lo-Fi And Chill (Lofi Collection)/02 HoliznaCC0 - Keeping Cool.mp3",
+      "sourceSha256": "229c07722dad8ecbdd82a683c5fe7f691cf07fe3d109df9d870d9b09b4a6784b",
+      "technical": {
+        "sha256": "940182e24cb55ad692154a013b5c11cc734db67d14144d073a43b490c8fd85a2",
+        "bytes": 3619361,
+        "durationSeconds": 150.778776,
+        "codec": {
+          "codec_name": "mp3",
+          "channels": 2,
+          "sample_rate": "44100",
+          "bit_rate": "192000"
+        },
+        "decoded": true,
+        "integratedLufs": -18.2,
+        "loudnessRangeLu": 4.5,
+        "truePeakDbfs": -6.1,
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false
+      },
+      "derivative": {
+        "gainDb": -6.699999999999999,
+        "trimEndSeconds": 150.73148,
+        "trimmedSeconds": 2.424438000000009
+      },
+      "subjectiveStatus": "Потребує прослуховування",
+      "importState": "prepared"
+    },
+    {
+      "id": "holizna-be310862fb30b080",
+      "title": "Windows Down",
+      "artist": "HoliznaCC0",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/holizna-be310862fb30b080-bg.mp3",
+      "sourceUrl": "https://opengameart.org/content/lo-fi-and-chill-collection",
+      "license": "CC0-1.0",
+      "checkedAt": "2026-10-18",
+      "publisherPermission": "CC0 declaration verified on creator archive and uploader collection; only rights held by affirmer are covered",
+      "statutoryRemuneration": "not claimed exempt; clinic obligations remain separate",
+      "sourceArchive": "lo-fi_and_chill_lofi_collection.zip",
+      "sourceEntry": "Lo-Fi And Chill (Lofi Collection)/02 HoliznaCC0 - Windows Down.mp3.mp3",
+      "sourceSha256": "54dc5dfb84c8ea71fa16866c4ad14d10ae4063e68d03f0f284156826ad882fac",
+      "technical": {
+        "sha256": "da2240c5871f64b0efcb51cd30a2161157c4f2c563b191afefbce92d4d04e680",
+        "bytes": 3979851,
+        "durationSeconds": 165.799184,
+        "codec": {
+          "codec_name": "mp3",
+          "channels": 2,
+          "sample_rate": "44100",
+          "bit_rate": "192000"
+        },
+        "decoded": true,
+        "integratedLufs": -18.2,
+        "loudnessRangeLu": 4.1,
+        "truePeakDbfs": -4,
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false
+      },
+      "derivative": {
+        "gainDb": -4.199999999999999,
+        "trimEndSeconds": 165.799184,
+        "trimmedSeconds": 0
+      },
+      "subjectiveStatus": "Потребує прослуховування",
+      "importState": "prepared"
+    },
+    {
+      "id": "holizna-9b7c957fc469fafd",
+      "title": "Morning Coffee",
+      "artist": "HoliznaCC0",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/holizna-9b7c957fc469fafd-bg.mp3",
+      "sourceUrl": "https://opengameart.org/content/lo-fi-and-chill-collection",
+      "license": "CC0-1.0",
+      "checkedAt": "2026-10-18",
+      "publisherPermission": "CC0 declaration verified on creator archive and uploader collection; only rights held by affirmer are covered",
+      "statutoryRemuneration": "not claimed exempt; clinic obligations remain separate",
+      "sourceArchive": "lo-fi_and_chill_lofi_collection_2.zip",
+      "sourceEntry": "Lo-Fi And Chill (Lofi Collection) 2/09 HoliznaCC0 - Morning Coffee.mp3",
+      "sourceSha256": "91de2d8f409730a7fa9b0d94f52d5637d7f913e8cee11d54e462a99b06a86758",
+      "technical": {
+        "sha256": "6a8a4dbf1e34aeda0c70755a297c4464fd5f20a423fb23d11ec2881f686966cc",
+        "bytes": 4608671,
+        "durationSeconds": 192,
+        "codec": {
+          "codec_name": "mp3",
+          "channels": 2,
+          "sample_rate": "44100",
+          "bit_rate": "192000"
+        },
+        "decoded": true,
+        "integratedLufs": -18.3,
+        "loudnessRangeLu": 4.1,
+        "truePeakDbfs": -5.3,
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false
+      },
+      "derivative": {
+        "gainDb": -5.800000000000001,
+        "trimEndSeconds": 192,
+        "trimmedSeconds": 0
+      },
+      "subjectiveStatus": "Потребує прослуховування",
+      "importState": "prepared"
+    },
+    {
+      "id": "holizna-ead6f7819e56bed5",
+      "title": "A Little Shade",
+      "artist": "HoliznaCC0",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/holizna-ead6f7819e56bed5-bg.mp3",
+      "sourceUrl": "https://opengameart.org/content/lo-fi-and-chill-collection",
+      "license": "CC0-1.0",
+      "checkedAt": "2026-10-18",
+      "publisherPermission": "CC0 declaration verified on creator archive and uploader collection; only rights held by affirmer are covered",
+      "statutoryRemuneration": "not claimed exempt; clinic obligations remain separate",
+      "sourceArchive": "lo-fi_and_chill_lofi_collection_2.zip",
+      "sourceEntry": "Lo-Fi And Chill (Lofi Collection) 2/10 HoliznaCC0 - A Little Shade.mp3",
+      "sourceSha256": "89958d422cac586da882319e9129ce0b737a6aa65839970002df0cbb1cdced8f",
+      "technical": {
+        "sha256": "a4e730c2a5f160b7002cc0a43527db8f81ff49e9ed32d8c630c61ab91e563f2c",
+        "bytes": 4286424,
+        "durationSeconds": 178.573061,
+        "codec": {
+          "codec_name": "mp3",
+          "channels": 2,
+          "sample_rate": "44100",
+          "bit_rate": "192000"
+        },
+        "decoded": true,
+        "integratedLufs": -18.3,
+        "loudnessRangeLu": 4.1,
+        "truePeakDbfs": -6.5,
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false
+      },
+      "derivative": {
+        "gainDb": -7,
+        "trimEndSeconds": 178.573061,
+        "trimmedSeconds": 0
+      },
+      "subjectiveStatus": "Потребує прослуховування",
+      "importState": "prepared"
+    },
+    {
+      "id": "holizna-5ef5ec9e72623df9",
+      "title": "Pretty Little Lies",
+      "artist": "HoliznaCC0",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/holizna-5ef5ec9e72623df9-bg.mp3",
+      "sourceUrl": "https://opengameart.org/content/lo-fi-and-chill-collection",
+      "license": "CC0-1.0",
+      "checkedAt": "2026-10-18",
+      "publisherPermission": "CC0 declaration verified on creator archive and uploader collection; only rights held by affirmer are covered",
+      "statutoryRemuneration": "not claimed exempt; clinic obligations remain separate",
+      "sourceArchive": "lo-fi_and_chill_lofi_collection_3.zip",
+      "sourceEntry": "Lo-Fi And Chill (Lofi Collection) 3/03 HoliznaCC0 - Pretty Little Lies.mp3",
+      "sourceSha256": "54c93ff8236fc19d4060cddb5d21a6f4a9cb6113aaa9f97200c2ca0730175aff",
+      "technical": {
+        "sha256": "3ba89730b069677285825db92037fc00a1f9cc26c9bad5c2d26d8732331a3b05",
+        "bytes": 4911482,
+        "durationSeconds": 204.617143,
+        "codec": {
+          "codec_name": "mp3",
+          "channels": 2,
+          "sample_rate": "44100",
+          "bit_rate": "192000"
+        },
+        "decoded": true,
+        "integratedLufs": -20.2,
+        "loudnessRangeLu": 4.4,
+        "truePeakDbfs": -2.1,
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false
+      },
+      "derivative": {
+        "gainDb": -2.7,
+        "trimEndSeconds": 204.58833,
+        "trimmedSeconds": 5.410036999999988
+      },
+      "subjectiveStatus": "Потребує прослуховування",
+      "importState": "prepared"
+    },
+    {
+      "id": "holizna-a94e7cbd66be6be8",
+      "title": "Something In the Air",
+      "artist": "HoliznaCC0",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/holizna-a94e7cbd66be6be8-bg.mp3",
+      "sourceUrl": "https://opengameart.org/content/lo-fi-and-chill-collection",
+      "license": "CC0-1.0",
+      "checkedAt": "2026-10-18",
+      "publisherPermission": "CC0 declaration verified on creator archive and uploader collection; only rights held by affirmer are covered",
+      "statutoryRemuneration": "not claimed exempt; clinic obligations remain separate",
+      "sourceArchive": "lo-fi_and_chill_lofi_collection_3.zip",
+      "sourceEntry": "Lo-Fi And Chill (Lofi Collection) 3/04 HoliznaCC0 - Something In the Air.mp3",
+      "sourceSha256": "934f53a409b4178b86055cbea80936ce084d5820e26db6034d625175a4200a02",
+      "technical": {
+        "sha256": "fd581092551d40bccd89b06a3f4e28d92eb734bea50a98f0cddc82666fbd97cc",
+        "bytes": 3168592,
+        "durationSeconds": 131.996735,
+        "codec": {
+          "codec_name": "mp3",
+          "channels": 2,
+          "sample_rate": "44100",
+          "bit_rate": "192000"
+        },
+        "decoded": true,
+        "integratedLufs": -18.3,
+        "loudnessRangeLu": 5.2,
+        "truePeakDbfs": -4.8,
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false
+      },
+      "derivative": {
+        "gainDb": -5,
+        "trimEndSeconds": 131.996735,
+        "trimmedSeconds": 0
+      },
+      "subjectiveStatus": "Потребує прослуховування",
+      "importState": "prepared"
+    },
+    {
+      "id": "holizna-b30eef3df16ab742",
+      "title": "Waves",
+      "artist": "HoliznaCC0",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/holizna-b30eef3df16ab742-bg.mp3",
+      "sourceUrl": "https://opengameart.org/content/lo-fi-and-chill-collection",
+      "license": "CC0-1.0",
+      "checkedAt": "2026-10-18",
+      "publisherPermission": "CC0 declaration verified on creator archive and uploader collection; only rights held by affirmer are covered",
+      "statutoryRemuneration": "not claimed exempt; clinic obligations remain separate",
+      "sourceArchive": "lo-fi_and_chill_lofi_collection_3.zip",
+      "sourceEntry": "Lo-Fi And Chill (Lofi Collection) 3/04 HoliznaCC0 - Waves.mp3.mp3",
+      "sourceSha256": "cc3ae08b3099d700204e84e6868eba1add9c07b64e21153d14ba6907b46d6ab4",
+      "technical": {
+        "sha256": "e477c9b193b70942439b2bf9c22c8de19524b79e53213aa60e867b5958fff544",
+        "bytes": 3130976,
+        "durationSeconds": 130.429388,
+        "codec": {
+          "codec_name": "mp3",
+          "channels": 2,
+          "sample_rate": "44100",
+          "bit_rate": "192000"
+        },
+        "decoded": true,
+        "integratedLufs": -18.3,
+        "loudnessRangeLu": 4.8,
+        "truePeakDbfs": -4.9,
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false
+      },
+      "derivative": {
+        "gainDb": -5.199999999999999,
+        "trimEndSeconds": 130.39159999999998,
+        "trimmedSeconds": 10.173298000000017
+      },
+      "subjectiveStatus": "Потребує прослуховування",
+      "importState": "prepared"
+    },
+    {
+      "id": "holizna-249cbce1bc409857",
+      "title": "Creature Comforts",
+      "artist": "HoliznaCC0",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/holizna-249cbce1bc409857-bg.mp3",
+      "sourceUrl": "https://opengameart.org/content/lo-fi-and-chill-collection",
+      "license": "CC0-1.0",
+      "checkedAt": "2026-10-18",
+      "publisherPermission": "CC0 declaration verified on creator archive and uploader collection; only rights held by affirmer are covered",
+      "statutoryRemuneration": "not claimed exempt; clinic obligations remain separate",
+      "sourceArchive": "lo-fi_and_chill_lofi_collection_3.zip",
+      "sourceEntry": "Lo-Fi And Chill (Lofi Collection) 3/23 HoliznaCC0 - Creature Comforts.mp3",
+      "sourceSha256": "07982da35ea272ff4c4dab555f024816d34c341bc079640dcbc372228cc5572b",
+      "technical": {
+        "sha256": "af3f63799ebb51308d49ce8d99034fc76ecc8804a618636c7727cfb06e73099f",
+        "bytes": 4098342,
+        "durationSeconds": 170.736327,
+        "codec": {
+          "codec_name": "mp3",
+          "channels": 2,
+          "sample_rate": "44100",
+          "bit_rate": "192000"
+        },
+        "decoded": true,
+        "integratedLufs": -18.3,
+        "loudnessRangeLu": 5.4,
+        "truePeakDbfs": -4.7,
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false
+      },
+      "derivative": {
+        "gainDb": -2.3000000000000007,
+        "trimEndSeconds": 170.68627,
+        "trimmedSeconds": 4.177402999999998
+      },
+      "subjectiveStatus": "Потребує прослуховування",
+      "importState": "prepared"
+    },
+    {
+      "id": "holizna-597f0b8f77d09c48",
+      "title": "Blue Skies",
+      "artist": "HoliznaCC0",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/holizna-597f0b8f77d09c48-bg.mp3",
+      "sourceUrl": "https://opengameart.org/content/happy-lo-fi-lofi-collection",
+      "license": "CC0-1.0",
+      "checkedAt": "2026-10-18",
+      "publisherPermission": "CC0 declaration verified on creator archive and uploader collection; only rights held by affirmer are covered",
+      "statutoryRemuneration": "not claimed exempt; clinic obligations remain separate",
+      "sourceArchive": "happy_lo-fi_lofi_collection.zip",
+      "sourceEntry": "Happy Lo-Fi (Lofi Collection)/03 HoliznaCC0 - Blue Skies.mp3.mp3",
+      "sourceSha256": "1b5916797fe6341663a7172d8f653e95691d9462be51537c56ebfaabd81b8696",
+      "technical": {
+        "sha256": "5a5878dac15a0b053562eb73805013e9b07bf0b7d4e3bfd0d9db7b705e85b5b0",
+        "bytes": 4162290,
+        "durationSeconds": 173.400816,
+        "codec": {
+          "codec_name": "mp3",
+          "channels": 2,
+          "sample_rate": "44100",
+          "bit_rate": "192000"
+        },
+        "decoded": true,
+        "integratedLufs": -18.3,
+        "loudnessRangeLu": 5.6,
+        "truePeakDbfs": -6.3,
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false
+      },
+      "derivative": {
+        "gainDb": -6.6,
+        "trimEndSeconds": 173.36796,
+        "trimmedSeconds": 2.2271419999999864
+      },
+      "subjectiveStatus": "Потребує прослуховування",
+      "importState": "prepared"
+    },
+    {
+      "id": "holizna-b767de41ae6e6b85",
+      "title": "Clouds",
+      "artist": "HoliznaCC0",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/holizna-b767de41ae6e6b85-bg.mp3",
+      "sourceUrl": "https://opengameart.org/content/happy-lo-fi-lofi-collection",
+      "license": "CC0-1.0",
+      "checkedAt": "2026-10-18",
+      "publisherPermission": "CC0 declaration verified on creator archive and uploader collection; only rights held by affirmer are covered",
+      "statutoryRemuneration": "not claimed exempt; clinic obligations remain separate",
+      "sourceArchive": "happy_lo-fi_lofi_collection.zip",
+      "sourceEntry": "Happy Lo-Fi (Lofi Collection)/21 HoliznaCC0 - Clouds.mp3",
+      "sourceSha256": "ae970bdaf997065c5b5ea3520c909514f3a4ed2c84521a83eed1325bffaa26c9",
+      "technical": {
+        "sha256": "910009db68d7fd0853dcd9eb04599049468d028cdf7304395fe48cef9580bc46",
+        "bytes": 5513343,
+        "durationSeconds": 229.694694,
+        "codec": {
+          "codec_name": "mp3",
+          "channels": 2,
+          "sample_rate": "44100",
+          "bit_rate": "192000"
+        },
+        "decoded": true,
+        "integratedLufs": -18.2,
+        "loudnessRangeLu": 5.3,
+        "truePeakDbfs": -5.8,
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false
+      },
+      "derivative": {
+        "gainDb": -6,
+        "trimEndSeconds": 229.694694,
+        "trimmedSeconds": 0
+      },
+      "subjectiveStatus": "Потребує прослуховування",
+      "importState": "prepared"
+    },
+    {
+      "id": "holizna-ddb21a5aa0c80da6",
+      "title": "Letting Go Of The Past",
+      "artist": "HoliznaCC0",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/holizna-ddb21a5aa0c80da6-bg.mp3",
+      "sourceUrl": "https://opengameart.org/content/happy-lo-fi-lofi-collection",
+      "license": "CC0-1.0",
+      "checkedAt": "2026-10-18",
+      "publisherPermission": "CC0 declaration verified on creator archive and uploader collection; only rights held by affirmer are covered",
+      "statutoryRemuneration": "not claimed exempt; clinic obligations remain separate",
+      "sourceArchive": "happy_lo-fi_lofi_collection.zip",
+      "sourceEntry": "Happy Lo-Fi (Lofi Collection)/16 HoliznaCC0 - Letting Go Of The Past.mp3",
+      "sourceSha256": "9897c9d28ebedc86b14ba810d69992e914b7fbf6c1d8ecec9ff3efd07397ab1a",
+      "technical": {
+        "sha256": "64b50889797f83231e6641b30d81d61943a6c9b9196d2e94a87c350a1f4a6047",
+        "bytes": 4311502,
+        "durationSeconds": 179.617959,
+        "codec": {
+          "codec_name": "mp3",
+          "channels": 2,
+          "sample_rate": "44100",
+          "bit_rate": "192000"
+        },
+        "decoded": true,
+        "integratedLufs": -18.3,
+        "loudnessRangeLu": 2.3,
+        "truePeakDbfs": -5,
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false
+      },
+      "derivative": {
+        "gainDb": -4.800000000000001,
+        "trimEndSeconds": 179.617959,
+        "trimmedSeconds": 0
+      },
+      "subjectiveStatus": "Потребує прослуховування",
+      "importState": "prepared"
+    },
+    {
+      "id": "holizna-779923835270286d",
+      "title": "City In The Rearview",
+      "artist": "HoliznaCC0",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/holizna-779923835270286d-bg.mp3",
+      "sourceUrl": "https://opengameart.org/content/chill-beats-collection",
+      "license": "CC0-1.0",
+      "checkedAt": "2026-10-18",
+      "publisherPermission": "CC0 declaration verified on creator archive and uploader collection; only rights held by affirmer are covered",
+      "statutoryRemuneration": "not claimed exempt; clinic obligations remain separate",
+      "sourceArchive": "chill_beats.zip",
+      "sourceEntry": "Chill Beats/01 HoliznaCC0 - City In The Rearview.mp3",
+      "sourceSha256": "7bed6ce57a2430b22cc54f005bc0d111aa0bbbf4243b9081db12d0168369b91b",
+      "technical": {
+        "sha256": "19b44917c5ede6a85bc99acabfd45e767829f9977ce92b9697fa3909e7919036",
+        "bytes": 4154140,
+        "durationSeconds": 173.061224,
+        "codec": {
+          "codec_name": "mp3",
+          "channels": 2,
+          "sample_rate": "44100",
+          "bit_rate": "192000"
+        },
+        "decoded": true,
+        "integratedLufs": -18.3,
+        "loudnessRangeLu": 5.3,
+        "truePeakDbfs": -7.2,
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false
+      },
+      "derivative": {
+        "gainDb": -7.300000000000001,
+        "trimEndSeconds": 173.01931000000002,
+        "trimmedSeconds": 2.680281999999977
+      },
+      "subjectiveStatus": "Потребує прослуховування",
+      "importState": "prepared"
+    },
+    {
+      "id": "holizna-0c9edd85dc1ae9ac",
+      "title": "Old Age",
+      "artist": "HoliznaCC0",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/holizna-0c9edd85dc1ae9ac-bg.mp3",
+      "sourceUrl": "https://opengameart.org/content/chill-beats-collection",
+      "license": "CC0-1.0",
+      "checkedAt": "2026-10-18",
+      "publisherPermission": "CC0 declaration verified on creator archive and uploader collection; only rights held by affirmer are covered",
+      "statutoryRemuneration": "not claimed exempt; clinic obligations remain separate",
+      "sourceArchive": "chill_beats.zip",
+      "sourceEntry": "Chill Beats/06 HoliznaCC0 - Old Age.mp3",
+      "sourceSha256": "6931b7ae6e4f247132b7425977cb71cc6692af9ce7dc6141e7e382746407af75",
+      "technical": {
+        "sha256": "1b387d434ab60b712b56e51966584767d801051815e7bbd591e78415828efed8",
+        "bytes": 5134672,
+        "durationSeconds": 213.916735,
+        "codec": {
+          "codec_name": "mp3",
+          "channels": 2,
+          "sample_rate": "44100",
+          "bit_rate": "192000"
+        },
+        "decoded": true,
+        "integratedLufs": -18.2,
+        "loudnessRangeLu": 5,
+        "truePeakDbfs": -5.6,
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false
+      },
+      "derivative": {
+        "gainDb": -5.800000000000001,
+        "trimEndSeconds": 213.916735,
+        "trimmedSeconds": 0
+      },
+      "subjectiveStatus": "Потребує прослуховування",
+      "importState": "prepared"
+    },
+    {
+      "id": "holizna-ecfe0e349bd7207a",
+      "title": "Autumn",
+      "artist": "HoliznaCC0",
+      "candidateProfile": "Lo-Fi & Chillhop",
+      "url": "https://ieytvixchndxnxsxpcot.supabase.co/storage/v1/object/public/smilestream-music/holizna-ecfe0e349bd7207a-bg.mp3",
+      "sourceUrl": "https://opengameart.org/content/chill-beats-collection",
+      "license": "CC0-1.0",
+      "checkedAt": "2026-10-18",
+      "publisherPermission": "CC0 declaration verified on creator archive and uploader collection; only rights held by affirmer are covered",
+      "statutoryRemuneration": "not claimed exempt; clinic obligations remain separate",
+      "sourceArchive": "chill_beats.zip",
+      "sourceEntry": "Chill Beats/28 HoliznaCC0 - Autumn.mp3",
+      "sourceSha256": "c12190c1c3587e61580078d01c54d4ab7ab1f742857dc07b9d9d712735631b1a",
+      "technical": {
+        "sha256": "8db3d2acb1eae2c87ed195bfebb15f0ff019f3aec895896a0642e009297cb90d",
+        "bytes": 3941608,
+        "durationSeconds": 164.205714,
+        "codec": {
+          "codec_name": "mp3",
+          "channels": 2,
+          "sample_rate": "44100",
+          "bit_rate": "192000"
+        },
+        "decoded": true,
+        "integratedLufs": -18.2,
+        "loudnessRangeLu": 2.4,
+        "truePeakDbfs": -4.9,
+        "browserPlaybackConfirmed": true,
+        "samsungHardwareTested": false
+      },
+      "derivative": {
+        "gainDb": -6.199999999999999,
+        "trimEndSeconds": 164.17470999999998,
+        "trimmedSeconds": 5.673453000000023
+      },
+      "subjectiveStatus": "Потребує прослуховування",
+      "importState": "prepared"
+    }
+  ]
+}
